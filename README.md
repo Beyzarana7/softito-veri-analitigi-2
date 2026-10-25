@@ -1,61 +1,30 @@
-# SoftITo | Veri Analitiği - 2 Programı
+# SoftITo | Veri Analitiği – 2
 
-**İstanbul Ticaret Odası (İTO) SoftITo Yazılım-Bilişim Akademisi** kapsamında yürüttüğüm **Veri Analitiği - 2 Programı** boyunca geliştirdiğim veri analizi projelerini, ödevleri ve uygulama çalışmalarını bu depoda bir araya getiriyorum.
+**Rana Beyza Culus · Endüstri Mühendisi**
 
-Bu depo, eğitim sürecinde öğrendiklerimi gerçek veri setleri üzerinde uyguladığım ve yeni çalışmalarla geliştireceğim kişisel bir portföydür.
+İstanbul Ticaret Odası (İTO) SoftITo Yazılım-Bilişim Akademisi Veri Analitiği – 2 Programı kapsamında hazırladığım veri analizi projeleri ve uygulama çalışmaları.
 
-## Eğitim hakkında
+Üretim, enerji ve sürdürülebilirlik verilerini; veri hazırlama, istatistiksel inceleme ve görselleştirme yöntemleriyle değerlendirerek mühendislik problemlerine yönelik analitik çıktılar üretiyorum.
 
-- **Kurum:** İstanbul Ticaret Odası (İTO) – SoftITo Yazılım-Bilişim Akademisi
-- **Program:** Veri Analitiği - 2
-- **Çevrim içi eğitim:** 7–30 Eylül 2026 · 140 saat (tamamlandı)
-- **Yüz yüze eğitim:** 12 Ekim 2026 – devam ediyor · 180 saat
-- **Toplam planlanan süre:** 320 saat
+## Projeler
 
-Program adındaki **“2”**, aynı eğitimin ikinci açılışını ifade eder; ileri düzey veya farklı bir program değildir.
+| Proje | Kapsam | Araçlar | Durum |
+| --- | --- | --- | --- |
+| [İstanbul Elektrik Tüketimi ve Karbon Emisyonu Analizi](01-istanbul-elektrik-karbon-analizi/) | Ocak 2020–Ağustos 2026 · 400 kayıt · 5 tüketici grubu | Python, Pandas, NumPy, Matplotlib | Tamamlandı ve teslim edildi |
 
-### Çevrim içi aşama · 140 saat (tamamlandı)
+Her proje klasöründe amaç, yöntem, veri kaynakları, bulgular, sınırlılıklar ve çalıştırma adımları yer alır.
 
-- Python programlamaya giriş, algoritmalar, veri tipleri, fonksiyonlar ve dosya işlemleri
-- PostgreSQL/SQL temelleri: sorgulama, filtreleme, gruplama ve tabloları birleştirme
-- Temel istatistik, olasılık ve lineer cebire giriş
-- Keşifsel veri analizi (EDA), veri görselleştirme ve iş zekâsına giriş
-- ETL/ELT, büyük veri, bulut bilişim, veri kalitesi, gizlilik ve güvenlik kavramları
+## Eğitim ve mesleki gelişim
 
-### Yüz yüze aşama · 180 saat (devam ediyor)
+- **Çevrim içi eğitim:** 7–30 Eylül 2026 · 140 saat · tamamlandı.
+- **Yüz yüze uygulamalı eğitim:** 12 Ekim 2026 başlangıç · 180 saat · devam ediyor.
 
-Resmî programda yer alan **uygulamalı eğitim kapsamı** aşağıdaki başlıkları içerir; devam eden eğitimde bu konuların tümünün tamamlandığı anlamına gelmez.
+Program; Python ve SQL ile veri işleme, istatistik, keşifsel veri analizi, görselleştirme, iş zekâsı ve veri mühendisliği konularını kapsar. Program kapsamı, tüm araçların tamamlandığı veya bu araçlarda uzmanlık kazanıldığı anlamına gelmez; bu depoda yalnızca gerçekleştirilen çalışmalar sunulur.
 
-- **Python ile veri analitiği:** NumPy, Pandas ile veri temizleme ve dönüştürme; Matplotlib, Seaborn ve Plotly ile görselleştirme
-- **SQL ve veritabanı:** PostgreSQL'de ileri sorgular, fonksiyonlar, indeksleme, bölümleme ve performans optimizasyonu
-- **İş zekâsı ve raporlama:** **Power BI ile dashboard geliştirme**, **Tableau ile etkileşimli raporlama**
-- **Büyük veri ve veri mühendisliği:** Hadoop/HDFS, Apache Spark, Kafka, ETL pipeline geliştirme ve Apache Airflow
-- **İstatistik ve makine öğrenmesi uygulamaları:** Scikit-learn, zaman serisi analizi ve tahminleme, A/B testleri ve hipotez testleri
-- **Veri servisleri ve dağıtım:** FastAPI, Docker ve bulut veri ambarı temelleri
-- **Uçtan uca proje süreci:** Sektörel senaryo geliştirme, veri hazırlama, proje gerçekleştirme, teknik raporlama ve sunum
-- **Veri yönetişimi:** KVKK uygulamaları ve veri yönetimi
+[Resmî program bilgisi](https://softito.com.tr/view/egitim/goster.php?Guid=15CC3157-AAB4-44E3-A5F3-0A577E60A151)
 
-Bu depo, eğitim kapsamında **gerçekten tamamladığım** proje ve uygulamaları belgelemek üzere güncellenmektedir.
+## İletişim
 
-## Projeler ve çalışmalar
+[LinkedIn](https://www.linkedin.com/in/rana-beyza-28920829a/) · [GitHub · Beyzarana7](https://github.com/Beyzarana7)
 
-| Proje | İçerik | Araçlar |
-| --- | --- | --- |
-| [01 · İstanbul Elektrik Tüketimi ve Karbon Emisyonu Analizi](./01-istanbul-elektrik-karbon-analizi/) | İstanbul'un 2020–Ağustos 2026 dönemindeki aylık ve sektörel elektrik tüketimi ve elektrik kaynaklı emisyon tahminleri | Python, Pandas, NumPy, Matplotlib |
-
-Yeni projeler ve uygulamalar tamamlandıkça bu depoya ayrı klasörler hâlinde eklenecektir.
-
-## Hakkımda
-
-**Rana Beyza Culus** · Endüstri Mühendisi
-
-Veri analitiği ve sürdürülebilir üretim odaklı projelerde analitik yöntemleri gerçek problemlere uygulamaya önem veriyorum.
-
-- [LinkedIn](https://www.linkedin.com/in/rana-beyza-28920829a/)
-- [GitHub](https://github.com/Beyzarana7)
-
-## Resmî eğitim bağlantısı
-
-[SoftITo – Veri Analitiği - 2](https://softito.com.tr/view/egitim/goster.php?Guid=15CC3157-AAB4-44E3-A5F3-0A577E60A151)
-
-> Bu depo kişisel bir eğitim portföyüdür; İTO veya SoftITo'nun resmî proje deposu değildir.
+Bu depo kişisel proje portföyüdür; İTO veya SoftITo'nun resmî deposu değildir.
