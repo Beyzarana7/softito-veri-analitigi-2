@@ -9,10 +9,33 @@ Bu depo, eğitim sürecinde öğrendiklerimi gerçek veri setleri üzerinde uygu
 - **Kurum:** İstanbul Ticaret Odası (İTO) – SoftITo Yazılım-Bilişim Akademisi
 - **Program:** Veri Analitiği - 2
 - **Çevrim içi eğitim:** 7–30 Eylül 2026 · 140 saat (tamamlandı)
-- **Yüz yüze eğitim:** 12 Ekim–13 Kasım 2026 · 180 saat (devam ediyor)
+- **Yüz yüze eğitim:** 12 Ekim 2026 – devam ediyor · 180 saat
 - **Toplam planlanan süre:** 320 saat
 
-Program adındaki “2”, eğitimin ikinci açılışını ifade eder. Eğitim kapsamında Python, Pandas, NumPy, veri temizleme ve keşifsel veri analizi (EDA), veri görselleştirme, temel istatistik, PostgreSQL/SQL, iş zekâsı ve ETL/ELT konuları yer almaktadır. Bu başlıkların tümünün tamamlandığı veya bütün projelerde kullanıldığı ileri sürülmemektedir.
+Program adındaki **“2”**, aynı eğitimin ikinci açılışını ifade eder; ileri düzey veya farklı bir program değildir.
+
+### Çevrim içi aşama · 140 saat (tamamlandı)
+
+- Python programlamaya giriş, algoritmalar, veri tipleri, fonksiyonlar ve dosya işlemleri
+- PostgreSQL/SQL temelleri: sorgulama, filtreleme, gruplama ve tabloları birleştirme
+- Temel istatistik, olasılık ve lineer cebire giriş
+- Keşifsel veri analizi (EDA), veri görselleştirme ve iş zekâsına giriş
+- ETL/ELT, büyük veri, bulut bilişim, veri kalitesi, gizlilik ve güvenlik kavramları
+
+### Yüz yüze aşama · 180 saat (devam ediyor)
+
+Resmî programda yer alan **uygulamalı eğitim kapsamı** aşağıdaki başlıkları içerir; devam eden eğitimde bu konuların tümünün tamamlandığı anlamına gelmez.
+
+- **Python ile veri analitiği:** NumPy, Pandas ile veri temizleme ve dönüştürme; Matplotlib, Seaborn ve Plotly ile görselleştirme
+- **SQL ve veritabanı:** PostgreSQL'de ileri sorgular, fonksiyonlar, indeksleme, bölümleme ve performans optimizasyonu
+- **İş zekâsı ve raporlama:** **Power BI ile dashboard geliştirme**, **Tableau ile etkileşimli raporlama**
+- **Büyük veri ve veri mühendisliği:** Hadoop/HDFS, Apache Spark, Kafka, ETL pipeline geliştirme ve Apache Airflow
+- **İstatistik ve makine öğrenmesi uygulamaları:** Scikit-learn, zaman serisi analizi ve tahminleme, A/B testleri ve hipotez testleri
+- **Veri servisleri ve dağıtım:** FastAPI, Docker ve bulut veri ambarı temelleri
+- **Uçtan uca proje süreci:** Sektörel senaryo geliştirme, veri hazırlama, proje gerçekleştirme, teknik raporlama ve sunum
+- **Veri yönetişimi:** KVKK uygulamaları ve veri yönetimi
+
+Bu depo, eğitim kapsamında **gerçekten tamamladığım** proje ve uygulamaları belgelemek üzere güncellenmektedir.
 
 ## Projeler ve çalışmalar
 
@@ -24,7 +47,7 @@ Yeni projeler ve uygulamalar tamamlandıkça bu depoya ayrı klasörler hâlinde
 
 ## Hakkımda
 
-**Rana Beyza Culus** · Endüstri Mühendisliği
+**Rana Beyza Culus** · Endüstri Mühendisi
 
 Veri analitiği ve sürdürülebilir üretim odaklı projelerde analitik yöntemleri gerçek problemlere uygulamaya önem veriyorum.
 
