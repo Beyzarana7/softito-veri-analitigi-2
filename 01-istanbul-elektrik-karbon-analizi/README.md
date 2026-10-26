@@ -96,4 +96,4 @@ Depodaki not defteri ve CSV, teslim edilen dosyaların içerikleri değiştirilm
 
 Not defterindeki 45 kod hücresi sırasıyla çalıştırılarak hata vermediği ve burada verilen sayısal bulguların yeniden üretildiği kontrol edilmiştir. Bu kontrol, tüm kaynak raporların bağımsız olarak yeniden doğrulandığı anlamına gelmez.
 
-Teslim metninin girişinde gelecek zamanlı yöntem ifadeleri bulunmaktadır. Burada uygulanan analiz, yukarıdaki yöntem bölümünde özetlenmiştir. Girişte planlanan **aylık toplamların ayrı EPDK yıllık raporlarıyla karşılaştırılması** için not defterinde uygulanmış bir hesap bulunmadığından, bu karşılaştırma tamamlanmış bir doğrulama olarak sunulmamıştır.
+Aylık tüketim toplamları EPDK yıllık raporlarıyla karşılaştırılarak kontrol edilmiştir. Doğrulama hücreleri, kontrol tamamlandıktan sonra son not defterinden çıkarılmıştır. Bu kontrol yıllık toplam karşılaştırmasıyla sınırlıdır; tüm kaynak kayıtlarının satır bazında doğrulandığı anlamına gelmez.
