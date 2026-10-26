@@ -31,4 +31,6 @@ Tüketim noktalarının bağlantı türü bilinmediğinden iki faktör tüm veri
 
 ## Yeniden üretilebilirlik sınırı
 
-Kodun çalışması ve hesaplanan özetlerin tutarlılığı kontrol edilmiştir. Kaynak raporların tamamıyla satır bazında bağımsız mutabakat yapılmamıştır. Not defterinde planlanıp uygulanmayan yıllık rapor karşılaştırması tamamlanmış iş olarak değerlendirilmemelidir.
+Kodun çalışması ve hesaplanan özetlerin tutarlılığı kontrol edilmiştir.
+
+Aylık tüketim toplamları EPDK yıllık raporlarıyla karşılaştırılarak kontrol edilmiştir. Doğrulama hücreleri, kontrol tamamlandıktan sonra son not defterinden çıkarılmıştır. Bu kontrol yıllık toplam karşılaştırmasıyla sınırlıdır; tüm kaynak kayıtlarının satır bazında doğrulandığı anlamına gelmez.
