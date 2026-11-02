@@ -1,0 +1,212 @@
+// PBIX modelinden çıkarılan özgün 29 ölçü. İnceleme içindir; toplu çalıştırma betiği değildir.
+
+// Tablo: Elektrik_Tuketimi
+// 
+Toplam Elektrik Tuketimi =
+SUM('Elektrik_Tuketimi'[elektrik_tuketimi_mwh])
+
+// Tablo: Elektrik_Tuketimi
+// 
+Iletim Karbon Emisyonu =
+SUMX('Elektrik_Tuketimi', 'Elektrik_Tuketimi'[elektrik_tuketimi_mwh] * RELATED('Emisyon_Faktorleri'[iletim_faktoru]))
+
+// Tablo: Elektrik_Tuketimi
+// 
+Dagitim Karbon Emisyonu =
+SUMX('Elektrik_Tuketimi', 'Elektrik_Tuketimi'[elektrik_tuketimi_mwh] * RELATED('Emisyon_Faktorleri'[dagitim_faktoru]))
+
+// Tablo: Elektrik_Tuketimi
+// Çoklu yıl seçiminde KPI ve katkı tablosu seçili son yılı kullanır.
+Analiz Yili =
+MAX(Dim_Takvim[Yıl])
+
+// Tablo: Elektrik_Tuketimi
+// Seçilen son yılın görünür ayları ve seçili sektörler.
+Donem Tuketimi =
+VAR vYil = [Analiz Yili]
+RETURN CALCULATE([Toplam Elektrik Tuketimi], KEEPFILTERS(Dim_Takvim[Yıl] = vYil))
+
+// Tablo: Elektrik_Tuketimi
+// 
+Donem Ay Sayisi =
+VAR vYil = [Analiz Yili]
+RETURN CALCULATE(COUNTROWS(VALUES(Dim_Takvim[Tarih])), KEEPFILTERS(Dim_Takvim[Yıl] = vYil))
+
+// Tablo: Elektrik_Tuketimi
+// Seçili son yılın ay numaralarını önceki yılda eşler; eksik karşılık varsa boş döner.
+Onceki Yil Ayni Donem Tuketimi =
+VAR vYil = [Analiz Yili]
+VAR vAyNumaralari = CALCULATETABLE(VALUES(Dim_Takvim[Ay_no]), KEEPFILTERS(Dim_Takvim[Yıl] = vYil))
+VAR vOncekiDonem = FILTER(ALL(Dim_Takvim), Dim_Takvim[Yıl] = vYil - 1 && Dim_Takvim[Ay_no] IN vAyNumaralari)
+RETURN IF(COUNTROWS(vAyNumaralari) = 0 || COUNTROWS(vOncekiDonem) <> COUNTROWS(vAyNumaralari), BLANK(),
+CALCULATE([Toplam Elektrik Tuketimi], REMOVEFILTERS(Dim_Takvim), vOncekiDonem))
+
+// Tablo: Elektrik_Tuketimi
+// 
+Tuketim Degisimi MWh =
+VAR vOnceki = [Onceki Yil Ayni Donem Tuketimi]
+RETURN IF(ISBLANK(vOnceki), BLANK(), [Donem Tuketimi] - vOnceki)
+
+// Tablo: Elektrik_Tuketimi
+// 
+Tuketim Degisimi Yuzde =
+DIVIDE([Tuketim Degisimi MWh], [Onceki Yil Ayni Donem Tuketimi])
+
+// Tablo: Elektrik_Tuketimi
+// 
+Secili Toplam Onceki Donem =
+CALCULATE([Onceki Yil Ayni Donem Tuketimi], ALLSELECTED(Dim_Sektor))
+
+// Tablo: Elektrik_Tuketimi
+// Payda: seçili sektörlerin önceki dönem toplamı. Satırlar toplandığında toplam büyüme yüzde puanına eşittir.
+Sektor Katkisi Yuzde Puan =
+100 * DIVIDE([Tuketim Degisimi MWh], [Secili Toplam Onceki Donem])
+
+// Tablo: Elektrik_Tuketimi
+// Aylık faturalanan tüketimin takvim gününe bölünmesi; ölçülmüş günlük yük değildir. Birden çok yıl için gün ağırlıklı ortalama.
+Gunluk Ortalama Tuketim =
+VAR vGunSayisi = SUMX(VALUES(Dim_Takvim[Tarih]), DAY(EOMONTH(Dim_Takvim[Tarih], 0)))
+RETURN DIVIDE([Toplam Elektrik Tuketimi], vGunSayisi)
+
+// Tablo: Elektrik_Tuketimi
+// Seçili ayların sektör içi günlük ortalamasına oran; mevsimsellikten arındırılmış seri değildir.
+Mevsimsellik Endeksi =
+VAR vReferans = CALCULATE([Gunluk Ortalama Tuketim], ALLSELECTED(Dim_Takvim[Ay_no]), ALLSELECTED(Dim_Takvim[Ay_Adi]))
+RETURN DIVIDE([Gunluk Ortalama Tuketim], vReferans)
+
+// Tablo: Elektrik_Tuketimi
+// 
+Isi Haritasi Rengi =
+VAR vEndeks = [Mevsimsellik Endeksi]
+RETURN SWITCH(TRUE(), ISBLANK(vEndeks), "#FFFFFF", vEndeks < 0.85, "#DCECF8", vEndeks < 0.95, "#94D9E7", vEndeks < 1.05, "#45C5BB", vEndeks < 1.15, "#F5D873", "#F5C542")
+
+// Tablo: Elektrik_Tuketimi
+// Tam 12 ardışık verili ay gerekir. İlk değer Aralık 2020. Görünür tarihten önceki geçmişi kullanır; sektör filtresini korur.
+Hareketli Ortalama 12 Ay =
+VAR vBitis = MAX(Dim_Takvim[Tarih])
+VAR vBaslangic = EDATE(vBitis, -11)
+VAR vPencere = FILTER(ALL(Dim_Takvim), Dim_Takvim[Tarih] >= vBaslangic && Dim_Takvim[Tarih] <= vBitis)
+VAR vAySayisi = COUNTROWS(vPencere)
+VAR vVeriliAySayisi = CALCULATE(DISTINCTCOUNT(Elektrik_Tuketimi[Tarih]), REMOVEFILTERS(Dim_Takvim), vPencere)
+RETURN IF(vAySayisi = 12 && vVeriliAySayisi = 12,
+CALCULATE(DIVIDE([Toplam Elektrik Tuketimi],12), REMOVEFILTERS(Dim_Takvim), vPencere), BLANK())
+
+// Tablo: Elektrik_Tuketimi
+// 
+Donem Dagitim Emisyonu =
+VAR vYil = [Analiz Yili]
+RETURN CALCULATE([Dagitim Karbon Emisyonu], KEEPFILTERS(Dim_Takvim[Yıl] = vYil))
+
+// Tablo: Elektrik_Tuketimi
+// 
+Donem Iletim Emisyonu =
+VAR vYil = [Analiz Yili]
+RETURN CALCULATE([Iletim Karbon Emisyonu], KEEPFILTERS(Dim_Takvim[Yıl] = vYil))
+
+// Tablo: Elektrik_Tuketimi
+// 
+Dinamik Donem Etiketi =
+VAR vYil = [Analiz Yili]
+VAR vAylar = CALCULATETABLE(VALUES(Dim_Takvim[Tarih]), KEEPFILTERS(Dim_Takvim[Yıl] = vYil))
+RETURN IF(ISBLANK(vYil), "Seçime uygun dönem yok", "KPI / katkı dönemi: " & FORMAT(vYil,"0") & " | " & FORMAT(COUNTROWS(vAylar),"0") & " ay | " & FORMAT(MINX(vAylar,Dim_Takvim[Tarih]),"MM.yyyy") & " – " & FORMAT(MAXX(vAylar,Dim_Takvim[Tarih]),"MM.yyyy") & " | Çoklu yıl seçiminde son yıl")
+
+// Tablo: Elektrik_Tuketimi
+// 
+Dinamik Bulgular =
+VAR vDegisim = [Tuketim Degisimi Yuzde]
+VAR vMutlak = [Tuketim Degisimi MWh]
+VAR vYil = [Analiz Yili]
+RETURN IF(ISBLANK(vYil), "Seçim için veri bulunamadı.",
+IF(ISBLANK(vDegisim), "Önceki yılın aynı ayları tam bulunmadığından değişim hesaplanmadı.",
+"Aynı aylar / önceki yıl: " & FORMAT(vDegisim,"+0.00%;-0.00%;0.00%") & " | Mutlak fark: " & FORMAT(vMutlak,"+#,0;-#,0;0") & " MWh.")
+& "  Sektör katkıları seçili sektörlerin önceki dönem toplamına göredir. "
+& IF(vYil >= 2024,"Emisyon: 2023 faktörüyle referans senaryosu.","Emisyon: ilgili yılın resmi faktörü."))
+
+// Tablo: Elektrik_Tuketimi
+// Grafikte her yıl, dış seçimdeki son yılın aynı aylarıyla gösterilir; 2026 kısmi yılı tam yıllarla karıştırılmaz.
+Ayni Aylarda Dagitim Emisyonu =
+VAR vSeciliTakvim = ALLSELECTED(Dim_Takvim)
+VAR vSonYil = MAXX(vSeciliTakvim, Dim_Takvim[Yıl])
+VAR vSeciliSonYil = FILTER(vSeciliTakvim, Dim_Takvim[Yıl] = vSonYil)
+VAR vAylar = SELECTCOLUMNS(vSeciliSonYil, "AyNumarasi", Dim_Takvim[Ay_no])
+RETURN CALCULATE([Dagitim Karbon Emisyonu], KEEPFILTERS(Dim_Takvim[Ay_no] IN vAylar))
+
+// Tablo: Elektrik_Tuketimi
+// Grafikte her yıl, dış seçimdeki son yılın aynı aylarıyla gösterilir; 2026 kısmi yılı tam yıllarla karıştırılmaz.
+Ayni Aylarda Iletim Emisyonu =
+VAR vSeciliTakvim = ALLSELECTED(Dim_Takvim)
+VAR vSonYil = MAXX(vSeciliTakvim, Dim_Takvim[Yıl])
+VAR vSeciliSonYil = FILTER(vSeciliTakvim, Dim_Takvim[Yıl] = vSonYil)
+VAR vAylar = SELECTCOLUMNS(vSeciliSonYil, "AyNumarasi", Dim_Takvim[Ay_no])
+RETURN CALCULATE([Iletim Karbon Emisyonu], KEEPFILTERS(Dim_Takvim[Ay_no] IN vAylar))
+
+// Tablo: Elektrik_Tuketimi
+// 
+Degisim Rengi =
+VAR vDegisim = [Tuketim Degisimi Yuzde]
+RETURN IF(ISBLANK(vDegisim), "#CBD5E1", IF(vDegisim < 0, "#FF6B6B", "#00B8A9"))
+
+// Tablo: Elektrik_Tuketimi
+// 
+Donem Aciklamasi =
+VAR vYil = [Analiz Yili]
+VAR vAylar = CALCULATETABLE(VALUES(Dim_Takvim[Tarih]), KEEPFILTERS(Dim_Takvim[Yıl] = vYil))
+VAR vIlkAy = MINX(vAylar, Dim_Takvim[Tarih])
+VAR vSonAy = MAXX(vAylar, Dim_Takvim[Tarih])
+VAR vAySayisi = COUNTROWS(vAylar)
+VAR vArdisik = vAySayisi = MONTH(vSonAy) - MONTH(vIlkAy) + 1
+VAR vAyMetni = IF(vAySayisi = 1, SWITCH(MONTH(vIlkAy), 1, "Ocak", 2, "Şubat", 3, "Mart", 4, "Nisan", 5, "Mayıs", 6, "Haziran", 7, "Temmuz", 8, "Ağustos", 9, "Eylül", 10, "Ekim", 11, "Kasım", 12, "Aralık"),
+IF(vArdisik, SWITCH(MONTH(vIlkAy), 1, "Ocak", 2, "Şubat", 3, "Mart", 4, "Nisan", 5, "Mayıs", 6, "Haziran", 7, "Temmuz", 8, "Ağustos", 9, "Eylül", 10, "Ekim", 11, "Kasım", 12, "Aralık") & "–" & SWITCH(MONTH(vSonAy), 1, "Ocak", 2, "Şubat", 3, "Mart", 4, "Nisan", 5, "Mayıs", 6, "Haziran", 7, "Temmuz", 8, "Ağustos", 9, "Eylül", 10, "Ekim", 11, "Kasım", 12, "Aralık"),
+CONCATENATEX(vAylar, LEFT(SWITCH(MONTH(Dim_Takvim[Tarih]), 1, "Ocak", 2, "Şubat", 3, "Mart", 4, "Nisan", 5, "Mayıs", 6, "Haziran", 7, "Temmuz", 8, "Ağustos", 9, "Eylül", 10, "Ekim", 11, "Kasım", 12, "Aralık"),3), ", ", Dim_Takvim[Tarih], ASC)))
+RETURN IF(ISBLANK(vYil) || vAySayisi = 0, "Seçilen yıl/tarih aralığında veri bulunmuyor.",
+"Seçili Dönem: " & vAyMetni & " " & FORMAT(vYil,"0") & " | " &
+IF(ISBLANK([Onceki Yil Ayni Donem Tuketimi]), "Karşılaştırma: veri yok", "Karşılaştırma: " & vAyMetni & " " & FORMAT(vYil-1,"0")) &
+IF(COUNTROWS(VALUES(Dim_Takvim[Yıl])) > 1, " | Çoklu yıl: son seçili yıl esas", ""))
+
+// Tablo: Elektrik_Tuketimi
+// 
+Bulgu Tuketim =
+VAR vYil = [Analiz Yili]
+VAR vAylar = CALCULATETABLE(VALUES(Dim_Takvim[Tarih]), KEEPFILTERS(Dim_Takvim[Yıl] = vYil))
+VAR vIlkAy = MINX(vAylar, Dim_Takvim[Tarih])
+VAR vSonAy = MAXX(vAylar, Dim_Takvim[Tarih])
+VAR vAySayisi = COUNTROWS(vAylar)
+VAR vArdisik = vAySayisi = MONTH(vSonAy) - MONTH(vIlkAy) + 1
+VAR vAyMetni = IF(vAySayisi = 1, SWITCH(MONTH(vIlkAy), 1, "Ocak", 2, "Şubat", 3, "Mart", 4, "Nisan", 5, "Mayıs", 6, "Haziran", 7, "Temmuz", 8, "Ağustos", 9, "Eylül", 10, "Ekim", 11, "Kasım", 12, "Aralık"),
+IF(vArdisik, SWITCH(MONTH(vIlkAy), 1, "Ocak", 2, "Şubat", 3, "Mart", 4, "Nisan", 5, "Mayıs", 6, "Haziran", 7, "Temmuz", 8, "Ağustos", 9, "Eylül", 10, "Ekim", 11, "Kasım", 12, "Aralık") & "–" & SWITCH(MONTH(vSonAy), 1, "Ocak", 2, "Şubat", 3, "Mart", 4, "Nisan", 5, "Mayıs", 6, "Haziran", 7, "Temmuz", 8, "Ağustos", 9, "Eylül", 10, "Ekim", 11, "Kasım", 12, "Aralık"),
+CONCATENATEX(vAylar, LEFT(SWITCH(MONTH(Dim_Takvim[Tarih]), 1, "Ocak", 2, "Şubat", 3, "Mart", 4, "Nisan", 5, "Mayıs", 6, "Haziran", 7, "Temmuz", 8, "Ağustos", 9, "Eylül", 10, "Ekim", 11, "Kasım", 12, "Aralık"),3), ", ", Dim_Takvim[Tarih], ASC)))
+VAR vOran = [Tuketim Degisimi Yuzde]
+RETURN IF(ISBLANK(vYil) || vAySayisi=0, "Seçilen yıl/tarih aralığında tüketim verisi yok.",
+vAyMetni & " " & FORMAT(vYil,"0") & ": " & FORMAT(DIVIDE([Donem Tuketimi],1000000),"0.00","tr-TR") & " milyon MWh. " &
+IF(ISBLANK(vOran), "Önceki yılın aynı ayları için karşılaştırma verisi yok.",
+vAyMetni & " " & FORMAT(vYil-1,"0") & " dönemine göre " & FORMAT(vOran,"+0.00%;-0.00%;0.00%","tr-TR") & "; fark " & FORMAT([Tuketim Degisimi MWh],"+#,0;-#,0;0","tr-TR") & " MWh."))
+
+// Tablo: Elektrik_Tuketimi
+// 
+Bulgu Sektor =
+VAR vSektorler = ADDCOLUMNS(ALLSELECTED(Dim_Sektor[tuketici_turu]), "NetKatki", CALCULATE([Tuketim Degisimi MWh]), "PuanKatki", CALCULATE([Sektor Katkisi Yuzde Puan]))
+VAR vEnBuyuk = TOPN(1, FILTER(vSektorler, NOT(ISBLANK([NetKatki]))), ABS([NetKatki]), DESC, Dim_Sektor[tuketici_turu], ASC)
+RETURN IF(COUNTROWS(vEnBuyuk) = 0, "Sektörel katkı için eşleşen önceki dönem yok.",
+FORMAT([Analiz Yili],"0") & " / " & FORMAT([Donem Ay Sayisi],"0") & " ay. En büyük mutlak katkı: " & MAXX(vEnBuyuk, Dim_Sektor[tuketici_turu]) & ". " & FORMAT(MAXX(vEnBuyuk,[NetKatki]),"+#,0;-#,0;0") & " MWh / " & FORMAT(MAXX(vEnBuyuk,[PuanKatki]),"+0.00;-0.00;0.00") & " yüzde puan. Seçili sektörler toplamına katkı.")
+
+// Tablo: Elektrik_Tuketimi
+// 
+Bulgu Karbon =
+VAR vYil = [Analiz Yili]
+RETURN IF(ISBLANK(vYil), "Seçilen yıl/tarih aralığında emisyon hesaplanamıyor.",
+FORMAT(vYil,"0") & " / " & FORMAT([Donem Ay Sayisi],"0") & " ay: dağıtım " & FORMAT(DIVIDE([Donem Dagitim Emisyonu],1000000),"0.00","tr-TR") & "; iletim " & FORMAT(DIVIDE([Donem Iletim Emisyonu],1000000),"0.00","tr-TR") & " milyon tCO₂e. " & IF(vYil>=2024,"2023 faktörleriyle referans tahmini.","İlgili yılın resmi faktörleriyle tahmin."))
+
+// Tablo: Elektrik_Tuketimi
+// Kartta milyon biriminde doğrudan değer; ayrıca M kısaltması uygulanmaz.
+KPI Tuketim Milyon =
+DIVIDE([Donem Tuketimi],1000000)
+
+// Tablo: Elektrik_Tuketimi
+// Kartta milyon biriminde doğrudan değer; ayrıca M kısaltması uygulanmaz.
+KPI Dagitim Milyon =
+DIVIDE([Donem Dagitim Emisyonu],1000000)
+
+// Tablo: Elektrik_Tuketimi
+// Kartta milyon biriminde doğrudan değer; ayrıca M kısaltması uygulanmaz.
+KPI Iletim Milyon =
+DIVIDE([Donem Iletim Emisyonu],1000000)

@@ -1,0 +1,11 @@
+OK: 400 kayıt, 80 ay, 5 standart grup; eksik/tekrarlı anahtar yok.
+Toplam tüketim: 283,869,173.152332 MWh
+İletim senaryosu: 124,166,909.181047 tCO2e
+Dağıtım senaryosu: 133,652,385.348624 tCO2e
+2026 Ocak–Ağustos: 31,171,097.702332 MWh; aynı dönem değişimi: %2.392627
+Sektörel katkılar (2026/2025 Ocak–Ağustos; tüm sektörler):
+  Aydınlatma: -11,247.956109 MWh / -0.036948 yüzde puan
+  Hizmetler/Ticarethane: +509,297.367723 MWh / +1.672969 yüzde puan
+  Mesken: +226,281.277477 MWh / +0.743302 yüzde puan
+  Sanayi: +2,262.579729 MWh / +0.007432 yüzde puan
+  Tarım: +1,787.253512 MWh / +0.005871 yüzde puan

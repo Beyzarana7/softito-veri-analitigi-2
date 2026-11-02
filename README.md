@@ -11,6 +11,7 @@
 | Proje | Kapsam | Araçlar | Durum |
 | --- | --- | --- | --- |
 | [İstanbul Elektrik Tüketimi ve Karbon Emisyonu Analizi](01-istanbul-elektrik-karbon-analizi/) | Ocak 2020–Ağustos 2026 · 400 kayıt · 5 tüketici grubu | Python, Pandas, NumPy, Matplotlib | Tamamlandı ve teslim edildi |
+| [İstanbul Elektrik Tüketimi ve Karbon Analizi — Power BI](02-istanbul-elektrik-karbon-power-bi/) | Aynı veri setiyle etkileşimli raporlama · dönem karşılaştırması · mevsimsellik · emisyon senaryoları | Power BI, Power Query, DAX | Tamamlandı |
 
 Her proje klasöründe amaç, yöntem, veri kaynakları, bulgular, sınırlılıklar ve çalıştırma adımları yer alır.
 
