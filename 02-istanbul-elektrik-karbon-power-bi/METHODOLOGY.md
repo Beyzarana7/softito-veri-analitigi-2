@@ -36,11 +36,12 @@ Satır bazındaki tüketim ilgili yılın faktörüyle çarpılır ve toplanır.
 - PBIX'in gömülü tüketim ve faktör tabloları çıkarılarak CSV'lerle karşılaştırıldı. Sayısal tüketim farkı tüm kayıtlarda sıfırdır.
 - 400 tüketim kaydında eksik alan, negatif tüketim ve yıl/ay/ham sektör anahtarı tekrarı bulunmadı. Standartlaştırmadan sonra 80 ayın her birinde beş grup bulunur.
 - Genel toplamlar, 2026/2025 aynı dönem farkı ve sektör katkıları bağımsız Python hesabıyla yeniden üretildi.
+- Güncel raporun kullanıcı tarafından dışa aktarılan PDF'si görsel olarak incelendi; dashboard önizlemesi bu PDF'den oluşturuldu.
 - Rapor tanımında A bölümüne yıl/ay dilimleyicilerinin etki etmediği, sektör dilimleyicisinin etki ettiği kontrol edildi.
 
 ## Kontrolün sınırları ve kullanım notları
 
-Bu inceleme PBIX'in kayıtlı veri, sorgu, ölçü ve rapor tanımlarına dayanır. Bu ortamda Power BI Desktop açılıp DAX motoru, yenileme ve etkileşimler canlı çalıştırılmamış; son rapor ekranı görsel olarak doğrulanmamıştır. Bağımsız Python kontrolü DAX motorunun tüm filtre bağlamlarını test etmiş sayılmaz. Kaynak EPDK/ETKB belgeleri bu incelemede yeniden satır bazında denetlenmemiştir.
+Bu inceleme PBIX'in kayıtlı veri, sorgu, ölçü ve rapor tanımlarına dayanır. Bu ortamda Power BI Desktop açılıp DAX motoru, yenileme ve etkileşimler canlı çalıştırılmamıştır. Güncel PDF dışa aktarımının yerleşimi, grafik görünümü ve gösterilen temel KPI değerleri incelenmiştir; bu kontrol canlı etkileşim testi değildir. Bağımsız Python kontrolü DAX motorunun tüm filtre bağlamlarını test etmiş sayılmaz. Kaynak EPDK/ETKB belgeleri bu incelemede yeniden satır bazında denetlenmemiştir.
 
 Genel dönem özet satırı statik bir metindir; veri yenilenip kapsam değişirse metnin güncellenmesi gerekir. Bu satır seçili dönemin dinamik KPI'larıyla karıştırılmamalıdır. Sektör seçimi tekil bir gruba indirildiğinde katkıların paydası da seçili gruba iner. A bölümü uzun dönem profili olarak tasarlandığı için dilimleyicilerden farklı dönem gösterebilir; bölüm başlığında bu davranış belirtilir.
 

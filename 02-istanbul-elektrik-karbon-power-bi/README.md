@@ -7,6 +7,12 @@ Ocak 2020–Ağustos 2026 · 400 kayıt · 80 ay · 5 standart tüketici grubu
 
 **[Power BI dosyasını indir](Istanbul_Elektrik_Karbon_Analizi.pbix)** · [DAX ölçüleri](model/measures.dax) · [Yöntem ve inceleme notları](METHODOLOGY.md) · [Veri kaynakları](SOURCES.md)
 
+## Dashboard önizlemesi
+
+![İstanbul elektrik tüketimi ve karbon analizi dashboard genel görünümü](assets/dashboard-genel-bakis.png)
+
+Güncel Power BI raporunun PDF dışa aktarımından alınmıştır. Dilimleyiciler tüm değerleri kapsar; dönem KPI'ları son verili yıl olan **2026 Ocak–Ağustos** dönemini gösterir. Görsel statiktir; etkileşimli inceleme için PBIX dosyasını açın.
+
 ## Raporun yanıtladığı sorular
 
 - Aylık tüketim ve 12 aylık hareketli ortalama nasıl değişiyor?
