@@ -12,13 +12,14 @@
 | --- | --- | --- | --- |
 | [İstanbul Elektrik Tüketimi ve Karbon Emisyonu Analizi](01-istanbul-elektrik-karbon-analizi/) | Ocak 2020–Ağustos 2026 · 400 kayıt · 5 tüketici grubu | Python, Pandas, NumPy, Matplotlib | Tamamlandı |
 | [İstanbul Elektrik Tüketimi ve Karbon Analizi — Power BI](02-istanbul-elektrik-karbon-power-bi/) | Aynı veri setiyle etkileşimli raporlama · dönem karşılaştırması · mevsimsellik · emisyon senaryoları | Power BI, Power Query, DAX | Tamamlandı |
+| [WattRota](WattRota/) | Elektrik fiyat tahmini ve üretim kısıtlarıyla 72 saatlik çizelgeleme; beklenen ve gerçekleşen maliyet analizi | Python, PostgreSQL, HiGHS (MILP), Streamlit | Tamamlandı |
 
 Her proje klasöründe amaç, yöntem, veri kaynakları, bulgular, sınırlılıklar ve çalıştırma adımları yer alır.
 
 ## Eğitim ve mesleki gelişim
 
 - **Çevrim içi eğitim:** 7–30 Eylül 2026 · 140 saat · tamamlandı.
-- **Yüz yüze uygulamalı eğitim:** 12 Ekim 2026 başlangıç · 180 saat · devam ediyor.
+- **Yüz yüze uygulamalı eğitim:** 12 Ekim–13 Kasım 2026 · 180 saat (resmî eğitim takvimi).
 
 Program; Python ve SQL ile veri işleme, istatistik, keşifsel veri analizi, görselleştirme, iş zekâsı ve veri mühendisliği konularını kapsar. Program kapsamı, tüm araçların tamamlandığı veya bu araçlarda uzmanlık kazanıldığı anlamına gelmez; bu depoda yalnızca gerçekleştirilen çalışmalar sunulur.
 

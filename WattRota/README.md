@@ -11,7 +11,9 @@ WattRota, açıklanmış saatlik elektrik fiyatlarını ve henüz açıklanmamı
 - [Veri sözlüğü](belgeler/Veri_Sozlugu.csv)
 - [Dosya açıklamaları](belgeler/Dosya_Aciklamalari.csv)
 
-Bu iki rapor dosyası, yazar tarafından incelenip sağlanan nihai sürümdür. Önceki proje raporları ve akademik makalenin eski PDF/DOCX sürümleri teslim paketinde bulunmaz; paket dışındaki yedeklerde korunur. Akademik makale: Medium'da yayımlanacaktır.
+Nihai veri sözlüğü `belgeler/Veri_Sozlugu.csv` dosyasıdır; alan açıklamaları, birimler, anahtarlar ve ilişkileri içerir.
+
+Akademik makale: Medium'da yayımlanacaktır.
 
 ## Teknolojiler ve uygulama
 
@@ -54,13 +56,13 @@ Uygulama, `uygulama/runs/20261111_232421_67cf3c75` içindeki doğrulanmış tari
 - `uygulama/`: Son üç sayfalı uygulama; `legacy/` uygulamanın kullandığı korunmuş kaynak kopyalarını içerir. Import yapısı nedeniyle gereklidir.
 - `data/raw/epias/`: Üç EPİAŞ PTF CSV'si, 24.984 saat.
 - `data/synthetic/firma_01/`: Sentetik fabrika, varsayımlar ve alan sözlüğü.
-- `veri/veri_sozlugu_taslak.md`: PostgreSQL tablo/anahtar taslağı; nihai belge düzenlemesi bekliyor.
-- `data/results/delivery_evaluation/`: Doğrulanmış on haftanın toplu değerlendirmesi.
+- `belgeler/Veri_Sozlugu.csv`: Nihai veri sözlüğü. `veri/veri_sozlugu_taslak.md`, PostgreSQL kataloglarından çıkarılmış teknik şema taslağıdır.
+- `data/results/delivery_evaluation/`: Doğrulanmış 10 ayrı 72 saatlik planlama penceresinin toplu değerlendirmesi.
 - `data/results/direct_milp_04_development_60s/`: Ayrı koşum kayıtları ve denetimleri.
 - `experiments/`: Raporlanmış akademik sonuçların kaynakları ve ayarları. Çalıştırmak uygulama açılışı için gerekli değildir.
 - `tests/`, `uygulama/tests/`: Model, veri, analitik ve ekran kontrolleri.
 - `uygulama/ekran_goruntuleri/`: Yalnız inceleme_01–inceleme_08 son sürüm görüntüleri.
-- `belgeler/`: Onaylı nihai proje raporu (DOCX/PDF), veri sözlüğü, dosya açıklamaları, logo. Akademik makalenin eski PDF/DOCX dosyaları teslim kapsamı dışındadır.
+- `belgeler/`: Onaylı nihai proje raporu (DOCX/PDF), veri sözlüğü, dosya açıklamaları, logo.
 - `teslim_kontrol/`: Kopyalama, bütünlük, güvenlik ve test kayıtları.
 
 ## Notebook ve test kullanımı
@@ -77,7 +79,7 @@ PostgreSQL yapılandırması yoksa bağlantı testi açıkça atlanır. Eski V2 
 
 ## Bulguların kapsamı
 
-Ana geliştirme değerlendirmesi 5 Ocak–9 Mart 2026 başlangıçlı 10 haftadır. Teslim süresi nedeniyle kronolojik akış güvenli kayıt noktasında durduruldu; haftalar sonuçlara göre seçilmedi. Toplam avantajlar HGB günlük yeniden planlama için 40.079,47 TL, ensemble için 21.064,23 TL, basit yöntem için 19.483,39 TL'dir. Bunlar uygulamadaki tek Ekim 2025 demo sonucundan ve eski pilot/havuz çalışmalarından ayrıdır. Kalan 24 geliştirme haftası ve kilitli 10 hafta değerlendirilmedi.
+Ana geliştirme değerlendirmesi, başlangıç tarihleri 5 Ocak–9 Mart 2026 arasında haftalık aralıklarla seçilmiş 10 ayrı 72 saatlik planlama penceresini kapsar. Buradaki “10 hafta”, kesintisiz 10 haftalık üretim simülasyonu anlamına gelmez. Teslim süresi nedeniyle kronolojik akış güvenli kayıt noktasında durduruldu; haftalar sonuçlara göre seçilmedi. Toplam avantajlar HGB günlük yeniden planlama için 40.079,47 TL, ensemble için 21.064,23 TL, basit yöntem için 19.483,39 TL'dir. Bunlar uygulamadaki tek Ekim 2025 demo sonucundan ve eski pilot/havuz çalışmalarından ayrıdır. Kalan 24 geliştirme haftası ve kilitli 10 hafta değerlendirilmedi.
 
 ## Sınırlılıklar ve gelecek geliştirmeler
 
