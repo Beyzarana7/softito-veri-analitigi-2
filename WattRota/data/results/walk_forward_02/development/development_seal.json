@@ -1,0 +1,9 @@
+{
+  "selection_sha256": "194ce4a4c1a6559b99bc1ecc9b67d7eacf209e36004ae4f9a3fddb3df8f0dca9",
+  "test_lock_sha256": "37bf653ed8016dfd1b53e9072a7040d84452e957dbe9ec3b71d8c44777eb58c6",
+  "files": {
+    "predictions.csv": "dfb1e698179c7877df2aa1090169f42891b31a06b8f9a87aa72aa48f0d53f9ba",
+    "scores.csv": "77c424957ba53b7034bc32905837f79481ca4b9796dd5a5b464d748b4f72794a",
+    "training_audit.csv": "698a3f09b916196a05f5635b6c36a9a6333be6f86d2b0a7cdf59437228e19569"
+  }
+}

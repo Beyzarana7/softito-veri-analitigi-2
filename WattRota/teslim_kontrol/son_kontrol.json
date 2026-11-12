@@ -1,0 +1,25 @@
+{
+  "files": 2683,
+  "total_bytes": 34487488,
+  "screenshots": [
+    "inceleme_01_cizelge.png",
+    "inceleme_02_makine_secimi.png",
+    "inceleme_03_fiyat_analizi.png",
+    "inceleme_04_tahmin.png",
+    "inceleme_05_maliyet.png",
+    "inceleme_06_karar_farklari.png",
+    "inceleme_07_planlama.png",
+    "inceleme_08_teknik_bilgiler.png"
+  ],
+  "source_changed": [],
+  "documents_byte_identical": true,
+  "secret_candidates": [],
+  "forbidden_files": [],
+  "files_over_5mb": [],
+  "syntax_errors": [],
+  "source_git_history_copied": false,
+  "fresh_dependency_install_tested": false,
+  "launcher_missing_venv_exit_code": 1,
+  "original_notebooks_byte_identical": true,
+  "original_notebook_execution_repeated": false
+}

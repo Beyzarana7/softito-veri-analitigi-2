@@ -1,0 +1,11 @@
+{
+  "parent_commit": "ad8947a2b3573be9d34bd8547e9afaebe03cfd5e",
+  "source_sha256": {
+    "audit.py": "dd5328610e026ffd1230acb3dcf761127ddc1011a685e673b9be267e4445f210",
+    "model_audit.py": "e9eb29c9c92fcfbaa5d70f3503a69b60e5bd33a54dce5e4377784c44ee937bf6",
+    "README.md": "d7ba8d4cfa1ae8d819ec2bfe2ccb91032666472155dd83f433ac579b2dea2b10",
+    "report.py": "f6947c4f233fe405cf3fad5cc1d6870a836edb6bbde44c5e04dd66e87f5f233a",
+    "test_audit.py": "3037f6efef5ad616aaa7a849f8f712f9fe45ceb4ec5c3251bf99f8509fe80b79"
+  },
+  "additional_optimization_calls": 0
+}

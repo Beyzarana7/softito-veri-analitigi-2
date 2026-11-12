@@ -1,0 +1,17 @@
+{
+  "experiment_id": "pilot04_60s_b8c91cd50d2b09b2",
+  "milp_reruns": 0,
+  "source_sha256": {
+    "analyze.py": "1e212b15258a3c035ed25d3d77e86d337e652dfbcf3b648426addb3fa003bc47",
+    "common.py": "15ab048f7d94b394e96c6323568874aa34524dd0c8f88104cd1f4f8a37966534",
+    "costs.py": "31e4d325be8d75bf5f1b43698fd1cd4ba33e6bd23f4dc2c4930823f2593be765",
+    "forecasting.py": "58641f966d8132aa4e21ebedd185dfcb6613a874b04bc0b4dc10334dd2c4641f",
+    "metrics.py": "e46166406392698cd2b70bc8ac9de7079e90877e8b4174ad2250916ce67969d9",
+    "run.py": "0de45e6da883d056cf7c10ec7b6b4195cd54aaf3aa114c4bc08a6ecb141471af",
+    "solver.py": "a4fa32a002c121b5dbc9f4b66313b78289cf80e75c4eca8ed376f128dd17a912",
+    "storage.py": "fd1a9056a84103b8876ee679f839c1baac6f12b25a29ee442023cc834b5bc6d2",
+    "test_analysis.py": "f2ebfb0a15f5afba9d61511ac2462eaa78e885ddecfe7e05b67d5eb8875c1e2b",
+    "test_task4.py": "0de57c88ea40623ad21f96128e7e76e3287a4f0e714000b6cf7e4f16fe03915d"
+  },
+  "note": "Postprocessing only; original solve manifest unchanged."
+}

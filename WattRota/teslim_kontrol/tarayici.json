@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "pages": [
+    {
+      "page": "Üretim Çizelgesi",
+      "passed": true
+    },
+    {
+      "page": "Analiz ve Bulgular",
+      "passed": true
+    },
+    {
+      "page": "Üretim Planlama",
+      "passed": true
+    }
+  ],
+  "database_required_for_saved_demo": false,
+  "optimization_started": false
+}

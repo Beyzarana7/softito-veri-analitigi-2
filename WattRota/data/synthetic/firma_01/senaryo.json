@@ -1,0 +1,16 @@
+{
+  "senaryo_id": "firma_01",
+  "surum": "1.0",
+  "sentetik": true,
+  "baslangic": "2025-10-06 00:00:00",
+  "bitis_haric": "2025-10-09 00:00:00",
+  "zaman_dilimi": "Europe/Istanbul",
+  "donem_saat": 1,
+  "rastgele": false,
+  "uretim_girdisi": "Senaryo varsayımları",
+  "fiyat_kaynagi": "EPİAŞ 2025 CSV",
+  "siparis_sayisi": 18,
+  "is_emri_sayisi": 18,
+  "rota_sayisi": 6,
+  "notlar": "İş emirleri ürün ve aşama bazında birleştirilir; malzeme uygunluğu stok dengesiyle sağlanır."
+}

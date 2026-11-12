@@ -1,0 +1,91 @@
+﻿week,run_key,source,decision_day,attempt,state,solver_status,actual_cost_tl,wall_seconds
+2026-01-05,oracle,oracle,0,1,success,Time limit reached,652231.61595,63.36044680001214
+2026-01-05,hgb_d0,hgb,0,1,success,Time limit reached,652231.61595,63.306991999968886
+2026-01-05,ensemble_d0,ensemble,0,1,success,Time limit reached,652231.61595,63.45779230003245
+2026-01-05,naive_d0,naive,0,1,success,Time limit reached,652231.61595,63.28379269992001
+2026-01-05,hgb_d1,hgb,1,1,success,Time limit reached,652231.61595,63.47511640004814
+2026-01-05,ensemble_d1,ensemble,1,1,success,Time limit reached,652231.61595,63.32992289995309
+2026-01-05,naive_d1,naive,1,1,success,Time limit reached,652231.61595,67.40137630002573
+2026-01-05,hgb_d2,hgb,2,1,success,Optimal,651066.87275,49.046099000028335
+2026-01-05,ensemble_d2,ensemble,2,1,success,Optimal,651066.87275,38.4077135999687
+2026-01-05,naive_d2,naive,2,1,success,Optimal,651066.87275,12.711534300004132
+2026-01-12,oracle,oracle,0,1,success,Time limit reached,734581.29015,63.25796249997802
+2026-01-12,hgb_d0,hgb,0,1,success,Time limit reached,734581.29015,63.297015200019814
+2026-01-12,ensemble_d0,ensemble,0,1,success,Time limit reached,734581.29015,63.198057999950834
+2026-01-12,naive_d0,naive,0,1,success,Time limit reached,734581.29015,63.169650799944066
+2026-01-12,hgb_d1,hgb,1,1,success,Time limit reached,734353.8978500001,63.29805079998914
+2026-01-12,ensemble_d1,ensemble,1,1,success,Time limit reached,734581.29015,63.136254900018685
+2026-01-12,naive_d1,naive,1,1,success,Time limit reached,734581.29015,63.16457200003788
+2026-01-12,hgb_d2,hgb,2,1,success,Time limit reached,734353.8978500001,614.0030567999929
+2026-01-12,ensemble_d2,ensemble,2,1,success,Time limit reached,734581.29015,80.45948330010287
+2026-01-12,naive_d2,naive,2,1,success,Optimal,734581.29015,7.8558659999398515
+2026-01-19,oracle,oracle,0,1,success,Time limit reached,706991.3874000001,67.4172922000289
+2026-01-19,hgb_d0,hgb,0,1,success,Time limit reached,706991.3874000001,71.7399785000598
+2026-01-19,ensemble_d0,ensemble,0,1,success,Time limit reached,706991.3874000001,63.65776019997429
+2026-01-19,naive_d0,naive,0,1,success,Time limit reached,706991.3874000001,68.29723150003701
+2026-01-19,hgb_d1,hgb,1,1,success,Time limit reached,706991.3874000001,74.7987117000157
+2026-01-19,ensemble_d1,ensemble,1,1,success,Time limit reached,706991.3874000001,68.39991069992539
+2026-01-19,naive_d1,naive,1,1,success,Time limit reached,706991.3874000001,63.3891411999939
+2026-01-19,hgb_d2,hgb,2,1,success,Optimal,706991.3874000001,12.250751100014895
+2026-01-19,ensemble_d2,ensemble,2,1,success,Optimal,706991.3874000001,18.758545899996534
+2026-01-19,naive_d2,naive,2,1,success,Optimal,706991.3874000001,41.364747300045565
+2026-01-26,oracle,oracle,0,1,success,Time limit reached,652882.7495,75.64587210002355
+2026-01-26,hgb_d0,hgb,0,1,success,Time limit reached,652882.7495,72.04708699998446
+2026-01-26,ensemble_d0,ensemble,0,1,success,Time limit reached,652882.7495,64.04628669994418
+2026-01-26,naive_d0,naive,0,1,success,Time limit reached,652882.7495,63.28452989994548
+2026-01-26,hgb_d1,hgb,1,1,success,Time limit reached,651859.30845,63.29458039999008
+2026-01-26,ensemble_d1,ensemble,1,1,success,Time limit reached,652882.7495,63.44619130005594
+2026-01-26,naive_d1,naive,1,1,success,Time limit reached,652882.7495,63.330775899928994
+2026-01-26,hgb_d2,hgb,2,1,success,Optimal,647217.14845,5.014768699998967
+2026-01-26,ensemble_d2,ensemble,2,1,success,Optimal,648300.5865,15.100266699912027
+2026-01-26,naive_d2,naive,2,1,success,Optimal,648300.5865,14.586554000037722
+2026-02-02,oracle,oracle,0,1,success,Time limit reached,641991.4871,63.9102419000119
+2026-02-02,hgb_d0,hgb,0,1,success,Time limit reached,641991.4871,63.6292500999989
+2026-02-02,ensemble_d0,ensemble,0,1,success,Time limit reached,641991.4871,63.32002590002958
+2026-02-02,naive_d0,naive,0,1,success,Time limit reached,641991.4871,63.325132499914616
+2026-02-02,hgb_d1,hgb,1,1,success,Time limit reached,641991.4871,63.285650100093335
+2026-02-02,ensemble_d1,ensemble,1,1,success,Time limit reached,641991.4871,63.33256290003192
+2026-02-02,naive_d1,naive,1,1,success,Time limit reached,641864.9109,63.278281899983995
+2026-02-02,hgb_d2,hgb,2,1,success,Optimal,638161.6945,8.526421400019899
+2026-02-02,ensemble_d2,ensemble,2,1,success,Optimal,638161.6945,8.41961890005041
+2026-02-02,naive_d2,naive,2,1,success,Optimal,638122.6951,6.0033012999920174
+2026-02-09,oracle,oracle,0,1,success,Time limit reached,656676.9824000001,63.3864603000693
+2026-02-09,hgb_d0,hgb,0,1,success,Time limit reached,656676.9824000001,63.60575760004576
+2026-02-09,ensemble_d0,ensemble,0,1,success,Time limit reached,656676.9824000001,63.45926760009024
+2026-02-09,naive_d0,naive,0,1,success,Time limit reached,656676.9824000001,63.408849800005555
+2026-02-09,hgb_d1,hgb,1,1,success,Time limit reached,648742.7572999999,63.39875180006493
+2026-02-09,ensemble_d1,ensemble,1,1,success,Time limit reached,656676.9824000001,63.53361030004453
+2026-02-09,naive_d1,naive,1,1,success,Time limit reached,656676.9824000001,63.410598299931735
+2026-02-09,hgb_d2,hgb,2,1,success,Optimal,646330.5957,5.614329200005159
+2026-02-09,ensemble_d2,ensemble,2,1,success,Optimal,652581.1674,14.019054700038396
+2026-02-09,naive_d2,naive,2,1,success,Optimal,652581.1674,14.235769900027663
+2026-02-16,oracle,oracle,0,1,success,Time limit reached,296894.3761,63.89610100002028
+2026-02-16,hgb_d0,hgb,0,1,success,Time limit reached,296894.3761,63.342241199919954
+2026-02-16,ensemble_d0,ensemble,0,1,success,Time limit reached,296894.3761,63.58558419998735
+2026-02-16,naive_d0,naive,0,1,success,Time limit reached,296894.3761,63.518720499938354
+2026-02-16,hgb_d1,hgb,1,1,success,Time limit reached,283791.5308,63.42858619999606
+2026-02-16,ensemble_d1,ensemble,1,1,success,Time limit reached,296894.3761,67.60961259994656
+2026-02-16,naive_d1,naive,1,1,success,Time limit reached,296894.3761,75.85709599999245
+2026-02-16,hgb_d2,hgb,2,1,success,Optimal,283401.8877,18.370741699938662
+2026-02-16,ensemble_d2,ensemble,2,1,success,Optimal,295538.1301,22.381536499946378
+2026-02-16,naive_d2,naive,2,1,success,Optimal,295538.1301,22.94104599999264
+2026-02-23,oracle,oracle,0,1,success,Time limit reached,510672.61415,63.82747679995373
+2026-02-23,hgb_d0,hgb,0,1,success,Time limit reached,510672.61415,63.620169100002386
+2026-02-23,ensemble_d0,ensemble,0,1,success,Time limit reached,510672.61415,63.530490699922666
+2026-02-23,naive_d0,naive,0,1,success,Time limit reached,510672.61415,67.65935789991636
+2026-02-23,hgb_d1,hgb,1,1,success,Time limit reached,510672.61415,75.91676809999626
+2026-02-23,ensemble_d1,ensemble,1,1,success,Time limit reached,510672.61415,76.67118970002048
+2026-02-23,naive_d1,naive,1,1,success,Time limit reached,510672.61415,76.23723630001768
+2026-02-23,hgb_d2,hgb,2,1,success,Optimal,507433.12655,48.6678204999771
+2026-02-23,ensemble_d2,ensemble,2,1,success,Optimal,507433.12655,23.90303829999175
+2026-02-23,naive_d2,naive,2,1,success,Optimal,507433.12655,14.068754700012505
+2026-03-02,oracle,oracle,0,1,success,Time limit reached,429726.8872,63.36407349992078
+2026-03-02,hgb_d0,hgb,0,1,success,Time limit reached,429726.8872,63.459504700032994
+2026-03-02,ensemble_d0,ensemble,0,1,success,Time limit reached,429726.8872,360.950917600072
+2026-03-02,naive_d0,naive,0,1,success,Time limit reached,429726.8872,63.655491700046696
+2026-03-02,hgb_d1,hgb,1,1,success,Time limit reached,428764.65670000005,63.539125000010245
+2026-03-02,ensemble_d1,ensemble,1,1,success,Time limit reached,428059.0456,63.29654709994793
+2026-03-02,naive_d1,naive,1,1,success,Time limit reached,429726.8872,63.33826049999334
+2026-03-02,hgb_d2,hgb,2,1,success,Optimal,428730.9545,4.518230200046673
+2026-03-02,ensemble_d2,ensemble,2,1,success,Optimal,428048.5462,3.891978499945253
+2026-03-02,naive_d2,naive,2,1,success,Optimal,429668.3872,3.7833465000148863

@@ -1,0 +1,11 @@
+{
+  "week": "2026-01-05 00:00:00",
+  "run_key": "ensemble_d2",
+  "source": "ensemble",
+  "decision_day": 2,
+  "attempt": 1,
+  "state": "success",
+  "solver_status": "Optimal",
+  "actual_cost_tl": 651066.87275,
+  "wall_seconds": 38.4077135999687
+}

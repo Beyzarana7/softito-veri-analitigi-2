@@ -1,0 +1,104 @@
+{
+  "api_status": {
+    "passModel": "HighsStatus.kOk",
+    "setSolution": "HighsStatus.kOk",
+    "run": "HighsStatus.kWarning"
+  },
+  "options": {
+    "before_model": {
+      "random_seed": {
+        "status": "HighsStatus.kOk",
+        "value": 42
+      },
+      "threads": {
+        "status": "HighsStatus.kOk",
+        "value": 1
+      },
+      "time_limit": {
+        "status": "HighsStatus.kOk",
+        "value": 60.0
+      },
+      "mip_rel_gap": {
+        "status": "HighsStatus.kOk",
+        "value": 0.001
+      }
+    },
+    "after_model": {
+      "random_seed": {
+        "status": "HighsStatus.kOk",
+        "value": 42
+      },
+      "threads": {
+        "status": "HighsStatus.kOk",
+        "value": 1
+      },
+      "time_limit": {
+        "status": "HighsStatus.kOk",
+        "value": 60.0
+      },
+      "mip_rel_gap": {
+        "status": "HighsStatus.kOk",
+        "value": 0.001
+      }
+    },
+    "before_run": {
+      "random_seed": {
+        "status": "HighsStatus.kOk",
+        "value": 42
+      },
+      "threads": {
+        "status": "HighsStatus.kOk",
+        "value": 1
+      },
+      "time_limit": {
+        "status": "HighsStatus.kOk",
+        "value": 60.0
+      },
+      "mip_rel_gap": {
+        "status": "HighsStatus.kOk",
+        "value": 0.001
+      }
+    },
+    "after_run": {
+      "random_seed": {
+        "status": "HighsStatus.kOk",
+        "value": 42
+      },
+      "threads": {
+        "status": "HighsStatus.kOk",
+        "value": 1
+      },
+      "time_limit": {
+        "status": "HighsStatus.kOk",
+        "value": 60.0
+      },
+      "mip_rel_gap": {
+        "status": "HighsStatus.kOk",
+        "value": 0.001
+      }
+    }
+  },
+  "event_counts": {
+    "mip_solution": 4,
+    "mip_improving_solution": 2,
+    "mip_logging": 10
+  },
+  "callback_errors": [],
+  "final_info": {
+    "valid": 1,
+    "objective_function_value": 634634.5703458263,
+    "mip_dual_bound": 623641.8983917924,
+    "mip_gap": 0.017321262451939465,
+    "mip_node_count": 136,
+    "simplex_iteration_count": 164500,
+    "ipm_iteration_count": -1,
+    "primal_dual_integral": 1.2677090031915914,
+    "primal_solution_status": 2,
+    "max_primal_infeasibility": 2.0463630789890885e-12,
+    "max_integrality_violation": 1.764065084484835e-13,
+    "model_status": "Time limit reached"
+  },
+  "native_mip_start_feasible_message": true,
+  "feasible_solution_count": null,
+  "solution_count_note": "Callback events are not a certified count of unique feasible solutions."
+}

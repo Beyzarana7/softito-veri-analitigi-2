@@ -1,0 +1,16 @@
+{
+  "uygun_plan_sayisi": 19,
+  "reddedilen_bilesim_sayisi": 93,
+  "kaynak_yili": 2025,
+  "amac": "Aynı geçerli planlar arasında tam tarama; tüm fabrika çizelgelerinin optimumu değildir.",
+  "kaynak_sha256": {
+    "data\\results\\firma_01_cizelgeleme\\onerilen_plan.csv": "803bbe85050b29d4361dc897fc92696a0debf11318e463fcfe0fd4841c4c2205",
+    "data\\results\\firma_01_cizelgeleme\\onerilen_yuklemeler.csv": "75900ef86abf61b9871e9a575a22f95b4ca975c95d4c9eb0002b43b4e6140a7a",
+    "data\\results\\firma_01_senaryolar\\kis_fiyatlari\\onerilen_plan.csv": "230859dc353fefd84a4d0a20bd3b25cba29614ea5ed1621ad753797364288623",
+    "data\\results\\firma_01_senaryolar\\kis_fiyatlari\\onerilen_yuklemeler.csv": "9dd3a62ce7302e32737506b438ebbfeb543faa61485dfb0a5ee959656658ff0c",
+    "data\\results\\firma_01_senaryolar\\ilkbahar_fiyatlari\\onerilen_plan.csv": "613ac8c430eac182db6d70f1237446a3fd56110675b6b986861466d50ae3b77e",
+    "data\\results\\firma_01_senaryolar\\ilkbahar_fiyatlari\\onerilen_yuklemeler.csv": "29e7654b1a6d81b8e2d06890f37f54dd186a57f47d055183f4c7a20e7d27394e",
+    "data\\results\\firma_01_senaryolar\\yaz_fiyatlari\\onerilen_plan.csv": "8f7e3aada11ac392217c253639ccd20af67ebd3a25600b006251de8759787281",
+    "data\\results\\firma_01_senaryolar\\yaz_fiyatlari\\onerilen_yuklemeler.csv": "1c17f27e82891eb4a97075c272ca380935dd663086745f7045b8057934789043"
+  }
+}

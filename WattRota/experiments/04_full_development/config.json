@@ -1,0 +1,23 @@
+{
+  "phase": "approved_full_development",
+  "expected_development_weeks": 34,
+  "solver_time_limit_seconds": 60,
+  "mip_relative_gap": 0.001,
+  "seed": 42,
+  "solver_threads": 1,
+  "local_search": false,
+  "forecast_sources": ["hgb", "ensemble", "naive"],
+  "rolling_days": [0, 1, 2],
+  "milp_runs_per_week": 10,
+  "locked_test_allowed": false,
+  "stochastic_mode": false,
+  "seed_experiment": false,
+  "task5": false,
+  "cost_tolerance_tl": 0.02,
+  "parent_protocol": "data/results/walk_forward_02",
+  "hgb_config": "experiments/02_walk_forward/config.json",
+  "ensemble_config": "experiments/03_price_models/config.json",
+  "pilot": "data/results/direct_milp_04_pilot_60s",
+  "plan_change_cost_tl_per_resource_hour": 0.0,
+  "automatic_solver_retry": false
+}

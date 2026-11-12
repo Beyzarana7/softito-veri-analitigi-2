@@ -1,0 +1,22 @@
+{
+  "holiday_sources": [
+    "https://vakithesaplama.diyanet.gov.tr/icerik.php?icerik=151",
+    "https://vakithesaplama.diyanet.gov.tr/icerik.php?icerik=152",
+    "https://vakithesaplama.diyanet.gov.tr/icerik.php?icerik=153",
+    "https://www.dhmi.gov.tr/PublishingImages/Lists/Duyurular/NewForm/1.%20Grup%20%C5%9Eube%20M%C3%BCd%C3%BCr%C3%BC%20%28%C4%B0nsan%20Kaynaklar%C4%B1%29%20Ders%20Notu.pdf"
+  ],
+  "lear_reference": "https://github.com/jeslago/epftoolbox/blob/master/epftoolbox/models/_lear.py",
+  "lear_implementation_note": "Independent implementation of hour/horizon-specific standardized Lasso-AR; not a reproduction of the paper's AIC/asinh/exogenous LEAR specification. No external source code copied.",
+  "lightgbm_reference": "https://lightgbm.readthedocs.io/en/stable/pythonapi/lightgbm.LGBMRegressor.html",
+  "dm_reference": "https://www.nber.org/system/files/working_papers/w18391/w18391.pdf",
+  "external_data": {
+    "documentation": "https://seffaflik.epias.com.tr/electricity-service/technical/tr/index.html",
+    "probed_url": "https://seffaflik.epias.com.tr/electricity-service/v1/consumption/data/load-estimation-plan",
+    "probe_date_local": "2026-11-10",
+    "http_status": 401,
+    "authentication_sent": false,
+    "usable_rows": 0,
+    "used_as_features": false,
+    "reason": "TGT required; no authorized API credential supplied. Load/wind/solar issue-time historical snapshots not acquired. Realized future values are not substituted."
+  }
+}

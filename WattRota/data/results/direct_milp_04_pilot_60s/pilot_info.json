@@ -1,0 +1,25 @@
+{
+  "experiment_id": "pilot04_60s_b8c91cd50d2b09b2",
+  "previous_experiment_id": "pilot04_8ca16b7c875acecb",
+  "milp_runs": 40,
+  "total_pilot_seconds": 1888.4165131000336,
+  "estimated_34_weeks_minutes": 267.1943378116664,
+  "observed_min_max_scaled_to_34_minutes": [
+    262.41976481661357,
+    272.9397776899976
+  ],
+  "maximum_solver_limits_34_minutes": 340,
+  "all_solutions_validated": true,
+  "violation_count": 0,
+  "sql_idempotent": true,
+  "sql_rows": {
+    "milp_runs_04": 40,
+    "milp_weekly_04": 32
+  },
+  "locked_test_evaluated": false,
+  "full_34_executed": false,
+  "sensitivity_executed": false,
+  "task5_executed": false,
+  "previous_files_and_sql_preserved": true,
+  "exact_oracle_weeks": 0
+}

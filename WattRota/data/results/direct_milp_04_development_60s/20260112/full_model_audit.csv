@@ -1,0 +1,9 @@
+﻿week,policy,full_model_feasible,rows_checked,columns_checked,fixed_prefix_columns,matrix_objective_tl,independent_cost_tl,objective_difference_tl,maximum_constraint_violation
+2026-01-12,reference,True,8637,5278,0,734581.29015,734581.29015,0.0,0.0
+2026-01-12,oracle_incumbent,True,8637,5278,0,734581.29015,734581.29015,0.0,0.0
+2026-01-12,hgb_open,True,8637,5278,0,734581.29015,734581.29015,0.0,0.0
+2026-01-12,hgb_rolling,True,8637,5278,0,734353.89785,734353.8978500001,-1.1641532182693481e-10,0.0
+2026-01-12,ensemble_open,True,8637,5278,0,734581.29015,734581.29015,0.0,0.0
+2026-01-12,ensemble_rolling,True,8637,5278,0,734581.29015,734581.29015,0.0,0.0
+2026-01-12,naive_open,True,8637,5278,0,734581.29015,734581.29015,0.0,0.0
+2026-01-12,naive_rolling,True,8637,5278,0,734581.29015,734581.29015,0.0,0.0

@@ -1,0 +1,176 @@
+﻿tablo,baglam,parametre,deger,birim,nitelik,gerekce
+kaynak_urun,kaynak_id=H01; urun_id=UR01,kapasite_ton_saat,60.0,ton/saat,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+kaynak_urun,kaynak_id=H01; urun_id=UR02,kapasite_ton_saat,70.0,ton/saat,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+kaynak_urun,kaynak_id=H01; urun_id=UR03,kapasite_ton_saat,50.0,ton/saat,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+kaynak_urun,kaynak_id=H02; urun_id=UR01,kapasite_ton_saat,70.0,ton/saat,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+kaynak_urun,kaynak_id=H02; urun_id=UR02,kapasite_ton_saat,80.0,ton/saat,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+kaynak_urun,kaynak_id=P01; urun_id=UR01,kapasite_ton_saat,80.0,ton/saat,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+kaynak_urun,kaynak_id=P01; urun_id=UR02,kapasite_ton_saat,100.0,ton/saat,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+kaynak_urun,kaynak_id=P01; urun_id=UR03,kapasite_ton_saat,60.0,ton/saat,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+kaynak_urun,kaynak_id=Y01; urun_id=UR01,kapasite_ton_saat,180.0,ton/saat,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+kaynak_urun,kaynak_id=Y01; urun_id=UR02,kapasite_ton_saat,180.0,ton/saat,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+kaynak_urun,kaynak_id=Y01; urun_id=UR03,kapasite_ton_saat,180.0,ton/saat,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+kaynak_urun,kaynak_id=Y02; urun_id=UR01,kapasite_ton_saat,120.0,ton/saat,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+kaynak_urun,kaynak_id=Y02; urun_id=UR02,kapasite_ton_saat,120.0,ton/saat,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+kaynak_urun,kaynak_id=Y02; urun_id=UR03,kapasite_ton_saat,120.0,ton/saat,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+kaynak_urun,kaynak_id=H01; urun_id=UR01,calisma_gucu_kw,1800.0,kW,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+kaynak_urun,kaynak_id=H01; urun_id=UR02,calisma_gucu_kw,1800.0,kW,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+kaynak_urun,kaynak_id=H01; urun_id=UR03,calisma_gucu_kw,1900.0,kW,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+kaynak_urun,kaynak_id=H02; urun_id=UR01,calisma_gucu_kw,2100.0,kW,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+kaynak_urun,kaynak_id=H02; urun_id=UR02,calisma_gucu_kw,2200.0,kW,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+kaynak_urun,kaynak_id=P01; urun_id=UR01,calisma_gucu_kw,100.0,kW,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+kaynak_urun,kaynak_id=P01; urun_id=UR02,calisma_gucu_kw,120.0,kW,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+kaynak_urun,kaynak_id=P01; urun_id=UR03,calisma_gucu_kw,90.0,kW,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+kaynak_urun,kaynak_id=Y01; urun_id=UR01,calisma_gucu_kw,60.0,kW,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+kaynak_urun,kaynak_id=Y01; urun_id=UR02,calisma_gucu_kw,60.0,kW,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+kaynak_urun,kaynak_id=Y01; urun_id=UR03,calisma_gucu_kw,60.0,kW,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+kaynak_urun,kaynak_id=Y02; urun_id=UR01,calisma_gucu_kw,50.0,kW,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+kaynak_urun,kaynak_id=Y02; urun_id=UR02,calisma_gucu_kw,50.0,kW,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+kaynak_urun,kaynak_id=Y02; urun_id=UR03,calisma_gucu_kw,50.0,kW,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+isletme_kurallari,kaynak_id=H01,minimum_uretim_saat,4.0,saat,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+isletme_kurallari,kaynak_id=H02,minimum_uretim_saat,4.0,saat,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+isletme_kurallari,kaynak_id=P01,minimum_uretim_saat,2.0,saat,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+isletme_kurallari,kaynak_id=H01,minimum_durus_saat,2.0,saat,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+isletme_kurallari,kaynak_id=H02,minimum_durus_saat,2.0,saat,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+isletme_kurallari,kaynak_id=P01,minimum_durus_saat,1.0,saat,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+isletme_kurallari,kaynak_id=H01,baslangic_durum_suresi_saat,4.0,saat,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+isletme_kurallari,kaynak_id=H02,baslangic_durum_suresi_saat,4.0,saat,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+isletme_kurallari,kaynak_id=P01,baslangic_durum_suresi_saat,4.0,saat,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+isletme_kurallari,kaynak_id=H01,baslatma_enerjisi_kwh,100.0,kWh,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+isletme_kurallari,kaynak_id=H02,baslatma_enerjisi_kwh,120.0,kWh,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+isletme_kurallari,kaynak_id=P01,baslatma_enerjisi_kwh,30.0,kWh,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+isletme_kurallari,kaynak_id=H01,baslatma_elektrik_disi_gider_tl,200.0,TL,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+isletme_kurallari,kaynak_id=H02,baslatma_elektrik_disi_gider_tl,250.0,TL,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+isletme_kurallari,kaynak_id=P01,baslatma_elektrik_disi_gider_tl,40.0,TL,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+urun_gecisleri,kaynak_id=H01; onceki_urun=UR01; sonraki_urun=UR02,hazirlik_saat,1.0,saat,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+urun_gecisleri,kaynak_id=H01; onceki_urun=UR01; sonraki_urun=UR03,hazirlik_saat,2.0,saat,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+urun_gecisleri,kaynak_id=H01; onceki_urun=UR02; sonraki_urun=UR01,hazirlik_saat,1.0,saat,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+urun_gecisleri,kaynak_id=H01; onceki_urun=UR02; sonraki_urun=UR03,hazirlik_saat,2.0,saat,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+urun_gecisleri,kaynak_id=H01; onceki_urun=UR03; sonraki_urun=UR01,hazirlik_saat,2.0,saat,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+urun_gecisleri,kaynak_id=H01; onceki_urun=UR03; sonraki_urun=UR02,hazirlik_saat,2.0,saat,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+urun_gecisleri,kaynak_id=H02; onceki_urun=UR01; sonraki_urun=UR02,hazirlik_saat,1.0,saat,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+urun_gecisleri,kaynak_id=H02; onceki_urun=UR02; sonraki_urun=UR01,hazirlik_saat,1.0,saat,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+urun_gecisleri,kaynak_id=P01; onceki_urun=UR01; sonraki_urun=UR02,hazirlik_saat,1.0,saat,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+urun_gecisleri,kaynak_id=P01; onceki_urun=UR01; sonraki_urun=UR03,hazirlik_saat,1.0,saat,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+urun_gecisleri,kaynak_id=P01; onceki_urun=UR02; sonraki_urun=UR01,hazirlik_saat,1.0,saat,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+urun_gecisleri,kaynak_id=P01; onceki_urun=UR02; sonraki_urun=UR03,hazirlik_saat,1.0,saat,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+urun_gecisleri,kaynak_id=P01; onceki_urun=UR03; sonraki_urun=UR01,hazirlik_saat,1.0,saat,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+urun_gecisleri,kaynak_id=P01; onceki_urun=UR03; sonraki_urun=UR02,hazirlik_saat,1.0,saat,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+urun_gecisleri,kaynak_id=H01; onceki_urun=UR01; sonraki_urun=UR02,hazirlik_gucu_kw,300.0,kW,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+urun_gecisleri,kaynak_id=H01; onceki_urun=UR01; sonraki_urun=UR03,hazirlik_gucu_kw,300.0,kW,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+urun_gecisleri,kaynak_id=H01; onceki_urun=UR02; sonraki_urun=UR01,hazirlik_gucu_kw,300.0,kW,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+urun_gecisleri,kaynak_id=H01; onceki_urun=UR02; sonraki_urun=UR03,hazirlik_gucu_kw,300.0,kW,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+urun_gecisleri,kaynak_id=H01; onceki_urun=UR03; sonraki_urun=UR01,hazirlik_gucu_kw,300.0,kW,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+urun_gecisleri,kaynak_id=H01; onceki_urun=UR03; sonraki_urun=UR02,hazirlik_gucu_kw,300.0,kW,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+urun_gecisleri,kaynak_id=H02; onceki_urun=UR01; sonraki_urun=UR02,hazirlik_gucu_kw,300.0,kW,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+urun_gecisleri,kaynak_id=H02; onceki_urun=UR02; sonraki_urun=UR01,hazirlik_gucu_kw,300.0,kW,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+urun_gecisleri,kaynak_id=P01; onceki_urun=UR01; sonraki_urun=UR02,hazirlik_gucu_kw,35.0,kW,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+urun_gecisleri,kaynak_id=P01; onceki_urun=UR01; sonraki_urun=UR03,hazirlik_gucu_kw,35.0,kW,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+urun_gecisleri,kaynak_id=P01; onceki_urun=UR02; sonraki_urun=UR01,hazirlik_gucu_kw,35.0,kW,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+urun_gecisleri,kaynak_id=P01; onceki_urun=UR02; sonraki_urun=UR03,hazirlik_gucu_kw,35.0,kW,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+urun_gecisleri,kaynak_id=P01; onceki_urun=UR03; sonraki_urun=UR01,hazirlik_gucu_kw,35.0,kW,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+urun_gecisleri,kaynak_id=P01; onceki_urun=UR03; sonraki_urun=UR02,hazirlik_gucu_kw,35.0,kW,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+urun_gecisleri,kaynak_id=H01; onceki_urun=UR01; sonraki_urun=UR02,elektrik_disi_gider_tl,75.0,TL,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+urun_gecisleri,kaynak_id=H01; onceki_urun=UR01; sonraki_urun=UR03,elektrik_disi_gider_tl,75.0,TL,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+urun_gecisleri,kaynak_id=H01; onceki_urun=UR02; sonraki_urun=UR01,elektrik_disi_gider_tl,75.0,TL,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+urun_gecisleri,kaynak_id=H01; onceki_urun=UR02; sonraki_urun=UR03,elektrik_disi_gider_tl,75.0,TL,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+urun_gecisleri,kaynak_id=H01; onceki_urun=UR03; sonraki_urun=UR01,elektrik_disi_gider_tl,75.0,TL,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+urun_gecisleri,kaynak_id=H01; onceki_urun=UR03; sonraki_urun=UR02,elektrik_disi_gider_tl,75.0,TL,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+urun_gecisleri,kaynak_id=H02; onceki_urun=UR01; sonraki_urun=UR02,elektrik_disi_gider_tl,75.0,TL,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+urun_gecisleri,kaynak_id=H02; onceki_urun=UR02; sonraki_urun=UR01,elektrik_disi_gider_tl,75.0,TL,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+urun_gecisleri,kaynak_id=P01; onceki_urun=UR01; sonraki_urun=UR02,elektrik_disi_gider_tl,20.0,TL,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+urun_gecisleri,kaynak_id=P01; onceki_urun=UR01; sonraki_urun=UR03,elektrik_disi_gider_tl,20.0,TL,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+urun_gecisleri,kaynak_id=P01; onceki_urun=UR02; sonraki_urun=UR01,elektrik_disi_gider_tl,20.0,TL,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+urun_gecisleri,kaynak_id=P01; onceki_urun=UR02; sonraki_urun=UR03,elektrik_disi_gider_tl,20.0,TL,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+urun_gecisleri,kaynak_id=P01; onceki_urun=UR03; sonraki_urun=UR01,elektrik_disi_gider_tl,20.0,TL,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+urun_gecisleri,kaynak_id=P01; onceki_urun=UR03; sonraki_urun=UR02,elektrik_disi_gider_tl,20.0,TL,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+stok_alanlari,urun_id=UR01; stok_id=D01,minimum_ton,60.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+stok_alanlari,urun_id=UR02; stok_id=D02,minimum_ton,80.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+stok_alanlari,urun_id=UR03; stok_id=D03,minimum_ton,50.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+stok_alanlari,urun_id=UR01; stok_id=T01,minimum_ton,0.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+stok_alanlari,urun_id=UR02; stok_id=T02,minimum_ton,0.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+stok_alanlari,urun_id=UR03; stok_id=T03,minimum_ton,0.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+stok_alanlari,urun_id=UR01; stok_id=D01,kapasite_ton,1200.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+stok_alanlari,urun_id=UR02; stok_id=D02,kapasite_ton,1600.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+stok_alanlari,urun_id=UR03; stok_id=D03,kapasite_ton,800.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+stok_alanlari,urun_id=UR01; stok_id=T01,kapasite_ton,600.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+stok_alanlari,urun_id=UR02; stok_id=T02,kapasite_ton,700.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+stok_alanlari,urun_id=UR03; stok_id=T03,kapasite_ton,400.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+stok_alanlari,urun_id=UR01; stok_id=D01,baslangic_ton,240.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+stok_alanlari,urun_id=UR02; stok_id=D02,baslangic_ton,900.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+stok_alanlari,urun_id=UR03; stok_id=D03,baslangic_ton,180.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+stok_alanlari,urun_id=UR01; stok_id=T01,baslangic_ton,120.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+stok_alanlari,urun_id=UR02; stok_id=T02,baslangic_ton,100.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+stok_alanlari,urun_id=UR03; stok_id=T03,baslangic_ton,80.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+stok_alanlari,urun_id=UR01; stok_id=D01,son_hedef_ton,240.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+stok_alanlari,urun_id=UR02; stok_id=D02,son_hedef_ton,900.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+stok_alanlari,urun_id=UR03; stok_id=D03,son_hedef_ton,180.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+stok_alanlari,urun_id=UR01; stok_id=T01,son_hedef_ton,120.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+stok_alanlari,urun_id=UR02; stok_id=T02,son_hedef_ton,100.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+stok_alanlari,urun_id=UR03; stok_id=T03,son_hedef_ton,80.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+depo_kurallari,,toplam_kapasite_ton,1100.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+siparisler,urun_id=UR01; siparis_id=SP1_UR01_dokme,miktar_ton,720.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+siparisler,urun_id=UR01; siparis_id=SP1_UR01_torbali,miktar_ton,320.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+siparisler,urun_id=UR02; siparis_id=SP1_UR02_dokme,miktar_ton,400.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+siparisler,urun_id=UR02; siparis_id=SP1_UR02_torbali,miktar_ton,400.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+siparisler,urun_id=UR03; siparis_id=SP1_UR03_dokme,miktar_ton,160.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+siparisler,urun_id=UR03; siparis_id=SP1_UR03_torbali,miktar_ton,240.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+siparisler,urun_id=UR01; siparis_id=SP2_UR01_dokme,miktar_ton,720.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+siparisler,urun_id=UR01; siparis_id=SP2_UR01_torbali,miktar_ton,320.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+siparisler,urun_id=UR02; siparis_id=SP2_UR02_dokme,miktar_ton,400.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+siparisler,urun_id=UR02; siparis_id=SP2_UR02_torbali,miktar_ton,400.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+siparisler,urun_id=UR03; siparis_id=SP2_UR03_dokme,miktar_ton,160.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+siparisler,urun_id=UR03; siparis_id=SP2_UR03_torbali,miktar_ton,240.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+siparisler,urun_id=UR01; siparis_id=SP3_UR01_dokme,miktar_ton,720.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+siparisler,urun_id=UR01; siparis_id=SP3_UR01_torbali,miktar_ton,320.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+siparisler,urun_id=UR02; siparis_id=SP3_UR02_dokme,miktar_ton,400.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+siparisler,urun_id=UR02; siparis_id=SP3_UR02_torbali,miktar_ton,400.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+siparisler,urun_id=UR03; siparis_id=SP3_UR03_dokme,miktar_ton,160.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+siparisler,urun_id=UR03; siparis_id=SP3_UR03_torbali,miktar_ton,240.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+is_emirleri,urun_id=UR01; is_emri_id=IE1_UR01_ogutme,miktar_ton,1040.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+is_emirleri,urun_id=UR01; is_emri_id=IE1_UR01_paketleme,miktar_ton,320.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+is_emirleri,urun_id=UR02; is_emri_id=IE1_UR02_ogutme,miktar_ton,800.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+is_emirleri,urun_id=UR02; is_emri_id=IE1_UR02_paketleme,miktar_ton,400.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+is_emirleri,urun_id=UR03; is_emri_id=IE1_UR03_ogutme,miktar_ton,400.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+is_emirleri,urun_id=UR03; is_emri_id=IE1_UR03_paketleme,miktar_ton,240.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+is_emirleri,urun_id=UR01; is_emri_id=IE2_UR01_ogutme,miktar_ton,1040.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+is_emirleri,urun_id=UR01; is_emri_id=IE2_UR01_paketleme,miktar_ton,320.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+is_emirleri,urun_id=UR02; is_emri_id=IE2_UR02_ogutme,miktar_ton,800.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+is_emirleri,urun_id=UR02; is_emri_id=IE2_UR02_paketleme,miktar_ton,400.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+is_emirleri,urun_id=UR03; is_emri_id=IE2_UR03_ogutme,miktar_ton,400.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+is_emirleri,urun_id=UR03; is_emri_id=IE2_UR03_paketleme,miktar_ton,240.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+is_emirleri,urun_id=UR01; is_emri_id=IE3_UR01_ogutme,miktar_ton,1040.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+is_emirleri,urun_id=UR01; is_emri_id=IE3_UR01_paketleme,miktar_ton,320.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+is_emirleri,urun_id=UR02; is_emri_id=IE3_UR02_ogutme,miktar_ton,800.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+is_emirleri,urun_id=UR02; is_emri_id=IE3_UR02_paketleme,miktar_ton,400.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+is_emirleri,urun_id=UR03; is_emri_id=IE3_UR03_ogutme,miktar_ton,400.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+is_emirleri,urun_id=UR03; is_emri_id=IE3_UR03_paketleme,miktar_ton,240.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+is_emri_siparis_baglantisi,siparis_id=SP1_UR01_dokme; is_emri_id=IE1_UR01_ogutme,tahsis_ton,720.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+is_emri_siparis_baglantisi,siparis_id=SP1_UR01_torbali; is_emri_id=IE1_UR01_ogutme,tahsis_ton,320.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+is_emri_siparis_baglantisi,siparis_id=SP1_UR01_torbali; is_emri_id=IE1_UR01_paketleme,tahsis_ton,320.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+is_emri_siparis_baglantisi,siparis_id=SP1_UR02_dokme; is_emri_id=IE1_UR02_ogutme,tahsis_ton,400.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+is_emri_siparis_baglantisi,siparis_id=SP1_UR02_torbali; is_emri_id=IE1_UR02_ogutme,tahsis_ton,400.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+is_emri_siparis_baglantisi,siparis_id=SP1_UR02_torbali; is_emri_id=IE1_UR02_paketleme,tahsis_ton,400.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+is_emri_siparis_baglantisi,siparis_id=SP1_UR03_dokme; is_emri_id=IE1_UR03_ogutme,tahsis_ton,160.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+is_emri_siparis_baglantisi,siparis_id=SP1_UR03_torbali; is_emri_id=IE1_UR03_ogutme,tahsis_ton,240.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+is_emri_siparis_baglantisi,siparis_id=SP1_UR03_torbali; is_emri_id=IE1_UR03_paketleme,tahsis_ton,240.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+is_emri_siparis_baglantisi,siparis_id=SP2_UR01_dokme; is_emri_id=IE2_UR01_ogutme,tahsis_ton,720.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+is_emri_siparis_baglantisi,siparis_id=SP2_UR01_torbali; is_emri_id=IE2_UR01_ogutme,tahsis_ton,320.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+is_emri_siparis_baglantisi,siparis_id=SP2_UR01_torbali; is_emri_id=IE2_UR01_paketleme,tahsis_ton,320.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+is_emri_siparis_baglantisi,siparis_id=SP2_UR02_dokme; is_emri_id=IE2_UR02_ogutme,tahsis_ton,400.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+is_emri_siparis_baglantisi,siparis_id=SP2_UR02_torbali; is_emri_id=IE2_UR02_ogutme,tahsis_ton,400.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+is_emri_siparis_baglantisi,siparis_id=SP2_UR02_torbali; is_emri_id=IE2_UR02_paketleme,tahsis_ton,400.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+is_emri_siparis_baglantisi,siparis_id=SP2_UR03_dokme; is_emri_id=IE2_UR03_ogutme,tahsis_ton,160.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+is_emri_siparis_baglantisi,siparis_id=SP2_UR03_torbali; is_emri_id=IE2_UR03_ogutme,tahsis_ton,240.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+is_emri_siparis_baglantisi,siparis_id=SP2_UR03_torbali; is_emri_id=IE2_UR03_paketleme,tahsis_ton,240.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+is_emri_siparis_baglantisi,siparis_id=SP3_UR01_dokme; is_emri_id=IE3_UR01_ogutme,tahsis_ton,720.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+is_emri_siparis_baglantisi,siparis_id=SP3_UR01_torbali; is_emri_id=IE3_UR01_ogutme,tahsis_ton,320.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+is_emri_siparis_baglantisi,siparis_id=SP3_UR01_torbali; is_emri_id=IE3_UR01_paketleme,tahsis_ton,320.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+is_emri_siparis_baglantisi,siparis_id=SP3_UR02_dokme; is_emri_id=IE3_UR02_ogutme,tahsis_ton,400.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+is_emri_siparis_baglantisi,siparis_id=SP3_UR02_torbali; is_emri_id=IE3_UR02_ogutme,tahsis_ton,400.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+is_emri_siparis_baglantisi,siparis_id=SP3_UR02_torbali; is_emri_id=IE3_UR02_paketleme,tahsis_ton,400.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+is_emri_siparis_baglantisi,siparis_id=SP3_UR03_dokme; is_emri_id=IE3_UR03_ogutme,tahsis_ton,160.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+is_emri_siparis_baglantisi,siparis_id=SP3_UR03_torbali; is_emri_id=IE3_UR03_ogutme,tahsis_ton,240.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+is_emri_siparis_baglantisi,siparis_id=SP3_UR03_torbali; is_emri_id=IE3_UR03_paketleme,tahsis_ton,240.0,ton,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+tesis_takvimi,,temel_yuk_kw,300.0,kW,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.
+tesis_takvimi,,guc_siniri_kw,4700.0,kW,Senaryo varsayımı,Kurgusal tesis tasarımı; gerçek işletme ölçümü değildir.

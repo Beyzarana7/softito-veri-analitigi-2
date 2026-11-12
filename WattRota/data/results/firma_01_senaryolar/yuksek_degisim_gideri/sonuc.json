@@ -1,0 +1,80 @@
+{
+  "senaryo_id": "yuksek_degisim_gideri",
+  "ad": "Yüksek üretim planı değişikliği gideri",
+  "aciklama": "Değişen üretim/paketleme kaynak-saati başına 10.000 TL: yüksek gider davranış testi; gerçek fabrika maliyeti değildir. Yükleme saati değişimi bu cezaya dahil değildir.",
+  "degisiklik_gideri_tl_kaynak_saat": 10000.0,
+  "toplam_siparis_ton": 6720.0,
+  "uygulanabilir": true,
+  "cozum_calistirildi": true,
+  "cozum": {
+    "durum": "Optimal",
+    "tolerans_icinde_optimum": true,
+    "sure_saniye": 0.4232942999806255,
+    "goreli_acik": 0.000728571608952176,
+    "alt_sinir_tl": 652016.6865499995,
+    "maliyet_tl": 652492.0737500001,
+    "degisken_sayisi": 5278,
+    "kisit_sayisi": 8637,
+    "sure_siniri_saniye": 120.0,
+    "hedef_goreli_acik": 0.001,
+    "degisiklik_gideri_tl_kaynak_saat": 10000.0,
+    "referans_model_kontrolu": true,
+    "baslangic_model_kontrolu": true,
+    "bagimsiz_plan_kontrolu": true,
+    "bagimsiz_maliyet_kontrolu": true,
+    "cozucu_surumu": "1.15.1",
+    "baslangic_iyilestirmeleri": [
+      {
+        "serbest_kaynaklar": [],
+        "maliyet_tl": 652492.0737500001,
+        "durum": "Optimal",
+        "goreli_acik": 0.0
+      },
+      {
+        "serbest_kaynaklar": [
+          "P01"
+        ],
+        "maliyet_tl": 652492.0737500001,
+        "durum": "Optimal",
+        "goreli_acik": 0.0
+      },
+      {
+        "serbest_kaynaklar": [
+          "H01",
+          "P01"
+        ],
+        "maliyet_tl": 652492.0737500001,
+        "durum": "Optimal",
+        "goreli_acik": 0.0
+      },
+      {
+        "serbest_kaynaklar": [
+          "H02",
+          "P01"
+        ],
+        "maliyet_tl": 652492.0737500001,
+        "durum": "Optimal",
+        "goreli_acik": 0.0
+      }
+    ],
+    "yerel_arama_saniye": 0.9963954999111593,
+    "toplam_cozum_saniye": 1.4196897998917848,
+    "baslangic_maliyet_tl": 652799.6589500001
+  },
+  "referans_maliyet_tl": 652799.6589500001,
+  "onerilen_maliyet_tl": 652492.07375,
+  "avantaj_tl": 307.58520000008866,
+  "avantaj_yuzde": 0.047117855498703246,
+  "degisen_uretim_kaynak_saat": 0,
+  "referans_enerji_kwh": 237040.0,
+  "onerilen_enerji_kwh": 237040.0,
+  "teslim_kontrolu": true,
+  "stok_kontrolu": true,
+  "guc_kontrolu": true,
+  "kaynak_sha256": {
+    "src\\firma_verisi.py": "aa646656b6ce3c502e1e646fdedf158931a1e91e9cd1818b6faad08de68a00ee",
+    "src\\firma_cizelgeleme.py": "8f6fae644267c1d36945adc805ecbff7a8a0eaa1ed49a2955ee4d8177103e456",
+    "src\\firma_senaryolari.py": "539eb7d6006f028855ca5119569e8349a2d9e10dc30d233b65ea85754cb98a81"
+  },
+  "girdi_zip_sha256": "26ae3b0d1d4f5752a24d2d934f0f17e3520f38536b95bdf47bce94f5aa2908af"
+}

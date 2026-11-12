@@ -1,0 +1,18 @@
+{
+  "excluded_delivery_copies": [
+    "uygulama/tests/check_preservation.py",
+    "uygulama/tests/hazir_fabrika_ekran.png",
+    "uygulama/tests/input_validation_summary.json",
+    "uygulama/tests/prepare_product_pages.py",
+    "uygulama/tests/preservation.json",
+    "uygulama/tests/product_preservation.json",
+    "uygulama/tests/product_validation.json",
+    "uygulama/tests/refined_browser.json",
+    "uygulama/tests/refinement_validation.json",
+    "uygulama/tests/simple_browser.json",
+    "uygulama/tests/simple_preservation.json",
+    "uygulama/tests/simple_review.json",
+    "uygulama/tests/validation.json"
+  ],
+  "reason": "Eski arayüz geliştirme kontrol kayıtları ve görüntüleri; kaynak konumlarında korunuyor."
+}

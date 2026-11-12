@@ -1,0 +1,8 @@
+{
+  "saved_solutions_revalidated": 28,
+  "known_price_prefixes_checked": 24,
+  "actual_forecast_future_poison_tests": 2,
+  "sql_summary_rows": 6,
+  "sql_summary_idempotent": true,
+  "normalized_outside_pool_runs": 8
+}

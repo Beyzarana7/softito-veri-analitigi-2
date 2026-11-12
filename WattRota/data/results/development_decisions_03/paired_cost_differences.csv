@@ -1,0 +1,7 @@
+﻿model_a,model_b,mean_a_minus_b_tl,total_a_minus_b_tl,a_cheaper_weeks,equal_weeks,b_cheaper_weeks
+naive_yesterday_recursive,lear_level_1,-93.04816617647371,-3163.637650000106,3,29,2
+naive_yesterday_recursive,hgb_expanding_cached,20.540094117647694,698.3632000000216,0,33,1
+naive_yesterday_recursive,ensemble_level_fixed,-57.16441176470835,-1943.5900000000838,1,32,1
+lear_level_1,hgb_expanding_cached,113.5882602941214,3862.0008500001277,1,30,3
+lear_level_1,ensemble_level_fixed,35.88375441176536,1220.0476500000223,1,31,2
+hgb_expanding_cached,ensemble_level_fixed,-77.70450588235605,-2641.9532000001054,1,33,0

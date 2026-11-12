@@ -1,0 +1,80 @@
+{
+  "senaryo_id": "yaz_fiyatlari",
+  "ad": "Yaz fiyatları",
+  "aciklama": "Aynı talep ve göreli işletme takvimi; farklı gerçek 72 saatlik EPİAŞ fiyatı.",
+  "degisiklik_gideri_tl_kaynak_saat": 0.0,
+  "toplam_siparis_ton": 6720.0,
+  "uygulanabilir": true,
+  "cozum_calistirildi": true,
+  "cozum": {
+    "durum": "Time limit reached",
+    "tolerans_icinde_optimum": false,
+    "sure_saniye": 120.01985190005507,
+    "goreli_acik": 0.0213880059503402,
+    "alt_sinir_tl": 703177.8941241209,
+    "maliyet_tl": 718546.1637500001,
+    "degisken_sayisi": 5278,
+    "kisit_sayisi": 8637,
+    "sure_siniri_saniye": 120.0,
+    "hedef_goreli_acik": 0.001,
+    "degisiklik_gideri_tl_kaynak_saat": 0.0,
+    "referans_model_kontrolu": true,
+    "baslangic_model_kontrolu": true,
+    "bagimsiz_plan_kontrolu": true,
+    "bagimsiz_maliyet_kontrolu": true,
+    "cozucu_surumu": "1.15.1",
+    "baslangic_iyilestirmeleri": [
+      {
+        "serbest_kaynaklar": [],
+        "maliyet_tl": 718546.1637500001,
+        "durum": "Optimal",
+        "goreli_acik": 0.0
+      },
+      {
+        "serbest_kaynaklar": [
+          "P01"
+        ],
+        "maliyet_tl": 718546.1637500001,
+        "durum": "Time limit reached",
+        "goreli_acik": 0.0009541292382282471
+      },
+      {
+        "serbest_kaynaklar": [
+          "H01",
+          "P01"
+        ],
+        "maliyet_tl": 718546.1637500001,
+        "durum": "Time limit reached",
+        "goreli_acik": 0.009795043942327553
+      },
+      {
+        "serbest_kaynaklar": [
+          "H02",
+          "P01"
+        ],
+        "maliyet_tl": 718546.1637500001,
+        "durum": "Time limit reached",
+        "goreli_acik": 0.005951688481704432
+      }
+    ],
+    "yerel_arama_saniye": 30.163466700003482,
+    "toplam_cozum_saniye": 150.18331860005856,
+    "baslangic_maliyet_tl": 718677.53735
+  },
+  "referans_maliyet_tl": 718677.53735,
+  "onerilen_maliyet_tl": 718546.16375,
+  "avantaj_tl": 131.37360000004992,
+  "avantaj_yuzde": 0.018279909023519437,
+  "degisen_uretim_kaynak_saat": 0,
+  "referans_enerji_kwh": 237040.0,
+  "onerilen_enerji_kwh": 237040.0,
+  "teslim_kontrolu": true,
+  "stok_kontrolu": true,
+  "guc_kontrolu": true,
+  "kaynak_sha256": {
+    "src\\firma_verisi.py": "aa646656b6ce3c502e1e646fdedf158931a1e91e9cd1818b6faad08de68a00ee",
+    "src\\firma_cizelgeleme.py": "8f6fae644267c1d36945adc805ecbff7a8a0eaa1ed49a2955ee4d8177103e456",
+    "src\\firma_senaryolari.py": "539eb7d6006f028855ca5119569e8349a2d9e10dc30d233b65ea85754cb98a81"
+  },
+  "girdi_zip_sha256": "ac64b9f34ccb69ca029a6b5f11c64fea01b787c6a9ccf494775c914c5a582297"
+}

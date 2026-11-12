@@ -1,0 +1,32 @@
+{
+  "experiment_id": "pilot04_8ca16b7c875acecb",
+  "runtime": {
+    "pilot_total_seconds": 483.0183708999539,
+    "pilot_week_seconds": [
+      126.99080480006523,
+      105.3203230999643,
+      124.19777940004133,
+      123.18237469997257
+    ],
+    "milp_runs": 28,
+    "estimated_34_weeks_minutes": 68.00843985333826,
+    "observed_week_min_max_scaled_to_34_minutes": [
+      59.7336913266452,
+      72.0136309567024
+    ],
+    "solver_limits_sum_34_minutes": 59.5,
+    "full_34_executed": false,
+    "approval_required_before_full_run": true
+  },
+  "results_idempotent": true,
+  "sql_rows": {
+    "milp_runs_04": 28,
+    "milp_weekly_04": 24
+  },
+  "all_28_solutions_independently_validated": true,
+  "violations": 0,
+  "oracle_exact_weeks": 0,
+  "outside_pool_runs": 8,
+  "locked_test_evaluated": false,
+  "stochastic_mode": false
+}

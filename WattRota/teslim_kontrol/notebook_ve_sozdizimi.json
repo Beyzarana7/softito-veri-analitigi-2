@@ -1,0 +1,53 @@
+{
+  "notebooks": [
+    {
+      "name": "01_elektrik_verisi_inceleme.ipynb",
+      "byte_identical": true,
+      "cells": 51,
+      "stored_errors": 0
+    },
+    {
+      "name": "02_firma_verisi_hazirlama.ipynb",
+      "byte_identical": true,
+      "cells": 17,
+      "stored_errors": 0
+    },
+    {
+      "name": "03_firma_cizelgeleme.ipynb",
+      "byte_identical": true,
+      "cells": 20,
+      "stored_errors": 0
+    },
+    {
+      "name": "04_senaryo_karsilastirmalari.ipynb",
+      "byte_identical": true,
+      "cells": 12,
+      "stored_errors": 0
+    },
+    {
+      "name": "05_elektrik_fiyat_tahmini.ipynb",
+      "byte_identical": true,
+      "cells": 14,
+      "stored_errors": 0
+    },
+    {
+      "name": "06_tahminin_uretim_kararina_etkisi.ipynb",
+      "byte_identical": true,
+      "cells": 11,
+      "stored_errors": 0
+    },
+    {
+      "name": "07_model_gelistirme_ve_karar_dogrulamasi.ipynb",
+      "byte_identical": true,
+      "cells": 18,
+      "stored_errors": 0
+    },
+    {
+      "name": "08_kazanc_potansiyeli_ve_kisitlar.ipynb",
+      "byte_identical": true,
+      "cells": 18,
+      "stored_errors": 0
+    }
+  ],
+  "syntax_errors": []
+}

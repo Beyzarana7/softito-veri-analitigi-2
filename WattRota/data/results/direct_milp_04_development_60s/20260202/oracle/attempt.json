@@ -1,0 +1,11 @@
+{
+  "week": "2026-02-02 00:00:00",
+  "run_key": "oracle",
+  "source": "oracle",
+  "decision_day": 0,
+  "attempt": 1,
+  "state": "success",
+  "solver_status": "Time limit reached",
+  "actual_cost_tl": 641991.4871,
+  "wall_seconds": 63.9102419000119
+}

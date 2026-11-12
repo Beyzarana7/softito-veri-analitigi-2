@@ -1,0 +1,5963 @@
+[
+  {
+    "key": "urunler",
+    "sheet": "Ürünler",
+    "keys": [
+      "urun_id"
+    ],
+    "fields": [
+      {
+        "key": "urun_id",
+        "label": "Ürün kodu",
+        "type": "str",
+        "unit": "—",
+        "description": "Ürün kimliği",
+        "required": true,
+        "example": "UR01"
+      },
+      {
+        "key": "urun_adi",
+        "label": "Ürün adı",
+        "type": "str",
+        "unit": "—",
+        "description": "Senaryo ürün adı",
+        "required": true,
+        "example": "Portland çimentosu"
+      }
+    ],
+    "rows": [
+      {
+        "urun_id": "UR01",
+        "urun_adi": "Portland çimentosu"
+      },
+      {
+        "urun_id": "UR02",
+        "urun_adi": "Kalker katkılı çimento"
+      },
+      {
+        "urun_id": "UR03",
+        "urun_adi": "İnce öğütülmüş Portland çimentosu"
+      }
+    ],
+    "optional": false,
+    "allow_empty": false
+  },
+  {
+    "key": "kaynaklar",
+    "sheet": "Makineler",
+    "keys": [
+      "kaynak_id"
+    ],
+    "fields": [
+      {
+        "key": "kaynak_id",
+        "label": "Makine kodu",
+        "type": "str",
+        "unit": "—",
+        "description": "Makine/hat/yükleme kimliği",
+        "required": true,
+        "example": "H01"
+      },
+      {
+        "key": "kaynak_adi",
+        "label": "Makine adı",
+        "type": "str",
+        "unit": "—",
+        "description": "Kaynak açıklaması",
+        "required": true,
+        "example": "Öğütme hattı 1"
+      },
+      {
+        "key": "kaynak_turu",
+        "label": "Makine türü",
+        "type": "str",
+        "unit": "—",
+        "description": "ogutme, paketleme, dokme_yukleme veya torbali_yukleme",
+        "required": true,
+        "example": "ogutme"
+      }
+    ],
+    "rows": [
+      {
+        "kaynak_id": "H01",
+        "kaynak_adi": "Öğütme hattı 1",
+        "kaynak_turu": "ogutme"
+      },
+      {
+        "kaynak_id": "H02",
+        "kaynak_adi": "Öğütme hattı 2",
+        "kaynak_turu": "ogutme"
+      },
+      {
+        "kaynak_id": "P01",
+        "kaynak_adi": "Ortak paketleme hattı",
+        "kaynak_turu": "paketleme"
+      },
+      {
+        "kaynak_id": "Y01",
+        "kaynak_adi": "Dökme yükleme",
+        "kaynak_turu": "dokme_yukleme"
+      },
+      {
+        "kaynak_id": "Y02",
+        "kaynak_adi": "Torbalı yükleme",
+        "kaynak_turu": "torbali_yukleme"
+      }
+    ],
+    "optional": false,
+    "allow_empty": false
+  },
+  {
+    "key": "kaynak_urun",
+    "sheet": "Makine Kapasiteleri",
+    "keys": [
+      "kaynak_id",
+      "urun_id"
+    ],
+    "fields": [
+      {
+        "key": "kaynak_id",
+        "label": "Makine kodu",
+        "type": "str",
+        "unit": "—",
+        "description": "Makine/hat/yükleme kimliği",
+        "required": true,
+        "example": "H01"
+      },
+      {
+        "key": "urun_id",
+        "label": "Ürün kodu",
+        "type": "str",
+        "unit": "—",
+        "description": "Ürün kimliği",
+        "required": true,
+        "example": "UR01"
+      },
+      {
+        "key": "kapasite_ton_saat",
+        "label": "Kapasite (ton/saat)",
+        "type": "number",
+        "unit": "ton/saat",
+        "description": "Uygun ürün için saatlik çıktı veya yükleme kapasitesi",
+        "required": true,
+        "example": "60"
+      },
+      {
+        "key": "calisma_gucu_kw",
+        "label": "Çalışma gücü (kW)",
+        "type": "number",
+        "unit": "kW",
+        "description": "Aktif saatte kaynak ve kapsanan yardımcıların toplam gücü",
+        "required": true,
+        "example": "1800"
+      }
+    ],
+    "rows": [
+      {
+        "kaynak_id": "H01",
+        "urun_id": "UR01",
+        "kapasite_ton_saat": 60.0,
+        "calisma_gucu_kw": 1800.0
+      },
+      {
+        "kaynak_id": "H01",
+        "urun_id": "UR02",
+        "kapasite_ton_saat": 70.0,
+        "calisma_gucu_kw": 1800.0
+      },
+      {
+        "kaynak_id": "H01",
+        "urun_id": "UR03",
+        "kapasite_ton_saat": 50.0,
+        "calisma_gucu_kw": 1900.0
+      },
+      {
+        "kaynak_id": "H02",
+        "urun_id": "UR01",
+        "kapasite_ton_saat": 70.0,
+        "calisma_gucu_kw": 2100.0
+      },
+      {
+        "kaynak_id": "H02",
+        "urun_id": "UR02",
+        "kapasite_ton_saat": 80.0,
+        "calisma_gucu_kw": 2200.0
+      },
+      {
+        "kaynak_id": "P01",
+        "urun_id": "UR01",
+        "kapasite_ton_saat": 80.0,
+        "calisma_gucu_kw": 100.0
+      },
+      {
+        "kaynak_id": "P01",
+        "urun_id": "UR02",
+        "kapasite_ton_saat": 100.0,
+        "calisma_gucu_kw": 120.0
+      },
+      {
+        "kaynak_id": "P01",
+        "urun_id": "UR03",
+        "kapasite_ton_saat": 60.0,
+        "calisma_gucu_kw": 90.0
+      },
+      {
+        "kaynak_id": "Y01",
+        "urun_id": "UR01",
+        "kapasite_ton_saat": 180.0,
+        "calisma_gucu_kw": 60.0
+      },
+      {
+        "kaynak_id": "Y01",
+        "urun_id": "UR02",
+        "kapasite_ton_saat": 180.0,
+        "calisma_gucu_kw": 60.0
+      },
+      {
+        "kaynak_id": "Y01",
+        "urun_id": "UR03",
+        "kapasite_ton_saat": 180.0,
+        "calisma_gucu_kw": 60.0
+      },
+      {
+        "kaynak_id": "Y02",
+        "urun_id": "UR01",
+        "kapasite_ton_saat": 120.0,
+        "calisma_gucu_kw": 50.0
+      },
+      {
+        "kaynak_id": "Y02",
+        "urun_id": "UR02",
+        "kapasite_ton_saat": 120.0,
+        "calisma_gucu_kw": 50.0
+      },
+      {
+        "kaynak_id": "Y02",
+        "urun_id": "UR03",
+        "kapasite_ton_saat": 120.0,
+        "calisma_gucu_kw": 50.0
+      }
+    ],
+    "optional": false,
+    "allow_empty": false
+  },
+  {
+    "key": "isletme_kurallari",
+    "sheet": "İşletme Kuralları",
+    "keys": [
+      "kaynak_id"
+    ],
+    "fields": [
+      {
+        "key": "kaynak_id",
+        "label": "Makine kodu",
+        "type": "str",
+        "unit": "—",
+        "description": "Makine/hat/yükleme kimliği",
+        "required": true,
+        "example": "H01"
+      },
+      {
+        "key": "minimum_uretim_saat",
+        "label": "En az üretim süresi (saat)",
+        "type": "number",
+        "unit": "saat",
+        "description": "Kesintisiz üretim bloğunun en kısa süresi",
+        "required": true,
+        "example": "4"
+      },
+      {
+        "key": "minimum_durus_saat",
+        "label": "En az duruş süresi (saat)",
+        "type": "number",
+        "unit": "saat",
+        "description": "Yeniden açılmadan önce kapalı kalma süresi",
+        "required": true,
+        "example": "2"
+      },
+      {
+        "key": "baslangicta_aktif",
+        "label": "Başlangıçta çalışıyor mu",
+        "type": "bool",
+        "unit": "—",
+        "description": "Plan başında aktiflik",
+        "required": true,
+        "example": "False"
+      },
+      {
+        "key": "baslangic_durum_suresi_saat",
+        "label": "Başlangıç durumunda geçen süre (saat)",
+        "type": "number",
+        "unit": "saat",
+        "description": "Başlangıç durumunda önceden geçen süre",
+        "required": true,
+        "example": "4"
+      },
+      {
+        "key": "baslangic_urun_ayari",
+        "label": "Başlangıç ürün ayarı",
+        "type": "str",
+        "unit": "—",
+        "description": "Hazırlık gereksinimini belirleyen ilk ürün ayarı",
+        "required": true,
+        "example": "UR01"
+      },
+      {
+        "key": "baslatma_enerjisi_kwh",
+        "label": "Başlatma enerjisi (kWh)",
+        "type": "number",
+        "unit": "kWh",
+        "description": "Açılış başına normal tüketime ek enerji",
+        "required": true,
+        "example": "100"
+      },
+      {
+        "key": "baslatma_elektrik_disi_gider_tl",
+        "label": "Başlatma ek gideri (TL)",
+        "type": "number",
+        "unit": "TL",
+        "description": "Açılış başına elektrik dışı gider",
+        "required": true,
+        "example": "200"
+      }
+    ],
+    "rows": [
+      {
+        "kaynak_id": "H01",
+        "minimum_uretim_saat": 4.0,
+        "minimum_durus_saat": 2.0,
+        "baslangicta_aktif": false,
+        "baslangic_durum_suresi_saat": 4.0,
+        "baslangic_urun_ayari": "UR01",
+        "baslatma_enerjisi_kwh": 100.0,
+        "baslatma_elektrik_disi_gider_tl": 200.0
+      },
+      {
+        "kaynak_id": "H02",
+        "minimum_uretim_saat": 4.0,
+        "minimum_durus_saat": 2.0,
+        "baslangicta_aktif": false,
+        "baslangic_durum_suresi_saat": 4.0,
+        "baslangic_urun_ayari": "UR02",
+        "baslatma_enerjisi_kwh": 120.0,
+        "baslatma_elektrik_disi_gider_tl": 250.0
+      },
+      {
+        "kaynak_id": "P01",
+        "minimum_uretim_saat": 2.0,
+        "minimum_durus_saat": 1.0,
+        "baslangicta_aktif": false,
+        "baslangic_durum_suresi_saat": 4.0,
+        "baslangic_urun_ayari": "UR01",
+        "baslatma_enerjisi_kwh": 30.0,
+        "baslatma_elektrik_disi_gider_tl": 40.0
+      }
+    ],
+    "optional": false,
+    "allow_empty": false
+  },
+  {
+    "key": "urun_gecisleri",
+    "sheet": "Ürün Geçişleri",
+    "keys": [
+      "kaynak_id",
+      "onceki_urun",
+      "sonraki_urun"
+    ],
+    "fields": [
+      {
+        "key": "kaynak_id",
+        "label": "Makine kodu",
+        "type": "str",
+        "unit": "—",
+        "description": "Makine/hat/yükleme kimliği",
+        "required": true,
+        "example": "H01"
+      },
+      {
+        "key": "onceki_urun",
+        "label": "Önceki ürün kodu",
+        "type": "str",
+        "unit": "—",
+        "description": "Hazırlık öncesi ürün ayarı",
+        "required": true,
+        "example": "UR01"
+      },
+      {
+        "key": "sonraki_urun",
+        "label": "Sonraki ürün kodu",
+        "type": "str",
+        "unit": "—",
+        "description": "Hazırlık sonunda elde edilen ürün ayarı",
+        "required": true,
+        "example": "UR02"
+      },
+      {
+        "key": "hazirlik_saat",
+        "label": "Geçiş süresi (saat)",
+        "type": "number",
+        "unit": "saat",
+        "description": "Ürün değiştirme süresi",
+        "required": true,
+        "example": "1"
+      },
+      {
+        "key": "hazirlik_gucu_kw",
+        "label": "Geçiş gücü (kW)",
+        "type": "number",
+        "unit": "kW",
+        "description": "Hazırlık saatindeki toplam güç",
+        "required": true,
+        "example": "300"
+      },
+      {
+        "key": "elektrik_disi_gider_tl",
+        "label": "Elektrik dışı gider (TL)",
+        "type": "number",
+        "unit": "TL",
+        "description": "Geçiş başlangıcında bir kez oluşan elektrik dışı gider",
+        "required": true,
+        "example": "75"
+      }
+    ],
+    "rows": [
+      {
+        "kaynak_id": "H01",
+        "onceki_urun": "UR01",
+        "sonraki_urun": "UR02",
+        "hazirlik_saat": 1.0,
+        "hazirlik_gucu_kw": 300.0,
+        "elektrik_disi_gider_tl": 75.0
+      },
+      {
+        "kaynak_id": "H01",
+        "onceki_urun": "UR01",
+        "sonraki_urun": "UR03",
+        "hazirlik_saat": 2.0,
+        "hazirlik_gucu_kw": 300.0,
+        "elektrik_disi_gider_tl": 75.0
+      },
+      {
+        "kaynak_id": "H01",
+        "onceki_urun": "UR02",
+        "sonraki_urun": "UR01",
+        "hazirlik_saat": 1.0,
+        "hazirlik_gucu_kw": 300.0,
+        "elektrik_disi_gider_tl": 75.0
+      },
+      {
+        "kaynak_id": "H01",
+        "onceki_urun": "UR02",
+        "sonraki_urun": "UR03",
+        "hazirlik_saat": 2.0,
+        "hazirlik_gucu_kw": 300.0,
+        "elektrik_disi_gider_tl": 75.0
+      },
+      {
+        "kaynak_id": "H01",
+        "onceki_urun": "UR03",
+        "sonraki_urun": "UR01",
+        "hazirlik_saat": 2.0,
+        "hazirlik_gucu_kw": 300.0,
+        "elektrik_disi_gider_tl": 75.0
+      },
+      {
+        "kaynak_id": "H01",
+        "onceki_urun": "UR03",
+        "sonraki_urun": "UR02",
+        "hazirlik_saat": 2.0,
+        "hazirlik_gucu_kw": 300.0,
+        "elektrik_disi_gider_tl": 75.0
+      },
+      {
+        "kaynak_id": "H02",
+        "onceki_urun": "UR01",
+        "sonraki_urun": "UR02",
+        "hazirlik_saat": 1.0,
+        "hazirlik_gucu_kw": 300.0,
+        "elektrik_disi_gider_tl": 75.0
+      },
+      {
+        "kaynak_id": "H02",
+        "onceki_urun": "UR02",
+        "sonraki_urun": "UR01",
+        "hazirlik_saat": 1.0,
+        "hazirlik_gucu_kw": 300.0,
+        "elektrik_disi_gider_tl": 75.0
+      },
+      {
+        "kaynak_id": "P01",
+        "onceki_urun": "UR01",
+        "sonraki_urun": "UR02",
+        "hazirlik_saat": 1.0,
+        "hazirlik_gucu_kw": 35.0,
+        "elektrik_disi_gider_tl": 20.0
+      },
+      {
+        "kaynak_id": "P01",
+        "onceki_urun": "UR01",
+        "sonraki_urun": "UR03",
+        "hazirlik_saat": 1.0,
+        "hazirlik_gucu_kw": 35.0,
+        "elektrik_disi_gider_tl": 20.0
+      },
+      {
+        "kaynak_id": "P01",
+        "onceki_urun": "UR02",
+        "sonraki_urun": "UR01",
+        "hazirlik_saat": 1.0,
+        "hazirlik_gucu_kw": 35.0,
+        "elektrik_disi_gider_tl": 20.0
+      },
+      {
+        "kaynak_id": "P01",
+        "onceki_urun": "UR02",
+        "sonraki_urun": "UR03",
+        "hazirlik_saat": 1.0,
+        "hazirlik_gucu_kw": 35.0,
+        "elektrik_disi_gider_tl": 20.0
+      },
+      {
+        "kaynak_id": "P01",
+        "onceki_urun": "UR03",
+        "sonraki_urun": "UR01",
+        "hazirlik_saat": 1.0,
+        "hazirlik_gucu_kw": 35.0,
+        "elektrik_disi_gider_tl": 20.0
+      },
+      {
+        "kaynak_id": "P01",
+        "onceki_urun": "UR03",
+        "sonraki_urun": "UR02",
+        "hazirlik_saat": 1.0,
+        "hazirlik_gucu_kw": 35.0,
+        "elektrik_disi_gider_tl": 20.0
+      }
+    ],
+    "optional": false,
+    "allow_empty": true
+  },
+  {
+    "key": "stok_alanlari",
+    "sheet": "Stok Alanları",
+    "keys": [
+      "stok_id"
+    ],
+    "fields": [
+      {
+        "key": "stok_id",
+        "label": "Stok alanı kodu",
+        "type": "str",
+        "unit": "—",
+        "description": "Ürüne ayrılmış stok alanı",
+        "required": true,
+        "example": "D01"
+      },
+      {
+        "key": "urun_id",
+        "label": "Ürün kodu",
+        "type": "str",
+        "unit": "—",
+        "description": "Ürün kimliği",
+        "required": true,
+        "example": "UR01"
+      },
+      {
+        "key": "stok_turu",
+        "label": "Stok türü",
+        "type": "str",
+        "unit": "—",
+        "description": "dokme veya torbali",
+        "required": true,
+        "example": "dokme"
+      },
+      {
+        "key": "minimum_ton",
+        "label": "Alt stok sınırı (ton)",
+        "type": "number",
+        "unit": "ton",
+        "description": "Korunacak en az stok",
+        "required": true,
+        "example": "60"
+      },
+      {
+        "key": "kapasite_ton",
+        "label": "Stok kapasitesi (ton)",
+        "type": "number",
+        "unit": "ton",
+        "description": "En yüksek stok",
+        "required": true,
+        "example": "1200"
+      },
+      {
+        "key": "baslangic_ton",
+        "label": "Başlangıç stoku (ton)",
+        "type": "number",
+        "unit": "ton",
+        "description": "Plan başlangıcı stoğu",
+        "required": true,
+        "example": "240"
+      },
+      {
+        "key": "son_hedef_ton",
+        "label": "Dönem sonu hedefi (ton)",
+        "type": "number",
+        "unit": "ton",
+        "description": "Dönem sonu eşitlik hedefi",
+        "required": true,
+        "example": "240"
+      }
+    ],
+    "rows": [
+      {
+        "stok_id": "D01",
+        "urun_id": "UR01",
+        "stok_turu": "dokme",
+        "minimum_ton": 60.0,
+        "kapasite_ton": 1200.0,
+        "baslangic_ton": 240.0,
+        "son_hedef_ton": 240.0
+      },
+      {
+        "stok_id": "D02",
+        "urun_id": "UR02",
+        "stok_turu": "dokme",
+        "minimum_ton": 80.0,
+        "kapasite_ton": 1600.0,
+        "baslangic_ton": 900.0,
+        "son_hedef_ton": 900.0
+      },
+      {
+        "stok_id": "D03",
+        "urun_id": "UR03",
+        "stok_turu": "dokme",
+        "minimum_ton": 50.0,
+        "kapasite_ton": 800.0,
+        "baslangic_ton": 180.0,
+        "son_hedef_ton": 180.0
+      },
+      {
+        "stok_id": "T01",
+        "urun_id": "UR01",
+        "stok_turu": "torbali",
+        "minimum_ton": 0.0,
+        "kapasite_ton": 600.0,
+        "baslangic_ton": 120.0,
+        "son_hedef_ton": 120.0
+      },
+      {
+        "stok_id": "T02",
+        "urun_id": "UR02",
+        "stok_turu": "torbali",
+        "minimum_ton": 0.0,
+        "kapasite_ton": 700.0,
+        "baslangic_ton": 100.0,
+        "son_hedef_ton": 100.0
+      },
+      {
+        "stok_id": "T03",
+        "urun_id": "UR03",
+        "stok_turu": "torbali",
+        "minimum_ton": 0.0,
+        "kapasite_ton": 400.0,
+        "baslangic_ton": 80.0,
+        "son_hedef_ton": 80.0
+      }
+    ],
+    "optional": false,
+    "allow_empty": false
+  },
+  {
+    "key": "depo_kurallari",
+    "sheet": "Depo Kuralları",
+    "keys": [
+      "depo_id"
+    ],
+    "fields": [
+      {
+        "key": "depo_id",
+        "label": "Depo kodu",
+        "type": "str",
+        "unit": "—",
+        "description": "Ortak depo kimliği",
+        "required": true,
+        "example": "TORBALI_DEPO"
+      },
+      {
+        "key": "toplam_kapasite_ton",
+        "label": "Ortak depo kapasitesi (ton)",
+        "type": "number",
+        "unit": "ton",
+        "description": "Torbalı stokların toplam üst sınırı",
+        "required": true,
+        "example": "1100"
+      }
+    ],
+    "rows": [
+      {
+        "depo_id": "TORBALI_DEPO",
+        "toplam_kapasite_ton": 1100.0
+      }
+    ],
+    "optional": false,
+    "allow_empty": false
+  },
+  {
+    "key": "rotalar",
+    "sheet": "Üretim Rotaları",
+    "keys": [
+      "rota_id",
+      "adim_no"
+    ],
+    "fields": [
+      {
+        "key": "rota_id",
+        "label": "Rota kodu",
+        "type": "str",
+        "unit": "—",
+        "description": "Ürün ve teslim biçimine ait işlem rotası",
+        "required": true,
+        "example": "R_UR01_dokme"
+      },
+      {
+        "key": "urun_id",
+        "label": "Ürün kodu",
+        "type": "str",
+        "unit": "—",
+        "description": "Ürün kimliği",
+        "required": true,
+        "example": "UR01"
+      },
+      {
+        "key": "teslim_turu",
+        "label": "Teslim türü",
+        "type": "str",
+        "unit": "—",
+        "description": "dokme veya torbali",
+        "required": true,
+        "example": "dokme"
+      },
+      {
+        "key": "adim_no",
+        "label": "Adım sırası",
+        "type": "number",
+        "unit": "—",
+        "description": "Rotadaki işlem sırası",
+        "required": true,
+        "example": "1"
+      },
+      {
+        "key": "islem_turu",
+        "label": "İşlem türü",
+        "type": "str",
+        "unit": "—",
+        "description": "İşlemi yapabilecek kaynak türü",
+        "required": true,
+        "example": "ogutme"
+      },
+      {
+        "key": "girdi_stok_turu",
+        "label": "Girdi stok türü",
+        "type": "str",
+        "unit": "—",
+        "description": "İşlemin malzeme aldığı stok türü",
+        "required": true,
+        "example": "hammadde"
+      },
+      {
+        "key": "cikti_stok_turu",
+        "label": "Çıktı stok türü",
+        "type": "str",
+        "unit": "—",
+        "description": "İşlem sonunda oluşan stok veya teslimat",
+        "required": true,
+        "example": "dokme"
+      }
+    ],
+    "rows": [
+      {
+        "rota_id": "R_UR01_dokme",
+        "urun_id": "UR01",
+        "teslim_turu": "dokme",
+        "adim_no": 1.0,
+        "islem_turu": "ogutme",
+        "girdi_stok_turu": "hammadde",
+        "cikti_stok_turu": "dokme"
+      },
+      {
+        "rota_id": "R_UR01_dokme",
+        "urun_id": "UR01",
+        "teslim_turu": "dokme",
+        "adim_no": 2.0,
+        "islem_turu": "dokme_yukleme",
+        "girdi_stok_turu": "dokme",
+        "cikti_stok_turu": "teslim"
+      },
+      {
+        "rota_id": "R_UR01_torbali",
+        "urun_id": "UR01",
+        "teslim_turu": "torbali",
+        "adim_no": 1.0,
+        "islem_turu": "ogutme",
+        "girdi_stok_turu": "hammadde",
+        "cikti_stok_turu": "dokme"
+      },
+      {
+        "rota_id": "R_UR01_torbali",
+        "urun_id": "UR01",
+        "teslim_turu": "torbali",
+        "adim_no": 2.0,
+        "islem_turu": "paketleme",
+        "girdi_stok_turu": "dokme",
+        "cikti_stok_turu": "torbali"
+      },
+      {
+        "rota_id": "R_UR01_torbali",
+        "urun_id": "UR01",
+        "teslim_turu": "torbali",
+        "adim_no": 3.0,
+        "islem_turu": "torbali_yukleme",
+        "girdi_stok_turu": "torbali",
+        "cikti_stok_turu": "teslim"
+      },
+      {
+        "rota_id": "R_UR02_dokme",
+        "urun_id": "UR02",
+        "teslim_turu": "dokme",
+        "adim_no": 1.0,
+        "islem_turu": "ogutme",
+        "girdi_stok_turu": "hammadde",
+        "cikti_stok_turu": "dokme"
+      },
+      {
+        "rota_id": "R_UR02_dokme",
+        "urun_id": "UR02",
+        "teslim_turu": "dokme",
+        "adim_no": 2.0,
+        "islem_turu": "dokme_yukleme",
+        "girdi_stok_turu": "dokme",
+        "cikti_stok_turu": "teslim"
+      },
+      {
+        "rota_id": "R_UR02_torbali",
+        "urun_id": "UR02",
+        "teslim_turu": "torbali",
+        "adim_no": 1.0,
+        "islem_turu": "ogutme",
+        "girdi_stok_turu": "hammadde",
+        "cikti_stok_turu": "dokme"
+      },
+      {
+        "rota_id": "R_UR02_torbali",
+        "urun_id": "UR02",
+        "teslim_turu": "torbali",
+        "adim_no": 2.0,
+        "islem_turu": "paketleme",
+        "girdi_stok_turu": "dokme",
+        "cikti_stok_turu": "torbali"
+      },
+      {
+        "rota_id": "R_UR02_torbali",
+        "urun_id": "UR02",
+        "teslim_turu": "torbali",
+        "adim_no": 3.0,
+        "islem_turu": "torbali_yukleme",
+        "girdi_stok_turu": "torbali",
+        "cikti_stok_turu": "teslim"
+      },
+      {
+        "rota_id": "R_UR03_dokme",
+        "urun_id": "UR03",
+        "teslim_turu": "dokme",
+        "adim_no": 1.0,
+        "islem_turu": "ogutme",
+        "girdi_stok_turu": "hammadde",
+        "cikti_stok_turu": "dokme"
+      },
+      {
+        "rota_id": "R_UR03_dokme",
+        "urun_id": "UR03",
+        "teslim_turu": "dokme",
+        "adim_no": 2.0,
+        "islem_turu": "dokme_yukleme",
+        "girdi_stok_turu": "dokme",
+        "cikti_stok_turu": "teslim"
+      },
+      {
+        "rota_id": "R_UR03_torbali",
+        "urun_id": "UR03",
+        "teslim_turu": "torbali",
+        "adim_no": 1.0,
+        "islem_turu": "ogutme",
+        "girdi_stok_turu": "hammadde",
+        "cikti_stok_turu": "dokme"
+      },
+      {
+        "rota_id": "R_UR03_torbali",
+        "urun_id": "UR03",
+        "teslim_turu": "torbali",
+        "adim_no": 2.0,
+        "islem_turu": "paketleme",
+        "girdi_stok_turu": "dokme",
+        "cikti_stok_turu": "torbali"
+      },
+      {
+        "rota_id": "R_UR03_torbali",
+        "urun_id": "UR03",
+        "teslim_turu": "torbali",
+        "adim_no": 3.0,
+        "islem_turu": "torbali_yukleme",
+        "girdi_stok_turu": "torbali",
+        "cikti_stok_turu": "teslim"
+      }
+    ],
+    "optional": false,
+    "allow_empty": false
+  },
+  {
+    "key": "rota_kaynaklari",
+    "sheet": "Rota Makineleri",
+    "keys": [
+      "rota_id",
+      "adim_no",
+      "kaynak_id"
+    ],
+    "fields": [
+      {
+        "key": "rota_id",
+        "label": "Rota kodu",
+        "type": "str",
+        "unit": "—",
+        "description": "Ürün ve teslim biçimine ait işlem rotası",
+        "required": true,
+        "example": "R_UR01_dokme"
+      },
+      {
+        "key": "adim_no",
+        "label": "Adım sırası",
+        "type": "number",
+        "unit": "—",
+        "description": "Rotadaki işlem sırası",
+        "required": true,
+        "example": "1"
+      },
+      {
+        "key": "kaynak_id",
+        "label": "Makine kodu",
+        "type": "str",
+        "unit": "—",
+        "description": "Makine/hat/yükleme kimliği",
+        "required": true,
+        "example": "H01"
+      }
+    ],
+    "rows": [
+      {
+        "rota_id": "R_UR01_dokme",
+        "adim_no": 1.0,
+        "kaynak_id": "H01"
+      },
+      {
+        "rota_id": "R_UR01_dokme",
+        "adim_no": 1.0,
+        "kaynak_id": "H02"
+      },
+      {
+        "rota_id": "R_UR01_dokme",
+        "adim_no": 2.0,
+        "kaynak_id": "Y01"
+      },
+      {
+        "rota_id": "R_UR01_torbali",
+        "adim_no": 1.0,
+        "kaynak_id": "H01"
+      },
+      {
+        "rota_id": "R_UR01_torbali",
+        "adim_no": 1.0,
+        "kaynak_id": "H02"
+      },
+      {
+        "rota_id": "R_UR01_torbali",
+        "adim_no": 2.0,
+        "kaynak_id": "P01"
+      },
+      {
+        "rota_id": "R_UR01_torbali",
+        "adim_no": 3.0,
+        "kaynak_id": "Y02"
+      },
+      {
+        "rota_id": "R_UR02_dokme",
+        "adim_no": 1.0,
+        "kaynak_id": "H01"
+      },
+      {
+        "rota_id": "R_UR02_dokme",
+        "adim_no": 1.0,
+        "kaynak_id": "H02"
+      },
+      {
+        "rota_id": "R_UR02_dokme",
+        "adim_no": 2.0,
+        "kaynak_id": "Y01"
+      },
+      {
+        "rota_id": "R_UR02_torbali",
+        "adim_no": 1.0,
+        "kaynak_id": "H01"
+      },
+      {
+        "rota_id": "R_UR02_torbali",
+        "adim_no": 1.0,
+        "kaynak_id": "H02"
+      },
+      {
+        "rota_id": "R_UR02_torbali",
+        "adim_no": 2.0,
+        "kaynak_id": "P01"
+      },
+      {
+        "rota_id": "R_UR02_torbali",
+        "adim_no": 3.0,
+        "kaynak_id": "Y02"
+      },
+      {
+        "rota_id": "R_UR03_dokme",
+        "adim_no": 1.0,
+        "kaynak_id": "H01"
+      },
+      {
+        "rota_id": "R_UR03_dokme",
+        "adim_no": 2.0,
+        "kaynak_id": "Y01"
+      },
+      {
+        "rota_id": "R_UR03_torbali",
+        "adim_no": 1.0,
+        "kaynak_id": "H01"
+      },
+      {
+        "rota_id": "R_UR03_torbali",
+        "adim_no": 2.0,
+        "kaynak_id": "P01"
+      },
+      {
+        "rota_id": "R_UR03_torbali",
+        "adim_no": 3.0,
+        "kaynak_id": "Y02"
+      }
+    ],
+    "optional": false,
+    "allow_empty": false
+  },
+  {
+    "key": "siparisler",
+    "sheet": "Siparişler",
+    "keys": [
+      "siparis_id"
+    ],
+    "fields": [
+      {
+        "key": "siparis_id",
+        "label": "Sipariş kodu",
+        "type": "str",
+        "unit": "—",
+        "description": "Müşteri siparişi kimliği",
+        "required": true,
+        "example": "SP1_UR01_dokme"
+      },
+      {
+        "key": "urun_id",
+        "label": "Ürün kodu",
+        "type": "str",
+        "unit": "—",
+        "description": "Ürün kimliği",
+        "required": true,
+        "example": "UR01"
+      },
+      {
+        "key": "miktar_ton",
+        "label": "Miktar (ton)",
+        "type": "number",
+        "unit": "ton",
+        "description": "Sipariş veya iş emri toplam miktarı",
+        "required": true,
+        "example": "720"
+      },
+      {
+        "key": "teslim_turu",
+        "label": "Teslim türü",
+        "type": "str",
+        "unit": "—",
+        "description": "dokme veya torbali",
+        "required": true,
+        "example": "dokme"
+      },
+      {
+        "key": "rota_id",
+        "label": "Rota kodu",
+        "type": "str",
+        "unit": "—",
+        "description": "Ürün ve teslim biçimine ait işlem rotası",
+        "required": true,
+        "example": "R_UR01_dokme"
+      },
+      {
+        "key": "gelis_zamani",
+        "label": "Sipariş geliş zamanı",
+        "type": "datetime",
+        "unit": "tarih-saat",
+        "description": "Siparişin bilindiği an",
+        "required": true,
+        "example": "2025-10-06"
+      },
+      {
+        "key": "en_erken_yukleme",
+        "label": "En erken yükleme",
+        "type": "datetime",
+        "unit": "tarih-saat",
+        "description": "İzin verilen ilk yükleme saati",
+        "required": true,
+        "example": "2025-10-06 08:00:00"
+      },
+      {
+        "key": "teslim_zamani",
+        "label": "Son teslim zamanı",
+        "type": "datetime",
+        "unit": "tarih-saat",
+        "description": "Son yüklemenin bitiş sınırı",
+        "required": true,
+        "example": "2025-10-06 18:00:00"
+      }
+    ],
+    "rows": [
+      {
+        "siparis_id": "SP1_UR01_dokme",
+        "urun_id": "UR01",
+        "miktar_ton": 720.0,
+        "teslim_turu": "dokme",
+        "rota_id": "R_UR01_dokme",
+        "gelis_zamani": "2025-10-06",
+        "en_erken_yukleme": "2025-10-06 08:00:00",
+        "teslim_zamani": "2025-10-06 18:00:00"
+      },
+      {
+        "siparis_id": "SP1_UR01_torbali",
+        "urun_id": "UR01",
+        "miktar_ton": 320.0,
+        "teslim_turu": "torbali",
+        "rota_id": "R_UR01_torbali",
+        "gelis_zamani": "2025-10-06",
+        "en_erken_yukleme": "2025-10-06 08:00:00",
+        "teslim_zamani": "2025-10-06 12:00:00"
+      },
+      {
+        "siparis_id": "SP1_UR02_dokme",
+        "urun_id": "UR02",
+        "miktar_ton": 400.0,
+        "teslim_turu": "dokme",
+        "rota_id": "R_UR02_dokme",
+        "gelis_zamani": "2025-10-06",
+        "en_erken_yukleme": "2025-10-06 08:00:00",
+        "teslim_zamani": "2025-10-06 12:00:00"
+      },
+      {
+        "siparis_id": "SP1_UR02_torbali",
+        "urun_id": "UR02",
+        "miktar_ton": 400.0,
+        "teslim_turu": "torbali",
+        "rota_id": "R_UR02_torbali",
+        "gelis_zamani": "2025-10-06",
+        "en_erken_yukleme": "2025-10-06 08:00:00",
+        "teslim_zamani": "2025-10-06 15:00:00"
+      },
+      {
+        "siparis_id": "SP1_UR03_dokme",
+        "urun_id": "UR03",
+        "miktar_ton": 160.0,
+        "teslim_turu": "dokme",
+        "rota_id": "R_UR03_dokme",
+        "gelis_zamani": "2025-10-06",
+        "en_erken_yukleme": "2025-10-06 08:00:00",
+        "teslim_zamani": "2025-10-06 17:00:00"
+      },
+      {
+        "siparis_id": "SP1_UR03_torbali",
+        "urun_id": "UR03",
+        "miktar_ton": 240.0,
+        "teslim_turu": "torbali",
+        "rota_id": "R_UR03_torbali",
+        "gelis_zamani": "2025-10-06",
+        "en_erken_yukleme": "2025-10-06 08:00:00",
+        "teslim_zamani": "2025-10-06 18:00:00"
+      },
+      {
+        "siparis_id": "SP2_UR01_dokme",
+        "urun_id": "UR01",
+        "miktar_ton": 720.0,
+        "teslim_turu": "dokme",
+        "rota_id": "R_UR01_dokme",
+        "gelis_zamani": "2025-10-06",
+        "en_erken_yukleme": "2025-10-07 08:00:00",
+        "teslim_zamani": "2025-10-07 18:00:00"
+      },
+      {
+        "siparis_id": "SP2_UR01_torbali",
+        "urun_id": "UR01",
+        "miktar_ton": 320.0,
+        "teslim_turu": "torbali",
+        "rota_id": "R_UR01_torbali",
+        "gelis_zamani": "2025-10-06",
+        "en_erken_yukleme": "2025-10-07 08:00:00",
+        "teslim_zamani": "2025-10-07 12:00:00"
+      },
+      {
+        "siparis_id": "SP2_UR02_dokme",
+        "urun_id": "UR02",
+        "miktar_ton": 400.0,
+        "teslim_turu": "dokme",
+        "rota_id": "R_UR02_dokme",
+        "gelis_zamani": "2025-10-06",
+        "en_erken_yukleme": "2025-10-07 08:00:00",
+        "teslim_zamani": "2025-10-07 12:00:00"
+      },
+      {
+        "siparis_id": "SP2_UR02_torbali",
+        "urun_id": "UR02",
+        "miktar_ton": 400.0,
+        "teslim_turu": "torbali",
+        "rota_id": "R_UR02_torbali",
+        "gelis_zamani": "2025-10-06",
+        "en_erken_yukleme": "2025-10-07 08:00:00",
+        "teslim_zamani": "2025-10-07 15:00:00"
+      },
+      {
+        "siparis_id": "SP2_UR03_dokme",
+        "urun_id": "UR03",
+        "miktar_ton": 160.0,
+        "teslim_turu": "dokme",
+        "rota_id": "R_UR03_dokme",
+        "gelis_zamani": "2025-10-06",
+        "en_erken_yukleme": "2025-10-07 08:00:00",
+        "teslim_zamani": "2025-10-07 17:00:00"
+      },
+      {
+        "siparis_id": "SP2_UR03_torbali",
+        "urun_id": "UR03",
+        "miktar_ton": 240.0,
+        "teslim_turu": "torbali",
+        "rota_id": "R_UR03_torbali",
+        "gelis_zamani": "2025-10-06",
+        "en_erken_yukleme": "2025-10-07 08:00:00",
+        "teslim_zamani": "2025-10-07 18:00:00"
+      },
+      {
+        "siparis_id": "SP3_UR01_dokme",
+        "urun_id": "UR01",
+        "miktar_ton": 720.0,
+        "teslim_turu": "dokme",
+        "rota_id": "R_UR01_dokme",
+        "gelis_zamani": "2025-10-06",
+        "en_erken_yukleme": "2025-10-08 08:00:00",
+        "teslim_zamani": "2025-10-08 18:00:00"
+      },
+      {
+        "siparis_id": "SP3_UR01_torbali",
+        "urun_id": "UR01",
+        "miktar_ton": 320.0,
+        "teslim_turu": "torbali",
+        "rota_id": "R_UR01_torbali",
+        "gelis_zamani": "2025-10-06",
+        "en_erken_yukleme": "2025-10-08 08:00:00",
+        "teslim_zamani": "2025-10-08 12:00:00"
+      },
+      {
+        "siparis_id": "SP3_UR02_dokme",
+        "urun_id": "UR02",
+        "miktar_ton": 400.0,
+        "teslim_turu": "dokme",
+        "rota_id": "R_UR02_dokme",
+        "gelis_zamani": "2025-10-06",
+        "en_erken_yukleme": "2025-10-08 08:00:00",
+        "teslim_zamani": "2025-10-08 12:00:00"
+      },
+      {
+        "siparis_id": "SP3_UR02_torbali",
+        "urun_id": "UR02",
+        "miktar_ton": 400.0,
+        "teslim_turu": "torbali",
+        "rota_id": "R_UR02_torbali",
+        "gelis_zamani": "2025-10-06",
+        "en_erken_yukleme": "2025-10-08 08:00:00",
+        "teslim_zamani": "2025-10-08 15:00:00"
+      },
+      {
+        "siparis_id": "SP3_UR03_dokme",
+        "urun_id": "UR03",
+        "miktar_ton": 160.0,
+        "teslim_turu": "dokme",
+        "rota_id": "R_UR03_dokme",
+        "gelis_zamani": "2025-10-06",
+        "en_erken_yukleme": "2025-10-08 08:00:00",
+        "teslim_zamani": "2025-10-08 17:00:00"
+      },
+      {
+        "siparis_id": "SP3_UR03_torbali",
+        "urun_id": "UR03",
+        "miktar_ton": 240.0,
+        "teslim_turu": "torbali",
+        "rota_id": "R_UR03_torbali",
+        "gelis_zamani": "2025-10-06",
+        "en_erken_yukleme": "2025-10-08 08:00:00",
+        "teslim_zamani": "2025-10-08 18:00:00"
+      }
+    ],
+    "optional": false,
+    "allow_empty": false
+  },
+  {
+    "key": "is_emirleri",
+    "sheet": "İş Emirleri",
+    "keys": [
+      "is_emri_id"
+    ],
+    "fields": [
+      {
+        "key": "is_emri_id",
+        "label": "İş emri kodu",
+        "type": "str",
+        "unit": "—",
+        "description": "Ürün ve üretim/paketleme aşaması için iş emri",
+        "required": true,
+        "example": "IE1_UR01_ogutme"
+      },
+      {
+        "key": "urun_id",
+        "label": "Ürün kodu",
+        "type": "str",
+        "unit": "—",
+        "description": "Ürün kimliği",
+        "required": true,
+        "example": "UR01"
+      },
+      {
+        "key": "islem_turu",
+        "label": "İşlem türü",
+        "type": "str",
+        "unit": "—",
+        "description": "İşlemi yapabilecek kaynak türü",
+        "required": true,
+        "example": "ogutme"
+      },
+      {
+        "key": "miktar_ton",
+        "label": "Miktar (ton)",
+        "type": "number",
+        "unit": "ton",
+        "description": "Sipariş veya iş emri toplam miktarı",
+        "required": true,
+        "example": "1040"
+      },
+      {
+        "key": "serbest_birakma",
+        "label": "En erken üretim",
+        "type": "datetime",
+        "unit": "tarih-saat",
+        "description": "İş emrinin çalışmaya başlayabileceği ilk an",
+        "required": true,
+        "example": "2025-10-06"
+      },
+      {
+        "key": "tamamlanma_siniri",
+        "label": "Üretim tamamlanma sınırı",
+        "type": "datetime",
+        "unit": "tarih-saat",
+        "description": "İş emrinin tamamlanma sınırı",
+        "required": true,
+        "example": "2025-10-07 00:00:00"
+      },
+      {
+        "key": "bolunebilir",
+        "label": "Bölünebilir mi",
+        "type": "bool",
+        "unit": "—",
+        "description": "İş emri uygun kaynak/zaman bloklarına ayrılabilir",
+        "required": true,
+        "example": "True"
+      }
+    ],
+    "rows": [
+      {
+        "is_emri_id": "IE1_UR01_ogutme",
+        "urun_id": "UR01",
+        "islem_turu": "ogutme",
+        "miktar_ton": 1040.0,
+        "serbest_birakma": "2025-10-06",
+        "tamamlanma_siniri": "2025-10-07 00:00:00",
+        "bolunebilir": true
+      },
+      {
+        "is_emri_id": "IE1_UR01_paketleme",
+        "urun_id": "UR01",
+        "islem_turu": "paketleme",
+        "miktar_ton": 320.0,
+        "serbest_birakma": "2025-10-06",
+        "tamamlanma_siniri": "2025-10-06 14:00:00",
+        "bolunebilir": true
+      },
+      {
+        "is_emri_id": "IE1_UR02_ogutme",
+        "urun_id": "UR02",
+        "islem_turu": "ogutme",
+        "miktar_ton": 800.0,
+        "serbest_birakma": "2025-10-06",
+        "tamamlanma_siniri": "2025-10-07 00:00:00",
+        "bolunebilir": true
+      },
+      {
+        "is_emri_id": "IE1_UR02_paketleme",
+        "urun_id": "UR02",
+        "islem_turu": "paketleme",
+        "miktar_ton": 400.0,
+        "serbest_birakma": "2025-10-06",
+        "tamamlanma_siniri": "2025-10-06 14:00:00",
+        "bolunebilir": true
+      },
+      {
+        "is_emri_id": "IE1_UR03_ogutme",
+        "urun_id": "UR03",
+        "islem_turu": "ogutme",
+        "miktar_ton": 400.0,
+        "serbest_birakma": "2025-10-06",
+        "tamamlanma_siniri": "2025-10-07 00:00:00",
+        "bolunebilir": true
+      },
+      {
+        "is_emri_id": "IE1_UR03_paketleme",
+        "urun_id": "UR03",
+        "islem_turu": "paketleme",
+        "miktar_ton": 240.0,
+        "serbest_birakma": "2025-10-06",
+        "tamamlanma_siniri": "2025-10-06 14:00:00",
+        "bolunebilir": true
+      },
+      {
+        "is_emri_id": "IE2_UR01_ogutme",
+        "urun_id": "UR01",
+        "islem_turu": "ogutme",
+        "miktar_ton": 1040.0,
+        "serbest_birakma": "2025-10-06",
+        "tamamlanma_siniri": "2025-10-08 00:00:00",
+        "bolunebilir": true
+      },
+      {
+        "is_emri_id": "IE2_UR01_paketleme",
+        "urun_id": "UR01",
+        "islem_turu": "paketleme",
+        "miktar_ton": 320.0,
+        "serbest_birakma": "2025-10-06",
+        "tamamlanma_siniri": "2025-10-07 14:00:00",
+        "bolunebilir": true
+      },
+      {
+        "is_emri_id": "IE2_UR02_ogutme",
+        "urun_id": "UR02",
+        "islem_turu": "ogutme",
+        "miktar_ton": 800.0,
+        "serbest_birakma": "2025-10-06",
+        "tamamlanma_siniri": "2025-10-08 00:00:00",
+        "bolunebilir": true
+      },
+      {
+        "is_emri_id": "IE2_UR02_paketleme",
+        "urun_id": "UR02",
+        "islem_turu": "paketleme",
+        "miktar_ton": 400.0,
+        "serbest_birakma": "2025-10-06",
+        "tamamlanma_siniri": "2025-10-07 14:00:00",
+        "bolunebilir": true
+      },
+      {
+        "is_emri_id": "IE2_UR03_ogutme",
+        "urun_id": "UR03",
+        "islem_turu": "ogutme",
+        "miktar_ton": 400.0,
+        "serbest_birakma": "2025-10-06",
+        "tamamlanma_siniri": "2025-10-08 00:00:00",
+        "bolunebilir": true
+      },
+      {
+        "is_emri_id": "IE2_UR03_paketleme",
+        "urun_id": "UR03",
+        "islem_turu": "paketleme",
+        "miktar_ton": 240.0,
+        "serbest_birakma": "2025-10-06",
+        "tamamlanma_siniri": "2025-10-07 14:00:00",
+        "bolunebilir": true
+      },
+      {
+        "is_emri_id": "IE3_UR01_ogutme",
+        "urun_id": "UR01",
+        "islem_turu": "ogutme",
+        "miktar_ton": 1040.0,
+        "serbest_birakma": "2025-10-06",
+        "tamamlanma_siniri": "2025-10-09 00:00:00",
+        "bolunebilir": true
+      },
+      {
+        "is_emri_id": "IE3_UR01_paketleme",
+        "urun_id": "UR01",
+        "islem_turu": "paketleme",
+        "miktar_ton": 320.0,
+        "serbest_birakma": "2025-10-06",
+        "tamamlanma_siniri": "2025-10-08 14:00:00",
+        "bolunebilir": true
+      },
+      {
+        "is_emri_id": "IE3_UR02_ogutme",
+        "urun_id": "UR02",
+        "islem_turu": "ogutme",
+        "miktar_ton": 800.0,
+        "serbest_birakma": "2025-10-06",
+        "tamamlanma_siniri": "2025-10-09 00:00:00",
+        "bolunebilir": true
+      },
+      {
+        "is_emri_id": "IE3_UR02_paketleme",
+        "urun_id": "UR02",
+        "islem_turu": "paketleme",
+        "miktar_ton": 400.0,
+        "serbest_birakma": "2025-10-06",
+        "tamamlanma_siniri": "2025-10-08 14:00:00",
+        "bolunebilir": true
+      },
+      {
+        "is_emri_id": "IE3_UR03_ogutme",
+        "urun_id": "UR03",
+        "islem_turu": "ogutme",
+        "miktar_ton": 400.0,
+        "serbest_birakma": "2025-10-06",
+        "tamamlanma_siniri": "2025-10-09 00:00:00",
+        "bolunebilir": true
+      },
+      {
+        "is_emri_id": "IE3_UR03_paketleme",
+        "urun_id": "UR03",
+        "islem_turu": "paketleme",
+        "miktar_ton": 240.0,
+        "serbest_birakma": "2025-10-06",
+        "tamamlanma_siniri": "2025-10-08 14:00:00",
+        "bolunebilir": true
+      }
+    ],
+    "optional": false,
+    "allow_empty": false
+  },
+  {
+    "key": "is_emri_siparis_baglantisi",
+    "sheet": "İş Emri Sipariş Bağı",
+    "keys": [
+      "is_emri_id",
+      "siparis_id"
+    ],
+    "fields": [
+      {
+        "key": "is_emri_id",
+        "label": "İş emri kodu",
+        "type": "str",
+        "unit": "—",
+        "description": "Ürün ve üretim/paketleme aşaması için iş emri",
+        "required": true,
+        "example": "IE1_UR01_ogutme"
+      },
+      {
+        "key": "siparis_id",
+        "label": "Sipariş kodu",
+        "type": "str",
+        "unit": "—",
+        "description": "Müşteri siparişi kimliği",
+        "required": true,
+        "example": "SP1_UR01_dokme"
+      },
+      {
+        "key": "tahsis_ton",
+        "label": "Ayrılan miktar (ton)",
+        "type": "number",
+        "unit": "ton",
+        "description": "İlgili aşamadaki iş emrinden siparişe ayrılan miktar; farklı aşamalar toplanmaz",
+        "required": true,
+        "example": "720"
+      }
+    ],
+    "rows": [
+      {
+        "is_emri_id": "IE1_UR01_ogutme",
+        "siparis_id": "SP1_UR01_dokme",
+        "tahsis_ton": 720.0
+      },
+      {
+        "is_emri_id": "IE1_UR01_ogutme",
+        "siparis_id": "SP1_UR01_torbali",
+        "tahsis_ton": 320.0
+      },
+      {
+        "is_emri_id": "IE1_UR01_paketleme",
+        "siparis_id": "SP1_UR01_torbali",
+        "tahsis_ton": 320.0
+      },
+      {
+        "is_emri_id": "IE1_UR02_ogutme",
+        "siparis_id": "SP1_UR02_dokme",
+        "tahsis_ton": 400.0
+      },
+      {
+        "is_emri_id": "IE1_UR02_ogutme",
+        "siparis_id": "SP1_UR02_torbali",
+        "tahsis_ton": 400.0
+      },
+      {
+        "is_emri_id": "IE1_UR02_paketleme",
+        "siparis_id": "SP1_UR02_torbali",
+        "tahsis_ton": 400.0
+      },
+      {
+        "is_emri_id": "IE1_UR03_ogutme",
+        "siparis_id": "SP1_UR03_dokme",
+        "tahsis_ton": 160.0
+      },
+      {
+        "is_emri_id": "IE1_UR03_ogutme",
+        "siparis_id": "SP1_UR03_torbali",
+        "tahsis_ton": 240.0
+      },
+      {
+        "is_emri_id": "IE1_UR03_paketleme",
+        "siparis_id": "SP1_UR03_torbali",
+        "tahsis_ton": 240.0
+      },
+      {
+        "is_emri_id": "IE2_UR01_ogutme",
+        "siparis_id": "SP2_UR01_dokme",
+        "tahsis_ton": 720.0
+      },
+      {
+        "is_emri_id": "IE2_UR01_ogutme",
+        "siparis_id": "SP2_UR01_torbali",
+        "tahsis_ton": 320.0
+      },
+      {
+        "is_emri_id": "IE2_UR01_paketleme",
+        "siparis_id": "SP2_UR01_torbali",
+        "tahsis_ton": 320.0
+      },
+      {
+        "is_emri_id": "IE2_UR02_ogutme",
+        "siparis_id": "SP2_UR02_dokme",
+        "tahsis_ton": 400.0
+      },
+      {
+        "is_emri_id": "IE2_UR02_ogutme",
+        "siparis_id": "SP2_UR02_torbali",
+        "tahsis_ton": 400.0
+      },
+      {
+        "is_emri_id": "IE2_UR02_paketleme",
+        "siparis_id": "SP2_UR02_torbali",
+        "tahsis_ton": 400.0
+      },
+      {
+        "is_emri_id": "IE2_UR03_ogutme",
+        "siparis_id": "SP2_UR03_dokme",
+        "tahsis_ton": 160.0
+      },
+      {
+        "is_emri_id": "IE2_UR03_ogutme",
+        "siparis_id": "SP2_UR03_torbali",
+        "tahsis_ton": 240.0
+      },
+      {
+        "is_emri_id": "IE2_UR03_paketleme",
+        "siparis_id": "SP2_UR03_torbali",
+        "tahsis_ton": 240.0
+      },
+      {
+        "is_emri_id": "IE3_UR01_ogutme",
+        "siparis_id": "SP3_UR01_dokme",
+        "tahsis_ton": 720.0
+      },
+      {
+        "is_emri_id": "IE3_UR01_ogutme",
+        "siparis_id": "SP3_UR01_torbali",
+        "tahsis_ton": 320.0
+      },
+      {
+        "is_emri_id": "IE3_UR01_paketleme",
+        "siparis_id": "SP3_UR01_torbali",
+        "tahsis_ton": 320.0
+      },
+      {
+        "is_emri_id": "IE3_UR02_ogutme",
+        "siparis_id": "SP3_UR02_dokme",
+        "tahsis_ton": 400.0
+      },
+      {
+        "is_emri_id": "IE3_UR02_ogutme",
+        "siparis_id": "SP3_UR02_torbali",
+        "tahsis_ton": 400.0
+      },
+      {
+        "is_emri_id": "IE3_UR02_paketleme",
+        "siparis_id": "SP3_UR02_torbali",
+        "tahsis_ton": 400.0
+      },
+      {
+        "is_emri_id": "IE3_UR03_ogutme",
+        "siparis_id": "SP3_UR03_dokme",
+        "tahsis_ton": 160.0
+      },
+      {
+        "is_emri_id": "IE3_UR03_ogutme",
+        "siparis_id": "SP3_UR03_torbali",
+        "tahsis_ton": 240.0
+      },
+      {
+        "is_emri_id": "IE3_UR03_paketleme",
+        "siparis_id": "SP3_UR03_torbali",
+        "tahsis_ton": 240.0
+      }
+    ],
+    "optional": false,
+    "allow_empty": false
+  },
+  {
+    "key": "kaynak_takvimi",
+    "sheet": "Makine Takvimi",
+    "keys": [
+      "kaynak_id",
+      "tarih_saat"
+    ],
+    "fields": [
+      {
+        "key": "kaynak_id",
+        "label": "Makine kodu",
+        "type": "str",
+        "unit": "—",
+        "description": "Makine/hat/yükleme kimliği",
+        "required": true,
+        "example": "H01"
+      },
+      {
+        "key": "tarih_saat",
+        "label": "Saat başlangıcı",
+        "type": "datetime",
+        "unit": "tarih-saat",
+        "description": "Saatlik dönem başlangıcı, Türkiye yerel saati",
+        "required": true,
+        "example": "2025-10-06 00:00:00"
+      },
+      {
+        "key": "kullanilabilir",
+        "label": "Kullanılabilir mi",
+        "type": "bool",
+        "unit": "—",
+        "description": "Kaynak o saatte kullanılabilir mi?",
+        "required": true,
+        "example": "True"
+      }
+    ],
+    "rows": [
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-06 00:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-06 01:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-06 02:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-06 03:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-06 04:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-06 05:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-06 06:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-06 07:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-06 08:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-06 09:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-06 10:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-06 11:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-06 12:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-06 13:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-06 14:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-06 15:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-06 16:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-06 17:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-06 18:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-06 19:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-06 20:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-06 21:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-06 22:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-06 23:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-07 00:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-07 01:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-07 02:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-07 03:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-07 04:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-07 05:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-07 06:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-07 07:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-07 08:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-07 09:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-07 10:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-07 11:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-07 12:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-07 13:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-07 14:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-07 15:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-07 16:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-07 17:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-07 18:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-07 19:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-07 20:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-07 21:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-07 22:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-07 23:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-08 00:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-08 01:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-08 02:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-08 03:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-08 04:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-08 05:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-08 06:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-08 07:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-08 08:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-08 09:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-08 10:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-08 11:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-08 12:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-08 13:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-08 14:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-08 15:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-08 16:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-08 17:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-08 18:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-08 19:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-08 20:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-08 21:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-08 22:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-08 23:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-06 00:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-06 01:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-06 02:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-06 03:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-06 04:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-06 05:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-06 06:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-06 07:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-06 08:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-06 09:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-06 10:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-06 11:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-06 12:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-06 13:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-06 14:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-06 15:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-06 16:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-06 17:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-06 18:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-06 19:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-06 20:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-06 21:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-06 22:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-06 23:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-07 00:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-07 01:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-07 02:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-07 03:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-07 04:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-07 05:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-07 06:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-07 07:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-07 08:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-07 09:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-07 10:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-07 11:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-07 12:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-07 13:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-07 14:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-07 15:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-07 16:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-07 17:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-07 18:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-07 19:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-07 20:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-07 21:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-07 22:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-07 23:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-08 00:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-08 01:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-08 02:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-08 03:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-08 04:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-08 05:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-08 06:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-08 07:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-08 08:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-08 09:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-08 10:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-08 11:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-08 12:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-08 13:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-08 14:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-08 15:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-08 16:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-08 17:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-08 18:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-08 19:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-08 20:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-08 21:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-08 22:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-08 23:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-06 00:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-06 01:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-06 02:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-06 03:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-06 04:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-06 05:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-06 06:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-06 07:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-06 08:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-06 09:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-06 10:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-06 11:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-06 12:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-06 13:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-06 14:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-06 15:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-06 16:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-06 17:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-06 18:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-06 19:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-06 20:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-06 21:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-06 22:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-06 23:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-07 00:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-07 01:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-07 02:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-07 03:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-07 04:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-07 05:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-07 06:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-07 07:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-07 08:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-07 09:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-07 10:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-07 11:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-07 12:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-07 13:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-07 14:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-07 15:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-07 16:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-07 17:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-07 18:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-07 19:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-07 20:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-07 21:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-07 22:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-07 23:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-08 00:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-08 01:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-08 02:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-08 03:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-08 04:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-08 05:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-08 06:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-08 07:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-08 08:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-08 09:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-08 10:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-08 11:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-08 12:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-08 13:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-08 14:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-08 15:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-08 16:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-08 17:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-08 18:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-08 19:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-08 20:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-08 21:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-08 22:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-08 23:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-06 00:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-06 01:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-06 02:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-06 03:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-06 04:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-06 05:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-06 06:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-06 07:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-06 08:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-06 09:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-06 10:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-06 11:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-06 12:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-06 13:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-06 14:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-06 15:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-06 16:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-06 17:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-06 18:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-06 19:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-06 20:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-06 21:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-06 22:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-06 23:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-07 00:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-07 01:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-07 02:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-07 03:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-07 04:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-07 05:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-07 06:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-07 07:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-07 08:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-07 09:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-07 10:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-07 11:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-07 12:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-07 13:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-07 14:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-07 15:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-07 16:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-07 17:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-07 18:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-07 19:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-07 20:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-07 21:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-07 22:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-07 23:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-08 00:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-08 01:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-08 02:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-08 03:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-08 04:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-08 05:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-08 06:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-08 07:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-08 08:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-08 09:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-08 10:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-08 11:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-08 12:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-08 13:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-08 14:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-08 15:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-08 16:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-08 17:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-08 18:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-08 19:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-08 20:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-08 21:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-08 22:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-08 23:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-06 00:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-06 01:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-06 02:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-06 03:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-06 04:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-06 05:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-06 06:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-06 07:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-06 08:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-06 09:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-06 10:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-06 11:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-06 12:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-06 13:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-06 14:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-06 15:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-06 16:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-06 17:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-06 18:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-06 19:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-06 20:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-06 21:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-06 22:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-06 23:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-07 00:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-07 01:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-07 02:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-07 03:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-07 04:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-07 05:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-07 06:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-07 07:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-07 08:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-07 09:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-07 10:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-07 11:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-07 12:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-07 13:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-07 14:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-07 15:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-07 16:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-07 17:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-07 18:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-07 19:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-07 20:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-07 21:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-07 22:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-07 23:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-08 00:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-08 01:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-08 02:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-08 03:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-08 04:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-08 05:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-08 06:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-08 07:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-08 08:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-08 09:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-08 10:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-08 11:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-08 12:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-08 13:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-08 14:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-08 15:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-08 16:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-08 17:00:00",
+        "kullanilabilir": true
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-08 18:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-08 19:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-08 20:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-08 21:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-08 22:00:00",
+        "kullanilabilir": false
+      },
+      {
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-08 23:00:00",
+        "kullanilabilir": false
+      }
+    ],
+    "optional": false,
+    "allow_empty": false
+  },
+  {
+    "key": "bakimlar",
+    "sheet": "Bakımlar",
+    "keys": [
+      "kaynak_id",
+      "baslangic",
+      "bitis"
+    ],
+    "fields": [
+      {
+        "key": "kaynak_id",
+        "label": "Makine kodu",
+        "type": "str",
+        "unit": "—",
+        "description": "Makine/hat/yükleme kimliği",
+        "required": true,
+        "example": "H01"
+      },
+      {
+        "key": "baslangic",
+        "label": "Başlangıç zamanı",
+        "type": "datetime",
+        "unit": "tarih-saat",
+        "description": "Bakım başlangıcı, dahil",
+        "required": true,
+        "example": "2025-10-07 20:00:00"
+      },
+      {
+        "key": "bitis",
+        "label": "Bitiş zamanı",
+        "type": "datetime",
+        "unit": "tarih-saat",
+        "description": "Bakım bitişi, hariç",
+        "required": true,
+        "example": "2025-10-07 22:00:00"
+      }
+    ],
+    "rows": [
+      {
+        "kaynak_id": "H01",
+        "baslangic": "2025-10-07 20:00:00",
+        "bitis": "2025-10-07 22:00:00"
+      },
+      {
+        "kaynak_id": "H02",
+        "baslangic": "2025-10-06 21:00:00",
+        "bitis": "2025-10-06 23:00:00"
+      },
+      {
+        "kaynak_id": "P01",
+        "baslangic": "2025-10-08 20:00:00",
+        "bitis": "2025-10-08 21:00:00"
+      },
+      {
+        "kaynak_id": "Y01",
+        "baslangic": "2025-10-07 12:00:00",
+        "bitis": "2025-10-07 13:00:00"
+      }
+    ],
+    "optional": false,
+    "allow_empty": true
+  },
+  {
+    "key": "tesis_takvimi",
+    "sheet": "Tesis Takvimi",
+    "keys": [
+      "tarih_saat"
+    ],
+    "fields": [
+      {
+        "key": "tarih_saat",
+        "label": "Saat başlangıcı",
+        "type": "datetime",
+        "unit": "tarih-saat",
+        "description": "Saatlik dönem başlangıcı, Türkiye yerel saati",
+        "required": true,
+        "example": "2025-10-06 00:00:00"
+      },
+      {
+        "key": "temel_yuk_kw",
+        "label": "Tesis temel yükü (kW)",
+        "type": "number",
+        "unit": "kW",
+        "description": "Ayrı makinelere yazılmayan kontrol dışı tesis yükü",
+        "required": true,
+        "example": "300"
+      },
+      {
+        "key": "guc_siniri_kw",
+        "label": "Ortak güç sınırı (kW)",
+        "type": "number",
+        "unit": "kW",
+        "description": "Tesis toplam saatlik ortalama güç üst sınırı",
+        "required": true,
+        "example": "4700"
+      }
+    ],
+    "rows": [
+      {
+        "tarih_saat": "2025-10-06 00:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-06 01:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-06 02:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-06 03:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-06 04:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-06 05:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-06 06:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-06 07:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-06 08:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-06 09:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-06 10:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-06 11:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-06 12:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-06 13:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-06 14:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-06 15:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-06 16:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-06 17:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-06 18:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-06 19:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-06 20:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-06 21:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-06 22:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-06 23:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-07 00:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-07 01:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-07 02:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-07 03:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-07 04:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-07 05:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-07 06:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-07 07:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-07 08:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-07 09:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-07 10:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-07 11:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-07 12:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-07 13:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-07 14:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-07 15:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-07 16:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-07 17:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-07 18:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-07 19:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-07 20:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-07 21:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-07 22:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-07 23:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-08 00:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-08 01:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-08 02:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-08 03:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-08 04:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-08 05:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-08 06:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-08 07:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-08 08:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-08 09:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-08 10:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-08 11:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-08 12:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-08 13:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-08 14:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-08 15:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-08 16:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-08 17:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-08 18:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-08 19:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-08 20:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-08 21:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-08 22:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      },
+      {
+        "tarih_saat": "2025-10-08 23:00:00",
+        "temel_yuk_kw": 300.0,
+        "guc_siniri_kw": 4700.0
+      }
+    ],
+    "optional": false,
+    "allow_empty": false
+  },
+  {
+    "key": "referans_plan",
+    "sheet": "Başlangıç Çizelgesi",
+    "keys": [
+      "kaynak_id",
+      "tarih_saat"
+    ],
+    "fields": [
+      {
+        "key": "kaynak_id",
+        "label": "Makine kodu",
+        "type": "str",
+        "unit": "—",
+        "description": "Makine kodu",
+        "required": true,
+        "example": "H01"
+      },
+      {
+        "key": "tarih_saat",
+        "label": "Saat başlangıcı",
+        "type": "datetime",
+        "unit": "tarih-saat",
+        "description": "Saat başlangıcı",
+        "required": true,
+        "example": "2025-10-06 00:00:00"
+      },
+      {
+        "key": "durum",
+        "label": "Çalışma durumu",
+        "type": "str",
+        "unit": "—",
+        "description": "Çalışma durumu",
+        "required": true,
+        "example": "uretim"
+      },
+      {
+        "key": "urun_id",
+        "label": "Ürün kodu",
+        "type": "str",
+        "unit": "—",
+        "description": "Ürün kodu",
+        "required": false,
+        "example": "UR01"
+      },
+      {
+        "key": "is_emri_id",
+        "label": "İş emri kodu",
+        "type": "str",
+        "unit": "—",
+        "description": "İş emri kodu",
+        "required": false,
+        "example": "IE1_UR01_ogutme"
+      }
+    ],
+    "rows": [
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-06 00:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE1_UR01_ogutme"
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-06 01:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE1_UR01_ogutme"
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-06 02:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE1_UR01_ogutme"
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-06 03:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE1_UR01_ogutme"
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-06 04:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE1_UR01_ogutme"
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-06 05:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE1_UR01_ogutme"
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-06 06:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE1_UR01_ogutme"
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-06 07:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE1_UR01_ogutme"
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-06 08:00:00",
+        "durum": "hazirlik",
+        "urun_id": "UR03",
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-06 09:00:00",
+        "durum": "hazirlik",
+        "urun_id": "UR03",
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-06 10:00:00",
+        "durum": "uretim",
+        "urun_id": "UR03",
+        "is_emri_id": "IE1_UR03_ogutme"
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-06 11:00:00",
+        "durum": "uretim",
+        "urun_id": "UR03",
+        "is_emri_id": "IE1_UR03_ogutme"
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-06 12:00:00",
+        "durum": "uretim",
+        "urun_id": "UR03",
+        "is_emri_id": "IE1_UR03_ogutme"
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-06 13:00:00",
+        "durum": "uretim",
+        "urun_id": "UR03",
+        "is_emri_id": "IE1_UR03_ogutme"
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-06 14:00:00",
+        "durum": "uretim",
+        "urun_id": "UR03",
+        "is_emri_id": "IE1_UR03_ogutme"
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-06 15:00:00",
+        "durum": "uretim",
+        "urun_id": "UR03",
+        "is_emri_id": "IE1_UR03_ogutme"
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-06 16:00:00",
+        "durum": "uretim",
+        "urun_id": "UR03",
+        "is_emri_id": "IE1_UR03_ogutme"
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-06 17:00:00",
+        "durum": "uretim",
+        "urun_id": "UR03",
+        "is_emri_id": "IE1_UR03_ogutme"
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-06 18:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-06 19:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-06 20:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-06 21:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-06 22:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-06 23:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-07 00:00:00",
+        "durum": "uretim",
+        "urun_id": "UR03",
+        "is_emri_id": "IE2_UR03_ogutme"
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-07 01:00:00",
+        "durum": "uretim",
+        "urun_id": "UR03",
+        "is_emri_id": "IE2_UR03_ogutme"
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-07 02:00:00",
+        "durum": "uretim",
+        "urun_id": "UR03",
+        "is_emri_id": "IE2_UR03_ogutme"
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-07 03:00:00",
+        "durum": "uretim",
+        "urun_id": "UR03",
+        "is_emri_id": "IE2_UR03_ogutme"
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-07 04:00:00",
+        "durum": "uretim",
+        "urun_id": "UR03",
+        "is_emri_id": "IE2_UR03_ogutme"
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-07 05:00:00",
+        "durum": "uretim",
+        "urun_id": "UR03",
+        "is_emri_id": "IE2_UR03_ogutme"
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-07 06:00:00",
+        "durum": "uretim",
+        "urun_id": "UR03",
+        "is_emri_id": "IE2_UR03_ogutme"
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-07 07:00:00",
+        "durum": "uretim",
+        "urun_id": "UR03",
+        "is_emri_id": "IE2_UR03_ogutme"
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-07 08:00:00",
+        "durum": "hazirlik",
+        "urun_id": "UR01",
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-07 09:00:00",
+        "durum": "hazirlik",
+        "urun_id": "UR01",
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-07 10:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE2_UR01_ogutme"
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-07 11:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE2_UR01_ogutme"
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-07 12:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE2_UR01_ogutme"
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-07 13:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE2_UR01_ogutme"
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-07 14:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE2_UR01_ogutme"
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-07 15:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE2_UR01_ogutme"
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-07 16:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE2_UR01_ogutme"
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-07 17:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE2_UR01_ogutme"
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-07 18:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-07 19:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-07 20:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-07 21:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-07 22:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-07 23:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-08 00:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE3_UR01_ogutme"
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-08 01:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE3_UR01_ogutme"
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-08 02:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE3_UR01_ogutme"
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-08 03:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE3_UR01_ogutme"
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-08 04:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE3_UR01_ogutme"
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-08 05:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE3_UR01_ogutme"
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-08 06:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE3_UR01_ogutme"
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-08 07:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE3_UR01_ogutme"
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-08 08:00:00",
+        "durum": "hazirlik",
+        "urun_id": "UR03",
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-08 09:00:00",
+        "durum": "hazirlik",
+        "urun_id": "UR03",
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-08 10:00:00",
+        "durum": "uretim",
+        "urun_id": "UR03",
+        "is_emri_id": "IE3_UR03_ogutme"
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-08 11:00:00",
+        "durum": "uretim",
+        "urun_id": "UR03",
+        "is_emri_id": "IE3_UR03_ogutme"
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-08 12:00:00",
+        "durum": "uretim",
+        "urun_id": "UR03",
+        "is_emri_id": "IE3_UR03_ogutme"
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-08 13:00:00",
+        "durum": "uretim",
+        "urun_id": "UR03",
+        "is_emri_id": "IE3_UR03_ogutme"
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-08 14:00:00",
+        "durum": "uretim",
+        "urun_id": "UR03",
+        "is_emri_id": "IE3_UR03_ogutme"
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-08 15:00:00",
+        "durum": "uretim",
+        "urun_id": "UR03",
+        "is_emri_id": "IE3_UR03_ogutme"
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-08 16:00:00",
+        "durum": "uretim",
+        "urun_id": "UR03",
+        "is_emri_id": "IE3_UR03_ogutme"
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-08 17:00:00",
+        "durum": "uretim",
+        "urun_id": "UR03",
+        "is_emri_id": "IE3_UR03_ogutme"
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-08 18:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-08 19:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-08 20:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-08 21:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-08 22:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "H01",
+        "tarih_saat": "2025-10-08 23:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-06 00:00:00",
+        "durum": "uretim",
+        "urun_id": "UR02",
+        "is_emri_id": "IE1_UR02_ogutme"
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-06 01:00:00",
+        "durum": "uretim",
+        "urun_id": "UR02",
+        "is_emri_id": "IE1_UR02_ogutme"
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-06 02:00:00",
+        "durum": "uretim",
+        "urun_id": "UR02",
+        "is_emri_id": "IE1_UR02_ogutme"
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-06 03:00:00",
+        "durum": "uretim",
+        "urun_id": "UR02",
+        "is_emri_id": "IE1_UR02_ogutme"
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-06 04:00:00",
+        "durum": "uretim",
+        "urun_id": "UR02",
+        "is_emri_id": "IE1_UR02_ogutme"
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-06 05:00:00",
+        "durum": "uretim",
+        "urun_id": "UR02",
+        "is_emri_id": "IE1_UR02_ogutme"
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-06 06:00:00",
+        "durum": "uretim",
+        "urun_id": "UR02",
+        "is_emri_id": "IE1_UR02_ogutme"
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-06 07:00:00",
+        "durum": "uretim",
+        "urun_id": "UR02",
+        "is_emri_id": "IE1_UR02_ogutme"
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-06 08:00:00",
+        "durum": "uretim",
+        "urun_id": "UR02",
+        "is_emri_id": "IE1_UR02_ogutme"
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-06 09:00:00",
+        "durum": "uretim",
+        "urun_id": "UR02",
+        "is_emri_id": "IE1_UR02_ogutme"
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-06 10:00:00",
+        "durum": "hazirlik",
+        "urun_id": "UR01",
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-06 11:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE1_UR01_ogutme"
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-06 12:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE1_UR01_ogutme"
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-06 13:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE1_UR01_ogutme"
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-06 14:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE1_UR01_ogutme"
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-06 15:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE1_UR01_ogutme"
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-06 16:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE1_UR01_ogutme"
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-06 17:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE1_UR01_ogutme"
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-06 18:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE1_UR01_ogutme"
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-06 19:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-06 20:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-06 21:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-06 22:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-06 23:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-07 00:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE2_UR01_ogutme"
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-07 01:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE2_UR01_ogutme"
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-07 02:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE2_UR01_ogutme"
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-07 03:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE2_UR01_ogutme"
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-07 04:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE2_UR01_ogutme"
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-07 05:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE2_UR01_ogutme"
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-07 06:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE2_UR01_ogutme"
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-07 07:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE2_UR01_ogutme"
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-07 08:00:00",
+        "durum": "hazirlik",
+        "urun_id": "UR02",
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-07 09:00:00",
+        "durum": "uretim",
+        "urun_id": "UR02",
+        "is_emri_id": "IE2_UR02_ogutme"
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-07 10:00:00",
+        "durum": "uretim",
+        "urun_id": "UR02",
+        "is_emri_id": "IE2_UR02_ogutme"
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-07 11:00:00",
+        "durum": "uretim",
+        "urun_id": "UR02",
+        "is_emri_id": "IE2_UR02_ogutme"
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-07 12:00:00",
+        "durum": "uretim",
+        "urun_id": "UR02",
+        "is_emri_id": "IE2_UR02_ogutme"
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-07 13:00:00",
+        "durum": "uretim",
+        "urun_id": "UR02",
+        "is_emri_id": "IE2_UR02_ogutme"
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-07 14:00:00",
+        "durum": "uretim",
+        "urun_id": "UR02",
+        "is_emri_id": "IE2_UR02_ogutme"
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-07 15:00:00",
+        "durum": "uretim",
+        "urun_id": "UR02",
+        "is_emri_id": "IE2_UR02_ogutme"
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-07 16:00:00",
+        "durum": "uretim",
+        "urun_id": "UR02",
+        "is_emri_id": "IE2_UR02_ogutme"
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-07 17:00:00",
+        "durum": "uretim",
+        "urun_id": "UR02",
+        "is_emri_id": "IE2_UR02_ogutme"
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-07 18:00:00",
+        "durum": "uretim",
+        "urun_id": "UR02",
+        "is_emri_id": "IE2_UR02_ogutme"
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-07 19:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-07 20:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-07 21:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-07 22:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-07 23:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-08 00:00:00",
+        "durum": "uretim",
+        "urun_id": "UR02",
+        "is_emri_id": "IE3_UR02_ogutme"
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-08 01:00:00",
+        "durum": "uretim",
+        "urun_id": "UR02",
+        "is_emri_id": "IE3_UR02_ogutme"
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-08 02:00:00",
+        "durum": "uretim",
+        "urun_id": "UR02",
+        "is_emri_id": "IE3_UR02_ogutme"
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-08 03:00:00",
+        "durum": "uretim",
+        "urun_id": "UR02",
+        "is_emri_id": "IE3_UR02_ogutme"
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-08 04:00:00",
+        "durum": "uretim",
+        "urun_id": "UR02",
+        "is_emri_id": "IE3_UR02_ogutme"
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-08 05:00:00",
+        "durum": "uretim",
+        "urun_id": "UR02",
+        "is_emri_id": "IE3_UR02_ogutme"
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-08 06:00:00",
+        "durum": "uretim",
+        "urun_id": "UR02",
+        "is_emri_id": "IE3_UR02_ogutme"
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-08 07:00:00",
+        "durum": "uretim",
+        "urun_id": "UR02",
+        "is_emri_id": "IE3_UR02_ogutme"
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-08 08:00:00",
+        "durum": "uretim",
+        "urun_id": "UR02",
+        "is_emri_id": "IE3_UR02_ogutme"
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-08 09:00:00",
+        "durum": "uretim",
+        "urun_id": "UR02",
+        "is_emri_id": "IE3_UR02_ogutme"
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-08 10:00:00",
+        "durum": "hazirlik",
+        "urun_id": "UR01",
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-08 11:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE3_UR01_ogutme"
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-08 12:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE3_UR01_ogutme"
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-08 13:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE3_UR01_ogutme"
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-08 14:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE3_UR01_ogutme"
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-08 15:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE3_UR01_ogutme"
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-08 16:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE3_UR01_ogutme"
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-08 17:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE3_UR01_ogutme"
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-08 18:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE3_UR01_ogutme"
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-08 19:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-08 20:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-08 21:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-08 22:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "H02",
+        "tarih_saat": "2025-10-08 23:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-06 00:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE1_UR01_paketleme"
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-06 01:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE1_UR01_paketleme"
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-06 02:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE1_UR01_paketleme"
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-06 03:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE1_UR01_paketleme"
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-06 04:00:00",
+        "durum": "hazirlik",
+        "urun_id": "UR02",
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-06 05:00:00",
+        "durum": "uretim",
+        "urun_id": "UR02",
+        "is_emri_id": "IE1_UR02_paketleme"
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-06 06:00:00",
+        "durum": "uretim",
+        "urun_id": "UR02",
+        "is_emri_id": "IE1_UR02_paketleme"
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-06 07:00:00",
+        "durum": "uretim",
+        "urun_id": "UR02",
+        "is_emri_id": "IE1_UR02_paketleme"
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-06 08:00:00",
+        "durum": "uretim",
+        "urun_id": "UR02",
+        "is_emri_id": "IE1_UR02_paketleme"
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-06 09:00:00",
+        "durum": "hazirlik",
+        "urun_id": "UR03",
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-06 10:00:00",
+        "durum": "uretim",
+        "urun_id": "UR03",
+        "is_emri_id": "IE1_UR03_paketleme"
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-06 11:00:00",
+        "durum": "uretim",
+        "urun_id": "UR03",
+        "is_emri_id": "IE1_UR03_paketleme"
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-06 12:00:00",
+        "durum": "uretim",
+        "urun_id": "UR03",
+        "is_emri_id": "IE1_UR03_paketleme"
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-06 13:00:00",
+        "durum": "uretim",
+        "urun_id": "UR03",
+        "is_emri_id": "IE1_UR03_paketleme"
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-06 14:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-06 15:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-06 16:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-06 17:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-06 18:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-06 19:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-06 20:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-06 21:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-06 22:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-06 23:00:00",
+        "durum": "hazirlik",
+        "urun_id": "UR01",
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-07 00:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE2_UR01_paketleme"
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-07 01:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE2_UR01_paketleme"
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-07 02:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE2_UR01_paketleme"
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-07 03:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE2_UR01_paketleme"
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-07 04:00:00",
+        "durum": "hazirlik",
+        "urun_id": "UR02",
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-07 05:00:00",
+        "durum": "uretim",
+        "urun_id": "UR02",
+        "is_emri_id": "IE2_UR02_paketleme"
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-07 06:00:00",
+        "durum": "uretim",
+        "urun_id": "UR02",
+        "is_emri_id": "IE2_UR02_paketleme"
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-07 07:00:00",
+        "durum": "uretim",
+        "urun_id": "UR02",
+        "is_emri_id": "IE2_UR02_paketleme"
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-07 08:00:00",
+        "durum": "uretim",
+        "urun_id": "UR02",
+        "is_emri_id": "IE2_UR02_paketleme"
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-07 09:00:00",
+        "durum": "hazirlik",
+        "urun_id": "UR03",
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-07 10:00:00",
+        "durum": "uretim",
+        "urun_id": "UR03",
+        "is_emri_id": "IE2_UR03_paketleme"
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-07 11:00:00",
+        "durum": "uretim",
+        "urun_id": "UR03",
+        "is_emri_id": "IE2_UR03_paketleme"
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-07 12:00:00",
+        "durum": "uretim",
+        "urun_id": "UR03",
+        "is_emri_id": "IE2_UR03_paketleme"
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-07 13:00:00",
+        "durum": "uretim",
+        "urun_id": "UR03",
+        "is_emri_id": "IE2_UR03_paketleme"
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-07 14:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-07 15:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-07 16:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-07 17:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-07 18:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-07 19:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-07 20:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-07 21:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-07 22:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-07 23:00:00",
+        "durum": "hazirlik",
+        "urun_id": "UR01",
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-08 00:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE3_UR01_paketleme"
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-08 01:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE3_UR01_paketleme"
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-08 02:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE3_UR01_paketleme"
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-08 03:00:00",
+        "durum": "uretim",
+        "urun_id": "UR01",
+        "is_emri_id": "IE3_UR01_paketleme"
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-08 04:00:00",
+        "durum": "hazirlik",
+        "urun_id": "UR02",
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-08 05:00:00",
+        "durum": "uretim",
+        "urun_id": "UR02",
+        "is_emri_id": "IE3_UR02_paketleme"
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-08 06:00:00",
+        "durum": "uretim",
+        "urun_id": "UR02",
+        "is_emri_id": "IE3_UR02_paketleme"
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-08 07:00:00",
+        "durum": "uretim",
+        "urun_id": "UR02",
+        "is_emri_id": "IE3_UR02_paketleme"
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-08 08:00:00",
+        "durum": "uretim",
+        "urun_id": "UR02",
+        "is_emri_id": "IE3_UR02_paketleme"
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-08 09:00:00",
+        "durum": "hazirlik",
+        "urun_id": "UR03",
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-08 10:00:00",
+        "durum": "uretim",
+        "urun_id": "UR03",
+        "is_emri_id": "IE3_UR03_paketleme"
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-08 11:00:00",
+        "durum": "uretim",
+        "urun_id": "UR03",
+        "is_emri_id": "IE3_UR03_paketleme"
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-08 12:00:00",
+        "durum": "uretim",
+        "urun_id": "UR03",
+        "is_emri_id": "IE3_UR03_paketleme"
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-08 13:00:00",
+        "durum": "uretim",
+        "urun_id": "UR03",
+        "is_emri_id": "IE3_UR03_paketleme"
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-08 14:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-08 15:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-08 16:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-08 17:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-08 18:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-08 19:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-08 20:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-08 21:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-08 22:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      },
+      {
+        "kaynak_id": "P01",
+        "tarih_saat": "2025-10-08 23:00:00",
+        "durum": "kapali",
+        "urun_id": null,
+        "is_emri_id": null
+      }
+    ],
+    "optional": true,
+    "allow_empty": true
+  },
+  {
+    "key": "referans_yuklemeler",
+    "sheet": "Başlangıç Yüklemeleri",
+    "keys": [
+      "kaynak_id",
+      "tarih_saat"
+    ],
+    "fields": [
+      {
+        "key": "siparis_id",
+        "label": "Sipariş kodu",
+        "type": "str",
+        "unit": "—",
+        "description": "Sipariş kodu",
+        "required": true,
+        "example": "SP1_UR01_dokme"
+      },
+      {
+        "key": "kaynak_id",
+        "label": "Makine kodu",
+        "type": "str",
+        "unit": "—",
+        "description": "Makine kodu",
+        "required": true,
+        "example": "Y01"
+      },
+      {
+        "key": "tarih_saat",
+        "label": "Saat başlangıcı",
+        "type": "datetime",
+        "unit": "tarih-saat",
+        "description": "Saat başlangıcı",
+        "required": true,
+        "example": "2025-10-06 11:00:00"
+      },
+      {
+        "key": "miktar_ton",
+        "label": "Miktar (ton)",
+        "type": "number",
+        "unit": "ton",
+        "description": "Miktar (ton)",
+        "required": true,
+        "example": "180"
+      }
+    ],
+    "rows": [
+      {
+        "siparis_id": "SP1_UR01_dokme",
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-06 11:00:00",
+        "miktar_ton": 180.0
+      },
+      {
+        "siparis_id": "SP1_UR01_dokme",
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-06 13:00:00",
+        "miktar_ton": 180.0
+      },
+      {
+        "siparis_id": "SP1_UR01_dokme",
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-06 15:00:00",
+        "miktar_ton": 180.0
+      },
+      {
+        "siparis_id": "SP1_UR01_dokme",
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-06 17:00:00",
+        "miktar_ton": 180.0
+      },
+      {
+        "siparis_id": "SP1_UR02_dokme",
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-06 08:00:00",
+        "miktar_ton": 180.0
+      },
+      {
+        "siparis_id": "SP1_UR02_dokme",
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-06 09:00:00",
+        "miktar_ton": 180.0
+      },
+      {
+        "siparis_id": "SP1_UR02_dokme",
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-06 10:00:00",
+        "miktar_ton": 40.0
+      },
+      {
+        "siparis_id": "SP1_UR03_dokme",
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-06 16:00:00",
+        "miktar_ton": 160.0
+      },
+      {
+        "siparis_id": "SP1_UR01_torbali",
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-06 08:00:00",
+        "miktar_ton": 120.0
+      },
+      {
+        "siparis_id": "SP1_UR01_torbali",
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-06 09:00:00",
+        "miktar_ton": 120.0
+      },
+      {
+        "siparis_id": "SP1_UR01_torbali",
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-06 10:00:00",
+        "miktar_ton": 80.0
+      },
+      {
+        "siparis_id": "SP1_UR02_torbali",
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-06 11:00:00",
+        "miktar_ton": 100.0
+      },
+      {
+        "siparis_id": "SP1_UR02_torbali",
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-06 12:00:00",
+        "miktar_ton": 100.0
+      },
+      {
+        "siparis_id": "SP1_UR02_torbali",
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-06 13:00:00",
+        "miktar_ton": 100.0
+      },
+      {
+        "siparis_id": "SP1_UR02_torbali",
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-06 14:00:00",
+        "miktar_ton": 100.0
+      },
+      {
+        "siparis_id": "SP1_UR03_torbali",
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-06 15:00:00",
+        "miktar_ton": 120.0
+      },
+      {
+        "siparis_id": "SP1_UR03_torbali",
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-06 16:00:00",
+        "miktar_ton": 120.0
+      },
+      {
+        "siparis_id": "SP2_UR01_dokme",
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-07 11:00:00",
+        "miktar_ton": 180.0
+      },
+      {
+        "siparis_id": "SP2_UR01_dokme",
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-07 13:00:00",
+        "miktar_ton": 180.0
+      },
+      {
+        "siparis_id": "SP2_UR01_dokme",
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-07 15:00:00",
+        "miktar_ton": 180.0
+      },
+      {
+        "siparis_id": "SP2_UR01_dokme",
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-07 17:00:00",
+        "miktar_ton": 180.0
+      },
+      {
+        "siparis_id": "SP2_UR02_dokme",
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-07 08:00:00",
+        "miktar_ton": 180.0
+      },
+      {
+        "siparis_id": "SP2_UR02_dokme",
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-07 09:00:00",
+        "miktar_ton": 180.0
+      },
+      {
+        "siparis_id": "SP2_UR02_dokme",
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-07 10:00:00",
+        "miktar_ton": 40.0
+      },
+      {
+        "siparis_id": "SP2_UR03_dokme",
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-07 16:00:00",
+        "miktar_ton": 160.0
+      },
+      {
+        "siparis_id": "SP2_UR01_torbali",
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-07 08:00:00",
+        "miktar_ton": 120.0
+      },
+      {
+        "siparis_id": "SP2_UR01_torbali",
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-07 09:00:00",
+        "miktar_ton": 120.0
+      },
+      {
+        "siparis_id": "SP2_UR01_torbali",
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-07 10:00:00",
+        "miktar_ton": 80.0
+      },
+      {
+        "siparis_id": "SP2_UR02_torbali",
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-07 11:00:00",
+        "miktar_ton": 100.0
+      },
+      {
+        "siparis_id": "SP2_UR02_torbali",
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-07 12:00:00",
+        "miktar_ton": 100.0
+      },
+      {
+        "siparis_id": "SP2_UR02_torbali",
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-07 13:00:00",
+        "miktar_ton": 100.0
+      },
+      {
+        "siparis_id": "SP2_UR02_torbali",
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-07 14:00:00",
+        "miktar_ton": 100.0
+      },
+      {
+        "siparis_id": "SP2_UR03_torbali",
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-07 15:00:00",
+        "miktar_ton": 120.0
+      },
+      {
+        "siparis_id": "SP2_UR03_torbali",
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-07 16:00:00",
+        "miktar_ton": 120.0
+      },
+      {
+        "siparis_id": "SP3_UR01_dokme",
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-08 11:00:00",
+        "miktar_ton": 180.0
+      },
+      {
+        "siparis_id": "SP3_UR01_dokme",
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-08 13:00:00",
+        "miktar_ton": 180.0
+      },
+      {
+        "siparis_id": "SP3_UR01_dokme",
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-08 15:00:00",
+        "miktar_ton": 180.0
+      },
+      {
+        "siparis_id": "SP3_UR01_dokme",
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-08 17:00:00",
+        "miktar_ton": 180.0
+      },
+      {
+        "siparis_id": "SP3_UR02_dokme",
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-08 08:00:00",
+        "miktar_ton": 180.0
+      },
+      {
+        "siparis_id": "SP3_UR02_dokme",
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-08 09:00:00",
+        "miktar_ton": 180.0
+      },
+      {
+        "siparis_id": "SP3_UR02_dokme",
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-08 10:00:00",
+        "miktar_ton": 40.0
+      },
+      {
+        "siparis_id": "SP3_UR03_dokme",
+        "kaynak_id": "Y01",
+        "tarih_saat": "2025-10-08 16:00:00",
+        "miktar_ton": 160.0
+      },
+      {
+        "siparis_id": "SP3_UR01_torbali",
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-08 08:00:00",
+        "miktar_ton": 120.0
+      },
+      {
+        "siparis_id": "SP3_UR01_torbali",
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-08 09:00:00",
+        "miktar_ton": 120.0
+      },
+      {
+        "siparis_id": "SP3_UR01_torbali",
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-08 10:00:00",
+        "miktar_ton": 80.0
+      },
+      {
+        "siparis_id": "SP3_UR02_torbali",
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-08 11:00:00",
+        "miktar_ton": 100.0
+      },
+      {
+        "siparis_id": "SP3_UR02_torbali",
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-08 12:00:00",
+        "miktar_ton": 100.0
+      },
+      {
+        "siparis_id": "SP3_UR02_torbali",
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-08 13:00:00",
+        "miktar_ton": 100.0
+      },
+      {
+        "siparis_id": "SP3_UR02_torbali",
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-08 14:00:00",
+        "miktar_ton": 100.0
+      },
+      {
+        "siparis_id": "SP3_UR03_torbali",
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-08 15:00:00",
+        "miktar_ton": 120.0
+      },
+      {
+        "siparis_id": "SP3_UR03_torbali",
+        "kaynak_id": "Y02",
+        "tarih_saat": "2025-10-08 16:00:00",
+        "miktar_ton": 120.0
+      }
+    ],
+    "optional": true,
+    "allow_empty": true
+  }
+]

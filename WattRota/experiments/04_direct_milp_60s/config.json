@@ -1,0 +1,28 @@
+{
+  "phase": "four_week_pilot_only",
+  "pilot_fold_indices": [0, 11, 22, 33],
+  "solver_time_limit_seconds": 60,
+  "mip_relative_gap": 0.001,
+  "seed": 42,
+  "solver_threads": 1,
+  "local_search": false,
+  "forecast_sources": ["hgb", "ensemble", "naive"],
+  "rolling_days": [0, 1, 2],
+  "locked_test_allowed": false,
+  "stochastic_mode": false,
+  "cost_tolerance_tl": 0.02,
+  "parent_protocol": "data/results/walk_forward_02",
+  "hgb_config": "experiments/02_walk_forward/config.json",
+  "ensemble_config": "experiments/03_price_models/config.json",
+  "milp_runs_per_week": 10,
+  "previous_pilot": "data/results/direct_milp_04_pilot",
+  "previous_module": "experiments/04_direct_milp",
+  "plan_change_cost_tl_per_resource_hour": 0.0,
+  "sensitivity_proposal": {
+    "selection_rule": "equally spaced interior development fold indices; no outcome-based selection",
+    "fold_indices": [5, 16, 28],
+    "seeds": [7, 19, 42, 73, 101],
+    "per_solve_seconds": 60,
+    "executed": false
+  }
+}

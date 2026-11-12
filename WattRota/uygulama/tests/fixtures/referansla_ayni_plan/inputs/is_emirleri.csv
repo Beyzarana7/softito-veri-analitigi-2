@@ -1,0 +1,19 @@
+is_emri_id,urun_id,islem_turu,miktar_ton,serbest_birakma,tamamlanma_siniri,bolunebilir
+IE1_UR01_ogutme,UR01,ogutme,1040,2025-10-06,2025-10-07 00:00:00,True
+IE1_UR01_paketleme,UR01,paketleme,320,2025-10-06,2025-10-06 14:00:00,True
+IE1_UR02_ogutme,UR02,ogutme,800,2025-10-06,2025-10-07 00:00:00,True
+IE1_UR02_paketleme,UR02,paketleme,400,2025-10-06,2025-10-06 14:00:00,True
+IE1_UR03_ogutme,UR03,ogutme,400,2025-10-06,2025-10-07 00:00:00,True
+IE1_UR03_paketleme,UR03,paketleme,240,2025-10-06,2025-10-06 14:00:00,True
+IE2_UR01_ogutme,UR01,ogutme,1040,2025-10-06,2025-10-08 00:00:00,True
+IE2_UR01_paketleme,UR01,paketleme,320,2025-10-06,2025-10-07 14:00:00,True
+IE2_UR02_ogutme,UR02,ogutme,800,2025-10-06,2025-10-08 00:00:00,True
+IE2_UR02_paketleme,UR02,paketleme,400,2025-10-06,2025-10-07 14:00:00,True
+IE2_UR03_ogutme,UR03,ogutme,400,2025-10-06,2025-10-08 00:00:00,True
+IE2_UR03_paketleme,UR03,paketleme,240,2025-10-06,2025-10-07 14:00:00,True
+IE3_UR01_ogutme,UR01,ogutme,1040,2025-10-06,2025-10-09 00:00:00,True
+IE3_UR01_paketleme,UR01,paketleme,320,2025-10-06,2025-10-08 14:00:00,True
+IE3_UR02_ogutme,UR02,ogutme,800,2025-10-06,2025-10-09 00:00:00,True
+IE3_UR02_paketleme,UR02,paketleme,400,2025-10-06,2025-10-08 14:00:00,True
+IE3_UR03_ogutme,UR03,ogutme,400,2025-10-06,2025-10-09 00:00:00,True
+IE3_UR03_paketleme,UR03,paketleme,240,2025-10-06,2025-10-08 14:00:00,True

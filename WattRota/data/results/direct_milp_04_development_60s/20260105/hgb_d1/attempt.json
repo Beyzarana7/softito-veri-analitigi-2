@@ -1,0 +1,11 @@
+{
+  "week": "2026-01-05 00:00:00",
+  "run_key": "hgb_d1",
+  "source": "hgb",
+  "decision_day": 1,
+  "attempt": 1,
+  "state": "success",
+  "solver_status": "Time limit reached",
+  "actual_cost_tl": 652231.61595,
+  "wall_seconds": 63.47511640004814
+}

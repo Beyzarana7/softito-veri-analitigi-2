@@ -1,0 +1,17 @@
+{
+  "changes": [
+    "Undefined capture shown as undefined in report",
+    "Plan hash normalizes integer/float tonnes; costs and schedules unchanged"
+  ],
+  "original_solver_manifest": "manifest.json",
+  "milp_reruns": 0,
+  "source_sha256": {
+    "forecasting.py": "5ac67452a583c79284a154de2b9ada726829afb234f0e5da0fb3d90acfb802b9",
+    "metrics.py": "e46166406392698cd2b70bc8ac9de7079e90877e8b4174ad2250916ce67969d9",
+    "review_pilot.py": "e6bde43caaf4d188916750f84114a3d0b9712861794ad28b9c838e32c985e7e8",
+    "run.py": "431b2a7e928c4cead4170a7d68b2d21b82cb9d03ce7bf1107444cee09b40bed7",
+    "solver.py": "050160a3dbb6cd4e7ba11def5ec676031b388585fcebc64f319bb3e4cd819c2e",
+    "storage.py": "fd1a9056a84103b8876ee679f839c1baac6f12b25a29ee442023cc834b5bc6d2",
+    "test_task4.py": "4e7312ba84583477d8ca722a8b9b11342c292a76370aa854b190af45c836e839"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "reason": "delivery_deadline",
+  "requested_at": "2026-11-11T16:16:25.7118559+03:00",
+  "pid": 27140,
+  "waiting_for": "C:\\Users\\Victus\\Documents\\ChatGPT\\WattRota\\data\\results\\direct_milp_04_development_60s\\20260309\\naive_d2",
+  "selection_rule": "chronological completed weeks only; no outcome based selection"
+}

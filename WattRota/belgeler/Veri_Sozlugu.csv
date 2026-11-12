@@ -1,0 +1,86 @@
+﻿tablo,alan,sql_turu,null_olabilir,birincil_anahtar,iliski,birim,aciklama,dayanak
+urunler,urun_id,TEXT,False,True,,—,Ürün kimliği,Sentetik firma senaryosu
+urunler,urun_adi,TEXT,False,False,,—,Senaryo ürün adı,Sentetik firma senaryosu
+kaynaklar,kaynak_id,TEXT,False,True,,—,Makine/hat/yükleme kimliği,Sentetik firma senaryosu
+kaynaklar,kaynak_adi,TEXT,False,False,,—,Kaynak açıklaması,Sentetik firma senaryosu
+kaynaklar,kaynak_turu,TEXT,False,False,,—,"ogutme, paketleme, dokme_yukleme veya torbali_yukleme",Sentetik firma senaryosu
+kaynak_urun,kaynak_id,TEXT,False,True,kaynaklar.kaynak_id,—,Makine/hat/yükleme kimliği,Sentetik firma senaryosu
+kaynak_urun,urun_id,TEXT,False,True,urunler.urun_id,—,Ürün kimliği,Sentetik firma senaryosu
+kaynak_urun,kapasite_ton_saat,BIGINT,False,False,,saat,Uygun ürün için saatlik çıktı veya yükleme kapasitesi,Sentetik firma senaryosu
+kaynak_urun,calisma_gucu_kw,BIGINT,False,False,,kW,Aktif saatte kaynak ve kapsanan yardımcıların toplam gücü,Sentetik firma senaryosu
+isletme_kurallari,kaynak_id,TEXT,False,True,kaynaklar.kaynak_id,—,Makine/hat/yükleme kimliği,Sentetik firma senaryosu
+isletme_kurallari,minimum_uretim_saat,BIGINT,False,False,,saat,Kesintisiz üretim bloğunun en kısa süresi,Sentetik firma senaryosu
+isletme_kurallari,minimum_durus_saat,BIGINT,False,False,,saat,Yeniden açılmadan önce kapalı kalma süresi,Sentetik firma senaryosu
+isletme_kurallari,baslangicta_aktif,BOOLEAN,False,False,,—,Plan başında aktiflik,Sentetik firma senaryosu
+isletme_kurallari,baslangic_durum_suresi_saat,BIGINT,False,False,,saat,Başlangıç durumunda önceden geçen süre,Sentetik firma senaryosu
+isletme_kurallari,baslangic_urun_ayari,TEXT,False,False,urunler.urun_id,—,Hazırlık gereksinimini belirleyen ilk ürün ayarı,Sentetik firma senaryosu
+isletme_kurallari,baslatma_enerjisi_kwh,BIGINT,False,False,,kWh,Açılış başına normal tüketime ek enerji,Sentetik firma senaryosu
+isletme_kurallari,baslatma_elektrik_disi_gider_tl,BIGINT,False,False,,TL,Açılış başına elektrik dışı gider,Sentetik firma senaryosu
+urun_gecisleri,kaynak_id,TEXT,False,True,kaynaklar.kaynak_id,—,Makine/hat/yükleme kimliği,Sentetik firma senaryosu
+urun_gecisleri,onceki_urun,TEXT,False,True,urunler.urun_id,—,Hazırlık öncesi ürün ayarı,Sentetik firma senaryosu
+urun_gecisleri,sonraki_urun,TEXT,False,True,urunler.urun_id,—,Hazırlık sonunda elde edilen ürün ayarı,Sentetik firma senaryosu
+urun_gecisleri,hazirlik_saat,BIGINT,False,False,,saat,Ürün değiştirme süresi,Sentetik firma senaryosu
+urun_gecisleri,hazirlik_gucu_kw,BIGINT,False,False,,kW,Hazırlık saatindeki toplam güç,Sentetik firma senaryosu
+urun_gecisleri,elektrik_disi_gider_tl,BIGINT,False,False,,TL,Geçiş başlangıcında bir kez oluşan elektrik dışı gider,Sentetik firma senaryosu
+stok_alanlari,stok_id,TEXT,False,True,,—,Ürüne ayrılmış stok alanı,Sentetik firma senaryosu
+stok_alanlari,urun_id,TEXT,False,False,urunler.urun_id,—,Ürün kimliği,Sentetik firma senaryosu
+stok_alanlari,stok_turu,TEXT,False,False,,—,dokme veya torbali,Sentetik firma senaryosu
+stok_alanlari,minimum_ton,BIGINT,False,False,,ton,Korunacak en az stok,Sentetik firma senaryosu
+stok_alanlari,kapasite_ton,BIGINT,False,False,,ton,En yüksek stok,Sentetik firma senaryosu
+stok_alanlari,baslangic_ton,BIGINT,False,False,,ton,Plan başlangıcı stoğu,Sentetik firma senaryosu
+stok_alanlari,son_hedef_ton,BIGINT,False,False,,ton,Dönem sonu eşitlik hedefi,Sentetik firma senaryosu
+depo_kurallari,depo_id,TEXT,False,True,,—,Ortak depo kimliği,Sentetik firma senaryosu
+depo_kurallari,toplam_kapasite_ton,BIGINT,False,False,,ton,Torbalı stokların toplam üst sınırı,Sentetik firma senaryosu
+rotalar,rota_id,TEXT,False,True,rota_tanimlari.rota_id,—,Ürün ve teslim biçimine ait işlem rotası,Sentetik firma senaryosu
+rotalar,urun_id,TEXT,False,False,rota_tanimlari.urun_id; urunler.urun_id,—,Ürün kimliği,Sentetik firma senaryosu
+rotalar,teslim_turu,TEXT,False,False,rota_tanimlari.teslim_turu,—,dokme veya torbali,Sentetik firma senaryosu
+rotalar,adim_no,BIGINT,False,True,,—,Rotadaki işlem sırası,Sentetik firma senaryosu
+rotalar,islem_turu,TEXT,False,False,,—,İşlemi yapabilecek kaynak türü,Sentetik firma senaryosu
+rotalar,girdi_stok_turu,TEXT,False,False,,—,İşlemin malzeme aldığı stok türü,Sentetik firma senaryosu
+rotalar,cikti_stok_turu,TEXT,False,False,,—,İşlem sonunda oluşan stok veya teslimat,Sentetik firma senaryosu
+siparisler,siparis_id,TEXT,False,True,,—,Müşteri siparişi kimliği,Sentetik firma senaryosu
+siparisler,urun_id,TEXT,False,False,rota_tanimlari.urun_id; urunler.urun_id,—,Ürün kimliği,Sentetik firma senaryosu
+siparisler,miktar_ton,BIGINT,False,False,,ton,Sipariş veya iş emri toplam miktarı,Sentetik firma senaryosu
+siparisler,teslim_turu,TEXT,False,False,rota_tanimlari.teslim_turu,—,dokme veya torbali,Sentetik firma senaryosu
+siparisler,rota_id,TEXT,False,False,rota_tanimlari.rota_id,—,Ürün ve teslim biçimine ait işlem rotası,Sentetik firma senaryosu
+siparisler,gelis_zamani,TIMESTAMP,False,False,,tarih-saat,Siparişin bilindiği an,Sentetik firma senaryosu
+siparisler,en_erken_yukleme,TIMESTAMP,False,False,,tarih-saat,İzin verilen ilk yükleme saati,Sentetik firma senaryosu
+siparisler,teslim_zamani,TIMESTAMP,False,False,,tarih-saat,Son yüklemenin bitiş sınırı,Sentetik firma senaryosu
+is_emirleri,is_emri_id,TEXT,False,True,,—,Ürün ve üretim/paketleme aşaması için iş emri,Sentetik firma senaryosu
+is_emirleri,urun_id,TEXT,False,False,urunler.urun_id,—,Ürün kimliği,Sentetik firma senaryosu
+is_emirleri,islem_turu,TEXT,False,False,,—,İşlemi yapabilecek kaynak türü,Sentetik firma senaryosu
+is_emirleri,miktar_ton,BIGINT,False,False,,ton,Sipariş veya iş emri toplam miktarı,Sentetik firma senaryosu
+is_emirleri,serbest_birakma,TIMESTAMP,False,False,,tarih-saat,İş emrinin çalışmaya başlayabileceği ilk an,Sentetik firma senaryosu
+is_emirleri,tamamlanma_siniri,TIMESTAMP,False,False,,tarih-saat,İş emrinin tamamlanma sınırı,Sentetik firma senaryosu
+is_emirleri,bolunebilir,BOOLEAN,False,False,,—,İş emri uygun kaynak/zaman bloklarına ayrılabilir,Sentetik firma senaryosu
+is_emri_siparis_baglantisi,is_emri_id,TEXT,False,True,is_emirleri.is_emri_id,—,Ürün ve üretim/paketleme aşaması için iş emri,Sentetik firma senaryosu
+is_emri_siparis_baglantisi,siparis_id,TEXT,False,True,siparisler.siparis_id,—,Müşteri siparişi kimliği,Sentetik firma senaryosu
+is_emri_siparis_baglantisi,tahsis_ton,BIGINT,False,False,,ton,İlgili aşamadaki iş emrinden siparişe ayrılan miktar; farklı aşamalar toplanmaz,Sentetik firma senaryosu
+kaynak_takvimi,kaynak_id,TEXT,False,True,kaynaklar.kaynak_id,—,Makine/hat/yükleme kimliği,Sentetik firma senaryosu
+kaynak_takvimi,tarih_saat,TIMESTAMP,False,True,tesis_takvimi.tarih_saat,tarih-saat,"Saatlik dönem başlangıcı, Türkiye yerel saati",Sentetik firma senaryosu
+kaynak_takvimi,kullanilabilir,BOOLEAN,False,False,,—,Kaynak o saatte kullanılabilir mi?,Sentetik firma senaryosu
+bakimlar,kaynak_id,TEXT,False,True,kaynaklar.kaynak_id,—,Makine/hat/yükleme kimliği,Sentetik firma senaryosu
+bakimlar,baslangic,TIMESTAMP,False,True,,tarih-saat,"Bakım başlangıcı, dahil",Sentetik firma senaryosu
+bakimlar,bitis,TIMESTAMP,False,False,,tarih-saat,"Bakım bitişi, hariç",Sentetik firma senaryosu
+tesis_takvimi,tarih_saat,TIMESTAMP,False,True,,tarih-saat,"Saatlik dönem başlangıcı, Türkiye yerel saati",Sentetik firma senaryosu
+tesis_takvimi,temel_yuk_kw,BIGINT,False,False,,kW,Ayrı makinelere yazılmayan kontrol dışı tesis yükü,Sentetik firma senaryosu
+tesis_takvimi,guc_siniri_kw,BIGINT,False,False,,kW,Tesis toplam saatlik ortalama güç üst sınırı,Sentetik firma senaryosu
+fiyatlar,tarih_saat,TIMESTAMP,False,True,,tarih-saat,"Saatlik dönem başlangıcı, Türkiye yerel saati",EPİAŞ CSV
+fiyatlar,PTF (TL/MWh),DOUBLE PRECISION,False,False,,TL/MWh,EPİAŞ gerçekleşmiş saatlik piyasa takas fiyatı,EPİAŞ CSV
+rota_kaynaklari,rota_id,TEXT,False,True,rotalar.rota_id,—,Ürün ve teslim biçimine ait işlem rotası,Sentetik firma senaryosu
+rota_kaynaklari,adim_no,BIGINT,False,True,rotalar.adim_no,—,Rotadaki işlem sırası,Sentetik firma senaryosu
+rota_kaynaklari,kaynak_id,TEXT,False,True,kaynaklar.kaynak_id,—,Makine/hat/yükleme kimliği,Sentetik firma senaryosu
+referans_plan,kaynak_id,TEXT,False,True,kaynaklar.kaynak_id,—,kaynak id,Sentetik firma senaryosu
+referans_plan,tarih_saat,TIMESTAMP,False,True,tesis_takvimi.tarih_saat,tarih-saat,Türkiye yerel zamanındaki saat başlangıcı,Sentetik firma senaryosu
+referans_plan,durum,TEXT,False,False,,—,durum,Sentetik firma senaryosu
+referans_plan,urun_id,TEXT,True,False,urunler.urun_id,kimlik,Ürün tablosuna bağlanan ürün kimliği,Sentetik firma senaryosu
+referans_plan,is_emri_id,TEXT,True,False,is_emirleri.is_emri_id,—,is emri id,Sentetik firma senaryosu
+referans_yuklemeler,siparis_id,TEXT,False,True,siparisler.siparis_id,—,siparis id,Sentetik firma senaryosu
+referans_yuklemeler,kaynak_id,TEXT,False,True,kaynaklar.kaynak_id,—,kaynak id,Sentetik firma senaryosu
+referans_yuklemeler,tarih_saat,TIMESTAMP,False,True,tesis_takvimi.tarih_saat,tarih-saat,Türkiye yerel zamanındaki saat başlangıcı,Sentetik firma senaryosu
+referans_yuklemeler,miktar_ton,BIGINT,False,False,,ton,miktar ton,Sentetik firma senaryosu
+rota_tanimlari,rota_id,TEXT,False,True,,kimlik,Üretim rotasının kimliği,Sentetik firma senaryosu
+rota_tanimlari,urun_id,TEXT,False,False,urunler.urun_id,kimlik,Ürün tablosuna bağlanan ürün kimliği,Sentetik firma senaryosu
+rota_tanimlari,teslim_turu,TEXT,False,False,,kategori,Dökme veya torbalı teslim biçimi,Sentetik firma senaryosu
+elektrik_fiyatlari,tarih_saat,TIMESTAMP,False,True,,tarih-saat,Türkiye yerel zamanındaki saat başlangıcı,EPİAŞ
+elektrik_fiyatlari,PTF (TL/MWh),DOUBLE PRECISION,False,False,,TL/MWh,Gün öncesi piyasası takas fiyatı,EPİAŞ

@@ -1,0 +1,122 @@
+{
+  "parent_experiment_id": "development04_60s_5b46f2ea9a4c86f1",
+  "stopped_early": true,
+  "stop_reason": "delivery_deadline",
+  "planned_development_weeks": 34,
+  "evaluated_weeks": 10,
+  "evaluated_week_starts": [
+    "2026-01-05",
+    "2026-01-12",
+    "2026-01-19",
+    "2026-01-26",
+    "2026-02-02",
+    "2026-02-09",
+    "2026-02-16",
+    "2026-02-23",
+    "2026-03-02",
+    "2026-03-09"
+  ],
+  "evaluated_windows": [
+    {
+      "start": "2026-01-05",
+      "end_exclusive": "2026-01-08 00:00:00"
+    },
+    {
+      "start": "2026-01-12",
+      "end_exclusive": "2026-01-15 00:00:00"
+    },
+    {
+      "start": "2026-01-19",
+      "end_exclusive": "2026-01-22 00:00:00"
+    },
+    {
+      "start": "2026-01-26",
+      "end_exclusive": "2026-01-29 00:00:00"
+    },
+    {
+      "start": "2026-02-02",
+      "end_exclusive": "2026-02-05 00:00:00"
+    },
+    {
+      "start": "2026-02-09",
+      "end_exclusive": "2026-02-12 00:00:00"
+    },
+    {
+      "start": "2026-02-16",
+      "end_exclusive": "2026-02-19 00:00:00"
+    },
+    {
+      "start": "2026-02-23",
+      "end_exclusive": "2026-02-26 00:00:00"
+    },
+    {
+      "start": "2026-03-02",
+      "end_exclusive": "2026-03-05 00:00:00"
+    },
+    {
+      "start": "2026-03-09",
+      "end_exclusive": "2026-03-12 00:00:00"
+    }
+  ],
+  "partial_weeks": [],
+  "not_started_development_weeks": [
+    "2026-03-16",
+    "2026-03-23",
+    "2026-03-30",
+    "2026-04-06",
+    "2026-04-13",
+    "2026-04-20",
+    "2026-04-27",
+    "2026-05-04",
+    "2026-05-11",
+    "2026-05-18",
+    "2026-05-25",
+    "2026-06-01",
+    "2026-06-08",
+    "2026-06-15",
+    "2026-06-22",
+    "2026-06-29",
+    "2026-07-06",
+    "2026-07-13",
+    "2026-07-20",
+    "2026-07-27",
+    "2026-08-03",
+    "2026-08-10",
+    "2026-08-17",
+    "2026-08-24"
+  ],
+  "remaining_development_weeks": 24,
+  "locked_test_weeks": 10,
+  "locked_week_starts": [
+    "2026-08-31",
+    "2026-09-07",
+    "2026-09-14",
+    "2026-09-21",
+    "2026-09-28",
+    "2026-10-05",
+    "2026-10-12",
+    "2026-10-19",
+    "2026-10-26",
+    "2026-11-02"
+  ],
+  "locked_test_evaluated": false,
+  "selection_rule": "chronological prefix completed before deadline; not selected by outcomes",
+  "solutions_revalidated": 100,
+  "full_model_policies": 80,
+  "violations": 0,
+  "additional_solver_calls": 0,
+  "sql_idempotent": true,
+  "original_process_exit": "intentional termination after saved solution boundary",
+  "runtime_stop_record": {
+    "reason": "delivery_deadline",
+    "requested_at": "2026-11-11T16:16:25.7118559+03:00",
+    "pid": 27140,
+    "waiting_for": "C:\\Users\\Victus\\Documents\\ChatGPT\\WattRota\\data\\results\\direct_milp_04_development_60s\\20260309\\naive_d2",
+    "selection_rule": "chronological completed weeks only; no outcome based selection",
+    "stopped_at": "2026-11-11T16:16:45.8039793+03:00",
+    "saved_run_boundary": true,
+    "new_solver_started_by_controller": false
+  },
+  "task5": "future work only; no sensitivity analysis",
+  "issues": []
+}

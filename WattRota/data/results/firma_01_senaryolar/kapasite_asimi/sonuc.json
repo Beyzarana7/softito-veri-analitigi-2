@@ -1,0 +1,17 @@
+{
+  "senaryo_id": "kapasite_asimi",
+  "ad": "Yükleme kapasitesini aşan talep",
+  "aciklama": "İkinci gün UR02 torbalı siparişi 400→800 ton. En az 12 torbalı yükleme saati gerekir; takvimde yalnızca 10 saat vardır.",
+  "degisiklik_gideri_tl_kaynak_saat": 0.0,
+  "toplam_siparis_ton": 7120.0,
+  "durum": "Kapasite alt sınırı ile uygulanamaz",
+  "uygulanabilir": false,
+  "kontrol": "Zorunlu yükleme saati alt sınırı takvim kapasitesini aşıyor.",
+  "cozum_calistirildi": false,
+  "kaynak_sha256": {
+    "src\\firma_verisi.py": "aa646656b6ce3c502e1e646fdedf158931a1e91e9cd1818b6faad08de68a00ee",
+    "src\\firma_cizelgeleme.py": "8f6fae644267c1d36945adc805ecbff7a8a0eaa1ed49a2955ee4d8177103e456",
+    "src\\firma_senaryolari.py": "539eb7d6006f028855ca5119569e8349a2d9e10dc30d233b65ea85754cb98a81"
+  },
+  "girdi_zip_sha256": "ecf230a5aafbe24b84f17e1c7a0b933bc7a4a4c7dcc0ee5157b38606d3c1d2c8"
+}

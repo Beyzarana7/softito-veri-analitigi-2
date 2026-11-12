@@ -1,0 +1,78 @@
+{
+  "yontem": "basit_tahmin",
+  "model": "son_yayinlanan_gun",
+  "karar_zamani": "2026-10-05 00:00:00",
+  "bilinen_saat": 24,
+  "tahmin_saat": 48,
+  "referans_gercek_maliyet_tl": 621829.5614,
+  "planlama_maliyeti_tl": 530332.9567,
+  "gerceklesen_maliyet_tl": 620914.72105,
+  "gerceklesen_avantaj_tl": 914.8403499999549,
+  "gerceklesen_avantaj_yuzde": 0.14712075571644814,
+  "fiyat_MAE_TL_MWh": 532.3718749999999,
+  "fiyat_RMSE_TL_MWh": 678.5897386568829,
+  "degisen_uretim_kaynak_saat": 26,
+  "bagimsiz_fiziksel_kontrol": true,
+  "cozum": {
+    "durum": "Time limit reached",
+    "tolerans_icinde_optimum": false,
+    "sure_saniye": 120.02297160006128,
+    "goreli_acik": 0.056802959249309226,
+    "alt_sinir_tl": 500208.4753720042,
+    "maliyet_tl": 530332.9567,
+    "degisken_sayisi": 5278,
+    "kisit_sayisi": 8637,
+    "sure_siniri_saniye": 120.0,
+    "hedef_goreli_acik": 0.001,
+    "degisiklik_gideri_tl_kaynak_saat": 0.0,
+    "referans_model_kontrolu": true,
+    "baslangic_model_kontrolu": true,
+    "bagimsiz_plan_kontrolu": true,
+    "bagimsiz_maliyet_kontrolu": true,
+    "cozucu_surumu": "1.15.1",
+    "baslangic_iyilestirmeleri": [
+      {
+        "serbest_kaynaklar": [],
+        "maliyet_tl": 530980.37075,
+        "durum": "Optimal",
+        "goreli_acik": 0.0
+      },
+      {
+        "serbest_kaynaklar": [
+          "P01"
+        ],
+        "maliyet_tl": 530332.9567,
+        "durum": "Time limit reached",
+        "goreli_acik": 0.0005528978818383248
+      },
+      {
+        "serbest_kaynaklar": [
+          "H01",
+          "P01"
+        ],
+        "maliyet_tl": 530332.9567,
+        "durum": "Time limit reached",
+        "goreli_acik": 0.014838726590056956
+      },
+      {
+        "serbest_kaynaklar": [
+          "H02",
+          "P01"
+        ],
+        "maliyet_tl": 530332.9567,
+        "durum": "Time limit reached",
+        "goreli_acik": 0.02449049951054748
+      }
+    ],
+    "yerel_arama_saniye": 30.300014700042084,
+    "toplam_cozum_saniye": 150.32298630010337,
+    "baslangic_maliyet_tl": 531472.97075
+  },
+  "kaynak_sha256": {
+    "src\\firma_verisi.py": "aa646656b6ce3c502e1e646fdedf158931a1e91e9cd1818b6faad08de68a00ee",
+    "src\\firma_cizelgeleme.py": "8f6fae644267c1d36945adc805ecbff7a8a0eaa1ed49a2955ee4d8177103e456",
+    "src\\fiyat_tahmini.py": "b30ba61552e49d7734e66ae51c11eae74ea5c5bdda6281fa6c7273b61bebc457",
+    "src\\tahminli_cizelgeleme.py": "c3a672a98ec71d74edbb8d5573f55993adf742945cdd18a8eb2bcee7218ae951"
+  },
+  "tahmin_sha256": "773781243782d4562827a01b3b9f808a977b7400b3e2d3f0e625d79d7e6ba03b"
+}

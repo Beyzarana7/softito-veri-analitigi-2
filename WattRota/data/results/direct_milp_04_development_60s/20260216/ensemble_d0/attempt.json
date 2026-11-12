@@ -1,0 +1,11 @@
+{
+  "week": "2026-02-16 00:00:00",
+  "run_key": "ensemble_d0",
+  "source": "ensemble",
+  "decision_day": 0,
+  "attempt": 1,
+  "state": "success",
+  "solver_status": "Time limit reached",
+  "actual_cost_tl": 296894.3761,
+  "wall_seconds": 63.58558419998735
+}

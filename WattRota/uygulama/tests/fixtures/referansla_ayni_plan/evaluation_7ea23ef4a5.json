@@ -1,0 +1,12 @@
+{
+  "status": "Değerlendirildi",
+  "as_of": "2026-11-11 21:37:48.911127",
+  "actual_cost_tl": 652799.6589500001,
+  "reference_actual_cost_tl": 652799.6589500001,
+  "actual_advantage_tl": 0.0,
+  "actual_savings_pct": 0.0,
+  "expected_cost_tl": 607365.14847967,
+  "forecast_cost_difference_tl": 45434.51047033002,
+  "price_file": "evaluation_7ea23ef4a5_prices.csv",
+  "hourly_file": "evaluation_7ea23ef4a5_hourly.csv"
+}

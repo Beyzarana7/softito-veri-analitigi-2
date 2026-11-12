@@ -1,0 +1,11 @@
+{
+  "week": "2026-01-26 00:00:00",
+  "run_key": "hgb_d2",
+  "source": "hgb",
+  "decision_day": 2,
+  "attempt": 1,
+  "state": "success",
+  "solver_status": "Optimal",
+  "actual_cost_tl": 647217.14845,
+  "wall_seconds": 5.014768699998967
+}

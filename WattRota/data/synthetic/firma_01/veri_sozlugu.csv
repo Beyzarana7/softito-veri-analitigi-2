@@ -1,0 +1,72 @@
+﻿dosya,alan,veri_turu,birim,aciklama,dayanak
+urunler.csv,urun_id,str,—,Ürün kimliği,Sentetik firma senaryosu
+urunler.csv,urun_adi,str,—,Senaryo ürün adı,Sentetik firma senaryosu
+kaynaklar.csv,kaynak_id,str,—,Makine/hat/yükleme kimliği,Sentetik firma senaryosu
+kaynaklar.csv,kaynak_adi,str,—,Kaynak açıklaması,Sentetik firma senaryosu
+kaynaklar.csv,kaynak_turu,str,—,"ogutme, paketleme, dokme_yukleme veya torbali_yukleme",Sentetik firma senaryosu
+kaynak_urun.csv,kaynak_id,str,—,Makine/hat/yükleme kimliği,Sentetik firma senaryosu
+kaynak_urun.csv,urun_id,str,—,Ürün kimliği,Sentetik firma senaryosu
+kaynak_urun.csv,kapasite_ton_saat,int64,ton/saat,Uygun ürün için saatlik çıktı veya yükleme kapasitesi,Sentetik firma senaryosu
+kaynak_urun.csv,calisma_gucu_kw,int64,kW,Aktif saatte kaynak ve kapsanan yardımcıların toplam gücü,Sentetik firma senaryosu
+isletme_kurallari.csv,kaynak_id,str,—,Makine/hat/yükleme kimliği,Sentetik firma senaryosu
+isletme_kurallari.csv,minimum_uretim_saat,int64,saat,Kesintisiz üretim bloğunun en kısa süresi,Sentetik firma senaryosu
+isletme_kurallari.csv,minimum_durus_saat,int64,saat,Yeniden açılmadan önce kapalı kalma süresi,Sentetik firma senaryosu
+isletme_kurallari.csv,baslangicta_aktif,bool,—,Plan başında aktiflik,Sentetik firma senaryosu
+isletme_kurallari.csv,baslangic_durum_suresi_saat,int64,saat,Başlangıç durumunda önceden geçen süre,Sentetik firma senaryosu
+isletme_kurallari.csv,baslangic_urun_ayari,str,—,Hazırlık gereksinimini belirleyen ilk ürün ayarı,Sentetik firma senaryosu
+isletme_kurallari.csv,baslatma_enerjisi_kwh,int64,kWh,Açılış başına normal tüketime ek enerji,Sentetik firma senaryosu
+isletme_kurallari.csv,baslatma_elektrik_disi_gider_tl,int64,TL,Açılış başına elektrik dışı gider,Sentetik firma senaryosu
+urun_gecisleri.csv,kaynak_id,str,—,Makine/hat/yükleme kimliği,Sentetik firma senaryosu
+urun_gecisleri.csv,onceki_urun,str,—,Hazırlık öncesi ürün ayarı,Sentetik firma senaryosu
+urun_gecisleri.csv,sonraki_urun,str,—,Hazırlık sonunda elde edilen ürün ayarı,Sentetik firma senaryosu
+urun_gecisleri.csv,hazirlik_saat,int64,saat,Ürün değiştirme süresi,Sentetik firma senaryosu
+urun_gecisleri.csv,hazirlik_gucu_kw,int64,kW,Hazırlık saatindeki toplam güç,Sentetik firma senaryosu
+urun_gecisleri.csv,elektrik_disi_gider_tl,int64,TL,Geçiş başlangıcında bir kez oluşan elektrik dışı gider,Sentetik firma senaryosu
+stok_alanlari.csv,stok_id,str,—,Ürüne ayrılmış stok alanı,Sentetik firma senaryosu
+stok_alanlari.csv,urun_id,str,—,Ürün kimliği,Sentetik firma senaryosu
+stok_alanlari.csv,stok_turu,str,—,dokme veya torbali,Sentetik firma senaryosu
+stok_alanlari.csv,minimum_ton,int64,ton,Korunacak en az stok,Sentetik firma senaryosu
+stok_alanlari.csv,kapasite_ton,int64,ton,En yüksek stok,Sentetik firma senaryosu
+stok_alanlari.csv,baslangic_ton,int64,ton,Plan başlangıcı stoğu,Sentetik firma senaryosu
+stok_alanlari.csv,son_hedef_ton,int64,ton,Dönem sonu eşitlik hedefi,Sentetik firma senaryosu
+depo_kurallari.csv,depo_id,str,—,Ortak depo kimliği,Sentetik firma senaryosu
+depo_kurallari.csv,toplam_kapasite_ton,int64,ton,Torbalı stokların toplam üst sınırı,Sentetik firma senaryosu
+rotalar.csv,rota_id,str,—,Ürün ve teslim biçimine ait işlem rotası,Sentetik firma senaryosu
+rotalar.csv,urun_id,str,—,Ürün kimliği,Sentetik firma senaryosu
+rotalar.csv,teslim_turu,str,—,dokme veya torbali,Sentetik firma senaryosu
+rotalar.csv,adim_no,int64,—,Rotadaki işlem sırası,Sentetik firma senaryosu
+rotalar.csv,islem_turu,str,—,İşlemi yapabilecek kaynak türü,Sentetik firma senaryosu
+rotalar.csv,girdi_stok_turu,str,—,İşlemin malzeme aldığı stok türü,Sentetik firma senaryosu
+rotalar.csv,cikti_stok_turu,str,—,İşlem sonunda oluşan stok veya teslimat,Sentetik firma senaryosu
+siparisler.csv,siparis_id,str,—,Müşteri siparişi kimliği,Sentetik firma senaryosu
+siparisler.csv,urun_id,str,—,Ürün kimliği,Sentetik firma senaryosu
+siparisler.csv,miktar_ton,int64,ton,Sipariş veya iş emri toplam miktarı,Sentetik firma senaryosu
+siparisler.csv,teslim_turu,str,—,dokme veya torbali,Sentetik firma senaryosu
+siparisler.csv,rota_id,str,—,Ürün ve teslim biçimine ait işlem rotası,Sentetik firma senaryosu
+siparisler.csv,gelis_zamani,datetime64[us],tarih-saat,Siparişin bilindiği an,Sentetik firma senaryosu
+siparisler.csv,en_erken_yukleme,datetime64[us],tarih-saat,İzin verilen ilk yükleme saati,Sentetik firma senaryosu
+siparisler.csv,teslim_zamani,datetime64[us],tarih-saat,Son yüklemenin bitiş sınırı,Sentetik firma senaryosu
+is_emirleri.csv,is_emri_id,str,—,Ürün ve üretim/paketleme aşaması için iş emri,Sentetik firma senaryosu
+is_emirleri.csv,urun_id,str,—,Ürün kimliği,Sentetik firma senaryosu
+is_emirleri.csv,islem_turu,str,—,İşlemi yapabilecek kaynak türü,Sentetik firma senaryosu
+is_emirleri.csv,miktar_ton,int64,ton,Sipariş veya iş emri toplam miktarı,Sentetik firma senaryosu
+is_emirleri.csv,serbest_birakma,datetime64[us],tarih-saat,İş emrinin çalışmaya başlayabileceği ilk an,Sentetik firma senaryosu
+is_emirleri.csv,tamamlanma_siniri,datetime64[us],tarih-saat,İş emrinin tamamlanma sınırı,Sentetik firma senaryosu
+is_emirleri.csv,bolunebilir,bool,—,İş emri uygun kaynak/zaman bloklarına ayrılabilir,Sentetik firma senaryosu
+is_emri_siparis_baglantisi.csv,is_emri_id,str,—,Ürün ve üretim/paketleme aşaması için iş emri,Sentetik firma senaryosu
+is_emri_siparis_baglantisi.csv,siparis_id,str,—,Müşteri siparişi kimliği,Sentetik firma senaryosu
+is_emri_siparis_baglantisi.csv,tahsis_ton,int64,ton,İlgili aşamadaki iş emrinden siparişe ayrılan miktar; farklı aşamalar toplanmaz,Sentetik firma senaryosu
+kaynak_takvimi.csv,kaynak_id,str,—,Makine/hat/yükleme kimliği,Sentetik firma senaryosu
+kaynak_takvimi.csv,tarih_saat,datetime64[us],tarih-saat,"Saatlik dönem başlangıcı, Türkiye yerel saati",Sentetik firma senaryosu
+kaynak_takvimi.csv,kullanilabilir,bool,—,Kaynak o saatte kullanılabilir mi?,Sentetik firma senaryosu
+bakimlar.csv,kaynak_id,str,—,Makine/hat/yükleme kimliği,Sentetik firma senaryosu
+bakimlar.csv,baslangic,datetime64[us],tarih-saat,"Bakım başlangıcı, dahil",Sentetik firma senaryosu
+bakimlar.csv,bitis,datetime64[us],tarih-saat,"Bakım bitişi, hariç",Sentetik firma senaryosu
+tesis_takvimi.csv,tarih_saat,datetime64[us],tarih-saat,"Saatlik dönem başlangıcı, Türkiye yerel saati",Sentetik firma senaryosu
+tesis_takvimi.csv,temel_yuk_kw,int64,kW,Ayrı makinelere yazılmayan kontrol dışı tesis yükü,Sentetik firma senaryosu
+tesis_takvimi.csv,guc_siniri_kw,int64,kW,Tesis toplam saatlik ortalama güç üst sınırı,Sentetik firma senaryosu
+fiyatlar.csv,tarih_saat,datetime64[us],tarih-saat,"Saatlik dönem başlangıcı, Türkiye yerel saati",EPİAŞ CSV
+fiyatlar.csv,PTF (TL/MWh),float64,TL/MWh,EPİAŞ gerçekleşmiş saatlik piyasa takas fiyatı,EPİAŞ CSV
+rota_kaynaklari.csv,rota_id,str,—,Ürün ve teslim biçimine ait işlem rotası,Sentetik firma senaryosu
+rota_kaynaklari.csv,adim_no,int64,—,Rotadaki işlem sırası,Sentetik firma senaryosu
+rota_kaynaklari.csv,kaynak_id,str,—,Makine/hat/yükleme kimliği,Sentetik firma senaryosu

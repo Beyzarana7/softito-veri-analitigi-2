@@ -1,0 +1,74 @@
+Running HiGHS 1.15.1 (git hash: 04024d7): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+MIP has 8637 rows; 5278 cols; 27961 nonzeros; 4716 integer variables (4626 binary)
+Coefficient ranges:
+  Matrix  [1e+00, 2e+03]
+  Cost    [7e+01, 7e+03]
+  Bound   [1e+00, 2e+03]
+  RHS     [1e+00, 4e+03]
+Assessing feasibility of MIP using primal feasibility and integrality tolerance of       1e-06
+Solution has               num          max          sum
+Col     infeasibilities      0            0            0
+Integer infeasibilities      0            0            0
+Row     infeasibilities      0            0            0
+Row     residuals            0            0            0
+Presolving model
+7566 rows, 4642 cols, 25333 nonzeros 0s
+6288 rows, 4137 cols, 24127 nonzeros 1s
+Presolve reductions: rows 6288(-2349); columns 4137(-1141); nonzeros 24127(-3834) 
+
+MIP start solution is feasible, objective value is 652882.7495
+
+Solving MIP model with:
+   6288 rows
+   4137 cols (3782 binary, 0 integer, 18 implied int., 337 continuous, 0 domain fixed)
+   24127 nonzeros
+   Thread count 1 (of 20 threads). Using 1 max workers. Parallel search off
+
+Src: B => Branching; C => Central rounding; F => Feasibility pump; H => Heuristic;
+     I => Shifting; J => Feasibility jump; L => Sub-MIP; P => Empty MIP; R => Randomized rounding;
+     S => Solve LP; T => Evaluate node; U => Unbounded; X => User solution; Y => HiGHS solution;
+     Z => ZI Round; l => Trivial lower; p => Trivial point; u => Trivial upper; z => Trivial zero
+
+        Nodes      |    B&B Tree     |            Objective Bounds              |  Dynamic Constraints |       Work      
+Src  Proc. InQueue |  Leaves   Expl. | BestBound       BestSol              Gap |   Cuts   InLp Confl. | LpIters     Time
+
+         0       0         0   0.00%   58288.428       652882.7495       91.07%        0      0      0         0     1.8s
+         0       0         0   0.00%   609671.931105   652882.7495        6.62%        0      0      5      2916     2.7s
+         0       0         0   0.00%   613490.551878   652882.7495        6.03%     1312     57      5      3638     8.7s
+         0       0         0   0.00%   615381.343601   652882.7495        5.74%     2058    103    287      4389    13.9s
+         0       0         0   0.00%   615773.981456   652882.7495        5.68%     2857    145    287      4821    19.5s
+         0       0         0   0.00%   616599.183552   652882.7495        5.56%     3240    182    287      5502    25.7s
+         0       0         0   0.00%   617415.017422   652882.7495        5.43%     3418    184    287      5917    32.1s
+         0       0         0   0.00%   617433.714665   652882.7495        5.43%     3432    151    287      5955    37.4s
+         0       0         0   0.00%   617433.725256   652882.7495        5.43%     3432    158    287      5971    45.1s
+         0       0         0   0.00%   617433.725256   652882.7495        5.43%     3432    158    287     10284    60.4s
+
+Solving report
+  Status            Time limit reached
+  Primal bound      652882.7495
+  Dual bound        617433.725256
+  Gap               5.43% (tolerance: 0.1%)
+  P-D integral      4.06643297793
+  Solution status   feasible
+                    652882.7495 (objective)
+                    0 (bound viol.)
+                    0 (int. viol.)
+                    0 (row viol.)
+  Timing            60.36
+                    6.13 (Presolve)
+                        MIP    time [calls] = 1.27 [1]
+                        subMIP time [calls] = 4.87 [4]
+                    54.22 (Solve)
+                        MIP    time [calls] = 45.84 [1]
+                        subMIP time [calls] = 8.38 [1]
+                    0.00 (Postsolve)
+                        MIP    time [calls] = 0.00 [1]
+                        subMIP time [calls] = 0.00 [4]
+  Max sub-MIP depth 2
+  Nodes             0
+  Repair LPs        0
+  LP iterations     10284
+                    0 (strong br.)
+                    3055 (separation)
+                    4313 (heuristics)

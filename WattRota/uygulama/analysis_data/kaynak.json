@@ -1,0 +1,20 @@
+{
+  "kaynak": "EPİAŞ, mevcut proje CSV verileri",
+  "kapsam": "2024 ve 2025 tam yılları; 2026 ve kilitli test haftaları dahil edilmedi",
+  "dosyalar": [
+    {
+      "dosya": "Piyasa_Takas_Fiyati-01012024-31122024.csv",
+      "sha256": "eb952ee7ab48d34724ef63d73da2cfc58ff68d836f8bd8c4433a14a036909a63",
+      "satir": 8784,
+      "ilk": "2024-01-01 00:00:00",
+      "son": "2024-12-31 23:00:00"
+    },
+    {
+      "dosya": "Piyasa_Takas_Fiyati-01012025-31122025.csv",
+      "sha256": "3c9edff56009fcc6522bec81dabdc30a629aae3a49967064bbfdfd13b0d541cf",
+      "satir": 8760,
+      "ilk": "2025-01-01 00:00:00",
+      "son": "2025-12-31 23:00:00"
+    }
+  ]
+}

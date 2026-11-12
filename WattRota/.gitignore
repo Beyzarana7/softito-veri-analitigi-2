@@ -1,0 +1,21 @@
+# Yerel ortam ve gizli bilgiler
+.env
+*.env
+!.env.example
+.venv/
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+*.log
+.streamlit/secrets.toml
+*.dump
+*.sql.gz
+.DS_Store
+Thumbs.db
+# Yerel yeni planlar; doğrulanmış örnek teslimde tutulur
+uygulama/runs/*
+!uygulama/runs/20261111_232421_67cf3c75/
+
+*.zip
+*.tmp

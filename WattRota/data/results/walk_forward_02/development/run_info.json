@@ -1,0 +1,13 @@
+{
+  "phase": "development",
+  "fold_count": 34,
+  "predictions": 4896,
+  "seed": 42,
+  "python": "3.14.6",
+  "numpy": "2.5.4",
+  "pandas": "3.1.1",
+  "sklearn": "1.9.1",
+  "config_sha256": "e30ae737ea2c3f5b9c864f8aae215a9fab17f9171cb91bd5064bcec7138b2c35",
+  "test_evaluated": false,
+  "interpretation": "retrospective_2026_previously_seen_not_a_new_blind_test"
+}

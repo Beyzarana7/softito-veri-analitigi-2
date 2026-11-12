@@ -1,0 +1,35 @@
+{
+  "selected_model": "ensemble_level_fixed",
+  "selection": "development_MAE_only_excluding_nonconverged",
+  "weeks": 34,
+  "models": 13,
+  "test_evaluated": false,
+  "input_sha256": {
+    "experiments\\03_price_models\\forecast_stats.py": "75225a695ca7a99986b4ef525652e6c86548e830e9fe565b6c2ad228bc3d625e",
+    "experiments\\03_price_models\\models.py": "f3cc34f176489a86713705589a0d28210b816c05707d22eaaac0dbb7c0221b99",
+    "experiments\\03_price_models\\run.py": "c7fd857c08a8dd08f0d4b6dc7cd23f1490e80d12df69aec27f3f65059fd2df5f",
+    "experiments\\03_price_models\\test_forecasts.py": "38ba1735bc8ff9fcaeb64dc20ac1da2504b25a2e2aec177339ddf078f9635e2f",
+    "experiments\\03_price_models\\config.json": "8de1d50b7cbeb48f63c454cef6362e92a4548ec4085e5095791732932d40df1d",
+    "experiments\\03_price_models\\sources.json": "50d84ffe8c64982f2f04fcd37607435718645cb94c952688f5965219906d8ddd",
+    "experiments\\03_price_models\\requirements.txt": "19f7254eb4d818658a069a764961c9810065790d1f84ec9a8c7060176d4c430c",
+    "data\\results\\walk_forward_02\\folds.csv": "c41c235241eafdf5b9f865097f7b868bb3a70a3ff596c921a62473d837259e32",
+    "data\\results\\walk_forward_02\\test_lock.json": "37bf653ed8016dfd1b53e9072a7040d84452e957dbe9ec3b71d8c44777eb58c6",
+    "data\\results\\walk_forward_02\\development\\predictions.csv": "dfb1e698179c7877df2aa1090169f42891b31a06b8f9a87aa72aa48f0d53f9ba"
+  },
+  "lightgbm_version": "4.7.0",
+  "zero_model": {
+    "zero_hours": 77,
+    "predicted_zero_hours": 52,
+    "f1": 0.5116279069767442,
+    "brier": 0.023747160034563546
+  },
+  "probabilistic": {
+    "coverage_q10_q90": 0.6188725490196079,
+    "mean_interval_width": 991.9420175662816,
+    "pinball_0.1": 142.27591868066574,
+    "pinball_0.5": 260.00602112702506,
+    "pinball_0.9": 159.611928447486
+  },
+  "parent_test_lock_sha256": "37bf653ed8016dfd1b53e9072a7040d84452e957dbe9ec3b71d8c44777eb58c6",
+  "external_features_used": false
+}

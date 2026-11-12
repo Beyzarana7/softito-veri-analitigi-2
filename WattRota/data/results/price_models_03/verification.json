@@ -1,0 +1,27 @@
+{
+  "prediction_rows": 21216,
+  "models": 13,
+  "weeks": 34,
+  "scenario_paths": 1020,
+  "full_parameter_future_poison_replay": true,
+  "scenario_replay": true,
+  "locked_test_opened": false,
+  "verification_source_sha256": "c51920b9ca3c9c7c35497a526a7fc316bb9b1ccc48920f3344f051ea4c429228",
+  "result_sha256": {
+    "calibration_predictions.csv": "79eb722e3aa835b618706effcc83d6a1900568b19017d2a765c7d89b2d7d177f",
+    "config_snapshot.json": "8de1d50b7cbeb48f63c454cef6362e92a4548ec4085e5095791732932d40df1d",
+    "dm_tests.csv": "10e2dece298c025500232c69c1067851cf668b6f15ab1949bcfeab883fa5cf38",
+    "experiment_info.json": "f2e60915ed051f565452f123b6c97e0605475919279a7acf961bc5fed67c831b",
+    "model_comparison.png": "faf4e38a1dd0750e7d8abe05336c6307ad62c1cfc46456043cd4c5beae6f967b",
+    "model_scores.csv": "e8ccf0fe095a92261c8163623eaf59a7b9f2e280e11de1b6ce98dc079fe3b8a0",
+    "predictions.csv": "93a3481e949e1f330daae0e47cc590f44b989f257aa4d9947fc474768d2f6bd2",
+    "probabilistic_forecasts.csv": "d1a3d9b3792ec04b083bd0ff66285669c10ebc1c259a71bc71b886763d703088",
+    "report.md": "c9e51c96cb8392eca132a360ef2fa8d75b9b4990506ddc927423cae589ae2ba1",
+    "scenario_audit.csv": "fd31a2cbd97618839e39119801d0845a8bfac0694554f6b4dcd56317e799a353",
+    "scenario_example.png": "ab520a12eaeced0b8116e798b97e49485378ba661d1b4c86f12623ac9b19a081",
+    "scenario_prices.csv": "b391f09833bb176688777d3e31ffd6003a6daa15b42824ca6696ed7d6313c14a",
+    "training_audit.csv": "f85ce1b0884693293727085d84db95c61499fc463be1a7a5e7ed75de54a6304e",
+    "weekly_mae.csv": "6965097a2d54e4b896a9c1978c2167fab44d94a861f58798902fa6fd19800eb6",
+    "zero_predictions.csv": "cf8980fd2b249d44adafdf8ac497f64bae4484229bc7331b9917e124c7abaf6d"
+  }
+}

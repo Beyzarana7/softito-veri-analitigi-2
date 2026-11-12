@@ -1,0 +1,11 @@
+{
+  "week": "2026-02-16 00:00:00",
+  "run_key": "naive_d1",
+  "source": "naive",
+  "decision_day": 1,
+  "attempt": 1,
+  "state": "success",
+  "solver_status": "Time limit reached",
+  "actual_cost_tl": 296894.3761,
+  "wall_seconds": 75.85709599999245
+}

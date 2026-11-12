@@ -1,0 +1,80 @@
+Running HiGHS 1.15.1 (git hash: 04024d7): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+MIP has 8637 rows; 5278 cols; 27961 nonzeros; 4716 integer variables (1349 binary)
+Coefficient ranges:
+  Matrix  [1e+00, 2e+03]
+  Cost    [8e+01, 7e+03]
+  Bound   [1e+00, 2e+03]
+  RHS     [1e+00, 4e+03]
+Assessing feasibility of MIP using primal feasibility and integrality tolerance of       1e-06
+Solution has               num          max          sum
+Col     infeasibilities      0            0            0
+Integer infeasibilities      0            0            0
+Row     infeasibilities      0            0            0
+Row     residuals            0            0            0
+Presolving model
+2252 rows, 1197 cols, 7319 nonzeros 0s
+1867 rows, 1011 cols, 6537 nonzeros 0s
+1599 rows, 932 cols, 6792 nonzeros 0s
+Presolve reductions: rows 1599(-7038); columns 932(-4346); nonzeros 6792(-21169) 
+
+MIP start solution is feasible, objective value is 656676.9824
+
+Solving MIP model with:
+   1599 rows
+   932 cols (879 binary, 0 integer, 11 implied int., 42 continuous, 0 domain fixed)
+   6792 nonzeros
+   Thread count 1 (of 20 threads). Using 1 max workers. Parallel search off
+
+Src: B => Branching; C => Central rounding; F => Feasibility pump; H => Heuristic;
+     I => Shifting; J => Feasibility jump; L => Sub-MIP; P => Empty MIP; R => Randomized rounding;
+     S => Solve LP; T => Evaluate node; U => Unbounded; X => User solution; Y => HiGHS solution;
+     Z => ZI Round; l => Trivial lower; p => Trivial point; u => Trivial upper; z => Trivial zero
+
+        Nodes      |    B&B Tree     |            Objective Bounds              |  Dynamic Constraints |       Work      
+Src  Proc. InQueue |  Leaves   Expl. | BestBound       BestSol              Gap |   Cuts   InLp Confl. | LpIters     Time
+
+         0       0         0   0.00%   452493.15985    656676.9824       31.09%        0      0      0         0     0.2s
+         0       0         0   0.00%   646385.202517   656676.9824        1.57%        0      0      2       475     0.2s
+ L       0       0         0   0.00%   650221.310201   652581.1674        0.36%     2616     88    126      3292     3.2s
+
+4.2% inactive integer columns, restarting
+Model after restart has 1529 rows, 871 cols (818 bin., 0 int., 11 impl., 42 cont., 0 dom.fix.), and 6364 nonzeros
+
+         0       0         0   0.00%   650221.435437   652581.1674        0.36%       50      0      0      3404     3.4s
+         0       0         0   0.00%   650223.20573    652581.1674        0.36%       50     39      3      4152     3.4s
+
+Symmetry detection completed in 0.0s
+Found 3 full orbitope(s) acting on 6 columns
+
+         3       2         0  25.00%   650491.87581    652581.1674        0.32%      875     41    401     39579     9.6s
+         5       0         0 100.00%   651939.94267    652581.1674        0.10%     3081     53    579     40789    10.3s
+
+Solving report
+  Status            Optimal
+  Primal bound      652581.1674
+  Dual bound        651939.94267
+  Gap               0.0983% (tolerance: 0.1%)
+  P-D integral      0.0630490750258
+  Solution status   feasible
+                    652581.1674 (objective)
+                    0 (bound viol.)
+                    0 (int. viol.)
+                    0 (row viol.)
+  Timing            10.32
+                    0.95 (Presolve)
+                        MIP    time [calls] = 0.18 [1]
+                        subMIP time [calls] = 0.78 [20]
+                    9.36 (Solve)
+                        MIP    time [calls] = 8.54 [1]
+                        subMIP time [calls] = 0.82 [6]
+                    0.00 (Postsolve)
+                        MIP    time [calls] = 0.00 [1]
+                        subMIP time [calls] = 0.00 [20]
+  Max sub-MIP depth 4
+  Nodes             5
+  Repair LPs        0
+  LP iterations     40789
+                    30408 (strong br.)
+                    4026 (separation)
+                    3796 (heuristics)

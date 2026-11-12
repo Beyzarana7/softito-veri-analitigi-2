@@ -1,0 +1,31 @@
+{
+  "hgb": {
+    "model": "hgb_residual_expanding",
+    "decision_origin": "2026-06-09 00:00:00",
+    "available_last": "2026-06-09 23:00:00",
+    "history_start": "2024-01-01 00:00:00",
+    "training_strategy": "expanding",
+    "training_rows": 41424,
+    "training_target_start": "2024-01-29 00:00:00",
+    "training_target_end": "2026-06-09 23:00:00",
+    "seed": 42,
+    "feature_count": 18
+  },
+  "naive": {
+    "model": "son_yayinlanan_gun",
+    "decision_origin": "2026-06-09 00:00:00",
+    "available_last": "2026-06-09 23:00:00",
+    "history_start": "2024-01-01 00:00:00",
+    "training_strategy": "expanding",
+    "training_rows": 0,
+    "training_target_start": null,
+    "training_target_end": null,
+    "seed": 42
+  },
+  "ensemble_components": [
+    "lear_level_10",
+    "lightgbm_level",
+    "hgb_expanding_cached"
+  ],
+  "available_last": "2026-06-09 23:00:00"
+}

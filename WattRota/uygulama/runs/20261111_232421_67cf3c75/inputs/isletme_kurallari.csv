@@ -1,0 +1,4 @@
+kaynak_id,minimum_uretim_saat,minimum_durus_saat,baslangicta_aktif,baslangic_durum_suresi_saat,baslangic_urun_ayari,baslatma_enerjisi_kwh,baslatma_elektrik_disi_gider_tl
+H01,4,2,False,4,UR01,100,200
+H02,4,2,False,4,UR02,120,250
+P01,2,1,False,4,UR01,30,40

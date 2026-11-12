@@ -1,0 +1,18 @@
+{
+  "phase": "four_week_pilot_only",
+  "pilot_fold_indices": [0, 11, 22, 33],
+  "solver_time_limit_seconds": 15,
+  "mip_relative_gap": 0.001,
+  "seed": 42,
+  "solver_threads": 1,
+  "local_search": false,
+  "forecast_sources": ["hgb", "ensemble"],
+  "rolling_days": [0, 1, 2],
+  "locked_test_allowed": false,
+  "stochastic_mode": false,
+  "cost_tolerance_tl": 0.02,
+  "parent_protocol": "data/results/walk_forward_02",
+  "hgb_config": "experiments/02_walk_forward/config.json",
+  "ensemble_config": "experiments/03_price_models/config.json",
+  "milp_runs_per_week": 7
+}

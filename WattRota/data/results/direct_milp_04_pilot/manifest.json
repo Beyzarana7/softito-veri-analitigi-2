@@ -1,0 +1,45 @@
+{
+  "experiment_id": "pilot04_8ca16b7c875acecb",
+  "phase": "pilot",
+  "weeks": [
+    "2026-01-05 00:00:00",
+    "2026-03-23 00:00:00",
+    "2026-06-08 00:00:00",
+    "2026-08-24 00:00:00"
+  ],
+  "inputs": "PostgreSQL via kod.db",
+  "input_hashes": {
+    "urunler": "b3fd54d4cc0e2554e7e14c65f435f340d864e0db2ecf447bde49f7609ccca4d3",
+    "kaynaklar": "519c92578a1465bd00c0bfda00c09afe88b9c26567d54b15456b217e371a2551",
+    "kaynak_urun": "6f461c435996c635cb448adc3e20fba35207a38b0b4247598126e0bdce465fa4",
+    "isletme_kurallari": "a7c3810f73d024b966d4537ea0d01f47d9087bdc7993c0b5fca4a276ad14635b",
+    "urun_gecisleri": "5bf912f48256a1b6d60bf22675d5343e7c487d081d731698bb4d4910d6bf8499",
+    "stok_alanlari": "87b42dc05ceb5b32a87484d73d907b2ec8afb6e75fa5ec12ade27afd3c41d8f8",
+    "depo_kurallari": "67220ce5356a2d46d443b3a2cb1bbec8b290b5d8cd16d8942b919cf2380c20ee",
+    "rotalar": "40ef636452cb0d48ddb5b5b5fbcb1d1dab597c5cf994997e9023ff8747012d72",
+    "siparisler": "70410a8c69bf28be9e408b1a97cb06792f9b8d9bba1d07ec4deb5ecaa0e0fa05",
+    "is_emirleri": "1632e522a2cef17bde119a59de678c863dc63afc7c7e48321920d3d5b40933be",
+    "is_emri_siparis_baglantisi": "5a4f7ef7a48f42635b4564a0b1b16e90348165dc658b850a26461ddcf0001906",
+    "kaynak_takvimi": "be7e5d1f07d268f809e350d104e2b188b9ddb9f17924ed76cc37d7ac3e8b5936",
+    "bakimlar": "636aaf1ec081cdb6d2e090b18efce3e3c0851cfcdad246942340e17252a865f7",
+    "tesis_takvimi": "f4c60cb2e4a65e2c26d358c87f9c0814d7160780b3458404ad26f3ad684e8354",
+    "fiyatlar": "04ea0c1f7ee91b9230c5efd85f06d5627f7aa8b2b40b29a71b46ce590dfd9837",
+    "rota_kaynaklari": "c5d3da1356a118bddfcf84e419e58fe3810bc1f4251595f8eb27794b90199074",
+    "referans_plan": "22356b7aa2d0de26c82db1aa7fecdc58b9ea4460dedbca44d7446ed4958d90ad",
+    "referans_yuklemeler": "7703a9ac8b470a0d859dfb1ebf28b6703e111669080621eeb8e077673628b379",
+    "postgresql_price_history": "70c841d2c93234b3ff445b345f7adbed57ee97e64a2922144aaa28ee382b2902"
+  },
+  "source_hashes": {
+    "experiments\\04_direct_milp\\forecasting.py": "5ac67452a583c79284a154de2b9ada726829afb234f0e5da0fb3d90acfb802b9",
+    "experiments\\04_direct_milp\\metrics.py": "e46166406392698cd2b70bc8ac9de7079e90877e8b4174ad2250916ce67969d9",
+    "experiments\\04_direct_milp\\run.py": "f9f8be15594530ad4a94da415049d5751ed20faed44b128b09b900cc46756e79",
+    "experiments\\04_direct_milp\\solver.py": "050160a3dbb6cd4e7ba11def5ec676031b388585fcebc64f319bb3e4cd819c2e",
+    "experiments\\04_direct_milp\\storage.py": "fd1a9056a84103b8876ee679f839c1baac6f12b25a29ee442023cc834b5bc6d2",
+    "experiments\\04_direct_milp\\test_task4.py": "83333aed43d97b2e51b98f58c6ecb8ca90c7386e77bf3977a207223ec14b1c27",
+    "experiments\\04_direct_milp\\config.json": "8ebade9451ec7d057929cbc205665fe20b9af6725fd272f018a9f095a44ba2c5",
+    "experiments\\02_walk_forward\\config.json": "e30ae737ea2c3f5b9c864f8aae215a9fab17f9171cb91bd5064bcec7138b2c35",
+    "experiments\\03_price_models\\config.json": "8de1d50b7cbeb48f63c454cef6362e92a4548ec4085e5095791732932d40df1d"
+  },
+  "locked_test_evaluated": false,
+  "stochastic_mode": false
+}

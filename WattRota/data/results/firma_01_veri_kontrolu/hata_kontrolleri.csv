@@ -1,0 +1,14 @@
+﻿deneme,sonuc,yakalanan_ihlal
+Uygun olmayan makinede ürün,Reddedildi,H02: ürün uygunluğu/ayar ihlali.
+Ürün değişimi hazırlığı atlama,Reddedildi,H01: eksik/fazla hazırlık.
+Paketleme için dökme stok yok,Reddedildi,"('UR01', 'dokme'), 2025-10-06 00:00:00: dönem başı stok yetersiz."
+Dökme silo taşması,Reddedildi,"('UR01', 'dokme'), 2025-10-06 05:00:00: stok kapasitesi aşıldı."
+Ortak torbalı depo kapasitesi,Reddedildi,2025-10-06 01:00:00: ortak torbalı depo doldu.
+Bakımda üretim,Reddedildi,H01: bakım/uygunluk ihlali.
+Ortak elektrik güç sınırı,Reddedildi,2025-10-06 00:00:00: ortak güç sınırı aşıldı.
+Dökme siparişi torbalı noktadan yükleme,Reddedildi,SP1_UR01_dokme: yanlış yükleme kaynağı.
+Geç teslimat,Reddedildi,SP1_UR01_dokme: teslim aralığı ihlali.
+Eksik sevkiyat,Reddedildi,SP1_UR01_dokme: eksik/fazla teslimat.
+İş emri miktar tahsisi,Reddedildi,IE1_UR01_ogutme: tahsis miktarı eşleşmiyor.
+Torbalı rotada paketleme atlama,Reddedildi,R_UR01_torbali: rota kaynağı uygun değil.
+Dönem sonu stok hedefi,Reddedildi,"('UR01', 'dokme'): dönem sonu stok hedefi sağlanmadı."

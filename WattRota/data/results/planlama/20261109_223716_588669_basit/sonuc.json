@@ -1,0 +1,101 @@
+{
+  "yontem": "basit",
+  "tahmin": {
+    "model": "son_yayinlanan_gun",
+    "karar_zamani": "2025-10-06 00:00:00",
+    "bilinen_son_saat": "2025-10-06 23:00:00",
+    "tahmin_ilk_saat": "2025-10-07 00:00:00",
+    "tahmin_son_saat": "2025-10-08 23:00:00",
+    "tahmin_edilen_saat": 48,
+    "bilinen_saat": 24
+  },
+  "cozum": {
+    "durum": "Time limit reached",
+    "tolerans_icinde_optimum": false,
+    "sure_saniye": 5.084951000055298,
+    "goreli_acik": 0.04531644111095934,
+    "alt_sinir_tl": 562843.7831005172,
+    "maliyet_tl": 589560.56995,
+    "degisken_sayisi": 5278,
+    "kisit_sayisi": 8637,
+    "sure_siniri_saniye": 5.0,
+    "hedef_goreli_acik": 0.001,
+    "degisiklik_gideri_tl_kaynak_saat": 0,
+    "referans_model_kontrolu": true,
+    "baslangic_model_kontrolu": true,
+    "bagimsiz_plan_kontrolu": true,
+    "bagimsiz_maliyet_kontrolu": true,
+    "cozucu_surumu": "1.15.1",
+    "baslangic_iyilestirmeleri": [
+      {
+        "serbest_kaynaklar": [],
+        "maliyet_tl": 589708.46745,
+        "durum": "Optimal",
+        "goreli_acik": 0.0
+      },
+      {
+        "serbest_kaynaklar": [
+          "P01"
+        ],
+        "maliyet_tl": 589560.56995,
+        "durum": "Time limit reached",
+        "goreli_acik": 0.001416988489343302
+      },
+      {
+        "serbest_kaynaklar": [
+          "H01",
+          "P01"
+        ],
+        "maliyet_tl": 589560.56995,
+        "durum": "Time limit reached",
+        "goreli_acik": 0.013577373711442244
+      },
+      {
+        "serbest_kaynaklar": [
+          "H02",
+          "P01"
+        ],
+        "maliyet_tl": 589560.56995,
+        "durum": "Time limit reached",
+        "goreli_acik": 0.021839323105272552
+      }
+    ],
+    "yerel_arama_saniye": 30.106305100023746,
+    "toplam_cozum_saniye": 35.191256100079045,
+    "baslangic_maliyet_tl": 590226.87105
+  },
+  "planlama_maliyeti_avantaji_tl": 666.3010999999242,
+  "bagimsiz_fiziksel_kontrol": true,
+  "bagimsiz_maliyet_kontrolu": true,
+  "gerceklesen_maliyet_avantaji_tl": 252.4878000000026,
+  "dosya_sha256": {
+    "data\\synthetic\\firma_01\\bakimlar.csv": "6d7e06c44d538c79841ac9d923d8607e76a8d3da59f0544c2884982e8b11336f",
+    "data\\synthetic\\firma_01\\depo_kurallari.csv": "3a2fa7542633cd1211e89dca6b919cf469d6d39f4244427ae9c53b80dac40f08",
+    "data\\synthetic\\firma_01\\fiyatlar.csv": "8aecd86d0cf5aa229e4254493d130813d2c3fa45a64f8aca450e8797e67d0522",
+    "data\\synthetic\\firma_01\\isletme_kurallari.csv": "245948002fe975cf4323f5487867447fb0394d096f27f8694f97e7ec7f354984",
+    "data\\synthetic\\firma_01\\is_emirleri.csv": "8602081ed506d1ee9f7d63d90aaf124f45182c1dc4461f411c3dac65a04e5671",
+    "data\\synthetic\\firma_01\\is_emri_siparis_baglantisi.csv": "1f0821b9e7a1836b90681b00584d231e4a66dfa475c8cd65d2e572d5f1ab7a74",
+    "data\\synthetic\\firma_01\\kaynaklar.csv": "e177b267d00907f5afd567d6e372fef6d8682b6aaf52e2e1173fe2cd47040633",
+    "data\\synthetic\\firma_01\\kaynak_takvimi.csv": "a86d9cf18ccc9804d45757413c6aec9c85028a4ef1dab0e312d356cccf1003f5",
+    "data\\synthetic\\firma_01\\kaynak_urun.csv": "330d088855d37d60d8078442659fe5fb574750f35d743e9f08421d3d1efd6ee5",
+    "data\\synthetic\\firma_01\\parametre_dayanaklari.csv": "cc0c85ee80fedbbfc9c9af23362cfccdef47471f21a490c7e2bebc9b31389ca3",
+    "data\\synthetic\\firma_01\\rotalar.csv": "c591116001e327b2ebd46b5808d72ae72907587f8312e9139d979ef1a5995fe9",
+    "data\\synthetic\\firma_01\\rota_kaynaklari.csv": "59d28faa0200aab27edfe112334d7cd025ee2128bde0680942e34042f1d78b56",
+    "data\\synthetic\\firma_01\\siparisler.csv": "05cc5a7dab28e398fb9aa44fc54d839b63a0de5fab61960957f9ea99fb6a6bb8",
+    "data\\synthetic\\firma_01\\stok_alanlari.csv": "687730b71179e58e35b96091afce82b95b2ac2655c93ca63bc0f7a60e785b2de",
+    "data\\synthetic\\firma_01\\tesis_takvimi.csv": "55c2c9e6678175af304fce67e224f297b7e1ecf1cd96eeef886b198711f609cf",
+    "data\\synthetic\\firma_01\\urunler.csv": "7c8a19348fd0946297e355447c6f070956a5f4847e4c056153f4ee316efb7429",
+    "data\\synthetic\\firma_01\\urun_gecisleri.csv": "a7c4f067f41b641e1b38c860ccbfdd4a1a2a33e4d2215d0f4c12ef77cc48e16a",
+    "data\\synthetic\\firma_01\\veri_sozlugu.csv": "d4bbf6ffb831268b51e3d35532d02137e8f329605624e593ebfb83891ff33742",
+    "data\\raw\\epias\\Piyasa_Takas_Fiyati-01012024-31122024.csv": "eb952ee7ab48d34724ef63d73da2cfc58ff68d836f8bd8c4433a14a036909a63",
+    "data\\raw\\epias\\Piyasa_Takas_Fiyati-01012025-31122025.csv": "3c9edff56009fcc6522bec81dabdc30a629aae3a49967064bbfdfd13b0d541cf",
+    "data\\raw\\epias\\Piyasa_Takas_Fiyati-01012026-06112026.csv": "091ead2572a63ce708686891d68bac1608515057dc2a7d9ac84b47632e05c8ad",
+    "data\\results\\firma_01_veri_kontrolu\\referans_plan.csv": "df78549071aa35b2a9e35d0446f406516995e190c75487d9551011475830fcb7",
+    "data\\results\\firma_01_veri_kontrolu\\referans_yuklemeler.csv": "0ab7f88da799fa40d052d220c646748a680ee5e868d912715112899d401c2dd4",
+    "src\\planlama_akisi.py": "25bbc4421e94c126d13f1486a3f66c8ef60d8a84094fb2d5651db8df3d9f6aba",
+    "src\\firma_verisi.py": "aa646656b6ce3c502e1e646fdedf158931a1e91e9cd1818b6faad08de68a00ee",
+    "src\\firma_cizelgeleme.py": "8f6fae644267c1d36945adc805ecbff7a8a0eaa1ed49a2955ee4d8177103e456",
+    "src\\fiyat_tahmini.py": "b30ba61552e49d7734e66ae51c11eae74ea5c5bdda6281fa6c7273b61bebc457",
+    "src\\fiyat_tahmini_gelistirme.py": "6da051672d7b7584199a0ea6778b2a137f56624e0eaeb9d0b66a9cdb3b93b218"
+  }
+}

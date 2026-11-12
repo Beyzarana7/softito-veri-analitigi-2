@@ -1,0 +1,15 @@
+{
+  "toplam_sure_saniye": 180.66541220003273,
+  "ilk_fiyat": "2024-01-01 00:00:00",
+  "son_fiyat": "2026-11-06 23:00:00",
+  "fiyat_saat_sayisi": 24984,
+  "bilinen_saat": 24,
+  "tahmin_saat": 48,
+  "karar_saati": "00:00 Europe/Istanbul",
+  "dosya_sha256": {
+    "data\\raw\\epias\\Piyasa_Takas_Fiyati-01012024-31122024.csv": "eb952ee7ab48d34724ef63d73da2cfc58ff68d836f8bd8c4433a14a036909a63",
+    "data\\raw\\epias\\Piyasa_Takas_Fiyati-01012025-31122025.csv": "3c9edff56009fcc6522bec81dabdc30a629aae3a49967064bbfdfd13b0d541cf",
+    "data\\raw\\epias\\Piyasa_Takas_Fiyati-01012026-06112026.csv": "091ead2572a63ce708686891d68bac1608515057dc2a7d9ac84b47632e05c8ad",
+    "src\\fiyat_tahmini.py": "b30ba61552e49d7734e66ae51c11eae74ea5c5bdda6281fa6c7273b61bebc457"
+  }
+}

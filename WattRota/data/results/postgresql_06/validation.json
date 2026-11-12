@@ -1,0 +1,46 @@
+{
+  "price": {
+    "rows": 24984,
+    "sum_tl_mwh": 58113112.82,
+    "first": "2024-01-01 00:00:00",
+    "last": "2026-11-06 23:00:00",
+    "exact": true
+  },
+  "equivalence": {
+    "reference_cost_tl": 652799.6589500001,
+    "optimized_cost_tl": 644855.65185,
+    "exact_inputs": true,
+    "exact_reference_cost": true,
+    "exact_optimized_cost": true,
+    "exact_selected_plan": true,
+    "exact_loading_plan": true,
+    "exact_validator_outputs": true,
+    "solver_status_csv": "Solution limit reached",
+    "solver_status_postgresql": "Solution limit reached",
+    "solver_node_limit": 1,
+    "solver_threads": 1,
+    "solver_seed": 42,
+    "csv_gap": 0.03041430746495555,
+    "postgresql_gap": 0.03041430746495555,
+    "csv_bound_tl": 625242.8137841198,
+    "postgresql_bound_tl": 625242.8137841198
+  },
+  "results_counts": {
+    "weekly_decision_metrics": 136,
+    "method_summaries": 4,
+    "net_savings": 137,
+    "forecast_log": 0
+  },
+  "results_idempotent": true,
+  "result_values_equal_csv": true,
+  "forecast_update_delete_truncate_blocked": true,
+  "live_forecast_connected": false,
+  "base_schema_tables": 20,
+  "locked_test_evaluated": false,
+  "result_sources_sha256": {
+    "data\\results\\development_decisions_03\\weekly_decision_metrics.csv": "0fa938957b508e91f47daa66ea370fe79a0028dd45e46b2944672ba241c322d2",
+    "data\\results\\development_decisions_03\\model_summary.csv": "c9ff85619b28d55576b4e95d4be8ef89402e41c8800d24e28cbd820f34bbcd7c",
+    "data\\results\\firma_01_cizelgeleme\\karsilastirma.csv": "8adf59ce14cb51c3a95bf5554ab964f49f5dcc827eeabfa5d1a04ae806597f53"
+  },
+  "env_gitignored": true
+}

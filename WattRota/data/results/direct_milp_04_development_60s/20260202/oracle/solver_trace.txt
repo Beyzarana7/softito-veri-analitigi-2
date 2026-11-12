@@ -1,0 +1,76 @@
+Running HiGHS 1.15.1 (git hash: 04024d7): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+MIP has 8637 rows; 5278 cols; 27961 nonzeros; 4716 integer variables (4626 binary)
+Coefficient ranges:
+  Matrix  [1e+00, 2e+03]
+  Cost    [5e+01, 7e+03]
+  Bound   [1e+00, 2e+03]
+  RHS     [1e+00, 4e+03]
+Assessing feasibility of MIP using primal feasibility and integrality tolerance of       1e-06
+Solution has               num          max          sum
+Col     infeasibilities      0            0            0
+Integer infeasibilities      0            0            0
+Row     infeasibilities      0            0            0
+Row     residuals            0            0            0
+Presolving model
+7566 rows, 4642 cols, 25333 nonzeros 0s
+6288 rows, 4137 cols, 24127 nonzeros 0s
+Presolve reductions: rows 6288(-2349); columns 4137(-1141); nonzeros 24127(-3834) 
+
+MIP start solution is feasible, objective value is 641991.4871
+
+Solving MIP model with:
+   6288 rows
+   4137 cols (3782 binary, 0 integer, 18 implied int., 337 continuous, 0 domain fixed)
+   24127 nonzeros
+   Thread count 1 (of 20 threads). Using 1 max workers. Parallel search off
+
+Src: B => Branching; C => Central rounding; F => Feasibility pump; H => Heuristic;
+     I => Shifting; J => Feasibility jump; L => Sub-MIP; P => Empty MIP; R => Randomized rounding;
+     S => Solve LP; T => Evaluate node; U => Unbounded; X => User solution; Y => HiGHS solution;
+     Z => ZI Round; l => Trivial lower; p => Trivial point; u => Trivial upper; z => Trivial zero
+
+        Nodes      |    B&B Tree     |            Objective Bounds              |  Dynamic Constraints |       Work      
+Src  Proc. InQueue |  Leaves   Expl. | BestBound       BestSol              Gap |   Cuts   InLp Confl. | LpIters     Time
+
+         0       0         0   0.00%   59301.24        641991.4871       90.76%        0      0      0         0     0.6s
+         0       0         0   0.00%   610492.694623   641991.4871        4.91%        0      0      7      3040     0.9s
+         0       0         0   0.00%   615683.628368   641991.4871        4.10%     2274    163    307      5286     6.0s
+         0       0         0   0.00%   616397.903991   641991.4871        3.99%     2458    141    307      6667    11.2s
+         0       0         0   0.00%   616514.743033   641991.4871        3.97%     1580    101    307     62873    57.8s
+
+0.9% inactive integer columns, restarting
+Model after restart has 6186 rows, 4062 cols (3739 bin., 0 int., 26 impl., 297 cont., 0 dom.fix.), and 24494 nonzeros
+
+         0       0         0   0.00%   616514.743033   641991.4871        3.97%      101      0      0     62873    58.1s
+         0       0         0   0.00%   616523.804525   641991.4871        3.97%      101     75      5     64920    58.7s
+         0       0         0   0.00%   616524.867582   641991.4871        3.97%      132     80      5     64952    60.3s
+
+Solving report
+  Status            Time limit reached
+  Primal bound      641991.4871
+  Dual bound        616524.867582
+  Gap               3.97% (tolerance: 0.1%)
+  P-D integral      2.68385609768
+  Solution status   feasible
+                    641991.4871 (objective)
+                    0 (bound viol.)
+                    0 (int. viol.)
+                    0 (row viol.)
+  Timing            60.28
+                    10.22 (Presolve)
+                        MIP    time [calls] = 0.37 [1]
+                        subMIP time [calls] = 9.85 [33]
+                    50.05 (Solve)
+                        MIP    time [calls] = 18.22 [1]
+                        subMIP time [calls] = 31.83 [13]
+                    0.00 (Postsolve)
+                        MIP    time [calls] = 0.00 [1]
+                        subMIP time [calls] = 0.00 [33]
+  Max sub-MIP depth 8
+  Nodes             0
+  Repair LPs        0
+  LP iterations     64952
+                    0 (strong br.)
+                    4527 (separation)
+                    55338 (heuristics)

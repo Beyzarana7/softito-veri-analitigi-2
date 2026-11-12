@@ -1,0 +1,53 @@
+{
+  "executed": false,
+  "fold_indices": [
+    5,
+    16,
+    28
+  ],
+  "weeks": [
+    "2026-02-09",
+    "2026-04-27",
+    "2026-07-20"
+  ],
+  "seeds": [
+    7,
+    19,
+    42,
+    73,
+    101
+  ],
+  "per_solve_seconds": 60,
+  "threads": 1,
+  "mip_relative_gap": 0.001,
+  "local_search": false,
+  "methods": [
+    "hgb",
+    "ensemble",
+    "naive"
+  ],
+  "per_week_seed_runs": 10,
+  "total_milp_runs": 150,
+  "solver_limits_sum_minutes": 150,
+  "estimated_minutes_from_measured_pilot": 118.0260320687521,
+  "first_decision_shared_open_and_rolling": true,
+  "rolling_decisions": [
+    0,
+    1,
+    2
+  ],
+  "warm_start": "original reference at d0; own week/method/seed previous plan at d1,d2",
+  "freeze_forecasts_across_seeds": true,
+  "best_seed_selection": false,
+  "required_logging": [
+    "setSolution return status",
+    "effective seed before/after passModel and run",
+    "incumbent event count and cost/time trace",
+    "primal/dual bound trace",
+    "node count",
+    "termination status",
+    "full-model posthoc validation and accounting check"
+  ],
+  "reporting": "All 15 week-seed pairs; paired ML-minus-naive and rolling-minus-open; equal-weight seed summaries; no best-of-seeds policy",
+  "unresolved": "Rolling vs open still confounds information refresh with extra solve budget; no budget-matched control is run."
+}

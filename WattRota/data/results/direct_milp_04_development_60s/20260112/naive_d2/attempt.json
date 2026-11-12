@@ -1,0 +1,11 @@
+{
+  "week": "2026-01-12 00:00:00",
+  "run_key": "naive_d2",
+  "source": "naive",
+  "decision_day": 2,
+  "attempt": 1,
+  "state": "success",
+  "solver_status": "Optimal",
+  "actual_cost_tl": 734581.29015,
+  "wall_seconds": 7.8558659999398515
+}

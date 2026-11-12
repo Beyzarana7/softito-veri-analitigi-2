@@ -1,0 +1,5 @@
+{
+  "findings": [],
+  "scope": "metin dosyalari; bilinen yerel gizli degerler ve kimlikli URL/token kaliplari",
+  "git_history_copied": false
+}

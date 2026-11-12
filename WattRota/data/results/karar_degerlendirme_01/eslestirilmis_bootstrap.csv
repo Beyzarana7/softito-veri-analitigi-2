@@ -1,0 +1,7 @@
+﻿model_a,model_b,fark_tanimi,yontem,blok_hafta,hafta_sayisi,ortalama_fark_tl,ci95_alt_tl,ci95_ust_tl,a_daha_ucuz_hafta,esit_hafta,b_daha_ucuz_hafta
+son_yayinlanan_gun,random_forest_365gun,A eksi B; negatif A daha ucuz,paired_iid,1,44,-1.3436954545561755,-228.463324573875,240.4802798579466,4,36,4
+son_yayinlanan_gun,random_forest_365gun,A eksi B; negatif A daha ucuz,paired_moving_block,4,44,-1.3436954545561755,-186.0653830113746,224.50398522727076,4,36,4
+son_yayinlanan_gun,hgb_duzeltme_365,A eksi B; negatif A daha ucuz,paired_iid,1,44,-266.3065534090909,-632.0368829545438,15.8718909090914,3,40,1
+son_yayinlanan_gun,hgb_duzeltme_365,A eksi B; negatif A daha ucuz,paired_moving_block,4,44,-266.3065534090909,-616.3175681818155,-21.503845454545544,3,40,1
+random_forest_365gun,hgb_duzeltme_365,A eksi B; negatif A daha ucuz,paired_iid,1,44,-264.96285795453474,-669.070163693164,75.01858426136391,6,35,3
+random_forest_365gun,hgb_duzeltme_365,A eksi B; negatif A daha ucuz,paired_moving_block,4,44,-264.96285795453474,-688.4923446874876,65.62767284091996,6,35,3

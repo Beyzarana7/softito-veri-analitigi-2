@@ -1,0 +1,81 @@
+Running HiGHS 1.15.1 (git hash: 04024d7): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+MIP has 8637 rows; 5278 cols; 27961 nonzeros; 4716 integer variables (1349 binary)
+Coefficient ranges:
+  Matrix  [1e+00, 2e+03]
+  Cost    [3e+01, 7e+03]
+  Bound   [1e+00, 2e+03]
+  RHS     [1e+00, 4e+03]
+Assessing feasibility of MIP using primal feasibility and integrality tolerance of       1e-06
+Solution has               num          max          sum
+Col     infeasibilities      0            0            0
+Integer infeasibilities      0            0            0
+Row     infeasibilities      0            0            0
+Row     residuals            0            0            0
+Presolving model
+2183 rows, 1144 cols, 6907 nonzeros 0s
+1849 rows, 970 cols, 6617 nonzeros 0s
+1475 rows, 874 cols, 6283 nonzeros 0s
+1466 rows, 871 cols, 6242 nonzeros 0s
+Presolve reductions: rows 1466(-7171); columns 871(-4407); nonzeros 6242(-21719) 
+
+MIP start solution is feasible, objective value is 428764.6567
+
+Solving MIP model with:
+   1466 rows
+   871 cols (825 binary, 0 integer, 5 implied int., 41 continuous, 0 domain fixed)
+   6242 nonzeros
+   Thread count 1 (of 20 threads). Using 1 max workers. Parallel search off
+
+Src: B => Branching; C => Central rounding; F => Feasibility pump; H => Heuristic;
+     I => Shifting; J => Feasibility jump; L => Sub-MIP; P => Empty MIP; R => Randomized rounding;
+     S => Solve LP; T => Evaluate node; U => Unbounded; X => User solution; Y => HiGHS solution;
+     Z => ZI Round; l => Trivial lower; p => Trivial point; u => Trivial upper; z => Trivial zero
+
+        Nodes      |    B&B Tree     |            Objective Bounds              |  Dynamic Constraints |       Work      
+Src  Proc. InQueue |  Leaves   Expl. | BestBound       BestSol              Gap |   Cuts   InLp Confl. | LpIters     Time
+
+         0       0         0   0.00%   330446.76475    428764.6567       22.93%        0      0      0         0     0.2s
+         0       0         0   0.00%   425597.354604   428764.6567        0.74%        0      0      4       437     0.2s
+ L       0       0         0   0.00%   426895.29808    428730.9545        0.43%      290      9    127       567     0.6s
+
+19.6% inactive integer columns, restarting
+Model after restart has 1115 rows, 632 cols (588 bin., 0 int., 5 impl., 39 cont., 0 dom.fix.), and 4757 nonzeros
+
+         0       0         0   0.00%   427258.88786    428730.9545        0.34%       11      0      0      1010     0.8s
+         0       0         0   0.00%   427302.087676   428730.9545        0.33%       11      8      4      1160     0.9s
+
+25.7% inactive integer columns, restarting
+Model after restart has 450 rows, 325 cols (288 bin., 0 int., 2 impl., 35 cont., 0 dom.fix.), and 1708 nonzeros
+
+         0       0         0   0.00%   428034.970793   428730.9545        0.16%        8      0      0      1651     1.3s
+         1       0         1 100.00%   428518.98689    428730.9545        0.05%        8      0      0      1681     1.3s
+
+Solving report
+  Status            Optimal
+  Primal bound      428730.9545
+  Dual bound        428518.98689
+  Gap               0.0494% (tolerance: 0.1%)
+  P-D integral      0.00785501207562
+  Solution status   feasible
+                    428730.9545 (objective)
+                    0 (bound viol.)
+                    3.75255382323e-14 (int. viol.)
+                    0 (row viol.)
+  Timing            1.32
+                    0.29 (Presolve)
+                        MIP    time [calls] = 0.18 [1]
+                        subMIP time [calls] = 0.12 [9]
+                    1.02 (Solve)
+                        MIP    time [calls] = 0.54 [1]
+                        subMIP time [calls] = 0.48 [6]
+                    0.00 (Postsolve)
+                        MIP    time [calls] = 0.00 [1]
+                        subMIP time [calls] = 0.00 [9]
+  Max sub-MIP depth 4
+  Nodes             1
+  Repair LPs        0
+  LP iterations     1681
+                    0 (strong br.)
+                    243 (separation)
+                    821 (heuristics)

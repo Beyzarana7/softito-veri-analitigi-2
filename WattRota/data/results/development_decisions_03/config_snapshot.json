@@ -1,0 +1,10 @@
+{
+  "parent_protocol": "data/results/walk_forward_02",
+  "forecast_results": "data/results/price_models_03",
+  "plan_pool": "data/results/ortak_plan_deneyi",
+  "models": ["naive_yesterday_recursive", "lear_level_1", "hgb_expanding_cached", "ensemble_level_fixed"],
+  "reference_forecast": "naive_yesterday_recursive",
+  "information_value_minimum_tl": 0.02,
+  "scope": "development_only_fixed_19_plan_pool_not_full_MILP_oracle",
+  "lasso_selection": "lear_level_1 fixed from task 3 development MAE; not selected by decision metrics"
+}

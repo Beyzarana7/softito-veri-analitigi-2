@@ -1,0 +1,80 @@
+{
+  "senaryo_id": "yogun_dokme_talep",
+  "ad": "Yoğun dökme talep",
+  "aciklama": "İkinci gün UR02 dökme siparişi 400→560 ton; toplam talep +%2,38. Y01 için en az 9/9 saat gerekir. Referans aynı yeni talebe göre fiyat kullanılmadan düzenlendi.",
+  "degisiklik_gideri_tl_kaynak_saat": 0.0,
+  "toplam_siparis_ton": 6880.0,
+  "uygulanabilir": true,
+  "cozum_calistirildi": true,
+  "cozum": {
+    "durum": "Time limit reached",
+    "tolerans_icinde_optimum": false,
+    "sure_saniye": 120.01247169997077,
+    "goreli_acik": 0.027452235699309376,
+    "alt_sinir_tl": 642299.2127934447,
+    "maliyet_tl": 660429.4784999987,
+    "degisken_sayisi": 5278,
+    "kisit_sayisi": 8637,
+    "sure_siniri_saniye": 120.0,
+    "hedef_goreli_acik": 0.001,
+    "degisiklik_gideri_tl_kaynak_saat": 0.0,
+    "referans_model_kontrolu": true,
+    "baslangic_model_kontrolu": true,
+    "bagimsiz_plan_kontrolu": true,
+    "bagimsiz_maliyet_kontrolu": true,
+    "cozucu_surumu": "1.15.1",
+    "baslangic_iyilestirmeleri": [
+      {
+        "serbest_kaynaklar": [],
+        "maliyet_tl": 667656.0297500001,
+        "durum": "Optimal",
+        "goreli_acik": 0.0
+      },
+      {
+        "serbest_kaynaklar": [
+          "P01"
+        ],
+        "maliyet_tl": 667555.3788000001,
+        "durum": "Time limit reached",
+        "goreli_acik": 0.0008565292906928841
+      },
+      {
+        "serbest_kaynaklar": [
+          "H01",
+          "P01"
+        ],
+        "maliyet_tl": 667555.3788000001,
+        "durum": "Time limit reached",
+        "goreli_acik": 0.01151686268991985
+      },
+      {
+        "serbest_kaynaklar": [
+          "H02",
+          "P01"
+        ],
+        "maliyet_tl": 667420.6964,
+        "durum": "Time limit reached",
+        "goreli_acik": 0.016556158723385096
+      }
+    ],
+    "yerel_arama_saniye": 30.156532800057903,
+    "toplam_cozum_saniye": 150.16900450002868,
+    "baslangic_maliyet_tl": 667955.7891500001
+  },
+  "referans_maliyet_tl": 667955.7891500001,
+  "onerilen_maliyet_tl": 660429.4785,
+  "avantaj_tl": 7526.310650000116,
+  "avantaj_yuzde": 1.1267677849723619,
+  "degisen_uretim_kaynak_saat": 76,
+  "referans_enerji_kwh": 241500.0,
+  "onerilen_enerji_kwh": 242375.0,
+  "teslim_kontrolu": true,
+  "stok_kontrolu": true,
+  "guc_kontrolu": true,
+  "kaynak_sha256": {
+    "src\\firma_verisi.py": "aa646656b6ce3c502e1e646fdedf158931a1e91e9cd1818b6faad08de68a00ee",
+    "src\\firma_cizelgeleme.py": "8f6fae644267c1d36945adc805ecbff7a8a0eaa1ed49a2955ee4d8177103e456",
+    "src\\firma_senaryolari.py": "539eb7d6006f028855ca5119569e8349a2d9e10dc30d233b65ea85754cb98a81"
+  },
+  "girdi_zip_sha256": "70df6b1aeebcb98a23e84f8d318e5e7cb43e2681af0a9e7dee810a9c90e81570"
+}

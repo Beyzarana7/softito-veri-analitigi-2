@@ -1,0 +1,4 @@
+﻿Yöntem,Fiyat modeli,48 saat fiyat MAE (TL/MWh),Planlama fiyatlarıyla maliyet (TL),Gerçek fiyatlarla maliyet (TL),Gerçekleşmiş avantaj (TL),Gerçekleşmiş avantaj (%),Değişen üretim kaynak-saat,Planlama amacı optimalite açığı (%),Çözücü durumu
+Tüm fiyatlar biliniyor,tum_fiyatlar_biliniyor,0.0,620761.2502,620761.2502,1068.3111999999965,0.17180128869955594,28,6.248304862212814,Time limit reached
+Basit tahmin,son_yayinlanan_gun,532.3718749999999,530332.9567,620914.72105,914.8403499999549,0.14712075571644814,26,5.680295924930922,Time limit reached
+Makine öğrenmesi,random_forest_365gun,412.9277295218233,578331.843208306,621400.5014000001,429.05999999993946,0.06899961446572994,0,5.6870501857068305,Time limit reached

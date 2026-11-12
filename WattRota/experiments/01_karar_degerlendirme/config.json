@@ -1,0 +1,11 @@
+{
+  "seed": 42,
+  "section": "geriye_donuk_2026",
+  "models": ["son_yayinlanan_gun", "random_forest_365gun", "hgb_duzeltme_365"],
+  "cheap_k_per_day": 6,
+  "bootstrap_repetitions": 10000,
+  "confidence_level": 0.95,
+  "block_length_weeks": 4,
+  "information_value_minimum_tl": 0.02,
+  "scope": "fixed_19_plan_pool_retrospective_not_full_milp_oracle"
+}

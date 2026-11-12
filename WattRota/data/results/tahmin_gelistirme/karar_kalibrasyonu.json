@@ -1,0 +1,14 @@
+{
+  "ml_model": "hgb_duzeltme_365",
+  "ml_orani": 1.0,
+  "aday_oranlar": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "secim_donemi": "2025 tamamı",
+  "olcut": "Ortak planlarda ortalama gerçekleşmiş maliyet",
+  "yorum": "2025 bu oran için kalibrasyon dönemidir; 2026 daha önce görülmüş geriye dönük karşılaştırmadır."
+}

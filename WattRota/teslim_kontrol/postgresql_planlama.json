@@ -1,0 +1,63 @@
+{
+  "connection": true,
+  "success": true,
+  "independent_validation": true,
+  "expected_cost_tl": 603852.919251901,
+  "actual_cost_tl": 646551.6477000001,
+  "actual_advantage_tl": 6248.011249999981,
+  "solver": {
+    "durum": "Time limit reached",
+    "tolerans_icinde_optimum": false,
+    "sure_saniye": 15.021808599998622,
+    "goreli_acik": 0.03567891625023784,
+    "alt_sinir_tl": 582308.1015184508,
+    "maliyet_tl": 603852.919251901,
+    "degisken_sayisi": 5278,
+    "kisit_sayisi": 8637,
+    "sure_siniri_saniye": 15,
+    "hedef_goreli_acik": 0.01,
+    "degisiklik_gideri_tl_kaynak_saat": 0.0,
+    "referans_model_kontrolu": true,
+    "baslangic_model_kontrolu": true,
+    "bagimsiz_plan_kontrolu": true,
+    "bagimsiz_maliyet_kontrolu": true,
+    "cozucu_surumu": "1.15.1",
+    "baslangic_iyilestirmeleri": [
+      {
+        "serbest_kaynaklar": [],
+        "maliyet_tl": 606917.2301184693,
+        "durum": "Optimal",
+        "goreli_acik": 0.0
+      },
+      {
+        "serbest_kaynaklar": [
+          "P01"
+        ],
+        "maliyet_tl": 606391.0775999443,
+        "durum": "Time limit reached",
+        "goreli_acik": 0.0005216569714091683
+      },
+      {
+        "serbest_kaynaklar": [
+          "H01",
+          "P01"
+        ],
+        "maliyet_tl": 604763.6345579706,
+        "durum": "Time limit reached",
+        "goreli_acik": 0.006455730778997715
+      },
+      {
+        "serbest_kaynaklar": [
+          "H02",
+          "P01"
+        ],
+        "maliyet_tl": 603852.919251901,
+        "durum": "Time limit reached",
+        "goreli_acik": 0.017122656094506142
+      }
+    ],
+    "yerel_arama_saniye": 30.084563600001275,
+    "toplam_cozum_saniye": 45.106372199999896,
+    "baslangic_maliyet_tl": 607365.14847967
+  }
+}

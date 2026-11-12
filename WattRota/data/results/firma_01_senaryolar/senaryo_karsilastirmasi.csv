@@ -1,0 +1,8 @@
+﻿Senaryo,Sipariş (ton),Referans maliyet (TL),Önerilen maliyet (TL),Avantaj (TL),Avantaj (%),Değişen üretim kaynak-saat,Optimalite açığı (%),Kontrol,Çözücü durumu
+Temel — Ekim fiyatları,6720.0,652799.6589500001,644855.65185,7944.007100000046,1.2169134880948984,54.0,3.037487520521601,Kontroller geçti,Time limit reached
+Kış fiyatları,6720.0,584954.1879,580118.62035,4835.567550000036,0.8266574801968413,36.0,3.0240993912349032,Kontroller geçti,Time limit reached
+İlkbahar fiyatları,6720.0,636666.7614499999,635617.9119999999,1048.8494499999797,0.16474072678322949,62.0,2.617509044512274,Kontroller geçti,Time limit reached
+Yaz fiyatları,6720.0,718677.53735,718546.16375,131.37360000004992,0.018279909023519437,0.0,2.13880059503402,Kontroller geçti,Time limit reached
+Yoğun dökme talep,6880.0,667955.7891500001,660429.4785,7526.310650000116,1.1267677849723619,76.0,2.7452235699309377,Kontroller geçti,Time limit reached
+Yüksek üretim planı değişikliği gideri,6720.0,652799.6589500001,652492.07375,307.58520000008866,0.047117855498703246,0.0,0.0728571608952176,Kontroller geçti,Optimal
+Yükleme kapasitesini aşan talep,7120.0,,,,,,,Yükleme kapasitesi yetersiz,Çözücü çalıştırılmadı

@@ -1,0 +1,7 @@
+stok_id,urun_id,stok_turu,minimum_ton,kapasite_ton,baslangic_ton,son_hedef_ton
+D01,UR01,dokme,60,1200,240,240
+D02,UR02,dokme,80,1600,900,900
+D03,UR03,dokme,50,800,180,180
+T01,UR01,torbali,0,600,120,120
+T02,UR02,torbali,0,700,100,100
+T03,UR03,torbali,0,400,80,80

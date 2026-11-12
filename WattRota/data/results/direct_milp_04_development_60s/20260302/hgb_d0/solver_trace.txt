@@ -1,0 +1,82 @@
+Running HiGHS 1.15.1 (git hash: 04024d7): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+MIP has 8637 rows; 5278 cols; 27961 nonzeros; 4716 integer variables (4626 binary)
+Coefficient ranges:
+  Matrix  [1e+00, 2e+03]
+  Cost    [4e+01, 7e+03]
+  Bound   [1e+00, 2e+03]
+  RHS     [1e+00, 4e+03]
+Assessing feasibility of MIP using primal feasibility and integrality tolerance of       1e-06
+Solution has               num          max          sum
+Col     infeasibilities      0            0            0
+Integer infeasibilities      0            0            0
+Row     infeasibilities      0            0            0
+Row     residuals            0            0            0
+Presolving model
+7566 rows, 4642 cols, 25333 nonzeros 0s
+6288 rows, 4137 cols, 24127 nonzeros 0s
+Presolve reductions: rows 6288(-2349); columns 4137(-1141); nonzeros 24127(-3834) 
+
+MIP start solution is feasible, objective value is 453898.413201
+
+Solving MIP model with:
+   6288 rows
+   4137 cols (3782 binary, 0 integer, 18 implied int., 337 continuous, 0 domain fixed)
+   24127 nonzeros
+   Thread count 1 (of 20 threads). Using 1 max workers. Parallel search off
+
+Src: B => Branching; C => Central rounding; F => Feasibility pump; H => Heuristic;
+     I => Shifting; J => Feasibility jump; L => Sub-MIP; P => Empty MIP; R => Randomized rounding;
+     S => Solve LP; T => Evaluate node; U => Unbounded; X => User solution; Y => HiGHS solution;
+     Z => ZI Round; l => Trivial lower; p => Trivial point; u => Trivial upper; z => Trivial zero
+
+        Nodes      |    B&B Tree     |            Objective Bounds              |  Dynamic Constraints |       Work      
+Src  Proc. InQueue |  Leaves   Expl. | BestBound       BestSol              Gap |   Cuts   InLp Confl. | LpIters     Time
+
+ J       0       0         0   0.00%   -inf            453898.413201      Large        0      0      0         0     0.5s
+         0       0         0   0.00%   427252.391897   453898.413201      5.87%        0      0      5      2834     0.7s
+         0       0         0   0.00%   433344.364251   453898.413201      4.53%     2036    108    233      4963     6.2s
+         0       0         0   0.00%   434256.81462    453898.413201      4.33%     2506    106    233      6608    11.3s
+         0       0         0   0.00%   434256.81462    453898.413201      4.33%     2508     61    249     24692    25.0s
+
+0.8% inactive integer columns, restarting
+Model after restart has 6200 rows, 4066 cols (3735 bin., 0 int., 19 impl., 312 cont., 0 dom.fix.), and 24563 nonzeros
+
+         0       0         0   0.00%   434256.81462    453898.413201      4.33%       61      0      0     24692    25.4s
+         0       0         0   0.00%   434271.438225   453898.413201      4.32%       61     53      6     26044    25.8s
+         0       0         0   0.00%   434296.178175   453898.413201      4.32%     1507     81      6     26486    30.8s
+
+Symmetry detection completed in 0.0s
+Found 3 full orbitope(s) acting on 6 columns
+
+         2       2         1   0.00%   434302.958017   453898.413201      4.32%     1513     70     23     97576    60.0s
+         2       2         1   0.00%   434302.958017   453898.413201      4.32%     1513     70     23     97576    60.0s
+
+Solving report
+  Status            Time limit reached
+  Primal bound      453898.413201
+  Dual bound        434302.958017
+  Gap               4.32% (tolerance: 0.1%)
+  P-D integral      2.83934316062
+  Solution status   feasible
+                    453898.413201 (objective)
+                    0 (bound viol.)
+                    0 (int. viol.)
+                    0 (row viol.)
+  Timing            60.01
+                    4.30 (Presolve)
+                        MIP    time [calls] = 0.33 [1]
+                        subMIP time [calls] = 3.97 [12]
+                    55.71 (Solve)
+                        MIP    time [calls] = 46.83 [1]
+                        subMIP time [calls] = 8.87 [9]
+                    0.00 (Postsolve)
+                        MIP    time [calls] = 0.00 [1]
+                        subMIP time [calls] = 0.00 [12]
+  Max sub-MIP depth 4
+  Nodes             2
+  Repair LPs        0
+  LP iterations     97576
+                    70750 (strong br.)
+                    4216 (separation)
+                    18084 (heuristics)

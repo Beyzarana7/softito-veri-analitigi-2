@@ -1,0 +1,15 @@
+﻿olcut,Referans,Önerilen
+Öğütülen miktar (ton),6880.0,6880.0
+Paketlenen miktar (ton),2880.0,2880.0
+Teslim edilen miktar (ton),6880.0,6879.999999999909
+Öğütme kaynak-saat,104.0,104.0
+Paketleme kaynak-saat,36.0,36.0
+Hazırlık kaynak-saat,17.0,21.0
+Başlatma sayısı,9.0,10.0
+Değişen kaynak-saat,0.0,76.0
+Enerji (kWh),241500.0,242375.0
+En yüksek saatlik ortalama güç (kW),4650.0,4670.0
+PTF bedeli (TL),665875.7891500001,658274.4785
+Başlatma ve geçiş gideri (TL),2080.0,2155.0
+Plan değişikliği gideri (TL),0.0,0.0
+Karşılaştırılan toplam maliyet (TL),667955.7891500001,660429.4785

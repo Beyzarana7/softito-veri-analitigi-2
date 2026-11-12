@@ -1,0 +1,144 @@
+{
+  "week": "2026-02-16 00:00:00",
+  "run_key": "hgb_d1",
+  "source": "hgb",
+  "decision_day": 1,
+  "solver_status": "Time limit reached",
+  "solver_objective_tl": 294956.36607590807,
+  "expected_cost_tl": 294956.36607590807,
+  "actual_cost_tl": 283791.5308,
+  "lower_bound_tl": 278788.02658755105,
+  "mip_gap": 0.05481603839734056,
+  "solver_seconds": 60.03031960001681,
+  "wall_seconds": 63.40063430008013,
+  "time_limit_seconds": 60.0,
+  "time_limit_reached": true,
+  "fixed_prefix_hours": 24,
+  "fixed_columns": 1954,
+  "independent_validation": true,
+  "violation_count": 0,
+  "mip_node_count": 203,
+  "solver_version": "1.15.1",
+  "requested_seed": 42,
+  "effective_seed": 42,
+  "warm_start_api_status": "HighsStatus.kOk",
+  "native_mip_start_feasible_message": true,
+  "mip_solution_callback_events": 4,
+  "improving_solution_callback_events": 2,
+  "warm_start": "own_previous_day_continuation",
+  "warm_start_signature": "f184560f30f2cf1ad59a56748c4e6bf1de119cc6b279ee81180e88e98d7a3d53",
+  "plan_signature": "90bbc479d706a0af41bfa13442bd9772ef7e8c9cb19e9ea97782915d7ac380a5",
+  "declared_optimal": false,
+  "tolerance_optimal": false,
+  "solver_diagnostics": {
+    "api_status": {
+      "passModel": "HighsStatus.kOk",
+      "setSolution": "HighsStatus.kOk",
+      "run": "HighsStatus.kWarning"
+    },
+    "options": {
+      "before_model": {
+        "random_seed": {
+          "status": "HighsStatus.kOk",
+          "value": 42
+        },
+        "threads": {
+          "status": "HighsStatus.kOk",
+          "value": 1
+        },
+        "time_limit": {
+          "status": "HighsStatus.kOk",
+          "value": 60.0
+        },
+        "mip_rel_gap": {
+          "status": "HighsStatus.kOk",
+          "value": 0.001
+        }
+      },
+      "after_model": {
+        "random_seed": {
+          "status": "HighsStatus.kOk",
+          "value": 42
+        },
+        "threads": {
+          "status": "HighsStatus.kOk",
+          "value": 1
+        },
+        "time_limit": {
+          "status": "HighsStatus.kOk",
+          "value": 60.0
+        },
+        "mip_rel_gap": {
+          "status": "HighsStatus.kOk",
+          "value": 0.001
+        }
+      },
+      "before_run": {
+        "random_seed": {
+          "status": "HighsStatus.kOk",
+          "value": 42
+        },
+        "threads": {
+          "status": "HighsStatus.kOk",
+          "value": 1
+        },
+        "time_limit": {
+          "status": "HighsStatus.kOk",
+          "value": 60.0
+        },
+        "mip_rel_gap": {
+          "status": "HighsStatus.kOk",
+          "value": 0.001
+        }
+      },
+      "after_run": {
+        "random_seed": {
+          "status": "HighsStatus.kOk",
+          "value": 42
+        },
+        "threads": {
+          "status": "HighsStatus.kOk",
+          "value": 1
+        },
+        "time_limit": {
+          "status": "HighsStatus.kOk",
+          "value": 60.0
+        },
+        "mip_rel_gap": {
+          "status": "HighsStatus.kOk",
+          "value": 0.001
+        }
+      }
+    },
+    "event_counts": {
+      "mip_solution": 4,
+      "mip_improving_solution": 2,
+      "mip_logging": 9
+    },
+    "callback_errors": [],
+    "final_info": {
+      "valid": 1,
+      "objective_function_value": 294956.36607590807,
+      "mip_dual_bound": 278788.02658755105,
+      "mip_gap": 0.05481603839734056,
+      "mip_node_count": 203,
+      "simplex_iteration_count": 152275,
+      "ipm_iteration_count": -1,
+      "primal_dual_integral": 5.435860717263617,
+      "primal_solution_status": 2,
+      "max_primal_infeasibility": 0.0,
+      "max_integrality_violation": 2.6645352591003757e-15,
+      "model_status": "Time limit reached"
+    },
+    "native_mip_start_feasible_message": true,
+    "feasible_solution_count": null,
+    "solution_count_note": "Callback events are not a certified count of unique feasible solutions."
+  },
+  "operating_electricity_tl": 274789.777,
+  "startup_electricity_tl": 577.4987999999998,
+  "transition_electricity_tl": 6264.254999999999,
+  "startup_non_electric_tl": 1550.0,
+  "transition_non_electric_tl": 610.0,
+  "plan_change_tl": 0.0,
+  "total_electricity_tl": 281631.5308
+}

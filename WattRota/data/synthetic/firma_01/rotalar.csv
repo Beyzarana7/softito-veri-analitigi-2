@@ -1,0 +1,16 @@
+﻿rota_id,urun_id,teslim_turu,adim_no,islem_turu,girdi_stok_turu,cikti_stok_turu
+R_UR01_dokme,UR01,dokme,1,ogutme,hammadde,dokme
+R_UR01_dokme,UR01,dokme,2,dokme_yukleme,dokme,teslim
+R_UR01_torbali,UR01,torbali,1,ogutme,hammadde,dokme
+R_UR01_torbali,UR01,torbali,2,paketleme,dokme,torbali
+R_UR01_torbali,UR01,torbali,3,torbali_yukleme,torbali,teslim
+R_UR02_dokme,UR02,dokme,1,ogutme,hammadde,dokme
+R_UR02_dokme,UR02,dokme,2,dokme_yukleme,dokme,teslim
+R_UR02_torbali,UR02,torbali,1,ogutme,hammadde,dokme
+R_UR02_torbali,UR02,torbali,2,paketleme,dokme,torbali
+R_UR02_torbali,UR02,torbali,3,torbali_yukleme,torbali,teslim
+R_UR03_dokme,UR03,dokme,1,ogutme,hammadde,dokme
+R_UR03_dokme,UR03,dokme,2,dokme_yukleme,dokme,teslim
+R_UR03_torbali,UR03,torbali,1,ogutme,hammadde,dokme
+R_UR03_torbali,UR03,torbali,2,paketleme,dokme,torbali
+R_UR03_torbali,UR03,torbali,3,torbali_yukleme,torbali,teslim

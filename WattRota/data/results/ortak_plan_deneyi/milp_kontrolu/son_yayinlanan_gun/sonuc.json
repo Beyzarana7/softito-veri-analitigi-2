@@ -1,0 +1,62 @@
+{
+  "model": "son_yayinlanan_gun",
+  "karar_zamani": "2026-10-05 00:00:00",
+  "baslangic_plan": "P009",
+  "gercek_maliyet_tl": 614059.3564,
+  "cozum": {
+    "durum": "Time limit reached",
+    "tolerans_icinde_optimum": false,
+    "sure_saniye": 120.02820940001402,
+    "goreli_acik": 0.05104795453798421,
+    "alt_sinir_tl": 500183.9493143046,
+    "maliyet_tl": 527090.85955,
+    "degisken_sayisi": 5278,
+    "kisit_sayisi": 8637,
+    "sure_siniri_saniye": 120,
+    "hedef_goreli_acik": 0.001,
+    "degisiklik_gideri_tl_kaynak_saat": 0.0,
+    "referans_model_kontrolu": false,
+    "baslangic_model_kontrolu": true,
+    "bagimsiz_plan_kontrolu": true,
+    "bagimsiz_maliyet_kontrolu": true,
+    "cozucu_surumu": "1.15.1",
+    "baslangic_iyilestirmeleri": [
+      {
+        "serbest_kaynaklar": [],
+        "maliyet_tl": 527793.22135,
+        "durum": "Optimal",
+        "goreli_acik": 0.0
+      },
+      {
+        "serbest_kaynaklar": [
+          "P01"
+        ],
+        "maliyet_tl": 527090.85955,
+        "durum": "Time limit reached",
+        "goreli_acik": 0.0013565851514962884
+      },
+      {
+        "serbest_kaynaklar": [
+          "H01",
+          "P01"
+        ],
+        "maliyet_tl": 527090.85955,
+        "durum": "Time limit reached",
+        "goreli_acik": 0.013025310286606195
+      },
+      {
+        "serbest_kaynaklar": [
+          "H02",
+          "P01"
+        ],
+        "maliyet_tl": 527090.85955,
+        "durum": "Time limit reached",
+        "goreli_acik": 0.021190057943534932
+      }
+    ],
+    "yerel_arama_saniye": 30.32459969993215,
+    "toplam_cozum_saniye": 150.35280909994617,
+    "baslangic_maliyet_tl": 528327.16135
+  },
+  "bagimsiz_kontrol": true
+}

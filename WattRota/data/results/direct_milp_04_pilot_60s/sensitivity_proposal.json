@@ -1,0 +1,32 @@
+{
+  "selection_rule": "equally spaced interior development fold indices; no outcome-based selection",
+  "fold_indices": [
+    5,
+    16,
+    28
+  ],
+  "seeds": [
+    7,
+    19,
+    42,
+    73,
+    101
+  ],
+  "per_solve_seconds": 60,
+  "executed": false,
+  "weeks": [
+    "2026-02-09 00:00:00",
+    "2026-04-27 00:00:00",
+    "2026-07-20 00:00:00"
+  ],
+  "locked_test_evaluated": false,
+  "outcome_based_selection": false,
+  "protocols": [
+    "oracle",
+    "hgb_open",
+    "ensemble_open",
+    "naive_open"
+  ],
+  "milp_runs": 60,
+  "note": "Only initial decisions; no rolling. 60 solves, maximum solver limits sum 60 minutes; not executed."
+}

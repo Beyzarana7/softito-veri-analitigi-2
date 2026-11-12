@@ -1,0 +1,9 @@
+{
+  "experiment_id": "development04_60s_5b46f2ea9a4c86f1",
+  "weeks_processed": 9,
+  "weeks_complete": 9,
+  "planned_weeks": 34,
+  "elapsed_seconds": 6130.7871690000175,
+  "successful_milp": 90,
+  "failure_count": 0
+}

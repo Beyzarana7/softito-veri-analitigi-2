@@ -1,0 +1,27 @@
+{
+  "protocol_version": 1,
+  "seed": 42,
+  "threads": 2,
+  "history_start": "2024-01-01 00:00:00",
+  "evaluation_year": 2026,
+  "evaluation_snapshot_end": "2026-11-06 23:00:00",
+  "decision_frequency": "W-MON",
+  "plan_hours": 72,
+  "known_hours": 24,
+  "forecast_hours": 48,
+  "locked_test_weeks": 10,
+  "minimum_training_rows": 1000,
+  "prediction_floor": 0.0,
+  "selection_metric": "mae_tl_mwh",
+  "selection_tie_break": "model_id_ascending",
+  "feature_builders": {
+    "rf": "fiyat_tahmini.ozellikleri_hazirla",
+    "hgb": "fiyat_tahmini_gelistirme.karar_ornekleri"
+  },
+  "models": [
+    {"id": "son_yayinlanan_gun", "kind": "naive", "parameters": {}},
+    {"id": "rf_expanding", "kind": "rf", "parameters": {"n_estimators": 80, "max_depth": 10, "min_samples_leaf": 8, "max_features": 1.0}},
+    {"id": "hgb_residual_expanding", "kind": "hgb", "parameters": {"loss": "absolute_error", "learning_rate": 0.05, "max_iter": 160, "max_leaf_nodes": 15, "min_samples_leaf": 30, "l2_regularization": 10, "early_stopping": false}}
+  ],
+  "interpretation": "retrospective_2026_previously_seen_not_a_new_blind_test"
+}

@@ -1,0 +1,12 @@
+{
+  "basit_model": "son_yayinlanan_gun",
+  "ml_model": "random_forest_365gun",
+  "secim_olcutu": "2025 doğrulama MAE",
+  "dogrulama_karar_sayisi": 52,
+  "ileri_donem_karar_sayisi": 44,
+  "sklearn_surumu": "1.9.1",
+  "random_state": 42,
+  "n_estimators": 80,
+  "max_depth": 10,
+  "min_samples_leaf": 8
+}

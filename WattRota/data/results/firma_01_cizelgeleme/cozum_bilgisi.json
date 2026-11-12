@@ -1,0 +1,77 @@
+{
+  "durum": "Time limit reached",
+  "tolerans_icinde_optimum": false,
+  "sure_saniye": 120.05522430001292,
+  "goreli_acik": 0.03037487520521601,
+  "alt_sinir_tl": 625268.2418996791,
+  "maliyet_tl": 644855.651850001,
+  "degisken_sayisi": 5278,
+  "kisit_sayisi": 8637,
+  "sure_siniri_saniye": 120,
+  "hedef_goreli_acik": 0.001,
+  "degisiklik_gideri_tl_kaynak_saat": 0.0,
+  "referans_model_kontrolu": true,
+  "bagimsiz_plan_kontrolu": true,
+  "bagimsiz_maliyet_kontrolu": true,
+  "cozucu_surumu": "1.15.1",
+  "baslangic_iyilestirmeleri": [
+    {
+      "serbest_kaynaklar": [],
+      "maliyet_tl": 652492.0737500001,
+      "durum": "Optimal",
+      "goreli_acik": 0.0
+    },
+    {
+      "serbest_kaynaklar": [
+        "P01"
+      ],
+      "maliyet_tl": 652359.22835,
+      "durum": "Time limit reached",
+      "goreli_acik": 0.0008922654347726238
+    },
+    {
+      "serbest_kaynaklar": [
+        "H01",
+        "P01"
+      ],
+      "maliyet_tl": 652359.22835,
+      "durum": "Time limit reached",
+      "goreli_acik": 0.012737522437734558
+    },
+    {
+      "serbest_kaynaklar": [
+        "H02",
+        "P01"
+      ],
+      "maliyet_tl": 652359.22835,
+      "durum": "Time limit reached",
+      "goreli_acik": 0.015629561107512187
+    }
+  ],
+  "yerel_arama_saniye": 30.136554299970157,
+  "toplam_cozum_saniye": 150.19177859998308,
+  "dosya_sha256": {
+    "data\\synthetic\\firma_01\\bakimlar.csv": "6d7e06c44d538c79841ac9d923d8607e76a8d3da59f0544c2884982e8b11336f",
+    "data\\synthetic\\firma_01\\depo_kurallari.csv": "3a2fa7542633cd1211e89dca6b919cf469d6d39f4244427ae9c53b80dac40f08",
+    "data\\synthetic\\firma_01\\fiyatlar.csv": "8aecd86d0cf5aa229e4254493d130813d2c3fa45a64f8aca450e8797e67d0522",
+    "data\\synthetic\\firma_01\\is_emirleri.csv": "8602081ed506d1ee9f7d63d90aaf124f45182c1dc4461f411c3dac65a04e5671",
+    "data\\synthetic\\firma_01\\is_emri_siparis_baglantisi.csv": "1f0821b9e7a1836b90681b00584d231e4a66dfa475c8cd65d2e572d5f1ab7a74",
+    "data\\synthetic\\firma_01\\isletme_kurallari.csv": "245948002fe975cf4323f5487867447fb0394d096f27f8694f97e7ec7f354984",
+    "data\\synthetic\\firma_01\\kaynak_takvimi.csv": "a86d9cf18ccc9804d45757413c6aec9c85028a4ef1dab0e312d356cccf1003f5",
+    "data\\synthetic\\firma_01\\kaynak_urun.csv": "330d088855d37d60d8078442659fe5fb574750f35d743e9f08421d3d1efd6ee5",
+    "data\\synthetic\\firma_01\\kaynaklar.csv": "e177b267d00907f5afd567d6e372fef6d8682b6aaf52e2e1173fe2cd47040633",
+    "data\\synthetic\\firma_01\\parametre_dayanaklari.csv": "cc0c85ee80fedbbfc9c9af23362cfccdef47471f21a490c7e2bebc9b31389ca3",
+    "data\\synthetic\\firma_01\\rota_kaynaklari.csv": "59d28faa0200aab27edfe112334d7cd025ee2128bde0680942e34042f1d78b56",
+    "data\\synthetic\\firma_01\\rotalar.csv": "c591116001e327b2ebd46b5808d72ae72907587f8312e9139d979ef1a5995fe9",
+    "data\\synthetic\\firma_01\\siparisler.csv": "05cc5a7dab28e398fb9aa44fc54d839b63a0de5fab61960957f9ea99fb6a6bb8",
+    "data\\synthetic\\firma_01\\stok_alanlari.csv": "687730b71179e58e35b96091afce82b95b2ac2655c93ca63bc0f7a60e785b2de",
+    "data\\synthetic\\firma_01\\tesis_takvimi.csv": "55c2c9e6678175af304fce67e224f297b7e1ecf1cd96eeef886b198711f609cf",
+    "data\\synthetic\\firma_01\\urun_gecisleri.csv": "a7c4f067f41b641e1b38c860ccbfdd4a1a2a33e4d2215d0f4c12ef77cc48e16a",
+    "data\\synthetic\\firma_01\\urunler.csv": "7c8a19348fd0946297e355447c6f070956a5f4847e4c056153f4ee316efb7429",
+    "data\\synthetic\\firma_01\\veri_sozlugu.csv": "d4bbf6ffb831268b51e3d35532d02137e8f329605624e593ebfb83891ff33742",
+    "data\\results\\firma_01_veri_kontrolu\\referans_plan.csv": "df78549071aa35b2a9e35d0446f406516995e190c75487d9551011475830fcb7",
+    "data\\results\\firma_01_veri_kontrolu\\referans_yuklemeler.csv": "0ab7f88da799fa40d052d220c646748a680ee5e868d912715112899d401c2dd4",
+    "src\\firma_verisi.py": "aa646656b6ce3c502e1e646fdedf158931a1e91e9cd1818b6faad08de68a00ee",
+    "src\\firma_cizelgeleme.py": "8f6fae644267c1d36945adc805ecbff7a8a0eaa1ed49a2955ee4d8177103e456"
+  }
+}

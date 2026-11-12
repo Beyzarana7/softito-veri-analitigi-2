@@ -1,0 +1,200 @@
+﻿dosya,aciklama
+BASLAT.bat,Kurulu proje ortamıyla uygulamayı açar; kurulum yapmaz.
+KURULUM.bat,Proje sanal ortamını ve Python bağımlılıklarını kurar.
+README.md,"Güncel kurulum, kayıtlı demo, PostgreSQL ile yeni plan ve sınırlılıklar."
+belgeler/Dosya_Aciklamalari.csv,Mevcut teslim yapısının önemli dosya adları ve açıklamaları.
+belgeler/Proje_Raporu.docx,Yazarın incelenmiş ve onaylanmış nihai proje raporu; düzenlenebilir DOCX sürümü.
+belgeler/Proje_Raporu.pdf,Aynı nihai proje raporunun PDF sürümü; 15 sayfa.
+belgeler/Veri_Sozlugu.csv,"20 tablo, 85 alan; tip, birim, anahtar ve ilişkiler."
+data/raw/epias/Piyasa_Takas_Fiyati-01012024-31122024.csv,EPİAŞ ham saatlik PTF dosyası; tarihler dosya adında: Piyasa_Takas_Fiyati-01012024-31122024.
+data/raw/epias/Piyasa_Takas_Fiyati-01012025-31122025.csv,EPİAŞ ham saatlik PTF dosyası; tarihler dosya adında: Piyasa_Takas_Fiyati-01012025-31122025.
+data/raw/epias/Piyasa_Takas_Fiyati-01012026-06112026.csv,EPİAŞ ham saatlik PTF dosyası; tarihler dosya adında: Piyasa_Takas_Fiyati-01012026-06112026.
+data/results/delivery_evaluation/actual_prices.csv,2026 nihai 10 dönem değerlendirmesi: actual_prices. Pilot ve 2025 uygulamasından ayrıdır.
+data/results/delivery_evaluation/best_known_feasible.csv,2026 nihai 10 dönem değerlendirmesi: best_known_feasible. Pilot ve 2025 uygulamasından ayrıdır.
+data/results/delivery_evaluation/evaluation.json,2026 nihai 10 dönem değerlendirmesi: evaluation. Pilot ve 2025 uygulamasından ayrıdır.
+data/results/delivery_evaluation/forecast_scores.csv,2026 nihai 10 dönem değerlendirmesi: forecast_scores. Pilot ve 2025 uygulamasından ayrıdır.
+data/results/delivery_evaluation/forecasts.csv,2026 nihai 10 dönem değerlendirmesi: forecasts. Pilot ve 2025 uygulamasından ayrıdır.
+data/results/delivery_evaluation/full_model_audit.csv,2026 nihai 10 dönem değerlendirmesi: full_model_audit. Pilot ve 2025 uygulamasından ayrıdır.
+data/results/delivery_evaluation/method_summary.csv,2026 nihai 10 dönem değerlendirmesi: method_summary. Pilot ve 2025 uygulamasından ayrıdır.
+data/results/delivery_evaluation/ml_vs_naive.csv,2026 nihai 10 dönem değerlendirmesi: ml_vs_naive. Pilot ve 2025 uygulamasından ayrıdır.
+data/results/delivery_evaluation/partial_weeks.json,2026 nihai 10 dönem değerlendirmesi: partial_weeks. Pilot ve 2025 uygulamasından ayrıdır.
+data/results/delivery_evaluation/policy_cost_components.csv,2026 nihai 10 dönem değerlendirmesi: policy_cost_components. Pilot ve 2025 uygulamasından ayrıdır.
+data/results/delivery_evaluation/review_manifest.json,2026 nihai 10 dönem değerlendirmesi: review_manifest. Pilot ve 2025 uygulamasından ayrıdır.
+data/results/delivery_evaluation/run_attempts.csv,2026 nihai 10 dönem değerlendirmesi: run_attempts. Pilot ve 2025 uygulamasından ayrıdır.
+data/results/delivery_evaluation/solver_runs.csv,2026 nihai 10 dönem değerlendirmesi: solver_runs. Pilot ve 2025 uygulamasından ayrıdır.
+data/results/delivery_evaluation/tightened_regret.csv,2026 nihai 10 dönem değerlendirmesi: tightened_regret. Pilot ve 2025 uygulamasından ayrıdır.
+data/results/delivery_evaluation/weekly_metrics.csv,2026 nihai 10 dönem değerlendirmesi: weekly_metrics. Pilot ve 2025 uygulamasından ayrıdır.
+data/synthetic/firma_01/bakimlar.csv,Sentetik fabrika girdisi veya alan/varsayım açıklaması: bakimlar.
+data/synthetic/firma_01/depo_kurallari.csv,Sentetik fabrika girdisi veya alan/varsayım açıklaması: depo_kurallari.
+data/synthetic/firma_01/fiyatlar.csv,Sentetik fabrika girdisi veya alan/varsayım açıklaması: fiyatlar.
+data/synthetic/firma_01/is_emirleri.csv,Sentetik fabrika girdisi veya alan/varsayım açıklaması: is_emirleri.
+data/synthetic/firma_01/is_emri_siparis_baglantisi.csv,Sentetik fabrika girdisi veya alan/varsayım açıklaması: is_emri_siparis_baglantisi.
+data/synthetic/firma_01/isletme_kurallari.csv,Sentetik fabrika girdisi veya alan/varsayım açıklaması: isletme_kurallari.
+data/synthetic/firma_01/kaynak_takvimi.csv,Sentetik fabrika girdisi veya alan/varsayım açıklaması: kaynak_takvimi.
+data/synthetic/firma_01/kaynak_urun.csv,Sentetik fabrika girdisi veya alan/varsayım açıklaması: kaynak_urun.
+data/synthetic/firma_01/kaynaklar.csv,Sentetik fabrika girdisi veya alan/varsayım açıklaması: kaynaklar.
+data/synthetic/firma_01/parametre_dayanaklari.csv,Sentetik fabrika girdisi veya alan/varsayım açıklaması: parametre_dayanaklari.
+data/synthetic/firma_01/rota_kaynaklari.csv,Sentetik fabrika girdisi veya alan/varsayım açıklaması: rota_kaynaklari.
+data/synthetic/firma_01/rotalar.csv,Sentetik fabrika girdisi veya alan/varsayım açıklaması: rotalar.
+data/synthetic/firma_01/senaryo.json,Sentetik fabrika girdisi veya alan/varsayım açıklaması: senaryo.
+data/synthetic/firma_01/siparisler.csv,Sentetik fabrika girdisi veya alan/varsayım açıklaması: siparisler.
+data/synthetic/firma_01/stok_alanlari.csv,Sentetik fabrika girdisi veya alan/varsayım açıklaması: stok_alanlari.
+data/synthetic/firma_01/tesis_takvimi.csv,Sentetik fabrika girdisi veya alan/varsayım açıklaması: tesis_takvimi.
+data/synthetic/firma_01/urun_gecisleri.csv,Sentetik fabrika girdisi veya alan/varsayım açıklaması: urun_gecisleri.
+data/synthetic/firma_01/urunler.csv,Sentetik fabrika girdisi veya alan/varsayım açıklaması: urunler.
+data/synthetic/firma_01/veri_sozlugu.csv,Sentetik fabrika girdisi veya alan/varsayım açıklaması: veri_sozlugu.
+docs/firma-uretim-kapsami.md,Yöntemlerin incelenmesi ve yeniden üretimi için korunan kaynak: firma-uretim-kapsami.
+experiments/01_karar_degerlendirme/README.md,"Korunan araştırma protokolü, ayar veya değerlendirme kaynağı: README."
+experiments/01_karar_degerlendirme/config.json,"Korunan araştırma protokolü, ayar veya değerlendirme kaynağı: config."
+experiments/01_karar_degerlendirme/metrics.py,"Korunan araştırma protokolü, ayar veya değerlendirme kaynağı: metrics."
+experiments/01_karar_degerlendirme/run.py,"Korunan araştırma protokolü, ayar veya değerlendirme kaynağı: run."
+experiments/01_karar_degerlendirme/test_metrics.py,"Korunan araştırma protokolü, ayar veya değerlendirme kaynağı: test_metrics."
+experiments/02_walk_forward/README.md,Yöntemlerin incelenmesi ve yeniden üretimi için korunan kaynak: README.
+experiments/02_walk_forward/config.json,Yöntemlerin incelenmesi ve yeniden üretimi için korunan kaynak: config.
+experiments/02_walk_forward/protocol.py,Yöntemlerin incelenmesi ve yeniden üretimi için korunan kaynak: protocol.
+experiments/02_walk_forward/run.py,Yöntemlerin incelenmesi ve yeniden üretimi için korunan kaynak: run.
+experiments/02_walk_forward/test_protocol.py,Yöntemlerin incelenmesi ve yeniden üretimi için korunan kaynak: test protocol.
+experiments/03_decision_evaluation/README.md,Yöntemlerin incelenmesi ve yeniden üretimi için korunan kaynak: README.
+experiments/03_decision_evaluation/config.json,Yöntemlerin incelenmesi ve yeniden üretimi için korunan kaynak: config.
+experiments/03_decision_evaluation/run.py,Yöntemlerin incelenmesi ve yeniden üretimi için korunan kaynak: run.
+experiments/03_decision_evaluation/test_decisions.py,Yöntemlerin incelenmesi ve yeniden üretimi için korunan kaynak: test decisions.
+experiments/03_price_models/README.md,Yöntemlerin incelenmesi ve yeniden üretimi için korunan kaynak: README.
+experiments/03_price_models/config.json,Yöntemlerin incelenmesi ve yeniden üretimi için korunan kaynak: config.
+experiments/03_price_models/forecast_stats.py,Yöntemlerin incelenmesi ve yeniden üretimi için korunan kaynak: forecast stats.
+experiments/03_price_models/models.py,Yöntemlerin incelenmesi ve yeniden üretimi için korunan kaynak: models.
+experiments/03_price_models/requirements.txt,Yöntemlerin incelenmesi ve yeniden üretimi için korunan kaynak: requirements.
+experiments/03_price_models/run.py,Yöntemlerin incelenmesi ve yeniden üretimi için korunan kaynak: run.
+experiments/03_price_models/sources.json,Yöntemlerin incelenmesi ve yeniden üretimi için korunan kaynak: sources.
+experiments/03_price_models/test_forecasts.py,Yöntemlerin incelenmesi ve yeniden üretimi için korunan kaynak: test forecasts.
+experiments/03_price_models/verify_results.py,Yöntemlerin incelenmesi ve yeniden üretimi için korunan kaynak: verify results.
+experiments/04_direct_milp/README.md,Yöntemlerin incelenmesi ve yeniden üretimi için korunan kaynak: README.
+experiments/04_direct_milp/config.json,Yöntemlerin incelenmesi ve yeniden üretimi için korunan kaynak: config.
+experiments/04_direct_milp/forecasting.py,Yöntemlerin incelenmesi ve yeniden üretimi için korunan kaynak: forecasting.
+experiments/04_direct_milp/metrics.py,Yöntemlerin incelenmesi ve yeniden üretimi için korunan kaynak: metrics.
+experiments/04_direct_milp/review_pilot.py,Yöntemlerin incelenmesi ve yeniden üretimi için korunan kaynak: review pilot.
+experiments/04_direct_milp/run.py,Yöntemlerin incelenmesi ve yeniden üretimi için korunan kaynak: run.
+experiments/04_direct_milp/solver.py,Yöntemlerin incelenmesi ve yeniden üretimi için korunan kaynak: solver.
+experiments/04_direct_milp/solver_origin.txt,Yöntemlerin incelenmesi ve yeniden üretimi için korunan kaynak: solver origin.
+experiments/04_direct_milp/storage.py,Yöntemlerin incelenmesi ve yeniden üretimi için korunan kaynak: storage.
+experiments/04_direct_milp/test_task4.py,Yöntemlerin incelenmesi ve yeniden üretimi için korunan kaynak: test task4.
+experiments/04_direct_milp_60s/README.md,Yöntemlerin incelenmesi ve yeniden üretimi için korunan kaynak: README.
+experiments/04_direct_milp_60s/analyze.py,Yöntemlerin incelenmesi ve yeniden üretimi için korunan kaynak: analyze.
+experiments/04_direct_milp_60s/common.py,Yöntemlerin incelenmesi ve yeniden üretimi için korunan kaynak: common.
+experiments/04_direct_milp_60s/config.json,Yöntemlerin incelenmesi ve yeniden üretimi için korunan kaynak: config.
+experiments/04_direct_milp_60s/costs.py,Yöntemlerin incelenmesi ve yeniden üretimi için korunan kaynak: costs.
+experiments/04_direct_milp_60s/forecasting.py,Yöntemlerin incelenmesi ve yeniden üretimi için korunan kaynak: forecasting.
+experiments/04_direct_milp_60s/metrics.py,Yöntemlerin incelenmesi ve yeniden üretimi için korunan kaynak: metrics.
+experiments/04_direct_milp_60s/run.py,Yöntemlerin incelenmesi ve yeniden üretimi için korunan kaynak: run.
+experiments/04_direct_milp_60s/solver.py,Yöntemlerin incelenmesi ve yeniden üretimi için korunan kaynak: solver.
+experiments/04_direct_milp_60s/storage.py,Yöntemlerin incelenmesi ve yeniden üretimi için korunan kaynak: storage.
+experiments/04_direct_milp_60s/test_analysis.py,Yöntemlerin incelenmesi ve yeniden üretimi için korunan kaynak: test analysis.
+experiments/04_direct_milp_60s/test_task4.py,Yöntemlerin incelenmesi ve yeniden üretimi için korunan kaynak: test task4.
+experiments/04_full_development/README.md,Yöntemlerin incelenmesi ve yeniden üretimi için korunan kaynak: README.
+experiments/04_full_development/config.json,Yöntemlerin incelenmesi ve yeniden üretimi için korunan kaynak: config.
+experiments/04_full_development/full_report.py,Yöntemlerin incelenmesi ve yeniden üretimi için korunan kaynak: full report.
+experiments/04_full_development/full_run.py,Yöntemlerin incelenmesi ve yeniden üretimi için korunan kaynak: full run.
+experiments/04_full_development/instrumentation.py,Yöntemlerin incelenmesi ve yeniden üretimi için korunan kaynak: instrumentation.
+experiments/04_full_development/instrumented_solver.py,Yöntemlerin incelenmesi ve yeniden üretimi için korunan kaynak: instrumented solver.
+experiments/04_full_development/persistence.py,Yöntemlerin incelenmesi ve yeniden üretimi için korunan kaynak: persistence.
+experiments/04_full_development/test_full.py,Yöntemlerin incelenmesi ve yeniden üretimi için korunan kaynak: test full.
+experiments/04_incumbent_audit/README.md,Yöntemlerin incelenmesi ve yeniden üretimi için korunan kaynak: README.
+experiments/04_incumbent_audit/audit.py,Yöntemlerin incelenmesi ve yeniden üretimi için korunan kaynak: audit.
+experiments/04_incumbent_audit/model_audit.py,Yöntemlerin incelenmesi ve yeniden üretimi için korunan kaynak: model audit.
+experiments/04_incumbent_audit/report.py,Yöntemlerin incelenmesi ve yeniden üretimi için korunan kaynak: report.
+experiments/04_incumbent_audit/test_audit.py,Yöntemlerin incelenmesi ve yeniden üretimi için korunan kaynak: test audit.
+kod/__init__.py,Yöntemlerin incelenmesi ve yeniden üretimi için korunan kaynak:   init  .
+kod/db/README.md,PostgreSQL veri katmanı: README.
+kod/db/__init__.py,PostgreSQL veri katmanı: __init__.
+kod/db/dictionary.py,PostgreSQL veri katmanı: dictionary.
+kod/db/engine.py,PostgreSQL veri katmanı: engine.
+kod/db/readers.py,PostgreSQL veri katmanı: readers.
+kod/db/requirements.txt,PostgreSQL veri katmanı: requirements.
+kod/db/results.py,PostgreSQL veri katmanı: results.
+kod/db/test_db.py,PostgreSQL veri katmanı: test_db.
+kod/db/validate.py,PostgreSQL veri katmanı: validate.
+notebooks/01_elektrik_verisi_inceleme.ipynb,Özgün analiz Notebook dosyası; Markdown ve kayıtlı çıktılar korunmuştur: 01_elektrik_verisi_inceleme.
+notebooks/02_firma_verisi_hazirlama.ipynb,Özgün analiz Notebook dosyası; Markdown ve kayıtlı çıktılar korunmuştur: 02_firma_verisi_hazirlama.
+notebooks/03_firma_cizelgeleme.ipynb,Özgün analiz Notebook dosyası; Markdown ve kayıtlı çıktılar korunmuştur: 03_firma_cizelgeleme.
+notebooks/04_senaryo_karsilastirmalari.ipynb,Özgün analiz Notebook dosyası; Markdown ve kayıtlı çıktılar korunmuştur: 04_senaryo_karsilastirmalari.
+notebooks/05_elektrik_fiyat_tahmini.ipynb,Özgün analiz Notebook dosyası; Markdown ve kayıtlı çıktılar korunmuştur: 05_elektrik_fiyat_tahmini.
+notebooks/06_tahminin_uretim_kararina_etkisi.ipynb,Özgün analiz Notebook dosyası; Markdown ve kayıtlı çıktılar korunmuştur: 06_tahminin_uretim_kararina_etkisi.
+notebooks/07_model_gelistirme_ve_karar_dogrulamasi.ipynb,Özgün analiz Notebook dosyası; Markdown ve kayıtlı çıktılar korunmuştur: 07_model_gelistirme_ve_karar_dogrulamasi.
+notebooks/08_kazanc_potansiyeli_ve_kisitlar.ipynb,Özgün analiz Notebook dosyası; Markdown ve kayıtlı çıktılar korunmuştur: 08_kazanc_potansiyeli_ve_kisitlar.
+requirements.txt,Ana Python bağımlılıkları.
+scripts/finalize_delivery_results.py,Mevcut çalıştırma veya veri hazırlama yardımcısı: finalize_delivery_results.
+scripts/firma_cizelgeleme_calistir.py,Mevcut çalıştırma veya veri hazırlama yardımcısı: firma_cizelgeleme_calistir.
+scripts/planlama_calistir.py,Mevcut çalıştırma veya veri hazırlama yardımcısı: planlama_calistir.
+scripts/veritabani_sql_hazirla.py,Mevcut çalıştırma veya veri hazırlama yardımcısı: veritabani_sql_hazirla.
+sql/00_veritabani_olustur.sql,Veritabanı kurulum/kontrol SQL dosyası: 00_veritabani_olustur.
+sql/01_veritabani_kontrol.sql,Veritabanı kurulum/kontrol SQL dosyası: 01_veritabani_kontrol.
+src/firma_cizelgeleme.py,"Tahmin, üretim veya karar analizi kaynak kodu: firma_cizelgeleme."
+src/firma_senaryolari.py,"Tahmin, üretim veya karar analizi kaynak kodu: firma_senaryolari."
+src/firma_verisi.py,"Tahmin, üretim veya karar analizi kaynak kodu: firma_verisi."
+src/fiyat_tahmini.py,"Tahmin, üretim veya karar analizi kaynak kodu: fiyat_tahmini."
+src/fiyat_tahmini_gelistirme.py,"Tahmin, üretim veya karar analizi kaynak kodu: fiyat_tahmini_gelistirme."
+src/karar_maliyeti_modeli.py,"Tahmin, üretim veya karar analizi kaynak kodu: karar_maliyeti_modeli."
+src/karar_odakli_tahmin.py,"Tahmin, üretim veya karar analizi kaynak kodu: karar_odakli_tahmin."
+src/kazanc_potansiyeli.py,"Tahmin, üretim veya karar analizi kaynak kodu: kazanc_potansiyeli."
+src/kazanc_tanilari.py,"Tahmin, üretim veya karar analizi kaynak kodu: kazanc_tanilari."
+src/ortak_plan_karsilastirmasi.py,"Tahmin, üretim veya karar analizi kaynak kodu: ortak_plan_karsilastirmasi."
+src/planlama_akisi.py,"Tahmin, üretim veya karar analizi kaynak kodu: planlama_akisi."
+src/tahminli_cizelgeleme.py,"Tahmin, üretim veya karar analizi kaynak kodu: tahminli_cizelgeleme."
+uygulama/analysis_data/aylik_fiyat_profili.csv,Son uygulamanın mevcut EDA özet verisi veya kaynak kaydı: aylik_fiyat_profili.
+uygulama/analysis_data/kaynak.json,Son uygulamanın mevcut EDA özet verisi veya kaynak kaydı: kaynak.
+uygulama/analysis_data/saatlik_fiyat_profili.csv,Son uygulamanın mevcut EDA özet verisi veya kaynak kaydı: saatlik_fiyat_profili.
+uygulama/analytics.py,Son üç sayfalı uygulamanın kaynak modülü: analytics.
+uygulama/app.py,Son üç sayfalı Streamlit uygulamasının giriş noktası.
+uygulama/charts.py,Son üç sayfalı uygulamanın kaynak modülü: charts.
+uygulama/display_checks.py,Son üç sayfalı uygulamanın kaynak modülü: display_checks.
+uygulama/ekran_goruntuleri/inceleme_01_cizelge.png,Son üç sayfalı uygulamanın gerçek ekran görüntüsü.
+uygulama/ekran_goruntuleri/inceleme_02_makine_secimi.png,Son üç sayfalı uygulamanın gerçek ekran görüntüsü.
+uygulama/ekran_goruntuleri/inceleme_03_fiyat_analizi.png,Son üç sayfalı uygulamanın gerçek ekran görüntüsü.
+uygulama/ekran_goruntuleri/inceleme_04_tahmin.png,Son üç sayfalı uygulamanın gerçek ekran görüntüsü.
+uygulama/ekran_goruntuleri/inceleme_05_maliyet.png,Son üç sayfalı uygulamanın gerçek ekran görüntüsü.
+uygulama/ekran_goruntuleri/inceleme_06_karar_farklari.png,Son üç sayfalı uygulamanın gerçek ekran görüntüsü.
+uygulama/ekran_goruntuleri/inceleme_07_planlama.png,Son üç sayfalı uygulamanın gerçek ekran görüntüsü.
+uygulama/ekran_goruntuleri/inceleme_08_teknik_bilgiler.png,Son üç sayfalı uygulamanın gerçek ekran görüntüsü.
+uygulama/engineering.py,Son üç sayfalı uygulamanın kaynak modülü: engineering.
+uygulama/execution.py,Planlama sürecinin toplam süre sınırını yönetir.
+uygulama/input_page.py,"Şablon indirme, Excel yükleme ve oturumda doğrulama sonuçları."
+uygulama/input_schema.json,17 desteklenen fabrika tablosunun alan tanımları.
+uygulama/outputs/veri_girisi/WattRota_Uretim_Verisi_Sablonu.xlsx,Türkçe açıklamalı veri giriş şablonu.
+uygulama/planning_page.py,Son üç sayfalı uygulamanın kaynak modülü: planning_page.
+uygulama/prepare_input_schema.py,Son üç sayfalı uygulamanın kaynak modülü: prepare_input_schema.
+uygulama/prepare_monthly_view.py,Son üç sayfalı uygulamanın kaynak modülü: prepare_monthly_view.
+uygulama/prepare_profile.py,Son üç sayfalı uygulamanın kaynak modülü: prepare_profile.
+uygulama/product_pages.py,Son üç sayfalı uygulamanın kaynak modülü: product_pages.
+uygulama/runs/20261111_232421_67cf3c75/activity.csv,6–8 Ekim 2025 kayıtlı uygulama örneğinin girdisi/çıktısı: activity.
+uygulama/runs/20261111_232421_67cf3c75/decision.json,"Kayıtlı 2025 uygulamasının maliyet, yöntem ve doğrulama kaydı."
+uygulama/runs/20261111_232421_67cf3c75/evaluation_b0db9f0913_hourly.csv,6–8 Ekim 2025 kayıtlı uygulama örneğinin girdisi/çıktısı: evaluation_b0db9f0913_hourly.
+uygulama/runs/20261111_232421_67cf3c75/evaluation_b0db9f0913_prices.csv,6–8 Ekim 2025 kayıtlı uygulama örneğinin girdisi/çıktısı: evaluation_b0db9f0913_prices.
+uygulama/runs/20261111_232421_67cf3c75/evaluation_b0db9f0913_reference_hourly.csv,6–8 Ekim 2025 kayıtlı uygulama örneğinin girdisi/çıktısı: evaluation_b0db9f0913_reference_hourly.
+uygulama/runs/20261111_232421_67cf3c75/expected_hourly.csv,6–8 Ekim 2025 kayıtlı uygulama örneğinin girdisi/çıktısı: expected_hourly.
+uygulama/runs/20261111_232421_67cf3c75/inputs/bakimlar.csv,6–8 Ekim 2025 kayıtlı uygulama örneğinin girdisi/çıktısı: bakimlar.
+uygulama/runs/20261111_232421_67cf3c75/inputs/depo_kurallari.csv,6–8 Ekim 2025 kayıtlı uygulama örneğinin girdisi/çıktısı: depo_kurallari.
+uygulama/runs/20261111_232421_67cf3c75/inputs/fiyatlar.csv,6–8 Ekim 2025 kayıtlı uygulama örneğinin girdisi/çıktısı: fiyatlar.
+uygulama/runs/20261111_232421_67cf3c75/inputs/is_emirleri.csv,6–8 Ekim 2025 kayıtlı uygulama örneğinin girdisi/çıktısı: is_emirleri.
+uygulama/runs/20261111_232421_67cf3c75/inputs/is_emri_siparis_baglantisi.csv,6–8 Ekim 2025 kayıtlı uygulama örneğinin girdisi/çıktısı: is_emri_siparis_baglantisi.
+uygulama/runs/20261111_232421_67cf3c75/inputs/isletme_kurallari.csv,6–8 Ekim 2025 kayıtlı uygulama örneğinin girdisi/çıktısı: isletme_kurallari.
+uygulama/runs/20261111_232421_67cf3c75/inputs/kaynak_takvimi.csv,6–8 Ekim 2025 kayıtlı uygulama örneğinin girdisi/çıktısı: kaynak_takvimi.
+uygulama/runs/20261111_232421_67cf3c75/inputs/kaynak_urun.csv,6–8 Ekim 2025 kayıtlı uygulama örneğinin girdisi/çıktısı: kaynak_urun.
+uygulama/runs/20261111_232421_67cf3c75/inputs/kaynaklar.csv,6–8 Ekim 2025 kayıtlı uygulama örneğinin girdisi/çıktısı: kaynaklar.
+uygulama/runs/20261111_232421_67cf3c75/inputs/referans_plan.csv,6–8 Ekim 2025 kayıtlı uygulama örneğinin girdisi/çıktısı: referans_plan.
+uygulama/runs/20261111_232421_67cf3c75/inputs/referans_yuklemeler.csv,6–8 Ekim 2025 kayıtlı uygulama örneğinin girdisi/çıktısı: referans_yuklemeler.
+uygulama/runs/20261111_232421_67cf3c75/inputs/rota_kaynaklari.csv,6–8 Ekim 2025 kayıtlı uygulama örneğinin girdisi/çıktısı: rota_kaynaklari.
+uygulama/runs/20261111_232421_67cf3c75/inputs/rotalar.csv,6–8 Ekim 2025 kayıtlı uygulama örneğinin girdisi/çıktısı: rotalar.
+uygulama/runs/20261111_232421_67cf3c75/inputs/siparisler.csv,6–8 Ekim 2025 kayıtlı uygulama örneğinin girdisi/çıktısı: siparisler.
+uygulama/runs/20261111_232421_67cf3c75/inputs/stok_alanlari.csv,6–8 Ekim 2025 kayıtlı uygulama örneğinin girdisi/çıktısı: stok_alanlari.
+uygulama/runs/20261111_232421_67cf3c75/inputs/tesis_takvimi.csv,6–8 Ekim 2025 kayıtlı uygulama örneğinin girdisi/çıktısı: tesis_takvimi.
+uygulama/runs/20261111_232421_67cf3c75/inputs/urun_gecisleri.csv,6–8 Ekim 2025 kayıtlı uygulama örneğinin girdisi/çıktısı: urun_gecisleri.
+uygulama/runs/20261111_232421_67cf3c75/inputs/urunler.csv,6–8 Ekim 2025 kayıtlı uygulama örneğinin girdisi/çıktısı: urunler.
+uygulama/runs/20261111_232421_67cf3c75/loads.csv,6–8 Ekim 2025 kayıtlı uygulama örneğinin girdisi/çıktısı: loads.
+uygulama/runs/20261111_232421_67cf3c75/plan.csv,6–8 Ekim 2025 kayıtlı uygulama örneğinin girdisi/çıktısı: plan.
+uygulama/runs/20261111_232421_67cf3c75/prices.csv,6–8 Ekim 2025 kayıtlı uygulama örneğinin girdisi/çıktısı: prices.
+uygulama/runs/20261111_232421_67cf3c75/result.json,"Kayıtlı 2025 uygulamasının maliyet, yöntem ve doğrulama kaydı."
+uygulama/runs/20261111_232421_67cf3c75/stocks.csv,6–8 Ekim 2025 kayıtlı uygulama örneğinin girdisi/çıktısı: stocks.
+uygulama/service.py,"PostgreSQL verileri, karar anı fiyatları, HGB tahmini, yerel ön iyileştirme, MILP ve bağımsız doğrulama akışı."
+uygulama/simple_pages.py,"Üretim Çizelgesi, Analiz ve Bulgular, Üretim Planlama sayfaları."
+uygulama/user_input.py,Excel yapısal veri doğrulaması; kullanıcı verisiyle optimizasyon yapmaz.
+uygulama/view_helpers.py,Son üç sayfalı uygulamanın kaynak modülü: view_helpers.
+uygulama/worker.py,Yeni hazır fabrika planını ayrı süreçte çalıştırır.

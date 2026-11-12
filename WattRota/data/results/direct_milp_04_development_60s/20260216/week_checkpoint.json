@@ -1,0 +1,1998 @@
+{
+  "success": [
+    {
+      "week": "2026-02-16 00:00:00",
+      "run_key": "oracle",
+      "source": "oracle",
+      "decision_day": 0,
+      "solver_status": "Time limit reached",
+      "solver_objective_tl": 296894.3761,
+      "expected_cost_tl": 296894.3761,
+      "actual_cost_tl": 296894.3761,
+      "lower_bound_tl": 237907.86084080988,
+      "mip_gap": 0.198678452701045,
+      "solver_seconds": 60.02790760004427,
+      "wall_seconds": 63.87373610003851,
+      "time_limit_seconds": 60.0,
+      "time_limit_reached": true,
+      "fixed_prefix_hours": 0,
+      "fixed_columns": 0,
+      "independent_validation": true,
+      "violation_count": 0,
+      "mip_node_count": 2,
+      "solver_version": "1.15.1",
+      "requested_seed": 42,
+      "effective_seed": 42,
+      "warm_start_api_status": "HighsStatus.kOk",
+      "native_mip_start_feasible_message": true,
+      "mip_solution_callback_events": 3,
+      "improving_solution_callback_events": 1,
+      "warm_start": "initial_postgresql_reference",
+      "warm_start_signature": "f184560f30f2cf1ad59a56748c4e6bf1de119cc6b279ee81180e88e98d7a3d53",
+      "plan_signature": "f184560f30f2cf1ad59a56748c4e6bf1de119cc6b279ee81180e88e98d7a3d53",
+      "declared_optimal": false,
+      "tolerance_optimal": false,
+      "solver_diagnostics": {
+        "api_status": {
+          "passModel": "HighsStatus.kOk",
+          "setSolution": "HighsStatus.kOk",
+          "run": "HighsStatus.kWarning"
+        },
+        "options": {
+          "before_model": {
+            "random_seed": {
+              "status": "HighsStatus.kOk",
+              "value": 42
+            },
+            "threads": {
+              "status": "HighsStatus.kOk",
+              "value": 1
+            },
+            "time_limit": {
+              "status": "HighsStatus.kOk",
+              "value": 60.0
+            },
+            "mip_rel_gap": {
+              "status": "HighsStatus.kOk",
+              "value": 0.001
+            }
+          },
+          "after_model": {
+            "random_seed": {
+              "status": "HighsStatus.kOk",
+              "value": 42
+            },
+            "threads": {
+              "status": "HighsStatus.kOk",
+              "value": 1
+            },
+            "time_limit": {
+              "status": "HighsStatus.kOk",
+              "value": 60.0
+            },
+            "mip_rel_gap": {
+              "status": "HighsStatus.kOk",
+              "value": 0.001
+            }
+          },
+          "before_run": {
+            "random_seed": {
+              "status": "HighsStatus.kOk",
+              "value": 42
+            },
+            "threads": {
+              "status": "HighsStatus.kOk",
+              "value": 1
+            },
+            "time_limit": {
+              "status": "HighsStatus.kOk",
+              "value": 60.0
+            },
+            "mip_rel_gap": {
+              "status": "HighsStatus.kOk",
+              "value": 0.001
+            }
+          },
+          "after_run": {
+            "random_seed": {
+              "status": "HighsStatus.kOk",
+              "value": 42
+            },
+            "threads": {
+              "status": "HighsStatus.kOk",
+              "value": 1
+            },
+            "time_limit": {
+              "status": "HighsStatus.kOk",
+              "value": 60.0
+            },
+            "mip_rel_gap": {
+              "status": "HighsStatus.kOk",
+              "value": 0.001
+            }
+          }
+        },
+        "event_counts": {
+          "mip_solution": 3,
+          "mip_improving_solution": 1,
+          "mip_logging": 10
+        },
+        "callback_errors": [],
+        "final_info": {
+          "valid": 1,
+          "objective_function_value": 296894.3761,
+          "mip_dual_bound": 237907.86084080988,
+          "mip_gap": 0.198678452701045,
+          "mip_node_count": 2,
+          "simplex_iteration_count": 75802,
+          "ipm_iteration_count": -1,
+          "primal_dual_integral": 12.179170907711889,
+          "primal_solution_status": 2,
+          "max_primal_infeasibility": 0.0,
+          "max_integrality_violation": 0.0,
+          "model_status": "Time limit reached"
+        },
+        "native_mip_start_feasible_message": true,
+        "feasible_solution_count": null,
+        "solution_count_note": "Callback events are not a certified count of unique feasible solutions."
+      },
+      "operating_electricity_tl": 287812.64080000005,
+      "startup_electricity_tl": 325.65000000000003,
+      "transition_electricity_tl": 6676.0853,
+      "startup_non_electric_tl": 1470.0,
+      "transition_non_electric_tl": 610.0,
+      "plan_change_tl": 0.0,
+      "total_electricity_tl": 294814.3761
+    },
+    {
+      "week": "2026-02-16 00:00:00",
+      "run_key": "hgb_d0",
+      "source": "hgb",
+      "decision_day": 0,
+      "solver_status": "Time limit reached",
+      "solver_objective_tl": 321151.551396325,
+      "expected_cost_tl": 321151.551396325,
+      "actual_cost_tl": 296894.3761,
+      "lower_bound_tl": 275267.48409267183,
+      "mip_gap": 0.1428735657796303,
+      "solver_seconds": 60.02378090005368,
+      "wall_seconds": 63.32190769992303,
+      "time_limit_seconds": 60.0,
+      "time_limit_reached": true,
+      "fixed_prefix_hours": 0,
+      "fixed_columns": 0,
+      "independent_validation": true,
+      "violation_count": 0,
+      "mip_node_count": 2,
+      "solver_version": "1.15.1",
+      "requested_seed": 42,
+      "effective_seed": 42,
+      "warm_start_api_status": "HighsStatus.kOk",
+      "native_mip_start_feasible_message": true,
+      "mip_solution_callback_events": 3,
+      "improving_solution_callback_events": 1,
+      "warm_start": "initial_postgresql_reference",
+      "warm_start_signature": "f184560f30f2cf1ad59a56748c4e6bf1de119cc6b279ee81180e88e98d7a3d53",
+      "plan_signature": "f184560f30f2cf1ad59a56748c4e6bf1de119cc6b279ee81180e88e98d7a3d53",
+      "declared_optimal": false,
+      "tolerance_optimal": false,
+      "solver_diagnostics": {
+        "api_status": {
+          "passModel": "HighsStatus.kOk",
+          "setSolution": "HighsStatus.kOk",
+          "run": "HighsStatus.kWarning"
+        },
+        "options": {
+          "before_model": {
+            "random_seed": {
+              "status": "HighsStatus.kOk",
+              "value": 42
+            },
+            "threads": {
+              "status": "HighsStatus.kOk",
+              "value": 1
+            },
+            "time_limit": {
+              "status": "HighsStatus.kOk",
+              "value": 60.0
+            },
+            "mip_rel_gap": {
+              "status": "HighsStatus.kOk",
+              "value": 0.001
+            }
+          },
+          "after_model": {
+            "random_seed": {
+              "status": "HighsStatus.kOk",
+              "value": 42
+            },
+            "threads": {
+              "status": "HighsStatus.kOk",
+              "value": 1
+            },
+            "time_limit": {
+              "status": "HighsStatus.kOk",
+              "value": 60.0
+            },
+            "mip_rel_gap": {
+              "status": "HighsStatus.kOk",
+              "value": 0.001
+            }
+          },
+          "before_run": {
+            "random_seed": {
+              "status": "HighsStatus.kOk",
+              "value": 42
+            },
+            "threads": {
+              "status": "HighsStatus.kOk",
+              "value": 1
+            },
+            "time_limit": {
+              "status": "HighsStatus.kOk",
+              "value": 60.0
+            },
+            "mip_rel_gap": {
+              "status": "HighsStatus.kOk",
+              "value": 0.001
+            }
+          },
+          "after_run": {
+            "random_seed": {
+              "status": "HighsStatus.kOk",
+              "value": 42
+            },
+            "threads": {
+              "status": "HighsStatus.kOk",
+              "value": 1
+            },
+            "time_limit": {
+              "status": "HighsStatus.kOk",
+              "value": 60.0
+            },
+            "mip_rel_gap": {
+              "status": "HighsStatus.kOk",
+              "value": 0.001
+            }
+          }
+        },
+        "event_counts": {
+          "mip_solution": 3,
+          "mip_improving_solution": 1,
+          "mip_logging": 10
+        },
+        "callback_errors": [],
+        "final_info": {
+          "valid": 1,
+          "objective_function_value": 321151.551396325,
+          "mip_dual_bound": 275267.48409267183,
+          "mip_gap": 0.1428735657796303,
+          "mip_node_count": 2,
+          "simplex_iteration_count": 75745,
+          "ipm_iteration_count": -1,
+          "primal_dual_integral": 8.982283947941811,
+          "primal_solution_status": 2,
+          "max_primal_infeasibility": 0.0,
+          "max_integrality_violation": 0.0,
+          "model_status": "Time limit reached"
+        },
+        "native_mip_start_feasible_message": true,
+        "feasible_solution_count": null,
+        "solution_count_note": "Callback events are not a certified count of unique feasible solutions."
+      },
+      "operating_electricity_tl": 287812.64080000005,
+      "startup_electricity_tl": 325.65000000000003,
+      "transition_electricity_tl": 6676.0853,
+      "startup_non_electric_tl": 1470.0,
+      "transition_non_electric_tl": 610.0,
+      "plan_change_tl": 0.0,
+      "total_electricity_tl": 294814.3761
+    },
+    {
+      "week": "2026-02-16 00:00:00",
+      "run_key": "ensemble_d0",
+      "source": "ensemble",
+      "decision_day": 0,
+      "solver_status": "Time limit reached",
+      "solver_objective_tl": 357316.66903134104,
+      "expected_cost_tl": 357316.66903134104,
+      "actual_cost_tl": 296894.3761,
+      "lower_bound_tl": 313593.3349183408,
+      "mip_gap": 0.12236578335830502,
+      "solver_seconds": 60.02503399993293,
+      "wall_seconds": 63.56198130000848,
+      "time_limit_seconds": 60.0,
+      "time_limit_reached": true,
+      "fixed_prefix_hours": 0,
+      "fixed_columns": 0,
+      "independent_validation": true,
+      "violation_count": 0,
+      "mip_node_count": 2,
+      "solver_version": "1.15.1",
+      "requested_seed": 42,
+      "effective_seed": 42,
+      "warm_start_api_status": "HighsStatus.kOk",
+      "native_mip_start_feasible_message": true,
+      "mip_solution_callback_events": 3,
+      "improving_solution_callback_events": 1,
+      "warm_start": "initial_postgresql_reference",
+      "warm_start_signature": "f184560f30f2cf1ad59a56748c4e6bf1de119cc6b279ee81180e88e98d7a3d53",
+      "plan_signature": "f184560f30f2cf1ad59a56748c4e6bf1de119cc6b279ee81180e88e98d7a3d53",
+      "declared_optimal": false,
+      "tolerance_optimal": false,
+      "solver_diagnostics": {
+        "api_status": {
+          "passModel": "HighsStatus.kOk",
+          "setSolution": "HighsStatus.kOk",
+          "run": "HighsStatus.kWarning"
+        },
+        "options": {
+          "before_model": {
+            "random_seed": {
+              "status": "HighsStatus.kOk",
+              "value": 42
+            },
+            "threads": {
+              "status": "HighsStatus.kOk",
+              "value": 1
+            },
+            "time_limit": {
+              "status": "HighsStatus.kOk",
+              "value": 60.0
+            },
+            "mip_rel_gap": {
+              "status": "HighsStatus.kOk",
+              "value": 0.001
+            }
+          },
+          "after_model": {
+            "random_seed": {
+              "status": "HighsStatus.kOk",
+              "value": 42
+            },
+            "threads": {
+              "status": "HighsStatus.kOk",
+              "value": 1
+            },
+            "time_limit": {
+              "status": "HighsStatus.kOk",
+              "value": 60.0
+            },
+            "mip_rel_gap": {
+              "status": "HighsStatus.kOk",
+              "value": 0.001
+            }
+          },
+          "before_run": {
+            "random_seed": {
+              "status": "HighsStatus.kOk",
+              "value": 42
+            },
+            "threads": {
+              "status": "HighsStatus.kOk",
+              "value": 1
+            },
+            "time_limit": {
+              "status": "HighsStatus.kOk",
+              "value": 60.0
+            },
+            "mip_rel_gap": {
+              "status": "HighsStatus.kOk",
+              "value": 0.001
+            }
+          },
+          "after_run": {
+            "random_seed": {
+              "status": "HighsStatus.kOk",
+              "value": 42
+            },
+            "threads": {
+              "status": "HighsStatus.kOk",
+              "value": 1
+            },
+            "time_limit": {
+              "status": "HighsStatus.kOk",
+              "value": 60.0
+            },
+            "mip_rel_gap": {
+              "status": "HighsStatus.kOk",
+              "value": 0.001
+            }
+          }
+        },
+        "event_counts": {
+          "mip_solution": 3,
+          "mip_improving_solution": 1,
+          "mip_logging": 10
+        },
+        "callback_errors": [],
+        "final_info": {
+          "valid": 1,
+          "objective_function_value": 357316.66903134104,
+          "mip_dual_bound": 313593.3349183408,
+          "mip_gap": 0.12236578335830502,
+          "mip_node_count": 2,
+          "simplex_iteration_count": 51368,
+          "ipm_iteration_count": -1,
+          "primal_dual_integral": 7.563341236095588,
+          "primal_solution_status": 2,
+          "max_primal_infeasibility": 0.0,
+          "max_integrality_violation": 0.0,
+          "model_status": "Time limit reached"
+        },
+        "native_mip_start_feasible_message": true,
+        "feasible_solution_count": null,
+        "solution_count_note": "Callback events are not a certified count of unique feasible solutions."
+      },
+      "operating_electricity_tl": 287812.64080000005,
+      "startup_electricity_tl": 325.65000000000003,
+      "transition_electricity_tl": 6676.0853,
+      "startup_non_electric_tl": 1470.0,
+      "transition_non_electric_tl": 610.0,
+      "plan_change_tl": 0.0,
+      "total_electricity_tl": 294814.3761
+    },
+    {
+      "week": "2026-02-16 00:00:00",
+      "run_key": "naive_d0",
+      "source": "naive",
+      "decision_day": 0,
+      "solver_status": "Time limit reached",
+      "solver_objective_tl": 192710.06065,
+      "expected_cost_tl": 192710.06065,
+      "actual_cost_tl": 296894.3761,
+      "lower_bound_tl": 137130.5578487802,
+      "mip_gap": 0.2884099699504702,
+      "solver_seconds": 60.08300270000473,
+      "wall_seconds": 63.49603339994792,
+      "time_limit_seconds": 60.0,
+      "time_limit_reached": true,
+      "fixed_prefix_hours": 0,
+      "fixed_columns": 0,
+      "independent_validation": true,
+      "violation_count": 0,
+      "mip_node_count": 2,
+      "solver_version": "1.15.1",
+      "requested_seed": 42,
+      "effective_seed": 42,
+      "warm_start_api_status": "HighsStatus.kOk",
+      "native_mip_start_feasible_message": true,
+      "mip_solution_callback_events": 3,
+      "improving_solution_callback_events": 1,
+      "warm_start": "initial_postgresql_reference",
+      "warm_start_signature": "f184560f30f2cf1ad59a56748c4e6bf1de119cc6b279ee81180e88e98d7a3d53",
+      "plan_signature": "f184560f30f2cf1ad59a56748c4e6bf1de119cc6b279ee81180e88e98d7a3d53",
+      "declared_optimal": false,
+      "tolerance_optimal": false,
+      "solver_diagnostics": {
+        "api_status": {
+          "passModel": "HighsStatus.kOk",
+          "setSolution": "HighsStatus.kOk",
+          "run": "HighsStatus.kWarning"
+        },
+        "options": {
+          "before_model": {
+            "random_seed": {
+              "status": "HighsStatus.kOk",
+              "value": 42
+            },
+            "threads": {
+              "status": "HighsStatus.kOk",
+              "value": 1
+            },
+            "time_limit": {
+              "status": "HighsStatus.kOk",
+              "value": 60.0
+            },
+            "mip_rel_gap": {
+              "status": "HighsStatus.kOk",
+              "value": 0.001
+            }
+          },
+          "after_model": {
+            "random_seed": {
+              "status": "HighsStatus.kOk",
+              "value": 42
+            },
+            "threads": {
+              "status": "HighsStatus.kOk",
+              "value": 1
+            },
+            "time_limit": {
+              "status": "HighsStatus.kOk",
+              "value": 60.0
+            },
+            "mip_rel_gap": {
+              "status": "HighsStatus.kOk",
+              "value": 0.001
+            }
+          },
+          "before_run": {
+            "random_seed": {
+              "status": "HighsStatus.kOk",
+              "value": 42
+            },
+            "threads": {
+              "status": "HighsStatus.kOk",
+              "value": 1
+            },
+            "time_limit": {
+              "status": "HighsStatus.kOk",
+              "value": 60.0
+            },
+            "mip_rel_gap": {
+              "status": "HighsStatus.kOk",
+              "value": 0.001
+            }
+          },
+          "after_run": {
+            "random_seed": {
+              "status": "HighsStatus.kOk",
+              "value": 42
+            },
+            "threads": {
+              "status": "HighsStatus.kOk",
+              "value": 1
+            },
+            "time_limit": {
+              "status": "HighsStatus.kOk",
+              "value": 60.0
+            },
+            "mip_rel_gap": {
+              "status": "HighsStatus.kOk",
+              "value": 0.001
+            }
+          }
+        },
+        "event_counts": {
+          "mip_solution": 3,
+          "mip_improving_solution": 1,
+          "mip_logging": 9
+        },
+        "callback_errors": [],
+        "final_info": {
+          "valid": 1,
+          "objective_function_value": 192710.06065,
+          "mip_dual_bound": 137130.5578487802,
+          "mip_gap": 0.2884099699504702,
+          "mip_node_count": 2,
+          "simplex_iteration_count": 61290,
+          "ipm_iteration_count": -1,
+          "primal_dual_integral": 17.582088707453828,
+          "primal_solution_status": 2,
+          "max_primal_infeasibility": 0.0,
+          "max_integrality_violation": 0.0,
+          "model_status": "Time limit reached"
+        },
+        "native_mip_start_feasible_message": true,
+        "feasible_solution_count": null,
+        "solution_count_note": "Callback events are not a certified count of unique feasible solutions."
+      },
+      "operating_electricity_tl": 287812.64080000005,
+      "startup_electricity_tl": 325.65000000000003,
+      "transition_electricity_tl": 6676.0853,
+      "startup_non_electric_tl": 1470.0,
+      "transition_non_electric_tl": 610.0,
+      "plan_change_tl": 0.0,
+      "total_electricity_tl": 294814.3761
+    },
+    {
+      "week": "2026-02-16 00:00:00",
+      "run_key": "hgb_d1",
+      "source": "hgb",
+      "decision_day": 1,
+      "solver_status": "Time limit reached",
+      "solver_objective_tl": 294956.36607590807,
+      "expected_cost_tl": 294956.36607590807,
+      "actual_cost_tl": 283791.5308,
+      "lower_bound_tl": 278788.02658755105,
+      "mip_gap": 0.05481603839734056,
+      "solver_seconds": 60.03031960001681,
+      "wall_seconds": 63.40063430008013,
+      "time_limit_seconds": 60.0,
+      "time_limit_reached": true,
+      "fixed_prefix_hours": 24,
+      "fixed_columns": 1954,
+      "independent_validation": true,
+      "violation_count": 0,
+      "mip_node_count": 203,
+      "solver_version": "1.15.1",
+      "requested_seed": 42,
+      "effective_seed": 42,
+      "warm_start_api_status": "HighsStatus.kOk",
+      "native_mip_start_feasible_message": true,
+      "mip_solution_callback_events": 4,
+      "improving_solution_callback_events": 2,
+      "warm_start": "own_previous_day_continuation",
+      "warm_start_signature": "f184560f30f2cf1ad59a56748c4e6bf1de119cc6b279ee81180e88e98d7a3d53",
+      "plan_signature": "90bbc479d706a0af41bfa13442bd9772ef7e8c9cb19e9ea97782915d7ac380a5",
+      "declared_optimal": false,
+      "tolerance_optimal": false,
+      "solver_diagnostics": {
+        "api_status": {
+          "passModel": "HighsStatus.kOk",
+          "setSolution": "HighsStatus.kOk",
+          "run": "HighsStatus.kWarning"
+        },
+        "options": {
+          "before_model": {
+            "random_seed": {
+              "status": "HighsStatus.kOk",
+              "value": 42
+            },
+            "threads": {
+              "status": "HighsStatus.kOk",
+              "value": 1
+            },
+            "time_limit": {
+              "status": "HighsStatus.kOk",
+              "value": 60.0
+            },
+            "mip_rel_gap": {
+              "status": "HighsStatus.kOk",
+              "value": 0.001
+            }
+          },
+          "after_model": {
+            "random_seed": {
+              "status": "HighsStatus.kOk",
+              "value": 42
+            },
+            "threads": {
+              "status": "HighsStatus.kOk",
+              "value": 1
+            },
+            "time_limit": {
+              "status": "HighsStatus.kOk",
+              "value": 60.0
+            },
+            "mip_rel_gap": {
+              "status": "HighsStatus.kOk",
+              "value": 0.001
+            }
+          },
+          "before_run": {
+            "random_seed": {
+              "status": "HighsStatus.kOk",
+              "value": 42
+            },
+            "threads": {
+              "status": "HighsStatus.kOk",
+              "value": 1
+            },
+            "time_limit": {
+              "status": "HighsStatus.kOk",
+              "value": 60.0
+            },
+            "mip_rel_gap": {
+              "status": "HighsStatus.kOk",
+              "value": 0.001
+            }
+          },
+          "after_run": {
+            "random_seed": {
+              "status": "HighsStatus.kOk",
+              "value": 42
+            },
+            "threads": {
+              "status": "HighsStatus.kOk",
+              "value": 1
+            },
+            "time_limit": {
+              "status": "HighsStatus.kOk",
+              "value": 60.0
+            },
+            "mip_rel_gap": {
+              "status": "HighsStatus.kOk",
+              "value": 0.001
+            }
+          }
+        },
+        "event_counts": {
+          "mip_solution": 4,
+          "mip_improving_solution": 2,
+          "mip_logging": 9
+        },
+        "callback_errors": [],
+        "final_info": {
+          "valid": 1,
+          "objective_function_value": 294956.36607590807,
+          "mip_dual_bound": 278788.02658755105,
+          "mip_gap": 0.05481603839734056,
+          "mip_node_count": 203,
+          "simplex_iteration_count": 152275,
+          "ipm_iteration_count": -1,
+          "primal_dual_integral": 5.435860717263617,
+          "primal_solution_status": 2,
+          "max_primal_infeasibility": 0.0,
+          "max_integrality_violation": 2.6645352591003757e-15,
+          "model_status": "Time limit reached"
+        },
+        "native_mip_start_feasible_message": true,
+        "feasible_solution_count": null,
+        "solution_count_note": "Callback events are not a certified count of unique feasible solutions."
+      },
+      "operating_electricity_tl": 274789.777,
+      "startup_electricity_tl": 577.4987999999998,
+      "transition_electricity_tl": 6264.254999999999,
+      "startup_non_electric_tl": 1550.0,
+      "transition_non_electric_tl": 610.0,
+      "plan_change_tl": 0.0,
+      "total_electricity_tl": 281631.5308
+    },
+    {
+      "week": "2026-02-16 00:00:00",
+      "run_key": "ensemble_d1",
+      "source": "ensemble",
+      "decision_day": 1,
+      "solver_status": "Time limit reached",
+      "solver_objective_tl": 308107.74212183565,
+      "expected_cost_tl": 308107.7421218356,
+      "actual_cost_tl": 296894.3761,
+      "lower_bound_tl": 283361.25011902215,
+      "mip_gap": 0.08031765716886122,
+      "solver_seconds": 60.05408589995932,
+      "wall_seconds": 67.50937270000577,
+      "time_limit_seconds": 60.0,
+      "time_limit_reached": true,
+      "fixed_prefix_hours": 24,
+      "fixed_columns": 1954,
+      "independent_validation": true,
+      "violation_count": 0,
+      "mip_node_count": 2,
+      "solver_version": "1.15.1",
+      "requested_seed": 42,
+      "effective_seed": 42,
+      "warm_start_api_status": "HighsStatus.kOk",
+      "native_mip_start_feasible_message": true,
+      "mip_solution_callback_events": 3,
+      "improving_solution_callback_events": 1,
+      "warm_start": "own_previous_day_continuation",
+      "warm_start_signature": "f184560f30f2cf1ad59a56748c4e6bf1de119cc6b279ee81180e88e98d7a3d53",
+      "plan_signature": "f184560f30f2cf1ad59a56748c4e6bf1de119cc6b279ee81180e88e98d7a3d53",
+      "declared_optimal": false,
+      "tolerance_optimal": false,
+      "solver_diagnostics": {
+        "api_status": {
+          "passModel": "HighsStatus.kOk",
+          "setSolution": "HighsStatus.kOk",
+          "run": "HighsStatus.kWarning"
+        },
+        "options": {
+          "before_model": {
+            "random_seed": {
+              "status": "HighsStatus.kOk",
+              "value": 42
+            },
+            "threads": {
+              "status": "HighsStatus.kOk",
+              "value": 1
+            },
+            "time_limit": {
+              "status": "HighsStatus.kOk",
+              "value": 60.0
+            },
+            "mip_rel_gap": {
+              "status": "HighsStatus.kOk",
+              "value": 0.001
+            }
+          },
+          "after_model": {
+            "random_seed": {
+              "status": "HighsStatus.kOk",
+              "value": 42
+            },
+            "threads": {
+              "status": "HighsStatus.kOk",
+              "value": 1
+            },
+            "time_limit": {
+              "status": "HighsStatus.kOk",
+              "value": 60.0
+            },
+            "mip_rel_gap": {
+              "status": "HighsStatus.kOk",
+              "value": 0.001
+            }
+          },
+          "before_run": {
+            "random_seed": {
+              "status": "HighsStatus.kOk",
+              "value": 42
+            },
+            "threads": {
+              "status": "HighsStatus.kOk",
+              "value": 1
+            },
+            "time_limit": {
+              "status": "HighsStatus.kOk",
+              "value": 60.0
+            },
+            "mip_rel_gap": {
+              "status": "HighsStatus.kOk",
+              "value": 0.001
+            }
+          },
+          "after_run": {
+            "random_seed": {
+              "status": "HighsStatus.kOk",
+              "value": 42
+            },
+            "threads": {
+              "status": "HighsStatus.kOk",
+              "value": 1
+            },
+            "time_limit": {
+              "status": "HighsStatus.kOk",
+              "value": 60.0
+            },
+            "mip_rel_gap": {
+              "status": "HighsStatus.kOk",
+              "value": 0.001
+            }
+          }
+        },
+        "event_counts": {
+          "mip_solution": 3,
+          "mip_improving_solution": 1,
+          "mip_logging": 8
+        },
+        "callback_errors": [],
+        "final_info": {
+          "valid": 1,
+          "objective_function_value": 308107.74212183565,
+          "mip_dual_bound": 283361.25011902215,
+          "mip_gap": 0.08031765716886122,
+          "mip_node_count": 2,
+          "simplex_iteration_count": 75559,
+          "ipm_iteration_count": -1,
+          "primal_dual_integral": 4.898761476701047,
+          "primal_solution_status": 2,
+          "max_primal_infeasibility": 0.0,
+          "max_integrality_violation": 0.0,
+          "model_status": "Time limit reached"
+        },
+        "native_mip_start_feasible_message": true,
+        "feasible_solution_count": null,
+        "solution_count_note": "Callback events are not a certified count of unique feasible solutions."
+      },
+      "operating_electricity_tl": 287812.64080000005,
+      "startup_electricity_tl": 325.65000000000003,
+      "transition_electricity_tl": 6676.0853,
+      "startup_non_electric_tl": 1470.0,
+      "transition_non_electric_tl": 610.0,
+      "plan_change_tl": 0.0,
+      "total_electricity_tl": 294814.3761
+    },
+    {
+      "week": "2026-02-16 00:00:00",
+      "run_key": "naive_d1",
+      "source": "naive",
+      "decision_day": 1,
+      "solver_status": "Time limit reached",
+      "solver_objective_tl": 254814.25335,
+      "expected_cost_tl": 254814.25334999998,
+      "actual_cost_tl": 296894.3761,
+      "lower_bound_tl": 231512.65144944342,
+      "mip_gap": 0.09144544150970504,
+      "solver_seconds": 60.15935440000612,
+      "wall_seconds": 75.75973369996063,
+      "time_limit_seconds": 60.0,
+      "time_limit_reached": true,
+      "fixed_prefix_hours": 24,
+      "fixed_columns": 1954,
+      "independent_validation": true,
+      "violation_count": 0,
+      "mip_node_count": 0,
+      "solver_version": "1.15.1",
+      "requested_seed": 42,
+      "effective_seed": 42,
+      "warm_start_api_status": "HighsStatus.kOk",
+      "native_mip_start_feasible_message": true,
+      "mip_solution_callback_events": 3,
+      "improving_solution_callback_events": 1,
+      "warm_start": "own_previous_day_continuation",
+      "warm_start_signature": "f184560f30f2cf1ad59a56748c4e6bf1de119cc6b279ee81180e88e98d7a3d53",
+      "plan_signature": "f184560f30f2cf1ad59a56748c4e6bf1de119cc6b279ee81180e88e98d7a3d53",
+      "declared_optimal": false,
+      "tolerance_optimal": false,
+      "solver_diagnostics": {
+        "api_status": {
+          "passModel": "HighsStatus.kOk",
+          "setSolution": "HighsStatus.kOk",
+          "run": "HighsStatus.kWarning"
+        },
+        "options": {
+          "before_model": {
+            "random_seed": {
+              "status": "HighsStatus.kOk",
+              "value": 42
+            },
+            "threads": {
+              "status": "HighsStatus.kOk",
+              "value": 1
+            },
+            "time_limit": {
+              "status": "HighsStatus.kOk",
+              "value": 60.0
+            },
+            "mip_rel_gap": {
+              "status": "HighsStatus.kOk",
+              "value": 0.001
+            }
+          },
+          "after_model": {
+            "random_seed": {
+              "status": "HighsStatus.kOk",
+              "value": 42
+            },
+            "threads": {
+              "status": "HighsStatus.kOk",
+              "value": 1
+            },
+            "time_limit": {
+              "status": "HighsStatus.kOk",
+              "value": 60.0
+            },
+            "mip_rel_gap": {
+              "status": "HighsStatus.kOk",
+              "value": 0.001
+            }
+          },
+          "before_run": {
+            "random_seed": {
+              "status": "HighsStatus.kOk",
+              "value": 42
+            },
+            "threads": {
+              "status": "HighsStatus.kOk",
+              "value": 1
+            },
+            "time_limit": {
+              "status": "HighsStatus.kOk",
+              "value": 60.0
+            },
+            "mip_rel_gap": {
+              "status": "HighsStatus.kOk",
+              "value": 0.001
+            }
+          },
+          "after_run": {
+            "random_seed": {
+              "status": "HighsStatus.kOk",
+              "value": 42
+            },
+            "threads": {
+              "status": "HighsStatus.kOk",
+              "value": 1
+            },
+            "time_limit": {
+              "status": "HighsStatus.kOk",
+              "value": 60.0
+            },
+            "mip_rel_gap": {
+              "status": "HighsStatus.kOk",
+              "value": 0.001
+            }
+          }
+        },
+        "event_counts": {
+          "mip_solution": 3,
+          "mip_improving_solution": 1,
+          "mip_logging": 11
+        },
+        "callback_errors": [],
+        "final_info": {
+          "valid": 1,
+          "objective_function_value": 254814.25335,
+          "mip_dual_bound": 231512.65144944342,
+          "mip_gap": 0.09144544150970504,
+          "mip_node_count": 0,
+          "simplex_iteration_count": 13936,
+          "ipm_iteration_count": -1,
+          "primal_dual_integral": 5.638650193134635,
+          "primal_solution_status": 2,
+          "max_primal_infeasibility": 0.0,
+          "max_integrality_violation": 0.0,
+          "model_status": "Time limit reached"
+        },
+        "native_mip_start_feasible_message": true,
+        "feasible_solution_count": null,
+        "solution_count_note": "Callback events are not a certified count of unique feasible solutions."
+      },
+      "operating_electricity_tl": 287812.64080000005,
+      "startup_electricity_tl": 325.65000000000003,
+      "transition_electricity_tl": 6676.0853,
+      "startup_non_electric_tl": 1470.0,
+      "transition_non_electric_tl": 610.0,
+      "plan_change_tl": 0.0,
+      "total_electricity_tl": 294814.3761
+    },
+    {
+      "week": "2026-02-16 00:00:00",
+      "run_key": "hgb_d2",
+      "source": "hgb",
+      "decision_day": 2,
+      "solver_status": "Optimal",
+      "solver_objective_tl": 283401.8877,
+      "expected_cost_tl": 283401.8877,
+      "actual_cost_tl": 283401.8877,
+      "lower_bound_tl": 283180.50098833354,
+      "mip_gap": 0.0007811758540607523,
+      "solver_seconds": 2.7312440000241622,
+      "wall_seconds": 18.279530399944633,
+      "time_limit_seconds": 60.0,
+      "time_limit_reached": false,
+      "fixed_prefix_hours": 48,
+      "fixed_columns": 3712,
+      "independent_validation": true,
+      "violation_count": 0,
+      "mip_node_count": 1,
+      "solver_version": "1.15.1",
+      "requested_seed": 42,
+      "effective_seed": 42,
+      "warm_start_api_status": "HighsStatus.kOk",
+      "native_mip_start_feasible_message": true,
+      "mip_solution_callback_events": 6,
+      "improving_solution_callback_events": 2,
+      "warm_start": "own_previous_day_continuation",
+      "warm_start_signature": "90bbc479d706a0af41bfa13442bd9772ef7e8c9cb19e9ea97782915d7ac380a5",
+      "plan_signature": "66af95180bf5517a6db2d1768e86302ecf61c3b5f85fb1334169354e51385055",
+      "declared_optimal": false,
+      "tolerance_optimal": true,
+      "solver_diagnostics": {
+        "api_status": {
+          "passModel": "HighsStatus.kOk",
+          "setSolution": "HighsStatus.kOk",
+          "run": "HighsStatus.kOk"
+        },
+        "options": {
+          "before_model": {
+            "random_seed": {
+              "status": "HighsStatus.kOk",
+              "value": 42
+            },
+            "threads": {
+              "status": "HighsStatus.kOk",
+              "value": 1
+            },
+            "time_limit": {
+              "status": "HighsStatus.kOk",
+              "value": 60.0
+            },
+            "mip_rel_gap": {
+              "status": "HighsStatus.kOk",
+              "value": 0.001
+            }
+          },
+          "after_model": {
+            "random_seed": {
+              "status": "HighsStatus.kOk",
+              "value": 42
+            },
+            "threads": {
+              "status": "HighsStatus.kOk",
+              "value": 1
+            },
+            "time_limit": {
+              "status": "HighsStatus.kOk",
+              "value": 60.0
+            },
+            "mip_rel_gap": {
+              "status": "HighsStatus.kOk",
+              "value": 0.001
+            }
+          },
+          "before_run": {
+            "random_seed": {
+              "status": "HighsStatus.kOk",
+              "value": 42
+            },
+            "threads": {
+              "status": "HighsStatus.kOk",
+              "value": 1
+            },
+            "time_limit": {
+              "status": "HighsStatus.kOk",
+              "value": 60.0
+            },
+            "mip_rel_gap": {
+              "status": "HighsStatus.kOk",
+              "value": 0.001
+            }
+          },
+          "after_run": {
+            "random_seed": {
+              "status": "HighsStatus.kOk",
+              "value": 42
+            },
+            "threads": {
+              "status": "HighsStatus.kOk",
+              "value": 1
+            },
+            "time_limit": {
+              "status": "HighsStatus.kOk",
+              "value": 60.0
+            },
+            "mip_rel_gap": {
+              "status": "HighsStatus.kOk",
+              "value": 0.001
+            }
+          }
+        },
+        "event_counts": {
+          "mip_solution": 6,
+          "mip_improving_solution": 2,
+          "mip_logging": 6
+        },
+        "callback_errors": [],
+        "final_info": {
+          "valid": 1,
+          "objective_function_value": 283401.8877,
+          "mip_dual_bound": 283180.50098833354,
+          "mip_gap": 0.0007811758540607523,
+          "mip_node_count": 1,
+          "simplex_iteration_count": 873,
+          "ipm_iteration_count": -1,
+          "primal_dual_integral": 0.04061849393106617,
+          "primal_solution_status": 2,
+          "max_primal_infeasibility": 0.0,
+          "max_integrality_violation": 0.0,
+          "model_status": "Optimal"
+        },
+        "native_mip_start_feasible_message": true,
+        "feasible_solution_count": null,
+        "solution_count_note": "Callback events are not a certified count of unique feasible solutions."
+      },
+      "operating_electricity_tl": 274606.5279,
+      "startup_electricity_tl": 500.9298,
+      "transition_electricity_tl": 6194.43,
+      "startup_non_electric_tl": 1510.0,
+      "transition_non_electric_tl": 590.0,
+      "plan_change_tl": 0.0,
+      "total_electricity_tl": 281301.8877
+    },
+    {
+      "week": "2026-02-16 00:00:00",
+      "run_key": "ensemble_d2",
+      "source": "ensemble",
+      "decision_day": 2,
+      "solver_status": "Optimal",
+      "solver_objective_tl": 295538.1301,
+      "expected_cost_tl": 295538.1301,
+      "actual_cost_tl": 295538.1301,
+      "lower_bound_tl": 295248.0582345371,
+      "mip_gap": 0.0009815040291578634,
+      "solver_seconds": 6.81829690001905,
+      "wall_seconds": 22.29278689995408,
+      "time_limit_seconds": 60.0,
+      "time_limit_reached": false,
+      "fixed_prefix_hours": 48,
+      "fixed_columns": 3712,
+      "independent_validation": true,
+      "violation_count": 0,
+      "mip_node_count": 1,
+      "solver_version": "1.15.1",
+      "requested_seed": 42,
+      "effective_seed": 42,
+      "warm_start_api_status": "HighsStatus.kOk",
+      "native_mip_start_feasible_message": true,
+      "mip_solution_callback_events": 6,
+      "improving_solution_callback_events": 2,
+      "warm_start": "own_previous_day_continuation",
+      "warm_start_signature": "f184560f30f2cf1ad59a56748c4e6bf1de119cc6b279ee81180e88e98d7a3d53",
+      "plan_signature": "60767e7c724f9136f8b273269d49b4f81e96d04fb942c1c71a2d0e904866d853",
+      "declared_optimal": false,
+      "tolerance_optimal": true,
+      "solver_diagnostics": {
+        "api_status": {
+          "passModel": "HighsStatus.kOk",
+          "setSolution": "HighsStatus.kOk",
+          "run": "HighsStatus.kOk"
+        },
+        "options": {
+          "before_model": {
+            "random_seed": {
+              "status": "HighsStatus.kOk",
+              "value": 42
+            },
+            "threads": {
+              "status": "HighsStatus.kOk",
+              "value": 1
+            },
+            "time_limit": {
+              "status": "HighsStatus.kOk",
+              "value": 60.0
+            },
+            "mip_rel_gap": {
+              "status": "HighsStatus.kOk",
+              "value": 0.001
+            }
+          },
+          "after_model": {
+            "random_seed": {
+              "status": "HighsStatus.kOk",
+              "value": 42
+            },
+            "threads": {
+              "status": "HighsStatus.kOk",
+              "value": 1
+            },
+            "time_limit": {
+              "status": "HighsStatus.kOk",
+              "value": 60.0
+            },
+            "mip_rel_gap": {
+              "status": "HighsStatus.kOk",
+              "value": 0.001
+            }
+          },
+          "before_run": {
+            "random_seed": {
+              "status": "HighsStatus.kOk",
+              "value": 42
+            },
+            "threads": {
+              "status": "HighsStatus.kOk",
+              "value": 1
+            },
+            "time_limit": {
+              "status": "HighsStatus.kOk",
+              "value": 60.0
+            },
+            "mip_rel_gap": {
+              "status": "HighsStatus.kOk",
+              "value": 0.001
+            }
+          },
+          "after_run": {
+            "random_seed": {
+              "status": "HighsStatus.kOk",
+              "value": 42
+            },
+            "threads": {
+              "status": "HighsStatus.kOk",
+              "value": 1
+            },
+            "time_limit": {
+              "status": "HighsStatus.kOk",
+              "value": 60.0
+            },
+            "mip_rel_gap": {
+              "status": "HighsStatus.kOk",
+              "value": 0.001
+            }
+          }
+        },
+        "event_counts": {
+          "mip_solution": 6,
+          "mip_improving_solution": 2,
+          "mip_logging": 7
+        },
+        "callback_errors": [],
+        "final_info": {
+          "valid": 1,
+          "objective_function_value": 295538.1301,
+          "mip_dual_bound": 295248.0582345371,
+          "mip_gap": 0.0009815040291578634,
+          "mip_node_count": 1,
+          "simplex_iteration_count": 1902,
+          "ipm_iteration_count": -1,
+          "primal_dual_integral": 0.09542928013050322,
+          "primal_solution_status": 2,
+          "max_primal_infeasibility": 0.0,
+          "max_integrality_violation": 0.0,
+          "model_status": "Optimal"
+        },
+        "native_mip_start_feasible_message": true,
+        "feasible_solution_count": null,
+        "solution_count_note": "Callback events are not a certified count of unique feasible solutions."
+      },
+      "operating_electricity_tl": 285190.0752,
+      "startup_electricity_tl": 696.9696,
+      "transition_electricity_tl": 7246.0853,
+      "startup_non_electric_tl": 1720.0,
+      "transition_non_electric_tl": 685.0,
+      "plan_change_tl": 0.0,
+      "total_electricity_tl": 293133.1301
+    },
+    {
+      "week": "2026-02-16 00:00:00",
+      "run_key": "naive_d2",
+      "source": "naive",
+      "decision_day": 2,
+      "solver_status": "Optimal",
+      "solver_objective_tl": 295538.1301,
+      "expected_cost_tl": 295538.1301,
+      "actual_cost_tl": 295538.1301,
+      "lower_bound_tl": 295248.0582345371,
+      "mip_gap": 0.0009815040291578634,
+      "solver_seconds": 6.809726700070314,
+      "wall_seconds": 22.842634000000544,
+      "time_limit_seconds": 60.0,
+      "time_limit_reached": false,
+      "fixed_prefix_hours": 48,
+      "fixed_columns": 3712,
+      "independent_validation": true,
+      "violation_count": 0,
+      "mip_node_count": 1,
+      "solver_version": "1.15.1",
+      "requested_seed": 42,
+      "effective_seed": 42,
+      "warm_start_api_status": "HighsStatus.kOk",
+      "native_mip_start_feasible_message": true,
+      "mip_solution_callback_events": 6,
+      "improving_solution_callback_events": 2,
+      "warm_start": "own_previous_day_continuation",
+      "warm_start_signature": "f184560f30f2cf1ad59a56748c4e6bf1de119cc6b279ee81180e88e98d7a3d53",
+      "plan_signature": "60767e7c724f9136f8b273269d49b4f81e96d04fb942c1c71a2d0e904866d853",
+      "declared_optimal": false,
+      "tolerance_optimal": true,
+      "solver_diagnostics": {
+        "api_status": {
+          "passModel": "HighsStatus.kOk",
+          "setSolution": "HighsStatus.kOk",
+          "run": "HighsStatus.kOk"
+        },
+        "options": {
+          "before_model": {
+            "random_seed": {
+              "status": "HighsStatus.kOk",
+              "value": 42
+            },
+            "threads": {
+              "status": "HighsStatus.kOk",
+              "value": 1
+            },
+            "time_limit": {
+              "status": "HighsStatus.kOk",
+              "value": 60.0
+            },
+            "mip_rel_gap": {
+              "status": "HighsStatus.kOk",
+              "value": 0.001
+            }
+          },
+          "after_model": {
+            "random_seed": {
+              "status": "HighsStatus.kOk",
+              "value": 42
+            },
+            "threads": {
+              "status": "HighsStatus.kOk",
+              "value": 1
+            },
+            "time_limit": {
+              "status": "HighsStatus.kOk",
+              "value": 60.0
+            },
+            "mip_rel_gap": {
+              "status": "HighsStatus.kOk",
+              "value": 0.001
+            }
+          },
+          "before_run": {
+            "random_seed": {
+              "status": "HighsStatus.kOk",
+              "value": 42
+            },
+            "threads": {
+              "status": "HighsStatus.kOk",
+              "value": 1
+            },
+            "time_limit": {
+              "status": "HighsStatus.kOk",
+              "value": 60.0
+            },
+            "mip_rel_gap": {
+              "status": "HighsStatus.kOk",
+              "value": 0.001
+            }
+          },
+          "after_run": {
+            "random_seed": {
+              "status": "HighsStatus.kOk",
+              "value": 42
+            },
+            "threads": {
+              "status": "HighsStatus.kOk",
+              "value": 1
+            },
+            "time_limit": {
+              "status": "HighsStatus.kOk",
+              "value": 60.0
+            },
+            "mip_rel_gap": {
+              "status": "HighsStatus.kOk",
+              "value": 0.001
+            }
+          }
+        },
+        "event_counts": {
+          "mip_solution": 6,
+          "mip_improving_solution": 2,
+          "mip_logging": 7
+        },
+        "callback_errors": [],
+        "final_info": {
+          "valid": 1,
+          "objective_function_value": 295538.1301,
+          "mip_dual_bound": 295248.0582345371,
+          "mip_gap": 0.0009815040291578634,
+          "mip_node_count": 1,
+          "simplex_iteration_count": 1902,
+          "ipm_iteration_count": -1,
+          "primal_dual_integral": 0.096394645514223,
+          "primal_solution_status": 2,
+          "max_primal_infeasibility": 0.0,
+          "max_integrality_violation": 0.0,
+          "model_status": "Optimal"
+        },
+        "native_mip_start_feasible_message": true,
+        "feasible_solution_count": null,
+        "solution_count_note": "Callback events are not a certified count of unique feasible solutions."
+      },
+      "operating_electricity_tl": 285190.0752,
+      "startup_electricity_tl": 696.9696,
+      "transition_electricity_tl": 7246.0853,
+      "startup_non_electric_tl": 1720.0,
+      "transition_non_electric_tl": 685.0,
+      "plan_change_tl": 0.0,
+      "total_electricity_tl": 293133.1301
+    }
+  ],
+  "attempts": [
+    {
+      "week": "2026-02-16 00:00:00",
+      "run_key": "oracle",
+      "source": "oracle",
+      "decision_day": 0,
+      "attempt": 1,
+      "state": "success",
+      "solver_status": "Time limit reached",
+      "actual_cost_tl": 296894.3761,
+      "wall_seconds": 63.89610100002028
+    },
+    {
+      "week": "2026-02-16 00:00:00",
+      "run_key": "hgb_d0",
+      "source": "hgb",
+      "decision_day": 0,
+      "attempt": 1,
+      "state": "success",
+      "solver_status": "Time limit reached",
+      "actual_cost_tl": 296894.3761,
+      "wall_seconds": 63.342241199919954
+    },
+    {
+      "week": "2026-02-16 00:00:00",
+      "run_key": "ensemble_d0",
+      "source": "ensemble",
+      "decision_day": 0,
+      "attempt": 1,
+      "state": "success",
+      "solver_status": "Time limit reached",
+      "actual_cost_tl": 296894.3761,
+      "wall_seconds": 63.58558419998735
+    },
+    {
+      "week": "2026-02-16 00:00:00",
+      "run_key": "naive_d0",
+      "source": "naive",
+      "decision_day": 0,
+      "attempt": 1,
+      "state": "success",
+      "solver_status": "Time limit reached",
+      "actual_cost_tl": 296894.3761,
+      "wall_seconds": 63.518720499938354
+    },
+    {
+      "week": "2026-02-16 00:00:00",
+      "run_key": "hgb_d1",
+      "source": "hgb",
+      "decision_day": 1,
+      "attempt": 1,
+      "state": "success",
+      "solver_status": "Time limit reached",
+      "actual_cost_tl": 283791.5308,
+      "wall_seconds": 63.42858619999606
+    },
+    {
+      "week": "2026-02-16 00:00:00",
+      "run_key": "ensemble_d1",
+      "source": "ensemble",
+      "decision_day": 1,
+      "attempt": 1,
+      "state": "success",
+      "solver_status": "Time limit reached",
+      "actual_cost_tl": 296894.3761,
+      "wall_seconds": 67.60961259994656
+    },
+    {
+      "week": "2026-02-16 00:00:00",
+      "run_key": "naive_d1",
+      "source": "naive",
+      "decision_day": 1,
+      "attempt": 1,
+      "state": "success",
+      "solver_status": "Time limit reached",
+      "actual_cost_tl": 296894.3761,
+      "wall_seconds": 75.85709599999245
+    },
+    {
+      "week": "2026-02-16 00:00:00",
+      "run_key": "hgb_d2",
+      "source": "hgb",
+      "decision_day": 2,
+      "attempt": 1,
+      "state": "success",
+      "solver_status": "Optimal",
+      "actual_cost_tl": 283401.8877,
+      "wall_seconds": 18.370741699938662
+    },
+    {
+      "week": "2026-02-16 00:00:00",
+      "run_key": "ensemble_d2",
+      "source": "ensemble",
+      "decision_day": 2,
+      "attempt": 1,
+      "state": "success",
+      "solver_status": "Optimal",
+      "actual_cost_tl": 295538.1301,
+      "wall_seconds": 22.381536499946378
+    },
+    {
+      "week": "2026-02-16 00:00:00",
+      "run_key": "naive_d2",
+      "source": "naive",
+      "decision_day": 2,
+      "attempt": 1,
+      "state": "success",
+      "solver_status": "Optimal",
+      "actual_cost_tl": 295538.1301,
+      "wall_seconds": 22.94104599999264
+    }
+  ],
+  "metrics": [
+    {
+      "week": "2026-02-16 00:00:00",
+      "policy": "reference",
+      "reference_cost_tl": 296894.3761,
+      "oracle_incumbent_tl": 296894.3761,
+      "oracle_lower_bound_tl": 237907.86084080988,
+      "actual_cost_tl": 296894.3761,
+      "reference_advantage_tl": 0.0,
+      "oracle_incumbent_gap_tl": 0.0,
+      "exact_regret_tl": null,
+      "regret_lower_tl": 0.0,
+      "regret_upper_tl": 58986.51525919011,
+      "information_capture_vs_incumbent": null,
+      "potential_vs_incumbent_tl": 0.0,
+      "potential_upper_tl": 58986.51525919011,
+      "oracle_exact_certified": false,
+      "beats_oracle_incumbent": false
+    },
+    {
+      "week": "2026-02-16 00:00:00",
+      "policy": "oracle_incumbent",
+      "reference_cost_tl": 296894.3761,
+      "oracle_incumbent_tl": 296894.3761,
+      "oracle_lower_bound_tl": 237907.86084080988,
+      "actual_cost_tl": 296894.3761,
+      "reference_advantage_tl": 0.0,
+      "oracle_incumbent_gap_tl": 0.0,
+      "exact_regret_tl": null,
+      "regret_lower_tl": 0.0,
+      "regret_upper_tl": 58986.51525919011,
+      "information_capture_vs_incumbent": null,
+      "potential_vs_incumbent_tl": 0.0,
+      "potential_upper_tl": 58986.51525919011,
+      "oracle_exact_certified": false,
+      "beats_oracle_incumbent": false
+    },
+    {
+      "week": "2026-02-16 00:00:00",
+      "policy": "hgb_open",
+      "reference_cost_tl": 296894.3761,
+      "oracle_incumbent_tl": 296894.3761,
+      "oracle_lower_bound_tl": 237907.86084080988,
+      "actual_cost_tl": 296894.3761,
+      "reference_advantage_tl": 0.0,
+      "oracle_incumbent_gap_tl": 0.0,
+      "exact_regret_tl": null,
+      "regret_lower_tl": 0.0,
+      "regret_upper_tl": 58986.51525919011,
+      "information_capture_vs_incumbent": null,
+      "potential_vs_incumbent_tl": 0.0,
+      "potential_upper_tl": 58986.51525919011,
+      "oracle_exact_certified": false,
+      "beats_oracle_incumbent": false
+    },
+    {
+      "week": "2026-02-16 00:00:00",
+      "policy": "hgb_rolling",
+      "reference_cost_tl": 296894.3761,
+      "oracle_incumbent_tl": 296894.3761,
+      "oracle_lower_bound_tl": 237907.86084080988,
+      "actual_cost_tl": 283401.8877,
+      "reference_advantage_tl": 13492.488399999973,
+      "oracle_incumbent_gap_tl": -13492.488399999973,
+      "exact_regret_tl": null,
+      "regret_lower_tl": 0.0,
+      "regret_upper_tl": 45494.02685919014,
+      "information_capture_vs_incumbent": null,
+      "potential_vs_incumbent_tl": 0.0,
+      "potential_upper_tl": 58986.51525919011,
+      "oracle_exact_certified": false,
+      "beats_oracle_incumbent": true
+    },
+    {
+      "week": "2026-02-16 00:00:00",
+      "policy": "ensemble_open",
+      "reference_cost_tl": 296894.3761,
+      "oracle_incumbent_tl": 296894.3761,
+      "oracle_lower_bound_tl": 237907.86084080988,
+      "actual_cost_tl": 296894.3761,
+      "reference_advantage_tl": 0.0,
+      "oracle_incumbent_gap_tl": 0.0,
+      "exact_regret_tl": null,
+      "regret_lower_tl": 0.0,
+      "regret_upper_tl": 58986.51525919011,
+      "information_capture_vs_incumbent": null,
+      "potential_vs_incumbent_tl": 0.0,
+      "potential_upper_tl": 58986.51525919011,
+      "oracle_exact_certified": false,
+      "beats_oracle_incumbent": false
+    },
+    {
+      "week": "2026-02-16 00:00:00",
+      "policy": "ensemble_rolling",
+      "reference_cost_tl": 296894.3761,
+      "oracle_incumbent_tl": 296894.3761,
+      "oracle_lower_bound_tl": 237907.86084080988,
+      "actual_cost_tl": 295538.1301,
+      "reference_advantage_tl": 1356.2459999999846,
+      "oracle_incumbent_gap_tl": -1356.2459999999846,
+      "exact_regret_tl": null,
+      "regret_lower_tl": 0.0,
+      "regret_upper_tl": 57630.26925919013,
+      "information_capture_vs_incumbent": null,
+      "potential_vs_incumbent_tl": 0.0,
+      "potential_upper_tl": 58986.51525919011,
+      "oracle_exact_certified": false,
+      "beats_oracle_incumbent": true
+    },
+    {
+      "week": "2026-02-16 00:00:00",
+      "policy": "naive_open",
+      "reference_cost_tl": 296894.3761,
+      "oracle_incumbent_tl": 296894.3761,
+      "oracle_lower_bound_tl": 237907.86084080988,
+      "actual_cost_tl": 296894.3761,
+      "reference_advantage_tl": 0.0,
+      "oracle_incumbent_gap_tl": 0.0,
+      "exact_regret_tl": null,
+      "regret_lower_tl": 0.0,
+      "regret_upper_tl": 58986.51525919011,
+      "information_capture_vs_incumbent": null,
+      "potential_vs_incumbent_tl": 0.0,
+      "potential_upper_tl": 58986.51525919011,
+      "oracle_exact_certified": false,
+      "beats_oracle_incumbent": false
+    },
+    {
+      "week": "2026-02-16 00:00:00",
+      "policy": "naive_rolling",
+      "reference_cost_tl": 296894.3761,
+      "oracle_incumbent_tl": 296894.3761,
+      "oracle_lower_bound_tl": 237907.86084080988,
+      "actual_cost_tl": 295538.1301,
+      "reference_advantage_tl": 1356.2459999999846,
+      "oracle_incumbent_gap_tl": -1356.2459999999846,
+      "exact_regret_tl": null,
+      "regret_lower_tl": 0.0,
+      "regret_upper_tl": 57630.26925919013,
+      "information_capture_vs_incumbent": null,
+      "potential_vs_incumbent_tl": 0.0,
+      "potential_upper_tl": 58986.51525919011,
+      "oracle_exact_certified": false,
+      "beats_oracle_incumbent": true
+    }
+  ],
+  "components": [
+    {
+      "week": "2026-02-16 00:00:00",
+      "policy": "reference",
+      "operating_electricity_tl": 287812.64080000005,
+      "startup_electricity_tl": 325.65000000000003,
+      "transition_electricity_tl": 6676.0853,
+      "startup_non_electric_tl": 1470.0,
+      "transition_non_electric_tl": 610.0,
+      "plan_change_tl": 0.0,
+      "total_electricity_tl": 294814.3761,
+      "total_cost_tl": 296894.3761
+    },
+    {
+      "week": "2026-02-16 00:00:00",
+      "policy": "oracle_incumbent",
+      "total_cost_tl": 296894.3761,
+      "operating_electricity_tl": 287812.64080000005,
+      "startup_electricity_tl": 325.65000000000003,
+      "transition_electricity_tl": 6676.0853,
+      "startup_non_electric_tl": 1470.0,
+      "transition_non_electric_tl": 610.0,
+      "plan_change_tl": 0.0,
+      "total_electricity_tl": 294814.3761
+    },
+    {
+      "week": "2026-02-16 00:00:00",
+      "policy": "hgb_open",
+      "total_cost_tl": 296894.3761,
+      "operating_electricity_tl": 287812.64080000005,
+      "startup_electricity_tl": 325.65000000000003,
+      "transition_electricity_tl": 6676.0853,
+      "startup_non_electric_tl": 1470.0,
+      "transition_non_electric_tl": 610.0,
+      "plan_change_tl": 0.0,
+      "total_electricity_tl": 294814.3761
+    },
+    {
+      "week": "2026-02-16 00:00:00",
+      "policy": "hgb_rolling",
+      "operating_electricity_tl": 274606.5279,
+      "startup_electricity_tl": 500.9298,
+      "transition_electricity_tl": 6194.43,
+      "startup_non_electric_tl": 1510.0,
+      "transition_non_electric_tl": 590.0,
+      "plan_change_tl": 0.0,
+      "total_electricity_tl": 281301.8877,
+      "total_cost_tl": 283401.8877
+    },
+    {
+      "week": "2026-02-16 00:00:00",
+      "policy": "ensemble_open",
+      "total_cost_tl": 296894.3761,
+      "operating_electricity_tl": 287812.64080000005,
+      "startup_electricity_tl": 325.65000000000003,
+      "transition_electricity_tl": 6676.0853,
+      "startup_non_electric_tl": 1470.0,
+      "transition_non_electric_tl": 610.0,
+      "plan_change_tl": 0.0,
+      "total_electricity_tl": 294814.3761
+    },
+    {
+      "week": "2026-02-16 00:00:00",
+      "policy": "ensemble_rolling",
+      "operating_electricity_tl": 285190.0752,
+      "startup_electricity_tl": 696.9696,
+      "transition_electricity_tl": 7246.0853,
+      "startup_non_electric_tl": 1720.0,
+      "transition_non_electric_tl": 685.0,
+      "plan_change_tl": 0.0,
+      "total_electricity_tl": 293133.1301,
+      "total_cost_tl": 295538.1301
+    },
+    {
+      "week": "2026-02-16 00:00:00",
+      "policy": "naive_open",
+      "total_cost_tl": 296894.3761,
+      "operating_electricity_tl": 287812.64080000005,
+      "startup_electricity_tl": 325.65000000000003,
+      "transition_electricity_tl": 6676.0853,
+      "startup_non_electric_tl": 1470.0,
+      "transition_non_electric_tl": 610.0,
+      "plan_change_tl": 0.0,
+      "total_electricity_tl": 294814.3761
+    },
+    {
+      "week": "2026-02-16 00:00:00",
+      "policy": "naive_rolling",
+      "operating_electricity_tl": 285190.0752,
+      "startup_electricity_tl": 696.9696,
+      "transition_electricity_tl": 7246.0853,
+      "startup_non_electric_tl": 1720.0,
+      "transition_non_electric_tl": 685.0,
+      "plan_change_tl": 0.0,
+      "total_electricity_tl": 293133.1301,
+      "total_cost_tl": 295538.1301
+    }
+  ],
+  "audits": [
+    {
+      "week": "2026-02-16 00:00:00",
+      "policy": "reference",
+      "full_model_feasible": true,
+      "rows_checked": 8637,
+      "columns_checked": 5278,
+      "fixed_prefix_columns": 0,
+      "matrix_objective_tl": 296894.3761,
+      "independent_cost_tl": 296894.3761,
+      "objective_difference_tl": 0.0,
+      "maximum_constraint_violation": 0.0
+    },
+    {
+      "week": "2026-02-16 00:00:00",
+      "policy": "oracle_incumbent",
+      "full_model_feasible": true,
+      "rows_checked": 8637,
+      "columns_checked": 5278,
+      "fixed_prefix_columns": 0,
+      "matrix_objective_tl": 296894.3761,
+      "independent_cost_tl": 296894.3761,
+      "objective_difference_tl": 0.0,
+      "maximum_constraint_violation": 0.0
+    },
+    {
+      "week": "2026-02-16 00:00:00",
+      "policy": "hgb_open",
+      "full_model_feasible": true,
+      "rows_checked": 8637,
+      "columns_checked": 5278,
+      "fixed_prefix_columns": 0,
+      "matrix_objective_tl": 296894.3761,
+      "independent_cost_tl": 296894.3761,
+      "objective_difference_tl": 0.0,
+      "maximum_constraint_violation": 0.0
+    },
+    {
+      "week": "2026-02-16 00:00:00",
+      "policy": "hgb_rolling",
+      "full_model_feasible": true,
+      "rows_checked": 8637,
+      "columns_checked": 5278,
+      "fixed_prefix_columns": 0,
+      "matrix_objective_tl": 283401.88769999996,
+      "independent_cost_tl": 283401.8877,
+      "objective_difference_tl": -5.820766091346741e-11,
+      "maximum_constraint_violation": 0.0
+    },
+    {
+      "week": "2026-02-16 00:00:00",
+      "policy": "ensemble_open",
+      "full_model_feasible": true,
+      "rows_checked": 8637,
+      "columns_checked": 5278,
+      "fixed_prefix_columns": 0,
+      "matrix_objective_tl": 296894.3761,
+      "independent_cost_tl": 296894.3761,
+      "objective_difference_tl": 0.0,
+      "maximum_constraint_violation": 0.0
+    },
+    {
+      "week": "2026-02-16 00:00:00",
+      "policy": "ensemble_rolling",
+      "full_model_feasible": true,
+      "rows_checked": 8637,
+      "columns_checked": 5278,
+      "fixed_prefix_columns": 0,
+      "matrix_objective_tl": 295538.1301,
+      "independent_cost_tl": 295538.1301,
+      "objective_difference_tl": 0.0,
+      "maximum_constraint_violation": 0.0
+    },
+    {
+      "week": "2026-02-16 00:00:00",
+      "policy": "naive_open",
+      "full_model_feasible": true,
+      "rows_checked": 8637,
+      "columns_checked": 5278,
+      "fixed_prefix_columns": 0,
+      "matrix_objective_tl": 296894.3761,
+      "independent_cost_tl": 296894.3761,
+      "objective_difference_tl": 0.0,
+      "maximum_constraint_violation": 0.0
+    },
+    {
+      "week": "2026-02-16 00:00:00",
+      "policy": "naive_rolling",
+      "full_model_feasible": true,
+      "rows_checked": 8637,
+      "columns_checked": 5278,
+      "fixed_prefix_columns": 0,
+      "matrix_objective_tl": 295538.1301,
+      "independent_cost_tl": 295538.1301,
+      "objective_difference_tl": 0.0,
+      "maximum_constraint_violation": 0.0
+    }
+  ],
+  "best": [
+    {
+      "week": "2026-02-16 00:00:00",
+      "verified_best_known_feasible_cost_tl": 283401.8877,
+      "winning_policies": "hgb_rolling",
+      "posthoc": true,
+      "original_oracle_upper_tl": 296894.3761,
+      "oracle_lower_bound_tl": 237907.86084080988
+    }
+  ],
+  "tighter": [
+    {
+      "week": "2026-02-16 00:00:00",
+      "policy": "reference",
+      "actual_cost_tl": 296894.3761,
+      "posthoc_verified_upper_tl": 283401.8877,
+      "oracle_lower_bound_tl": 237907.86084080988,
+      "tightened_regret_lower_tl": 13492.488399999973,
+      "tightened_regret_upper_tl": 58986.51525919011,
+      "posthoc": true,
+      "independent_information_capture": null
+    },
+    {
+      "week": "2026-02-16 00:00:00",
+      "policy": "oracle_incumbent",
+      "actual_cost_tl": 296894.3761,
+      "posthoc_verified_upper_tl": 283401.8877,
+      "oracle_lower_bound_tl": 237907.86084080988,
+      "tightened_regret_lower_tl": 13492.488399999973,
+      "tightened_regret_upper_tl": 58986.51525919011,
+      "posthoc": true,
+      "independent_information_capture": null
+    },
+    {
+      "week": "2026-02-16 00:00:00",
+      "policy": "hgb_open",
+      "actual_cost_tl": 296894.3761,
+      "posthoc_verified_upper_tl": 283401.8877,
+      "oracle_lower_bound_tl": 237907.86084080988,
+      "tightened_regret_lower_tl": 13492.488399999973,
+      "tightened_regret_upper_tl": 58986.51525919011,
+      "posthoc": true,
+      "independent_information_capture": null
+    },
+    {
+      "week": "2026-02-16 00:00:00",
+      "policy": "hgb_rolling",
+      "actual_cost_tl": 283401.8877,
+      "posthoc_verified_upper_tl": 283401.8877,
+      "oracle_lower_bound_tl": 237907.86084080988,
+      "tightened_regret_lower_tl": 0.0,
+      "tightened_regret_upper_tl": 45494.02685919014,
+      "posthoc": true,
+      "independent_information_capture": null
+    },
+    {
+      "week": "2026-02-16 00:00:00",
+      "policy": "ensemble_open",
+      "actual_cost_tl": 296894.3761,
+      "posthoc_verified_upper_tl": 283401.8877,
+      "oracle_lower_bound_tl": 237907.86084080988,
+      "tightened_regret_lower_tl": 13492.488399999973,
+      "tightened_regret_upper_tl": 58986.51525919011,
+      "posthoc": true,
+      "independent_information_capture": null
+    },
+    {
+      "week": "2026-02-16 00:00:00",
+      "policy": "ensemble_rolling",
+      "actual_cost_tl": 295538.1301,
+      "posthoc_verified_upper_tl": 283401.8877,
+      "oracle_lower_bound_tl": 237907.86084080988,
+      "tightened_regret_lower_tl": 12136.242399999988,
+      "tightened_regret_upper_tl": 57630.26925919013,
+      "posthoc": true,
+      "independent_information_capture": null
+    },
+    {
+      "week": "2026-02-16 00:00:00",
+      "policy": "naive_open",
+      "actual_cost_tl": 296894.3761,
+      "posthoc_verified_upper_tl": 283401.8877,
+      "oracle_lower_bound_tl": 237907.86084080988,
+      "tightened_regret_lower_tl": 13492.488399999973,
+      "tightened_regret_upper_tl": 58986.51525919011,
+      "posthoc": true,
+      "independent_information_capture": null
+    },
+    {
+      "week": "2026-02-16 00:00:00",
+      "policy": "naive_rolling",
+      "actual_cost_tl": 295538.1301,
+      "posthoc_verified_upper_tl": 283401.8877,
+      "oracle_lower_bound_tl": 237907.86084080988,
+      "tightened_regret_lower_tl": 12136.242399999988,
+      "tightened_regret_upper_tl": 57630.26925919013,
+      "posthoc": true,
+      "independent_information_capture": null
+    }
+  ]
+}

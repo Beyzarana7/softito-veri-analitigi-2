@@ -1,0 +1,14 @@
+{
+  "saved_solutions_revalidated": 40,
+  "known_price_prefixes_checked": 36,
+  "warm_start_checks": 40,
+  "future_poison_model_tests": 3,
+  "naive_matches_previous_definition": true,
+  "forecast_prices_same_as_15s": true,
+  "sql_idempotent": true,
+  "sql_analysis_rows": 152,
+  "sql_summary_rows": 8,
+  "seed_option_verified_in_40_runs": true,
+  "postprocessing_seconds": 30.87632380006835,
+  "old_experiment_preserved": true
+}

@@ -1,0 +1,6 @@
+﻿kaynak_id,kaynak_adi,kaynak_turu
+H01,Öğütme hattı 1,ogutme
+H02,Öğütme hattı 2,ogutme
+P01,Ortak paketleme hattı,paketleme
+Y01,Dökme yükleme,dokme_yukleme
+Y02,Torbalı yükleme,torbali_yukleme

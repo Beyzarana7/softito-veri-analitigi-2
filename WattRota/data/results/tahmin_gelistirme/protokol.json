@@ -1,0 +1,12 @@
+{
+  "adaylar": [
+    "rf_duzeltme_180",
+    "hgb_duzeltme_180",
+    "hgb_duzeltme_365"
+  ],
+  "secim_donemi": "2025-01-06 / 2025-06-30",
+  "onay_donemi": "2025-07-07 / 2025-12-29",
+  "geriye_donuk_donem": "2026-01-05 / 2026-11-02",
+  "secim_olcutu": "MAE; yalnız ilk altı ay",
+  "donem_2026_yorumu": "Daha önce incelenmiş dönem; yeni kör test değildir."
+}

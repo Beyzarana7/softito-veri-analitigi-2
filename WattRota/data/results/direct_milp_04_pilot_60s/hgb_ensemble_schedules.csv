@@ -1,0 +1,17 @@
+﻿week,mode,seconds,hgb_minus_ensemble_tl,identical_cost_within_002_tl,identical_machine_schedule,identical_loading_schedule,identical_full_schedule,changed_machine_resource_hours,loading_absolute_difference_ton
+2026-01-05,open,15,0.0,True,True,True,True,0,0.0
+2026-01-05,open,60,0.0,True,True,True,True,0,0.0
+2026-01-05,rolling,15,0.0,True,True,True,True,0,0.0
+2026-01-05,rolling,60,0.0,True,True,True,True,0,0.0
+2026-03-23,open,15,0.0,True,True,True,True,0,0.0
+2026-03-23,open,60,0.0,True,True,True,True,0,0.0
+2026-03-23,rolling,15,0.0,True,True,True,True,0,0.0
+2026-03-23,rolling,60,-6962.894750000036,False,False,False,False,50,3359.999999996576
+2026-06-08,open,15,0.0,True,True,True,True,0,0.0
+2026-06-08,open,60,0.0,True,True,True,True,0,0.0
+2026-06-08,rolling,15,0.0,True,True,True,True,0,0.0
+2026-06-08,rolling,60,-57.13359999997192,False,False,False,False,22,1959.999999999741
+2026-08-24,open,15,0.0,True,True,True,True,0,0.0
+2026-08-24,open,60,0.0,True,True,True,True,0,0.0
+2026-08-24,rolling,15,0.0,True,True,True,True,0,0.0
+2026-08-24,rolling,60,442.3096999999834,False,False,False,False,24,2440.0

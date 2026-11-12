@@ -1,0 +1,8 @@
+{
+  "selected_model": "hgb_residual_expanding",
+  "criterion": "mae_tl_mwh",
+  "selection_split": "development_only",
+  "config_sha256": "e30ae737ea2c3f5b9c864f8aae215a9fab17f9171cb91bd5064bcec7138b2c35",
+  "last_selection_target": "2026-08-26 23:00:00",
+  "first_locked_origin": "2026-08-31 00:00:00"
+}

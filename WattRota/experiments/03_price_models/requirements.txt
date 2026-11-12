@@ -1,0 +1,2 @@
+# Proje kökündeki requirements.txt üzerine eklenir; eski kilit dosyası değiştirilmez.
+lightgbm==4.7.0
