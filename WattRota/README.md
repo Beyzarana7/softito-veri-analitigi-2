@@ -13,7 +13,7 @@ WattRota, açıklanmış saatlik elektrik fiyatlarını ve henüz açıklanmamı
 
 Nihai veri sözlüğü `belgeler/Veri_Sozlugu.csv` dosyasıdır; alan açıklamaları, birimler, anahtarlar ve ilişkileri içerir.
 
-Akademik makale:(https://medium.com/@beyzarana2403/daha-i%CC%87yi-fiyat-tahmini-daha-ucuz-%C3%BCretim-plan%C4%B1-demek-mi-wattrota-3f359f682b5b?sharedUserId=beyzarana2403)
+Akademik makale: (https://medium.com/@beyzarana2403/daha-i%CC%87yi-fiyat-tahmini-daha-ucuz-%C3%BCretim-plan%C4%B1-demek-mi-wattrota-3f359f682b5b?sharedUserId=beyzarana2403)
 
 ## Teknolojiler ve uygulama
 
