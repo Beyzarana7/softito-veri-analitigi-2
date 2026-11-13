@@ -2,17 +2,23 @@
   {
     "source_group": "original",
     "path": ".gitignore",
-    "sha256": "44a47dd124b11238008e8f09fbad06fe88873328891b21f12bc12d4d59f69b61"
+    "sha256": "44a47dd124b11238008e8f09fbad06fe88873328891b21f12bc12d4d59f69b61",
+    "present_in_final_delivery": true,
+    "final_sha256": "87998d8b2063b3ad8605be598f01c689f2a60a2dab11753f85aacc09bbe619c1"
   },
   {
     "source_group": "original",
     "path": "README.md",
-    "sha256": "60f760eb40b3956ae4acfda192b05ab2f5a173bbf0e56cb956b87cd7fecf3e17"
+    "sha256": "60f760eb40b3956ae4acfda192b05ab2f5a173bbf0e56cb956b87cd7fecf3e17",
+    "present_in_final_delivery": true,
+    "final_sha256": "405f8d860d914bd13e211495ce616c1921b15bf64be2e14a57ef8c6e32690f0c"
   },
   {
     "source_group": "original",
     "path": "requirements.txt",
-    "sha256": "3f3e9760f82c56e9446c6e9debdcc7be5673ebffed3a763dcebc933d3b115828"
+    "sha256": "3f3e9760f82c56e9446c6e9debdcc7be5673ebffed3a763dcebc933d3b115828",
+    "present_in_final_delivery": true,
+    "final_sha256": "f1da10a5e2694b8a899485720108cd8bd17013c9b0af2bd26928e2787a2604e3"
   },
   {
     "source_group": "original",
@@ -252,7 +258,9 @@
   {
     "source_group": "original",
     "path": "kod/db/engine.py",
-    "sha256": "ab5bfd3cb1ae6ff9c529b5cdcb0179a59e573f99909e5aed7081a4e2ff5bace1"
+    "sha256": "ab5bfd3cb1ae6ff9c529b5cdcb0179a59e573f99909e5aed7081a4e2ff5bace1",
+    "present_in_final_delivery": true,
+    "final_sha256": "a1a99dbaefee0e7c72f5387ae3797c9edc96edb0aefa740166f21b0d487425cc"
   },
   {
     "source_group": "original",
@@ -12692,7 +12700,9 @@
   {
     "source_group": "application",
     "path": "uygulama/BASLAT.bat",
-    "sha256": "57ce927f79fa9ff3d07f24a31c8e24b494ea99cc847fcfd4bfeb20c005193cd9"
+    "sha256": "57ce927f79fa9ff3d07f24a31c8e24b494ea99cc847fcfd4bfeb20c005193cd9",
+    "present_in_final_delivery": true,
+    "final_sha256": "89edcb6013ccad9026685deda8e619b39be49ba9286daba92a021b75fa5cd893"
   },
   {
     "source_group": "application",
@@ -12732,17 +12742,23 @@
   {
     "source_group": "application",
     "path": "uygulama/prepare_input_schema.py",
-    "sha256": "b478b68dc151d6db6c29e3ab72d67703211fc5a750b918f675adfe0672c20bea"
+    "sha256": "b478b68dc151d6db6c29e3ab72d67703211fc5a750b918f675adfe0672c20bea",
+    "present_in_final_delivery": true,
+    "final_sha256": "964f84ee97e179b43f6b1309280285da01da931b8b20247cbb775972f9efa71f"
   },
   {
     "source_group": "application",
     "path": "uygulama/prepare_monthly_view.py",
-    "sha256": "5c9b777f0421f8dced908eb72a60b5900b42ee64bba6cadfb79a413379fa0eb2"
+    "sha256": "5c9b777f0421f8dced908eb72a60b5900b42ee64bba6cadfb79a413379fa0eb2",
+    "present_in_final_delivery": true,
+    "final_sha256": "1b25e5d8ff1e9f8440fbc636eaa3d7d882cb34987e76e3e160ecf334cae91cdd"
   },
   {
     "source_group": "application",
     "path": "uygulama/prepare_profile.py",
-    "sha256": "a3e656b0d43bca5fad473ab1511ace9e204a6263a818eb1cca821fd3e7d9aeb9"
+    "sha256": "a3e656b0d43bca5fad473ab1511ace9e204a6263a818eb1cca821fd3e7d9aeb9",
+    "present_in_final_delivery": true,
+    "final_sha256": "55944b162fb93d00d01a467e0cbf8cbdf86a17cabb0768ba0503fbae19c39d98"
   },
   {
     "source_group": "application",
@@ -12752,12 +12768,16 @@
   {
     "source_group": "application",
     "path": "uygulama/README.md",
-    "sha256": "a6d03a4667247a58cb096b894108e8905abb06fedc621d703261945dd64cda70"
+    "sha256": "a6d03a4667247a58cb096b894108e8905abb06fedc621d703261945dd64cda70",
+    "present_in_final_delivery": true,
+    "final_sha256": "f71a0474a19141ac65c3ee9139a4d85d66add100e3e58c4296d906ba062b9ae8"
   },
   {
     "source_group": "application",
     "path": "uygulama/service.py",
-    "sha256": "1d75a157ae32ae482f8ba3dd0ac27c9e4939cce291039ead0cad3b17185df164"
+    "sha256": "1d75a157ae32ae482f8ba3dd0ac27c9e4939cce291039ead0cad3b17185df164",
+    "present_in_final_delivery": true,
+    "final_sha256": "4156587928275ae2ebefc8e021704372f7e68d96c63fb4e913c4143b30e4bff8"
   },
   {
     "source_group": "application",
@@ -12842,52 +12862,72 @@
   {
     "source_group": "application",
     "path": "uygulama/tests/check_preservation.py",
-    "sha256": "cf024f93930d4f94137419b034533310de7805948c94f63158f571f309b72440"
+    "sha256": "cf024f93930d4f94137419b034533310de7805948c94f63158f571f309b72440",
+    "present_in_final_delivery": false,
+    "final_sha256": null
   },
   {
     "source_group": "application",
     "path": "uygulama/tests/final_checks.json",
-    "sha256": "b368ecd81e66b13a63e144d5d9f3f1545e6f21e116c451aa62901a91656fd717"
+    "sha256": "b368ecd81e66b13a63e144d5d9f3f1545e6f21e116c451aa62901a91656fd717",
+    "present_in_final_delivery": true,
+    "final_sha256": "b3757e42e483d67a3a6c54a4301ef9d95d32a340dcaaa01cabdd0956593fe3e7"
   },
   {
     "source_group": "application",
     "path": "uygulama/tests/hazir_fabrika_ekran.png",
-    "sha256": "40552e9885de543d55f7bac65dacf6c30eb0f8d05d69a3774a4878bced2a03a4"
+    "sha256": "40552e9885de543d55f7bac65dacf6c30eb0f8d05d69a3774a4878bced2a03a4",
+    "present_in_final_delivery": false,
+    "final_sha256": null
   },
   {
     "source_group": "application",
     "path": "uygulama/tests/input_validation_summary.json",
-    "sha256": "b0f119e2f7d5d9928fb1a943d1afa5cb2ea7f32930a1eb200ee05bcb3fa39628"
+    "sha256": "b0f119e2f7d5d9928fb1a943d1afa5cb2ea7f32930a1eb200ee05bcb3fa39628",
+    "present_in_final_delivery": false,
+    "final_sha256": null
   },
   {
     "source_group": "application",
     "path": "uygulama/tests/prepare_product_pages.py",
-    "sha256": "54121753f655e252be6075d4e4014f99bd71a0cd9b8604ef74ad12c4fbfd3d08"
+    "sha256": "54121753f655e252be6075d4e4014f99bd71a0cd9b8604ef74ad12c4fbfd3d08",
+    "present_in_final_delivery": false,
+    "final_sha256": null
   },
   {
     "source_group": "application",
     "path": "uygulama/tests/preservation.json",
-    "sha256": "5e4d72f78cd368228fd1db493f6f380ccccabc5898cfca5b52a2fc804840ae1c"
+    "sha256": "5e4d72f78cd368228fd1db493f6f380ccccabc5898cfca5b52a2fc804840ae1c",
+    "present_in_final_delivery": false,
+    "final_sha256": null
   },
   {
     "source_group": "application",
     "path": "uygulama/tests/product_preservation.json",
-    "sha256": "0f82c6757b66fdd5e465f9f8932e8957a649786ad921a8f6fb3e647a25aabad5"
+    "sha256": "0f82c6757b66fdd5e465f9f8932e8957a649786ad921a8f6fb3e647a25aabad5",
+    "present_in_final_delivery": false,
+    "final_sha256": null
   },
   {
     "source_group": "application",
     "path": "uygulama/tests/product_validation.json",
-    "sha256": "1119c6a34bb55a836f1653b7b5d6f00e7a9e1d5e4f77d1feefc1d8411c08e261"
+    "sha256": "1119c6a34bb55a836f1653b7b5d6f00e7a9e1d5e4f77d1feefc1d8411c08e261",
+    "present_in_final_delivery": false,
+    "final_sha256": null
   },
   {
     "source_group": "application",
     "path": "uygulama/tests/refined_browser.json",
-    "sha256": "154c7a7ca19c3bed4166b8fb42e24a0ad56a6532200975d291744b911a88ab45"
+    "sha256": "154c7a7ca19c3bed4166b8fb42e24a0ad56a6532200975d291744b911a88ab45",
+    "present_in_final_delivery": false,
+    "final_sha256": null
   },
   {
     "source_group": "application",
     "path": "uygulama/tests/refinement_validation.json",
-    "sha256": "3e6378e04c10eb850af8e1698063fccb33aa56871dd9fcf73d79a2fac1494889"
+    "sha256": "3e6378e04c10eb850af8e1698063fccb33aa56871dd9fcf73d79a2fac1494889",
+    "present_in_final_delivery": false,
+    "final_sha256": null
   },
   {
     "source_group": "application",
@@ -12897,22 +12937,30 @@
   {
     "source_group": "application",
     "path": "uygulama/tests/simple_browser.json",
-    "sha256": "5994b2e81079c34fb427355a9dc4da805b569bc9876840991346242b3966f127"
+    "sha256": "5994b2e81079c34fb427355a9dc4da805b569bc9876840991346242b3966f127",
+    "present_in_final_delivery": false,
+    "final_sha256": null
   },
   {
     "source_group": "application",
     "path": "uygulama/tests/simple_preservation.json",
-    "sha256": "d749ca644d877d380037e4266192a50bf240ea57509161c722bcebc8d817e453"
+    "sha256": "d749ca644d877d380037e4266192a50bf240ea57509161c722bcebc8d817e453",
+    "present_in_final_delivery": false,
+    "final_sha256": null
   },
   {
     "source_group": "application",
     "path": "uygulama/tests/simple_review.json",
-    "sha256": "b159a3fec223542ece8b2559abf7c993099c0d00f0e7e54ff994a793c1af9b8c"
+    "sha256": "b159a3fec223542ece8b2559abf7c993099c0d00f0e7e54ff994a793c1af9b8c",
+    "present_in_final_delivery": false,
+    "final_sha256": null
   },
   {
     "source_group": "application",
     "path": "uygulama/tests/test_analytics.py",
-    "sha256": "4e00732f6d7e49752bb59c35f5417db58bbed96235875654de2156a657df0ae2"
+    "sha256": "4e00732f6d7e49752bb59c35f5417db58bbed96235875654de2156a657df0ae2",
+    "present_in_final_delivery": true,
+    "final_sha256": "ffa29c9c7b15f8cc1a29c00f1b19de5fb5efaafab7705406c148143d6ca54a7a"
   },
   {
     "source_group": "application",
@@ -12932,7 +12980,9 @@
   {
     "source_group": "application",
     "path": "uygulama/tests/test_input_session.py",
-    "sha256": "075b35d80cf8cd3e85c2d62ed7f7d4cef443866d7ae1c6f7e3d4275164113c36"
+    "sha256": "075b35d80cf8cd3e85c2d62ed7f7d4cef443866d7ae1c6f7e3d4275164113c36",
+    "present_in_final_delivery": true,
+    "final_sha256": "3760290b6ba376ac71c6cc2d17365e8764ef088183ef9af5e362e77f32a3e6ce"
   },
   {
     "source_group": "application",
@@ -12942,7 +12992,9 @@
   {
     "source_group": "application",
     "path": "uygulama/tests/test_local_integration.py",
-    "sha256": "566a15874f0b7423e1ffd5d52fbacecd5751adf3726b0cfeb4ccbf138ea3ceb0"
+    "sha256": "566a15874f0b7423e1ffd5d52fbacecd5751adf3726b0cfeb4ccbf138ea3ceb0",
+    "present_in_final_delivery": true,
+    "final_sha256": "dbd7ce14e4ff376f33efdd94514cfd6feb1e87a7dd2bae4bc2ce8d176b60c97f"
   },
   {
     "source_group": "application",
@@ -12952,7 +13004,9 @@
   {
     "source_group": "application",
     "path": "uygulama/tests/test_service.py",
-    "sha256": "6c8569c678881167ccf8ca34ad430456f48883c8f660296a04604d14479a609a"
+    "sha256": "6c8569c678881167ccf8ca34ad430456f48883c8f660296a04604d14479a609a",
+    "present_in_final_delivery": true,
+    "final_sha256": "c26ee749ed592c1d069bc14234a4be12b79fb500bcbe43ba8d6ba5f501e478d7"
   },
   {
     "source_group": "application",
@@ -12962,12 +13016,16 @@
   {
     "source_group": "application",
     "path": "uygulama/tests/test_ui_refinement.py",
-    "sha256": "5a27c823409bdb3f10940e4c883677d81b97ebe0857fee36652feb245c115986"
+    "sha256": "5a27c823409bdb3f10940e4c883677d81b97ebe0857fee36652feb245c115986",
+    "present_in_final_delivery": true,
+    "final_sha256": "48380e20b1b98b2da5cbec3f7a0fde36f093acce94d9845526f0bdb890437704"
   },
   {
     "source_group": "application",
     "path": "uygulama/tests/test_ui_states.py",
-    "sha256": "bcc28a0b687c119327488405e10aaf60dfa8319158a9244cf75cc352a6b3c27f"
+    "sha256": "bcc28a0b687c119327488405e10aaf60dfa8319158a9244cf75cc352a6b3c27f",
+    "present_in_final_delivery": true,
+    "final_sha256": "57e3cf52c4b42e9d3767b219f3b0685d55f58e8a53a726e795028c87c024b7ce"
   },
   {
     "source_group": "application",
@@ -12977,7 +13035,9 @@
   {
     "source_group": "application",
     "path": "uygulama/tests/validation.json",
-    "sha256": "3831448e04c6cfa25e5f4586bd08a669517ba94423c449d00eaaca30d0dcbf8b"
+    "sha256": "3831448e04c6cfa25e5f4586bd08a669517ba94423c449d00eaaca30d0dcbf8b",
+    "present_in_final_delivery": false,
+    "final_sha256": null
   },
   {
     "source_group": "application",
@@ -13167,7 +13227,9 @@
   {
     "source_group": "application",
     "path": "uygulama/legacy/kod/db/engine.py",
-    "sha256": "ab5bfd3cb1ae6ff9c529b5cdcb0179a59e573f99909e5aed7081a4e2ff5bace1"
+    "sha256": "ab5bfd3cb1ae6ff9c529b5cdcb0179a59e573f99909e5aed7081a4e2ff5bace1",
+    "present_in_final_delivery": true,
+    "final_sha256": "a1a99dbaefee0e7c72f5387ae3797c9edc96edb0aefa740166f21b0d487425cc"
   },
   {
     "source_group": "application",
@@ -13187,26 +13249,36 @@
   {
     "source_group": "documents",
     "path": "belgeler/Akademik_Makale.docx",
-    "sha256": "93e2c8aa57db12b9df7e9ddd7cc4c44135acf96de4efbc8c404cf56f8eb9d25b"
+    "sha256": "93e2c8aa57db12b9df7e9ddd7cc4c44135acf96de4efbc8c404cf56f8eb9d25b",
+    "present_in_final_delivery": false,
+    "final_sha256": null
   },
   {
     "source_group": "documents",
     "path": "belgeler/Akademik_Makale.pdf",
-    "sha256": "f3fc4dff676f6964275c53aa9e780ab920ebb04358856d75020686c5b04a17ea"
+    "sha256": "f3fc4dff676f6964275c53aa9e780ab920ebb04358856d75020686c5b04a17ea",
+    "present_in_final_delivery": false,
+    "final_sha256": null
   },
   {
     "source_group": "documents",
     "path": "belgeler/Dosya_Aciklamalari.csv",
-    "sha256": "07918bcc2d708c11f35ebd8562c1569bb40f6dacc5f60f322231c5242c8074c1"
+    "sha256": "07918bcc2d708c11f35ebd8562c1569bb40f6dacc5f60f322231c5242c8074c1",
+    "present_in_final_delivery": true,
+    "final_sha256": "acfb1fcd9cae73496f71915bf90ddbffec646c967d9b76c65cec818d30a69b5a"
   },
   {
     "source_group": "documents",
     "path": "belgeler/Proje_Raporu.pdf",
-    "sha256": "81860072074ca3360984d43adcd965b91cee8ba8e9a1167edfecc44147175e43"
+    "sha256": "81860072074ca3360984d43adcd965b91cee8ba8e9a1167edfecc44147175e43",
+    "present_in_final_delivery": true,
+    "final_sha256": "fe4cd80d54ca882998035db401b0e696b6448fb7b02428842be01445cb8c0c52"
   },
   {
     "source_group": "documents",
     "path": "belgeler/Veri_Sozlugu.csv",
-    "sha256": "c469054c3bdd8bf61532c98c3f9d9bce8069add80fabe4973d83325caf6a8c7c"
+    "sha256": "c469054c3bdd8bf61532c98c3f9d9bce8069add80fabe4973d83325caf6a8c7c",
+    "present_in_final_delivery": true,
+    "final_sha256": "a0c4b4b59d8d39af96edd40fe39ed51384de589e5c31c1012bc1c3256963dd0a"
   }
 ]

@@ -1,5 +1,31 @@
 {
   "findings": [],
-  "scope": "metin dosyalari; bilinen yerel gizli degerler ve kimlikli URL/token kaliplari",
-  "git_history_copied": false
+  "checked_at": "2026-11-13T08:55:49+03:00",
+  "scope": "Mevcut teslim metin dosyaları; kimlik bilgili URL, token/API anahtarı ve sabit parola kalıpları. Yeni rapor bağlantıları ve .env.example kontrol edildi.",
+  "git_history_copied": false,
+  "forbidden_files": [],
+  "files_over_5mb": [],
+  "historical_local_path_references": [
+    {
+      "path": "notebooks/01_elektrik_verisi_inceleme.ipynb",
+      "line": 19
+    },
+    {
+      "path": "notebooks/02_firma_verisi_hazirlama.ipynb",
+      "line": 264
+    },
+    {
+      "path": "data/results/delivery_evaluation/evaluation.json",
+      "line": 114
+    },
+    {
+      "path": "data/results/direct_milp_04_development_60s/early_stop.json",
+      "line": 5
+    },
+    {
+      "path": "data/results/direct_milp_04_development_60s/stop_request.json",
+      "line": 5
+    }
+  ],
+  "historical_local_path_note": "Bunlar önceden yayımlanmış Notebook çıktıları ve deney metaverileridir; kod, veri ve araştırma kayıtlarını korumak için değiştirilmedi."
 }

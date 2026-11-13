@@ -1,6 +1,6 @@
 {
-  "files": 2683,
-  "total_bytes": 34487488,
+  "files": 2679,
+  "total_bytes": 36075557,
   "screenshots": [
     "inceleme_01_cizelge.png",
     "inceleme_02_makine_secimi.png",
@@ -12,7 +12,6 @@
     "inceleme_08_teknik_bilgiler.png"
   ],
   "source_changed": [],
-  "documents_byte_identical": true,
   "secret_candidates": [],
   "forbidden_files": [],
   "files_over_5mb": [],
@@ -21,5 +20,18 @@
   "fresh_dependency_install_tested": false,
   "launcher_missing_venv_exit_code": 1,
   "original_notebooks_byte_identical": true,
-  "original_notebook_execution_repeated": false
+  "original_notebook_execution_repeated": false,
+  "checked_at": "2026-11-13T08:55:49+03:00",
+  "report_pages": 19,
+  "report_docx_pdf_content_match": true,
+  "report_figures": 8,
+  "report_tables": 9,
+  "report_github_and_medium_links_active": true,
+  "medium_url": "https://medium.com/p/3f359f682b5b",
+  "current_notebook_count": 8,
+  "last_update_scope": "README, nihai raporlar ve ilgili teslim kontrol kayıtları. Yeni deney/optimizasyon/test çalıştırılmadı; önceki test kayıtları tarihsel olarak korundu.",
+  "file_manifest_excludes": [
+    "teslim_kontrol/dosya_manifesti.json"
+  ],
+  "copy_manifest_note": "sha256 ilk kopyalama anını korur. Yalnız değişmiş/çıkarılmış kayıtlara present_in_final_delivery ve final_sha256 eklenmiştir; ek alanı olmayan kayıtlarda ilk özet güncel teslimle eşleşir."
 }

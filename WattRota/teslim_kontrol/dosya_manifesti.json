@@ -6,8 +6,8 @@
   },
   {
     "path": ".gitignore",
-    "bytes": 311,
-    "sha256": "4679a8489243d8b2a89884011640b8268dbafc85391187cc16c0430df1011d2e"
+    "bytes": 327,
+    "sha256": "87998d8b2063b3ad8605be598f01c689f2a60a2dab11753f85aacc09bbe619c1"
   },
   {
     "path": "BASLAT.bat",
@@ -15,64 +15,29 @@
     "sha256": "77e5f50d4a6e6537b88539ec19f0fc4ad59b03a0b05fa4f1469a9afa9a8b9511"
   },
   {
-    "path": "belgeler/Akademik_Makale.docx",
-    "bytes": 241943,
-    "sha256": "93e2c8aa57db12b9df7e9ddd7cc4c44135acf96de4efbc8c404cf56f8eb9d25b"
-  },
-  {
-    "path": "belgeler/Akademik_Makale.pdf",
-    "bytes": 657532,
-    "sha256": "f3fc4dff676f6964275c53aa9e780ab920ebb04358856d75020686c5b04a17ea"
-  },
-  {
     "path": "belgeler/Dosya_Aciklamalari.csv",
-    "bytes": 49548,
-    "sha256": "07918bcc2d708c11f35ebd8562c1569bb40f6dacc5f60f322231c5242c8074c1"
+    "bytes": 23752,
+    "sha256": "acfb1fcd9cae73496f71915bf90ddbffec646c967d9b76c65cec818d30a69b5a"
   },
   {
-    "path": "belgeler/kaynak/article_content.py",
-    "bytes": 33109,
-    "sha256": "8befec05642a19654bbb52b15c3137d6de7cccab582ed678a76a1dbc34450fb3"
-  },
-  {
-    "path": "belgeler/kaynak/build_documents.py",
-    "bytes": 20899,
-    "sha256": "fcdbe585bf4027477f2f058b746944c78aad3eb7ec095b32e3de7570eb94cfc9"
-  },
-  {
-    "path": "belgeler/kaynak/build_figures.py",
-    "bytes": 1817,
-    "sha256": "901db82ff0421af2938602af7f91171c4be7f9c31cb593db9998defbd3734613"
-  },
-  {
-    "path": "belgeler/kaynak/export_word.ps1",
-    "bytes": 1044,
-    "sha256": "e6a3954a95f63fbfead99d4caa1a39c24c2fb4be75e45a1d06fc286332b5c1e4"
-  },
-  {
-    "path": "belgeler/kaynak/PAYLASIM_KONTROLU.md",
-    "bytes": 1114,
-    "sha256": "ded1c8c236ad67a4f7035387355979eb9aa2a203a773ef6886c45f7815c6fb87"
-  },
-  {
-    "path": "belgeler/kaynak/requirements-dashboard.txt",
-    "bytes": 113,
-    "sha256": "fa1b7cc49fa4fc5f6543e3c224cc8a502211e2b318bd98132bc358d19da21c64"
-  },
-  {
-    "path": "belgeler/kaynak/THIRD_PARTY_NOTICES.md",
-    "bytes": 1885,
-    "sha256": "805f738f489af70caa180022b94d148e054fa1723c54ae0cc2b11b66d1f06be2"
+    "path": "belgeler/Proje_Raporu.docx",
+    "bytes": 1321685,
+    "sha256": "34e8a041f02362beab37154ca82b7a07ba4aa4321ae34db16868e982c783fbf8"
   },
   {
     "path": "belgeler/Proje_Raporu.pdf",
-    "bytes": 106928,
-    "sha256": "81860072074ca3360984d43adcd965b91cee8ba8e9a1167edfecc44147175e43"
+    "bytes": 776226,
+    "sha256": "fe4cd80d54ca882998035db401b0e696b6448fb7b02428842be01445cb8c0c52"
+  },
+  {
+    "path": "belgeler/SoftITo_Logo_Seffaf.png",
+    "bytes": 576335,
+    "sha256": "14b41632d3dbaa32f1af418ccf493ac11b1bdf097ea1e470b0f5c1063c99faac"
   },
   {
     "path": "belgeler/Veri_Sozlugu.csv",
-    "bytes": 10164,
-    "sha256": "c469054c3bdd8bf61532c98c3f9d9bce8069add80fabe4973d83325caf6a8c7c"
+    "bytes": 10163,
+    "sha256": "a0c4b4b59d8d39af96edd40fe39ed51384de589e5c31c1012bc1c3256963dd0a"
   },
   {
     "path": "data/database_import/firma_01_yukle.sql",
@@ -12215,6 +12180,11 @@
     "sha256": "1f1e93d6b1882e56da23739e0c1c1bed2643506f5ab6f54f909a8f1f2b9f853d"
   },
   {
+    "path": "docs/THIRD_PARTY_NOTICES.md",
+    "bytes": 1885,
+    "sha256": "805f738f489af70caa180022b94d148e054fa1723c54ae0cc2b11b66d1f06be2"
+  },
+  {
     "path": "experiments/01_karar_degerlendirme/config.json",
     "bytes": 352,
     "sha256": "e20b94a449c2fe0119926d43e54ed403f5d2afb859fabdd401c19daa127be9f9"
@@ -12601,8 +12571,8 @@
   },
   {
     "path": "README.md",
-    "bytes": 7652,
-    "sha256": "f768c6f2a107df9eeefbbee4c0a244991778c5cbab3af8cf70d897a1bb7736f7"
+    "bytes": 8608,
+    "sha256": "405f8d860d914bd13e211495ce616c1921b15bf64be2e14a57ef8c6e32690f0c"
   },
   {
     "path": "requirements.txt",
@@ -12700,11 +12670,6 @@
     "sha256": "c3a672a98ec71d74edbb8d5573f55993adf742945cdd18a8eb2bcee7218ae951"
   },
   {
-    "path": "TESLIM_DURUMU.md",
-    "bytes": 4068,
-    "sha256": "733e2884e5e436a191d88e3e76692cdc2afa66a73ae8c5823585dd457f038525"
-  },
-  {
     "path": "teslim_kontrol/browser_check.cjs",
     "bytes": 1400,
     "sha256": "099021da7bfd65edc9b4a18e092bab4efff5f25c4590b4610b3669e079df9bf6"
@@ -12716,8 +12681,8 @@
   },
   {
     "path": "teslim_kontrol/gizli_bilgi_taramasi.json",
-    "bytes": 147,
-    "sha256": "d4251b07764929f33198cf989e668ec047e58ce976ba76280f846cb160ab85eb"
+    "bytes": 1074,
+    "sha256": "ee5fd9bfe1761d53095061523b60fe07a35f21bceb23b8a6c9599ec47541fe61"
   },
   {
     "path": "teslim_kontrol/kapsam_disi_kopyalar.json",
@@ -12726,8 +12691,8 @@
   },
   {
     "path": "teslim_kontrol/kopyalama_manifesti.json",
-    "bytes": 563175,
-    "sha256": "003d0f61bdde63fdf9df6f15064e7281bb06d77aafe06bc773760092c2244359"
+    "bytes": 566906,
+    "sha256": "e313ed143ae413397a8fd5bced0380c5f2d54d18cc27174cf84911c9630cd39b"
   },
   {
     "path": "teslim_kontrol/notebook_ve_sozdizimi.json",
@@ -12741,8 +12706,8 @@
   },
   {
     "path": "teslim_kontrol/son_kontrol.json",
-    "bytes": 743,
-    "sha256": "817dc983009a09028a191b4d1a53cae6094d82e6f3be411d7eecabec22aa2aec"
+    "bytes": 1506,
+    "sha256": "7316398ae369744cd80e61f2120536818eda9cea441e6fb36e0dad6cfc64cba8"
   },
   {
     "path": "teslim_kontrol/tarayici.json",
@@ -13000,6 +12965,11 @@
     "sha256": "1cd77227ee46096059e43b9ba8089c215436afcb4f2521d1c9fb29e54e0475b6"
   },
   {
+    "path": "uygulama/runs/20261111_232421_67cf3c75/evaluation_1162a3f129.json",
+    "bytes": 177,
+    "sha256": "1cd77227ee46096059e43b9ba8089c215436afcb4f2521d1c9fb29e54e0475b6"
+  },
+  {
     "path": "uygulama/runs/20261111_232421_67cf3c75/evaluation_63ac1b0324.json",
     "bytes": 177,
     "sha256": "1cd77227ee46096059e43b9ba8089c215436afcb4f2521d1c9fb29e54e0475b6"
@@ -13023,6 +12993,11 @@
     "path": "uygulama/runs/20261111_232421_67cf3c75/evaluation_b0db9f0913_reference_hourly.csv",
     "bytes": 5534,
     "sha256": "0c0f506952e8e45ef2c6227b09b76acf401e59449eaa62e1ea34565d1a342bcf"
+  },
+  {
+    "path": "uygulama/runs/20261111_232421_67cf3c75/evaluation_e131138946.json",
+    "bytes": 177,
+    "sha256": "1cd77227ee46096059e43b9ba8089c215436afcb4f2521d1c9fb29e54e0475b6"
   },
   {
     "path": "uygulama/runs/20261111_232421_67cf3c75/expected_hourly.csv",

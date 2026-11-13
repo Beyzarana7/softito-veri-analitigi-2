@@ -4,7 +4,7 @@ KURULUM.bat,Proje sanal ortamını ve Python bağımlılıklarını kurar.
 README.md,"Güncel kurulum, kayıtlı demo, PostgreSQL ile yeni plan ve sınırlılıklar."
 belgeler/Dosya_Aciklamalari.csv,Mevcut teslim yapısının önemli dosya adları ve açıklamaları.
 belgeler/Proje_Raporu.docx,Yazarın incelenmiş ve onaylanmış nihai proje raporu; düzenlenebilir DOCX sürümü.
-belgeler/Proje_Raporu.pdf,Aynı nihai proje raporunun PDF sürümü; 15 sayfa.
+belgeler/Proje_Raporu.pdf,Aynı nihai proje raporunun PDF sürümü; 19 sayfa.
 belgeler/Veri_Sozlugu.csv,"20 tablo, 85 alan; tip, birim, anahtar ve ilişkiler."
 data/raw/epias/Piyasa_Takas_Fiyati-01012024-31122024.csv,EPİAŞ ham saatlik PTF dosyası; tarihler dosya adında: Piyasa_Takas_Fiyati-01012024-31122024.
 data/raw/epias/Piyasa_Takas_Fiyati-01012025-31122025.csv,EPİAŞ ham saatlik PTF dosyası; tarihler dosya adında: Piyasa_Takas_Fiyati-01012025-31122025.
